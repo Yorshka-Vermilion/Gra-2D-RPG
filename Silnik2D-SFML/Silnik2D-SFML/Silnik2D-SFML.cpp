@@ -3,6 +3,6 @@
 
 int main()
 {
-    Engine test = Engine();
-    test.t();
+    Engine gra = Engine("Test",500,500);
+    gra.start();
 }

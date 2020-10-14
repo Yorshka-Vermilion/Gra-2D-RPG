@@ -1,2 +1,4 @@
 ﻿  Silnik2D-SFML.cpp
-  Silnik2D-SFML.vcxproj -> C:\Users\MangD\Desktop\Polibuda\Grafika\Lab1\Silnik2D-SFML\x64\Debug\Silnik2D-SFML.exe
+C:\Users\MangD\Desktop\Polibuda\Grafika\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Engine.h(16,78): warning C4244: "argument": konwersja z "float" do "unsigned int", możliwa utrata danych
+C:\Users\MangD\Desktop\Polibuda\Grafika\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Engine.h(16,58): warning C4244: "argument": konwersja z "float" do "unsigned int", możliwa utrata danych
+  Silnik2D-SFML.vcxproj -> C:\Users\MangD\Desktop\Polibuda\Grafika\Grafika-Projekt\Silnik2D-SFML\x64\Debug\Silnik2D-SFML.exe
