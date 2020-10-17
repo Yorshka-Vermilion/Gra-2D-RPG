@@ -154,7 +154,14 @@
     <ClCompile Include="Silnik2D-SFML.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Bartek.h" />
+    <ClInclude Include="Bartek\Engine.h" />
+    <ClInclude Include="Przemek.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Sebix.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Silnik2D-SFML.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
