@@ -16,14 +16,23 @@ private:
 			this->window = new sf::RenderWindow(sf::VideoMode(this->window_width, this->window_height), this->title);
 		}
 	}
-
-public:
+	
 	Engine(std::string title, float window_width, float window_height) {
 		this->window_width = window_width;
 		this->window_height = window_height;
-
 		makeWindow();
 	}
+
+public:
+
+	static Engine* MakeEngine(std::string title, float window_width, float window_height) {
+		
+		static Engine instance(title,window_width,window_height);
+		
+		return &instance;
+	}
+	
+	
 
 	void start() {
 		while (this->window->isOpen()) {
