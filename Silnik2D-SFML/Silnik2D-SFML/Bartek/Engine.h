@@ -22,7 +22,7 @@ private:
 
 	void testyWczytaj() {
 		//this->testObrazu = new Obiekt("Obraz.jpg", sf::Vector2f(50, 50));
-		dodajStan();
+		addStan();
 	}
 
 	void testyRun() {// funkcja do testowania
@@ -52,6 +52,9 @@ private:
 				this->window->close();
 			}
 		}
+		if (!stos.empty()) {
+			this->stos.top()->update(dtime);
+		}
 	}
 
 	void draw() { // Funkcja rysuj¹ca obrazy
@@ -62,8 +65,8 @@ private:
 		window->clear(sf::Color::Black);
 	}
 
-	void dodajStan() {
-		this->stos.push(new MenuGlowne(this->window,&this->stos));
+	void addStan() {
+		this->stos.push(new MenuGlowne(this->window,&this->stos,&this->event));
 	}
 
 public:

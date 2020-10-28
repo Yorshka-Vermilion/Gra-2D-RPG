@@ -13,7 +13,7 @@ class MenuGlowne : public Stan
 
 public:
 
-	MenuGlowne(sf::RenderWindow* window, std::stack<Stan*>* stos) : Stan(window, stos) {
+	MenuGlowne(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event) : Stan(window, stos, event) {
 		testyWczytaj();
 	}
 	void draw(sf::RenderTarget* target) {
@@ -23,6 +23,7 @@ public:
 	};
 	void update(const float& dtime) {
 		this->dtime = dtime;
+		sprawdzMysz();
 	};
 };
 
