@@ -3,6 +3,8 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <stack>
+#include "../Sebix.h"
+#include "../Bartek.h"
 
 class Engine
 {
@@ -13,17 +15,55 @@ private:
 	sf::Clock clock; // Zegar
 	sf::Event event; // Eventy
 	std::string title; // Tytu³ okna
+	std::stack<Stan*> stos;
+
+	//Testy
+	
+
+	void testyWczytaj() {
+		//this->testObrazu = new Obiekt("Obraz.jpg", sf::Vector2f(50, 50));
+		dodajStan();
+	}
+
+	void testyRun() {// funkcja do testowania
+		//this->window->draw(this->testObrazu->sprajt);
+	}
+
+	
+	Engine(std::string title, float window_width, float window_height) { // Konstruktor prywatny
+		this->title = title;
+		this->window_width = window_width;
+		this->window_height = window_height;
+		makeWindow();
+		testyWczytaj();
+	}
 
 	void makeWindow() { // Tworzy okno 
 		if (window_width && window_height) {
 			this->window = new sf::RenderWindow(sf::VideoMode(this->window_width, this->window_height), this->title);
 		}
 	}
-	
-	Engine(std::string title, float window_width, float window_height) { // Konstruktor prywatny
-		this->window_width = window_width;
-		this->window_height = window_height;
-		makeWindow();
+
+	void update() { // 
+		this->dtime = this->clock.restart().asSeconds(); // Aktualizuje delte czasu
+
+		while (this->window->pollEvent(event)) {
+			if (this->event.type == sf::Event::Closed) {
+				this->window->close();
+			}
+		}
+	}
+
+	void draw() { // Funkcja rysuj¹ca obrazy
+		if (!stos.empty()) {
+			this->stos.top()->draw();
+		}
+		window->display();
+		window->clear(sf::Color::Black);
+	}
+
+	void dodajStan() {
+		this->stos.push(new MenuGlowne(this->window,&this->stos));
 	}
 
 public:
@@ -33,8 +73,9 @@ public:
 		return &instance;
 	}
 	
-	virtual void start() { // Funkcja uruchamiaj¹ca program
+	void start() { // Funkcja uruchamiaj¹ca program
 		while (this->window->isOpen()) {	
+			testyRun();
 			update();
 			draw();	
 		}
@@ -46,25 +87,16 @@ public:
 		window->setSize(sf::Vector2u(this->window_width,this->window_height));
 	}
 
+	void setFullScreen() {// Ustawia pelny ekran
+		window->create(sf::VideoMode::getDesktopMode(), "Borderless Fullscreen", sf::Style::None);
+	}
+
 	void setFrameRateCap(unsigned int l) { // Ustawia limit klatek na sekunde
 		window->setFramerateLimit(l);
 	}
 
-	virtual void update() { // 
-		this->dtime = this->clock.restart().asSeconds(); // Aktualizuje delte czasu
-
-		while (this->window->pollEvent(event)) {
-			if (this->event.type == sf::Event::Closed) {
-				this->window->close();
-			}
-		}
-	}
-
-	virtual void draw() { // Funkcja rysuj¹ca obrazy
-		window->clear(sf::Color::Magenta);
-		window->display();
-	}
-
+	
+	
 };
 
 
