@@ -7,7 +7,7 @@ class MenuGlowne : public Stan
 		this->testObrazu = new Obiekt("Obraz.jpg", sf::Vector2f(50, 50));
 	}
 
-	void testyRun(sf::RenderTarget* target) {// funkcja do testowania
+	void testyRun(sf::RenderTarget* target) {// funkcja do testowaniaa
 		target->draw(this->testObrazu->sprajt);
 	}
 
