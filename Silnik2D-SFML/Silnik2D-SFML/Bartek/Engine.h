@@ -15,7 +15,7 @@ private:
 	sf::Clock clock; // Zegar
 	sf::Event event; // Eventy
 	std::string title; // Tytu³ okna
-	std::stack<Stan*> stos;
+	std::stack<Stan*> stos; //Stos wska¿ników a stany
 
 	//Testy
 	
@@ -97,8 +97,6 @@ public:
 	void setFrameRateCap(unsigned int l) { // Ustawia limit klatek na sekunde
 		window->setFramerateLimit(l);
 	}
-
-	
 	
 };
 
