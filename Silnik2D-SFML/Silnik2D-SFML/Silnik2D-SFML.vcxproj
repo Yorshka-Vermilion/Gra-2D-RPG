@@ -156,9 +156,14 @@
   <ItemGroup>
     <ClInclude Include="Bartek.h" />
     <ClInclude Include="Bartek\Engine.h" />
+    <ClInclude Include="Bartek\Gra.h" />
+    <ClInclude Include="Bartek\MenuGlowne.h" />
+    <ClInclude Include="Bartek\Obiekt.h" />
+    <ClInclude Include="Bartek\Stan.h" />
     <ClInclude Include="Przemek.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Sebix.h" />
+    <ClInclude Include="Sebix\Point2D.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Silnik2D-SFML.rc" />

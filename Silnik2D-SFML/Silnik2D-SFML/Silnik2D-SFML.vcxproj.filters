@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Pliki nagłówkowe\Bartek">
+      <UniqueIdentifier>{fa6b1c8f-d599-4fc4-8bbe-feb2390d9cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Sebix">
+      <UniqueIdentifier>{7b5eecdf-5c2c-4690-8985-f59c3c90df3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Przemek">
+      <UniqueIdentifier>{695b311a-a66c-43fd-a46c-3f1c60e590be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Silnik2D-SFML.cpp">
@@ -34,6 +43,21 @@
     </ClInclude>
     <ClInclude Include="Bartek\Engine.h">
       <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Gra.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\MenuGlowne.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Obiekt.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Stan.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Point2D.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
