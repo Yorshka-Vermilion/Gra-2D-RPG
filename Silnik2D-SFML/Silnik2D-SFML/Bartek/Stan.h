@@ -33,7 +33,7 @@ public:
 			this->prawy = true;
 		}
 		else this->prawy = false;
-		std::cout << pozycja_kursora_w_oknie.x << pozycja_kursora_w_oknie.y << std::endl;
+		//std::cout << pozycja_kursora_w_oknie.x << pozycja_kursora_w_oknie.y << std::endl;
 	}
 };
 

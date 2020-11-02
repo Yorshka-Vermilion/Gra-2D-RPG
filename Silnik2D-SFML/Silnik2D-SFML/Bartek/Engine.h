@@ -5,6 +5,7 @@
 #include <stack>
 #include "../Sebix.h"
 #include "../Bartek.h"
+#include "../Przemek.h"
 
 class Engine
 {
@@ -36,6 +37,7 @@ private:
 		this->window_height = window_height;
 		makeWindow();
 		testyWczytaj();
+
 	}
 
 	void makeWindow() { // Tworzy okno 
@@ -46,6 +48,8 @@ private:
 
 	void update() { // 
 		this->dtime = this->clock.restart().asSeconds(); // Aktualizuje delte czasu
+		
+		std::cout << 1.f / dtime << std::endl; // Wyswietla fps'y
 
 		while (this->window->pollEvent(event)) {
 			if (this->event.type == sf::Event::Closed) {
