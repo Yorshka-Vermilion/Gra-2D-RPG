@@ -154,6 +154,7 @@
     <ClCompile Include="Silnik2D-SFML.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animacja.h" />
     <ClInclude Include="Bartek.h" />
     <ClInclude Include="Bartek\Engine.h" />
     <ClInclude Include="Bartek\Gra.h" />
@@ -161,6 +162,7 @@
     <ClInclude Include="Bartek\Obiekt.h" />
     <ClInclude Include="Bartek\Stan.h" />
     <ClInclude Include="Przemek.h" />
+    <ClInclude Include="Przemek\rysowanie.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Sebix.h" />
     <ClInclude Include="Sebix\Point2D.h" />

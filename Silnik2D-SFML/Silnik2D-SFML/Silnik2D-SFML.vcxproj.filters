@@ -41,9 +41,6 @@
     <ClInclude Include="Przemek.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="Bartek\Engine.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="Bartek\Gra.h">
       <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
@@ -58,6 +55,15 @@
     </ClInclude>
     <ClInclude Include="Sebix\Point2D.h">
       <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Przemek\rysowanie.h">
+      <Filter>Pliki nagłówkowe\Przemek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Engine.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Animacja.h">
+      <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -6,15 +6,6 @@ class Sebix{
 	sf::RenderWindow *window; // Okno programu przekazane z klasy Engine
 	Point2D *pixel; // Ustawienia pixela
 
-	sf::RectangleShape draw2DPoint(Point2D *p2d) { // Funkcja odpowiada za rysowanie pixeli na ekranie
-		sf::RectangleShape pixel;
-		pixel.setFillColor(p2d->color);
-		pixel.setPosition(p2d->x, p2d->y);
-		pixel.setSize({1,1});
-		this->window->draw(pixel);
-		return pixel;
-	}
-
 	template <typename T> // Funkcja odpowiada za działanie klawiatury
 	void keyboard(sf::Keyboard::Key k, T function) {
 		if (sf::Keyboard::isKeyPressed(k)) {
@@ -33,6 +24,15 @@ public:
 	Sebix(sf::RenderWindow *window) {
 		this->window = window;
 		this->pixel = new Point2D(0, 0, sf::Color::Magenta);
+	}
+
+	sf::RectangleShape draw2DPoint(Point2D* p2d) { // Funkcja odpowiada za rysowanie pixeli na ekranie
+		sf::RectangleShape pixel;
+		pixel.setFillColor(p2d->color);
+		pixel.setPosition(p2d->x, p2d->y);
+		pixel.setSize({ 1,1 });
+		this->window->draw(pixel);
+		return pixel;
 	}
 
 	void run() {
