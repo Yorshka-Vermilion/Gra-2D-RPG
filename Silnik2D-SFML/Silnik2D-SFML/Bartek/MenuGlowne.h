@@ -1,5 +1,6 @@
 #pragma once
 #include "Bartek/Animacja.h"
+#include "../Sebix.h"
 
 class MenuGlowne : public Stan
 {
@@ -23,8 +24,35 @@ public:
 	void draw(sf::RenderTarget* target) {
 		if (!target) target = this->window;
 		//target->draw(...);
-		//wykonaj(10,10,150,150,this->window);
-		testAnimacji->animuj(target, this->dtime);
+		//testAnimacji->animuj(target, this->dtime);
+
+		//Rysuje pixel na ekranie
+		/*
+		sf::Vector2f v2f = sf::Vector2f(10.0, 10.0);
+		Point2D p2d = Point2D(v2f, sf::Color::Blue);
+		draw2DPoint(p2d,target);
+		
+		//Rysuje figure na ekranie
+		
+		std::vector<sf::Vector2f> vector;
+		vector.push_back(sf::Vector2f(100.f, 100.f));
+		vector.push_back(sf::Vector2f(10.f, 100.f));
+		vector.push_back(sf::Vector2f(10.f, 10.f));
+		vector.push_back(sf::Vector2f(100.f, 10.f));
+		
+		Point2DArray p2da = Point2DArray(vector, sf::Color::Cyan);
+		draw2DEmpty(p2da, target);
+		
+
+		// Rysuje linie algorytmem przyrostowym
+		std::vector<sf::Vector2f> v;
+		v.push_back(sf::Vector2f(300.f, 300.f));
+		v.push_back(sf::Vector2f(10.f, 10.f));
+		LineSegment ls = LineSegment(v, sf::Color::Cyan);
+
+		drawLinePrzyrostowo(ls,target);
+		*/
+
 		testyRun(target);
 	};
 	void update(const float& dtime) {
