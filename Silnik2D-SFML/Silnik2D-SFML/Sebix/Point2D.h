@@ -2,15 +2,19 @@
 
 #include <SFML/Graphics.hpp>
 
-class Point2D {
+class Point2D : public sf::Vertex {
 public:
-	int x;
-	int y;
-	sf::Color color;
 
-	Point2D(int x, int y, sf::Color color) {
-		this->x = x;
-		this->y = y;
-		this->color = color;
+	Point2D(const sf::Vector2f& xy, const sf::Color& color) : sf::Vertex(xy,color){}
+	Point2D() {}
+
+	float getX() {
+		return this->position.x;
+	}
+
+	float getY() {
+		return this->position.y;
 	}
 };
+
+
