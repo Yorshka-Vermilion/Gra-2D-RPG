@@ -2,10 +2,11 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "../Sebix.h"
+#include "../Sebix/Point2D.h"
+#include "../Silnik2D-SFML/Sebix.h"
 
 
-void linia_powyzej45(int x0, int y0, int x1, int y1, sf::RenderWindow* window) {
+void linia_powyzej45(int x0, int y0, int x1, int y1, sf::RenderWindow *window) {
 	int x;
 	float dy, dx, y, m;
 	Sebix* s = new Sebix(window);
@@ -15,7 +16,7 @@ void linia_powyzej45(int x0, int y0, int x1, int y1, sf::RenderWindow* window) {
 		dx = x0 - x1;
 
 		m = dy / dx;
-
+	
 		if (dx == 0) {
 			y = 0;
 			for (x = x1; x <= x0; x++) {
@@ -68,9 +69,9 @@ void linia_ponizej45(int x0, int y0, int x1, int y1, sf::RenderWindow* window) {
 
 	Sebix* s = new Sebix(window);
 
-	if (x0 > x1) {
-		dy = y1 - y0;
-		dx = x1 - x0;
+	if (y0 > y1) {
+		dy = y0 - y1;
+		dx = x0 - x1;
 
 		m = dx / dy;
 
@@ -94,8 +95,8 @@ void linia_ponizej45(int x0, int y0, int x1, int y1, sf::RenderWindow* window) {
 	}
 
 	else {
-		dy = y0 - y1;
-		dx = x0 - x1;
+		dy = y1 - y0;
+		dx = x1 - x0;
 
 		m = dx / dy;
 		if (dy == 0) {
@@ -118,20 +119,22 @@ void linia_ponizej45(int x0, int y0, int x1, int y1, sf::RenderWindow* window) {
 	}
 }
 
-void wykonaj(int x0, int y0, int x1, int y1, sf::RenderWindow* window) {
-
+void wykonaj(int x0, int y0, int x1, int y1, sf::RenderWindow *window) {
+	
 	float dy, dx, m;
 
-	dy = y1 - y0;
-	dx = x1 - x0;
 
-	m = dy / dx;
+		dy = y1 - y0;
+		dx = x1 - x0;
 
-	if (m <= 1 && m >= -1) {
+		m = dy / dx;
+
+	if(m <= 1 && m >=-1){
 		linia_powyzej45(x0, y0, x1, y1, window);
-
 	}
-	if (m > 1 || m < -1) {
+	if (x1 == x0 || m > 1 || m < -1) {
 		linia_ponizej45(x0, y0, x1, y1, window);
 	}
+
 }
+
