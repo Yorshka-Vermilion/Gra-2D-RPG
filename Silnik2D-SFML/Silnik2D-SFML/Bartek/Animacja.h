@@ -6,7 +6,7 @@
 class Animacja : public Obiekt
 {
 private:
-	int x = 0, y = 0, szerokosc, wysokosc, klatki, klatka, wysokoscMAX = 0, szerokoscMAX = 0;
+	int x = 0, y = 0, szerokosc, wysokosc, klatki, klatka, wysokoscMAX = 0, szerokoscMAX = 0; // pozycja x i y animacji, szerokosc i wysokosc klatki, ilosc klatek, numer aklatki, maksymalna wysokosc tekstury i maksymalna szerokosc tekstury
 	float przerwa, dt = 0; // Przerwa pomiêdzy klatkami
 	bool pionowa; // Ustawienie klatek w pliku
 	

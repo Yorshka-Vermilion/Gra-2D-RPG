@@ -21,7 +21,7 @@ private:
 	//Testy
 	
 
-	void testyWczytaj() {
+	void testyWczytaj() { // Sluzy do wczytania/stworzenia testowanych obiektow
 		//this->testObrazu = new Obiekt("Obraz.jpg", sf::Vector2f(50, 50));
 		addStan();
 	}
@@ -46,7 +46,7 @@ private:
 		}
 	}
 
-	void update() { // 
+	void update() { // Odswieza stan silnika
 		this->dtime = this->clock.restart().asSeconds(); // Aktualizuje delte czasu
 		
 		std::cout << 1.f / dtime << std::endl; // Wyswietla fps'y
@@ -69,7 +69,7 @@ private:
 		window->clear(sf::Color::Black);
 	}
 
-	void addStan() {
+	void addStan() { // Dodaje nowy stan na szczyt stosu
 		this->stos.push(new MenuGlowne(this->window,&this->stos,&this->event));
 	}
 

@@ -2,9 +2,9 @@
 #include "Gracz.h"
 class ObslugaRuchuGracza
 {
-	Gracz *gracz;
-	float zegar;
-	float szybkosc;
+	Gracz *gracz; // Wskaznik na obiekt gracza
+	float zegar; // Zegar synchronizacji
+	float szybkosc; // Predkosc ruchu
 public:
 	ObslugaRuchuGracza(Gracz* gracz, float szybkosc) {
 		this->gracz = gracz;
@@ -12,7 +12,7 @@ public:
 	}
 
 	
-	void update(const float& Zegar) {
+	void update(const float& Zegar) { // Odswiezenie stanu ruchu
 		float x = this->gracz->pobierzPozycje().x;
 		float y = this->gracz->pobierzPozycje().y;
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {

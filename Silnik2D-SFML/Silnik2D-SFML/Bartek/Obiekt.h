@@ -7,9 +7,9 @@
 class Obiekt
 {
 protected:
-	sf::Texture tekstura;
+	sf::Texture tekstura; // Zmienna przechowujaca teksture
 public:
-	sf::Sprite sprajt;
+	sf::Sprite sprajt; // Zmienna przechowujaca sprite
 	Obiekt(std::string sciezka, sf::Vector2f pozycja) {
 		if (!tekstura.loadFromFile(sciezka)) {
 			std::cout << "Problem z zaladowaniem tekstury : " << sciezka << std::endl;

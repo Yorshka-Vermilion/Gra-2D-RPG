@@ -8,8 +8,8 @@ class MenuGlowne : public Stan
 {
 	//Obiekt* testObrazu;
 	//Animacja* testAnimacji;
-	Gracz* gracz;
-	ObslugaRuchuGracza* gRuch;
+	Gracz* gracz; // Wskaznik na obiekt gracza
+	ObslugaRuchuGracza* gRuch; // Wskaznik na obsluge ruchu gracza
 
 	void testyWczytaj() {
 		//this->testObrazu = new Obiekt("Obraz.jpg", sf::Vector2f(50, 50));
@@ -29,14 +29,14 @@ public:
 	MenuGlowne(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event) : Stan(window, stos, event) {
 		testyWczytaj();
 	}
-	void draw(sf::RenderTarget* target) {
+	void draw(sf::RenderTarget* target) { // Rysowanie obiektow na ekranie
 		if (!target) target = this->window;
 		//target->draw(...);
 		//testAnimacji->animuj(target, this->dtime);
 		
 		testyRun(target);
 	};
-	void update(const float& dtime) {
+	void update(const float& dtime) { // Odswiezenie stanu aktualnego "stanu"
 		this->dtime = dtime;
 		sprawdzMysz();
 		gRuch->update(dtime);
