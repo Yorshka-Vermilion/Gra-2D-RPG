@@ -17,7 +17,9 @@ public:
 		this->sprajt.setTexture(this->tekstura);
 		this->sprajt.setPosition(pozycja);
 	}
-
+	void WyczyscBitmape() { // Czyszczenie tekstury;
+		tekstura.~Texture();
+	}
 
 };
 

@@ -1,11 +1,11 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "Obiekt.h"
 
-class Animacja
+class Animacja : public Obiekt
 {
 private:
-	sf::Texture tekstura;
 	int x = 0, y = 0, szerokosc, wysokosc, klatki, klatka, wysokoscMAX = 0, szerokoscMAX = 0;
 	float przerwa, dt = 0; // Przerwa pomiêdzy klatkami
 	bool pionowa; // Ustawienie klatek w pliku
@@ -25,14 +25,10 @@ private:
 	}
 
 public:
-	sf::Sprite sprajt;
-	Animacja(std::string sciezka, int pozx, int pozy, int szerokosc, int wysokosc, int klatki, float przerwa, bool pionowa = true) {
+	Animacja(std::string sciezka, int pozx, int pozy, int szerokosc, int wysokosc, int klatki, float przerwa, bool pionowa = true) : Obiekt(sciezka, sf::Vector2f(pozx, pozy)){
 		this->szerokosc = szerokosc;
 		this->wysokosc = wysokosc;
 		this->klatki = klatki;
-		if(!this->tekstura.loadFromFile(sciezka)) {
-			std::cout << "Blad w ladowaniu animacji" << std::endl;
-		}
 		this->klatka = 1;
 		this->pionowa = pionowa;
 		this->przerwa = przerwa;
@@ -40,9 +36,7 @@ public:
 		else this->szerokoscMAX = szerokosc * klatki;
 
 		//Sprite
-		this->sprajt.setTexture(this->tekstura);
 		this->sprajt.setTextureRect(sf::IntRect(this->x, this->y, this->szerokosc, this->wysokosc));
-		this->sprajt.setPosition(sf::Vector2f(pozx, pozy));
 	}
 
 	void animuj(sf::RenderTarget *cel, const float& dtime) { // Rysuje i zmienia klatke na nastêpn¹.

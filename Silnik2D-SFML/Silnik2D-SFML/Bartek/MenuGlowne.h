@@ -1,19 +1,27 @@
 #pragma once
-#include "Bartek/Animacja.h"
+#include "Animacja.h"
 #include "../Sebix.h"
+#include "Gracz.h"
+#include "ObslugaRuchuGracza.h"
 
 class MenuGlowne : public Stan
 {
-	Obiekt* testObrazu;
-	Animacja* testAnimacji;
+	//Obiekt* testObrazu;
+	//Animacja* testAnimacji;
+	Gracz* gracz;
+	ObslugaRuchuGracza* gRuch;
 
 	void testyWczytaj() {
-		this->testObrazu = new Obiekt("Obraz.jpg", sf::Vector2f(50, 50));
-		this->testAnimacji = new Animacja("testanimacja.png", 10, 10, 765, 540, 32, 0.1);
+		//this->testObrazu = new Obiekt("Obraz.jpg", sf::Vector2f(50, 50));
+		//this->testAnimacji = new Animacja("testanimacja.png", 10, 10, 765, 540, 32, 0.1);
+		//this->testAnimacji->WyczyscBitmape(); // Dziala
+		this->gracz = new Gracz("Postac.png", sf::Vector2f(100, 100), sf::RectangleShape(sf::Vector2f(79, 63)));
+		this->gRuch = new ObslugaRuchuGracza(gracz,0.0005);
 	}
 
 	void testyRun(sf::RenderTarget* target) {// funkcja do testowaniaa
 		//target->draw(this->testObrazu->sprajt);
+		this->gracz->draw(target);
 	}
 
 public:
@@ -25,39 +33,13 @@ public:
 		if (!target) target = this->window;
 		//target->draw(...);
 		//testAnimacji->animuj(target, this->dtime);
-
-		//Rysuje pixel na ekranie
-		/*
-		sf::Vector2f v2f = sf::Vector2f(10.0, 10.0);
-		Point2D p2d = Point2D(v2f, sf::Color::Blue);
-		draw2DPoint(p2d,target);
 		
-		//Rysuje figure na ekranie
-		
-		std::vector<sf::Vector2f> vector;
-		vector.push_back(sf::Vector2f(100.f, 100.f));
-		vector.push_back(sf::Vector2f(10.f, 100.f));
-		vector.push_back(sf::Vector2f(10.f, 10.f));
-		vector.push_back(sf::Vector2f(100.f, 10.f));
-		
-		Point2DArray p2da = Point2DArray(vector, sf::Color::Cyan);
-		draw2DEmpty(p2da, target);
-		
-
-		// Rysuje linie algorytmem przyrostowym
-		std::vector<sf::Vector2f> v;
-		v.push_back(sf::Vector2f(300.f, 300.f));
-		v.push_back(sf::Vector2f(10.f, 10.f));
-		LineSegment ls = LineSegment(v, sf::Color::Cyan);
-
-		drawLinePrzyrostowo(ls,target);
-		*/
-
 		testyRun(target);
 	};
 	void update(const float& dtime) {
 		this->dtime = dtime;
 		sprawdzMysz();
+		gRuch->update(dtime);
 	};
 };
 
