@@ -6,11 +6,12 @@
 class Animacja : public Obiekt
 {
 private:
-	int x = 0, y = 0, szerokosc, wysokosc, klatki, klatka, wysokoscMAX = 0, szerokoscMAX = 0; // pozycja x i y animacji, szerokosc i wysokosc klatki, ilosc klatek, numer aklatki, maksymalna wysokosc tekstury i maksymalna szerokosc tekstury
-	float przerwa, dt = 0; // Przerwa pomiêdzy klatkami
-	bool pionowa; // Ustawienie klatek w pliku
+	int x = 0, y = 0, szerokosc, wysokosc, klatki, klatka, wysokoscMAX = 0, szerokoscMAX = 0; 
+	float przerwa, dt = 0; 
+	/*! A test class */
+	bool pionowa;
 	
-	void zmienKlatke() { // Zmienia klatke na nastêpn¹, po dotarciu na ostatni¹ klatke wraca do pierwszej.	
+	void zmienKlatke() { /// Zmienia klatke na nastêpn¹, po dotarciu na ostatni¹ klatke wraca do pierwszej.	
 		if (dt > przerwa) { // Je¿eli licznik jest wiêkszy ni¿ podana przerwa zmienia sie klatka animacji
 			if (pionowa) {
 				this->y += wysokosc;
@@ -39,14 +40,14 @@ public:
 		this->sprajt.setTextureRect(sf::IntRect(this->x, this->y, this->szerokosc, this->wysokosc));
 	}
 
-	void animuj(sf::RenderTarget *cel, const float& dtime) { // Rysuje i zmienia klatke na nastêpn¹.
+	void animuj(sf::RenderTarget *cel, const float& dtime) { /// Rysuje i zmienia klatke na nastêpn¹.
 		cel->draw(this->sprajt);
 		this->dt += dtime;
 		zmienKlatke();
 		this->sprajt.setTextureRect(sf::IntRect(this->x, this->y, this->szerokosc, this->wysokosc));
 	}
 
-	void rusz(sf::Vector2f gdzie) { // Zmienia pozycje sprite'a
+	void rusz(sf::Vector2f gdzie) { /// Zmienia pozycje sprite'a
 		this->sprajt.setPosition(gdzie);
 	}
 

@@ -12,7 +12,7 @@ public:
 	}
 
 	
-	void update(const float& Zegar) { // Odswiezenie stanu ruchu
+	void update(const float& Zegar) { /// Odswiezenie stanu ruchu
 		float x = this->gracz->pobierzPozycje().x;
 		float y = this->gracz->pobierzPozycje().y;
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {

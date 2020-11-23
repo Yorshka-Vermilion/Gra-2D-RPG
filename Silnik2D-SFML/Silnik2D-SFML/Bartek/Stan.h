@@ -20,10 +20,10 @@ public:
 		this->event = event;
 	}
 
-	virtual void update(const float &dtime) = 0; // Wirtualna funkcja aktualizuj¹ca stan
-	virtual void draw(sf::RenderTarget* cel = nullptr) = 0; // Wirtualna funkcja rysuj¹ca
+	virtual void update(const float &dtime) = 0; /// Wirtualna funkcja aktualizuj¹ca stan
+	virtual void draw(sf::RenderTarget* cel = nullptr) = 0; /// Wirtualna funkcja rysuj¹ca
 
-	void sprawdzMysz() { // Sprawdza pozycje myszy, oraz zapewnia, ¿e nacisniêcie (przytrzymanie) klawisza myszy spowodujê jednokrotn¹ akcjê, zamiast ci¹g³ej
+	void sprawdzMysz() { /// Sprawdza pozycje myszy, oraz zapewnia, ¿e nacisniêcie (przytrzymanie) klawisza myszy spowodujê jednokrotn¹ akcjê, zamiast ci¹g³ej
 		this->pozycja_kursora_w_oknie = sf::Mouse::getPosition(*this->window);
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
 			this->lewy = true;

@@ -21,17 +21,17 @@ private:
 	//Testy
 	
 
-	void testyWczytaj() { // Sluzy do wczytania/stworzenia testowanych obiektow
+	void testyWczytaj() { /// Sluzy do wczytania/stworzenia testowanych obiektow
 		//this->testObrazu = new Obiekt("Obraz.jpg", sf::Vector2f(50, 50));
 		addStan();
 	}
 
-	void testyRun() {// funkcja do testowania
+	void testyRun() {/// funkcja do testowania
 		//this->window->draw(this->testObrazu->sprajt);
 	}
 
 	
-	Engine(std::string title, float window_width, float window_height) { // Konstruktor prywatny
+	Engine(std::string title, float window_width, float window_height) { /// Konstruktor prywatny
 		this->title = title;
 		this->window_width = window_width;
 		this->window_height = window_height;
@@ -40,13 +40,13 @@ private:
 
 	}
 
-	void makeWindow() { // Tworzy okno 
+	void makeWindow() { /// Tworzy okno 
 		if (window_width && window_height) {
 			this->window = new sf::RenderWindow(sf::VideoMode(this->window_width, this->window_height), this->title);
 		}
 	}
 
-	void update() { // Odswieza stan silnika
+	void update() { /// Odswieza stan silnika
 		this->dtime = this->clock.restart().asSeconds(); // Aktualizuje delte czasu
 		
 		std::cout << 1.f / dtime << std::endl; // Wyswietla fps'y
@@ -61,7 +61,7 @@ private:
 		}
 	}
 
-	void draw() { // Funkcja rysuj¹ca obrazy
+	void draw() { /// Funkcja rysuj¹ca obrazy
 		if (!stos.empty()) {
 			this->stos.top()->draw();
 		}
@@ -69,18 +69,18 @@ private:
 		window->clear(sf::Color::Black);
 	}
 
-	void addStan() { // Dodaje nowy stan na szczyt stosu
+	void addStan() { /// Dodaje nowy stan na szczyt stosu
 		this->stos.push(new MenuGlowne(this->window,&this->stos,&this->event));
 	}
 
 public:
 
-	static Engine* MakeEngine(std::string title, float window_width, float window_height) { // Stworzenie singletonu silnika
+	static Engine* MakeEngine(std::string title, float window_width, float window_height) { /// Stworzenie singletonu silnika
 		static Engine instance(title,window_width,window_height);
 		return &instance;
 	}
 	
-	void start() { // Funkcja uruchamiaj¹ca program
+	void start() { /// Funkcja uruchamiaj¹ca program
 		while (this->window->isOpen()) {	
 			testyRun();
 			update();
@@ -88,17 +88,17 @@ public:
 		}
 	}
 
-	void setResolution(float window_width, float window_height) { // Ustawienie rozmiaru okna
+	void setResolution(float window_width, float window_height) { /// Ustawienie rozmiaru okna
 		this->window_width = window_width;
 		this->window_height = window_height;
 		window->setSize(sf::Vector2u(this->window_width,this->window_height));
 	}
 
-	void setFullScreen() {// Ustawia pelny ekran
+	void setFullScreen() {/// Ustawia pelny ekran
 		window->create(sf::VideoMode::getDesktopMode(), "Borderless Fullscreen", sf::Style::None);
 	}
 
-	void setFrameRateCap(unsigned int l) { // Ustawia limit klatek na sekunde
+	void setFrameRateCap(unsigned int l) { /// Ustawia limit klatek na sekunde
 		window->setFramerateLimit(l);
 	}
 	

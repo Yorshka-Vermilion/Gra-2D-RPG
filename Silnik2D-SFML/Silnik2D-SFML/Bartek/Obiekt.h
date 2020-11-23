@@ -7,9 +7,9 @@
 class Obiekt
 {
 protected:
-	sf::Texture tekstura; // Zmienna przechowujaca teksture
+	sf::Texture tekstura; /// Zmienna przechowujaca teksture
 public:
-	sf::Sprite sprajt; // Zmienna przechowujaca sprite
+	sf::Sprite sprajt; /// Zmienna przechowujaca sprite
 	Obiekt(std::string sciezka, sf::Vector2f pozycja) {
 		if (!tekstura.loadFromFile(sciezka)) {
 			std::cout << "Problem z zaladowaniem tekstury : " << sciezka << std::endl;
@@ -17,7 +17,7 @@ public:
 		this->sprajt.setTexture(this->tekstura);
 		this->sprajt.setPosition(pozycja);
 	}
-	void WyczyscBitmape() { // Czyszczenie tekstury;
+	void WyczyscBitmape() { /// Czyszczenie tekstury;
 		tekstura.~Texture();
 	}
 
