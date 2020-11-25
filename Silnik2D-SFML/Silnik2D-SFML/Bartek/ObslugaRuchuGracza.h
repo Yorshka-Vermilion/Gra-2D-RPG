@@ -1,17 +1,32 @@
 #pragma once
 #include "Gracz.h"
+
+/**
+ * @brief Klasa sluzaca do obslugi ruchu gracza
+ * 
+ */
 class ObslugaRuchuGracza
 {
-	Gracz *gracz; // Wskaznik na obiekt gracza
-	float szybkosc; // Predkosc ruchu
+	Gracz *gracz; /// Wskaznik na obiekt gracza
+	float szybkosc; /// Predkosc ruchu
 public:
+	/**
+	 * @brief Tworzy nowy obiekt obslugi ruchu gracza
+	 * 
+	 * @param gracz Wskaznik na obiekt typu Gracz
+	 * @param szybkosc Szybkosc ruchu
+	 */
 	ObslugaRuchuGracza(Gracz* gracz, float szybkosc) {
 		this->gracz = gracz;
 		this->szybkosc = szybkosc;
 	}
 
-	
-	void update(const float& Zegar) { /// Odswiezenie stanu ruchu
+	/**
+	 * @brief Odswieza stan obiektu ObslugaRuchuGracza
+	 * 
+	 * @param Zegar Kontrola czasu
+	 */
+	void update(const float& Zegar) {
 		float x = this->gracz->pobierzPozycje().x;
 		float y = this->gracz->pobierzPozycje().y;
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {

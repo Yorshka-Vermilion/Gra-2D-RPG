@@ -3,12 +3,23 @@
 #include <iostream>
 
 
+/**
+ * @brief Klasa opisujaca kazdy obiekt w grze
+ * 
+ */
 class Obiekt
 {
 protected:
 	sf::Texture tekstura; /// Zmienna przechowujaca teksture
 public:
 	sf::Sprite sprajt; /// Zmienna przechowujaca sprite
+
+	/**
+	 * @brief Tworzy nowy Obiekt
+	 * 
+	 * @param sciezka Sciezka do pliku z tekstura/obrazkiem
+	 * @param pozycja Pozycja poczatkowa obiektu
+	 */
 	Obiekt(std::string sciezka, sf::Vector2f pozycja) {
 		if (!tekstura.loadFromFile(sciezka)) {
 			std::cout << "Problem z zaladowaniem tekstury : " << sciezka << std::endl;
@@ -16,22 +27,44 @@ public:
 		this->sprajt.setTexture(this->tekstura);
 		this->sprajt.setPosition(pozycja);
 	}
-	void zmienTeksture(std::string sciezka) { /// Zmiana tekstury obiektu
+
+	/**
+	 * @brief Podmienia teksture na podana w argumencie
+	 * 
+	 * @param sciezka Sciezka do pliku z teksura
+	 */
+	void zmienTeksture(std::string sciezka) {
 		if (!tekstura.loadFromFile(sciezka)) {
 			std::cout << "Problem z zaladowaniem tekstury : " << sciezka << std::endl;
 		}
 		this->sprajt.setTexture(this->tekstura);
 	}
 
-	void przestaw(sf::Vector2f gdzie) { /// Funkcja przestawiaj¹ca sprite
+
+	/**
+	 * @brief Przestawia obiekt w inne miejsce
+	 * 
+	 * @param gdzie Gdzie ma byc przestawiony obiekt
+	 */
+	void przestaw(sf::Vector2f gdzie) {
 		this->sprajt.setPosition(gdzie);
 	}
 
-	void rotuj(float kat) { /// Funkcja obracajaca
+	/**
+	 * @brief Funkcja obraca obiekt
+	 * 
+	 * @param kat O jaki kat ma byc obrocony sprite
+	 */
+	void rotuj(float kat) {
 		this->sprajt.setRotation(kat);
 	}
 
-	void przeskaluj(sf::Vector2f jak) { /// Funkcja skalujaca
+	/**
+	 * @brief Skaluje obiekt
+	 * 
+	 * @param jak O ile ma byc przeskalowany obiekt
+	 */
+	void przeskaluj(sf::Vector2f jak) {
 		this->sprajt.setScale(jak);
 	}
 

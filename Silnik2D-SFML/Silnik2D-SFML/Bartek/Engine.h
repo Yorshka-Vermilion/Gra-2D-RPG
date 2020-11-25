@@ -10,28 +10,44 @@
 class Engine
 {
 private:
-	float window_width, window_height; // Wymiary okna
-	float dtime; // Zmienna u¿ywana do kontroli czasu
-	sf::RenderWindow *window; // Okno
-	sf::Clock clock; // Zegar
-	sf::Event event; // Eventy
-	std::string title; // Tytu³ okna
-	std::stack<Stan*> stos; //Stos wska¿ników a stany
+	float window_width; /// Szerokosc okna
+	float window_height; /// Wysokosc okna
+	float dtime; /// Zmienna uzywana do kontroli czasu
+	sf::RenderWindow *window; /// Okno
+	sf::Clock clock; /// Zegar
+	sf::Event event; /// Eventy
+	std::string title; /// Tytul okna
+	std::stack<Stan*> stos; /// Stos wskaznikow na stany
 
 	//Testy
 	
-
-	void testyWczytaj() { /// Sluzy do wczytania/stworzenia testowanych obiektow
+	/**
+	 * @brief Sluzy do wczytania/stworzenia testowanych obiektow
+	 * 
+	 */
+	void testyWczytaj() { 
 		//this->testObrazu = new Obiekt("Obraz.jpg", sf::Vector2f(50, 50));
 		addStan();
 	}
 
-	void testyRun() {/// funkcja do testowania
+
+	/**
+	 * @brief Funkcja do odpalania/renderowania testowanych obiektow
+	 * 
+	 */
+	void testyRun() {
 		//this->window->draw(this->testObrazu->sprajt);
 	}
 
 	
-	Engine(std::string title, float window_width, float window_height) { /// Konstruktor prywatny
+	/**
+	 * @brief Prywatny konstruktor, tworzy obiekt Engine
+	 * 
+	 * @param title Tytul okna
+	 * @param window_width Szerokosc okna
+	 * @param window_height Wysokosc okna
+	 */
+	Engine(std::string title, float window_width, float window_height) {
 		this->title = title;
 		this->window_width = window_width;
 		this->window_height = window_height;
@@ -40,13 +56,23 @@ private:
 
 	}
 
-	void makeWindow() { /// Tworzy okno 
+
+	/**
+	 * @brief Tworzy nowe okno
+	 * 
+	 */
+	void makeWindow() {
 		if (window_width && window_height) {
 			this->window = new sf::RenderWindow(sf::VideoMode(this->window_width, this->window_height), this->title);
 		}
 	}
 
-	void update() { /// Odswieza stan silnika
+
+	/**
+	 * @brief Odswieza stan silnika
+	 * 
+	 */
+	void update() {
 		this->dtime = this->clock.restart().asSeconds(); // Aktualizuje delte czasu
 		
 		//std::cout << 1.f / dtime << std::endl; // Wyswietla fps'y
@@ -61,7 +87,12 @@ private:
 		}
 	}
 
-	void draw() { /// Funkcja rysuj¹ca obrazy
+
+	/**
+	 * @brief Funkcja rysujaca obiekty ktore znajduja sie w elemencie na szczycie stos 
+	 * 
+	 */
+	void draw() {
 		if (!stos.empty()) {
 			this->stos.top()->draw();
 		}
@@ -69,16 +100,33 @@ private:
 		window->clear(sf::Color::Black);
 	}
 
-	void addStan() { /// Dodaje nowy stan na szczyt stosu
+	/**
+	 * @brief Dodaje nowy stan na stos
+	 * 
+	 */
+	void addStan() {
 		this->stos.push(new MenuGlowne(this->window,&this->stos,&this->event));
 	}
 
 public:
 
-	static Engine* MakeEngine(std::string title, float window_width, float window_height) { /// Stworzenie singletonu silnika
+	/**
+	 * @brief Stworzenie singletonu silnika
+	 * 
+	 * @param title Tytul okna
+	 * @param window_width Szerokosc okna
+	 * @param window_height Wysokosc okna
+	 * @return Engine* 
+	 */
+	static Engine* MakeEngine(std::string title, float window_width, float window_height) { 
 		static Engine instance(title,window_width,window_height);
 		return &instance;
 	}
+
+	/**
+	 * @brief Niszczy obiekt Engine oraz jego wszystkie wskazniki
+	 * 
+	 */
 	~Engine() {
 		delete(this->window);
 		while (!this->stos.empty())
@@ -88,7 +136,12 @@ public:
 		}
 	}
 	
-	void start() { /// Funkcja uruchamiaj¹ca program
+
+	/**
+	 * @brief Funkcja uruchamiajaca program
+	 * 
+	 */
+	void start() {
 		while (this->window->isOpen()) {	
 			testyRun();
 			update();
@@ -96,16 +149,34 @@ public:
 		}
 	}
 
+
+	/**
+	 * @brief Ustawia wymiary okna
+	 * 
+	 * @param window_width Szerokosc
+	 * @param window_height Wysokosc
+	 */
 	void setResolution(float window_width, float window_height) { /// Ustawienie rozmiaru okna
 		this->window_width = window_width;
 		this->window_height = window_height;
 		window->setSize(sf::Vector2u(this->window_width,this->window_height));
 	}
 
+
+	/**
+	 * @brief Ustawia pelny obraz
+	 * 
+	 */
 	void setFullScreen() {/// Ustawia pelny ekran
 		window->create(sf::VideoMode::getDesktopMode(), "Borderless Fullscreen", sf::Style::None);
 	}
 
+
+	/**
+	 * @brief Ustawia limit wyswietlanych klatek
+	 * 
+	 * @param l Ilosc klatek
+	 */
 	void setFrameRateCap(unsigned int l) { /// Ustawia limit klatek na sekunde
 		window->setFramerateLimit(l);
 	}

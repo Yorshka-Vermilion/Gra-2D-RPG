@@ -3,16 +3,32 @@
 #include <iostream>
 #include "Obiekt.h"
 
+/**
+ * @brief Klasa obsÅ‚ugujÄ…ca animacje
+ * 
+ */
 class Animacja : public Obiekt
 {
 private:
-	int x = 0, y = 0, szerokosc, wysokosc, klatki, klatka, wysokoscMAX = 0, szerokoscMAX = 0; 
-	float przerwa, dt = 0; 
+	int x = 0; /// Pozycja x klatki
+	int y = 0; /// Pozycja y klatki
+	int szerokosc; /// Szerokosc klatki
+	int wysokosc; /// WYsokosc klatki
+	int klatki; /// Ilosc klatek w teksturze
+	int klatka; /// Numer aktualnej klatki
+	int wysokoscMAX = 0; /// Maksymalna wysokosc na ktora moze dotrzec algorytm przed powrotem na poczatek
+	int szerokoscMAX = 0; /// Maksymalna szerokosc na ktora moze dotrzec algorytm przed powrotem na poczatek
+	float przerwa; /// Czas jaki ma uplynac miedzy klatkami
+	float dt = 0; /// Licznik kontroli czasu
 	/*! A test class */
-	bool pionowa;
+	bool pionowa; /// Orientacja
 	
-	void zmienKlatke() { /// Zmienia klatke na nastêpn¹, po dotarciu na ostatni¹ klatke wraca do pierwszej.	
-		if (dt > przerwa) { // Je¿eli licznik jest wiêkszy ni¿ podana przerwa zmienia sie klatka animacji
+	/**
+	 * @brief  Zmienia klatke na nastapna, po dotarciu na ostatnia klatke wraca do pierwszej.	
+	 * 
+	 */
+	void zmienKlatke() {
+		if (dt > przerwa) { // Jeï¿½eli licznik jest wiï¿½kszy niï¿½ podana przerwa zmienia sie klatka animacji
 			if (pionowa) {
 				this->y += wysokosc;
 				if (this->y >= wysokoscMAX)this->y = 0;
@@ -26,6 +42,18 @@ private:
 	}
 
 public:
+	/**
+	* @brief Konstruktor klasy animacja
+	* 
+	* @param sciezka Sciezka do pliku z tekstura
+	* @param pozx Pozycja startowa
+	* @param pozy Pozycja startowa
+	* @param szerokosc Szerokosc klatki
+	* @param wysokosc Wysokosc klatki
+	* @param klatki Ilosc klatek
+	* @param przerwa Czas przerwy
+	* @param pionowa Orientacja
+	*/
 	Animacja(std::string sciezka, int pozx, int pozy, int szerokosc, int wysokosc, int klatki, float przerwa, bool pionowa = true) : Obiekt(sciezka, sf::Vector2f(pozx, pozy)){
 		this->szerokosc = szerokosc;
 		this->wysokosc = wysokosc;
@@ -40,14 +68,26 @@ public:
 		this->sprajt.setTextureRect(sf::IntRect(this->x, this->y, this->szerokosc, this->wysokosc));
 	}
 
-	void animuj(sf::RenderTarget *cel, const float& dtime) { /// Rysuje i zmienia klatke na nastêpn¹.
+
+	/**
+	 * @brief Rysuje i zmienia klatki animacji
+	 * 
+	 * @param cel Obiekt typu RenderTarget w ktorym ma byc wyswietlany obraz
+	 * @param dtime Kontrola czasu
+	 */
+	void animuj(sf::RenderTarget *cel, const float& dtime) {
 		cel->draw(this->sprajt);
 		this->dt += dtime;
 		zmienKlatke();
 		this->sprajt.setTextureRect(sf::IntRect(this->x, this->y, this->szerokosc, this->wysokosc));
 	}
 
-	void rusz(sf::Vector2f gdzie) { /// Zmienia pozycje sprite'a
+	/**
+	 * @brief Zmienia pozycje sprite'a
+	 * 
+	 * @param gdzie Vector2f na ktory ma przejsc sprite
+	 */
+	void rusz(sf::Vector2f gdzie) {
 		this->sprajt.setPosition(gdzie);
 	}
 
