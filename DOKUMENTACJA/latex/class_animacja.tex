@@ -1,0 +1,257 @@
+\hypertarget{class_animacja}{}\doxysection{Animacja Class Reference}
+\label{class_animacja}\index{Animacja@{Animacja}}
+
+
+Klasa obsługująca animacje.  
+
+
+
+
+{\ttfamily \#include $<$Animacja.\+h$>$}
+
+Inheritance diagram for Animacja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_animacja}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_animacja_a02c7d49bb8bb7052d903d4698dd51a9a}{Animacja}} (std\+::string sciezka, int pozx, int pozy, int \mbox{\hyperlink{class_animacja_a032caf41600a729e94dc25942eb6e1fb}{szerokosc}}, int \mbox{\hyperlink{class_animacja_ae3705e23f21caeaffcb193480218f646}{wysokosc}}, int \mbox{\hyperlink{class_animacja_acd79b74e003d1678b4d14f9df9f76403}{klatki}}, float \mbox{\hyperlink{class_animacja_a66c252a62b7aab18f37340779912c247}{przerwa}}, bool \mbox{\hyperlink{class_animacja_a1c8b1a859fd5fb38becd45477a1659ae}{pionowa}}=true)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy animacja. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animacja_ad1243d7a08cd16b93c9015ce676cd352}{animuj}} (sf\+::\+Render\+Target $\ast$cel, const float \&dtime)
+\begin{DoxyCompactList}\small\item\em Rysuje i zmienia klatki animacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animacja_ad0333345ef5d98ba865da1d3af0efbc4}{rusz}} (sf\+::\+Vector2f gdzie)
+\begin{DoxyCompactList}\small\item\em Zmienia pozycje sprite\textquotesingle{}a. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_animacja_ab274eaa04fe5bff0a43ccc7d7c1b0b87}{zmien\+Klatke}} ()
+\begin{DoxyCompactList}\small\item\em Zmienia klatke na nastapna, po dotarciu na ostatnia klatke wraca do pierwszej. ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_animacja_a00798807f26269250d839da3d729fc7f}{x}} = 0
+\begin{DoxyCompactList}\small\item\em Pozycja x klatki. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animacja_af098f53c2a5ef6fbff8d53d2c6d13d7a}{y}} = 0
+\begin{DoxyCompactList}\small\item\em Pozycja y klatki. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animacja_a032caf41600a729e94dc25942eb6e1fb}{szerokosc}}
+\begin{DoxyCompactList}\small\item\em Szerokosc klatki. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animacja_ae3705e23f21caeaffcb193480218f646}{wysokosc}}
+\begin{DoxyCompactList}\small\item\em W\+Ysokosc klatki. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animacja_acd79b74e003d1678b4d14f9df9f76403}{klatki}}
+\begin{DoxyCompactList}\small\item\em Ilosc klatek w teksturze. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animacja_ab369a62d0a33b95116a2872e5556f7ba}{klatka}}
+\begin{DoxyCompactList}\small\item\em Numer aktualnej klatki. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animacja_ab9db3e337d2fb211834fb3002c6148b7}{wysokosc\+M\+AX}} = 0
+\begin{DoxyCompactList}\small\item\em Maksymalna wysokosc na ktora moze dotrzec algorytm przed powrotem na poczatek. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animacja_a54aa86ac01fed5c7f5b58773b95eee63}{szerokosc\+M\+AX}} = 0
+\begin{DoxyCompactList}\small\item\em Maksymalna szerokosc na ktora moze dotrzec algorytm przed powrotem na poczatek. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_animacja_a66c252a62b7aab18f37340779912c247}{przerwa}}
+\begin{DoxyCompactList}\small\item\em Czas jaki ma uplynac miedzy klatkami. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_animacja_ab43d112ef0cb4134996b061a1d95b433}{dt}} = 0
+\begin{DoxyCompactList}\small\item\em Licznik kontroli czasu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_animacja_a1c8b1a859fd5fb38becd45477a1659ae}{pionowa}}
+\begin{DoxyCompactList}\small\item\em Orientacja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Klasa obsługująca animacje. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_animacja_a02c7d49bb8bb7052d903d4698dd51a9a}\label{class_animacja_a02c7d49bb8bb7052d903d4698dd51a9a}} 
+\index{Animacja@{Animacja}!Animacja@{Animacja}}
+\index{Animacja@{Animacja}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{Animacja()}{Animacja()}}
+{\footnotesize\ttfamily Animacja\+::\+Animacja (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{int}]{pozx,  }\item[{int}]{pozy,  }\item[{int}]{szerokosc,  }\item[{int}]{wysokosc,  }\item[{int}]{klatki,  }\item[{float}]{przerwa,  }\item[{bool}]{pionowa = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor klasy animacja. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & Sciezka do pliku z tekstura \\
+\hline
+{\em pozx} & Pozycja startowa \\
+\hline
+{\em pozy} & Pozycja startowa \\
+\hline
+{\em szerokosc} & Szerokosc klatki \\
+\hline
+{\em wysokosc} & Wysokosc klatki \\
+\hline
+{\em klatki} & Ilosc klatek \\
+\hline
+{\em przerwa} & Czas przerwy \\
+\hline
+{\em pionowa} & Orientacja \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_animacja_ad1243d7a08cd16b93c9015ce676cd352}\label{class_animacja_ad1243d7a08cd16b93c9015ce676cd352}} 
+\index{Animacja@{Animacja}!animuj@{animuj}}
+\index{animuj@{animuj}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{animuj()}{animuj()}}
+{\footnotesize\ttfamily void Animacja\+::animuj (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel,  }\item[{const float \&}]{dtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rysuje i zmienia klatki animacji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target w ktorym ma byc wyswietlany obraz \\
+\hline
+{\em dtime} & Kontrola czasu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animacja_ad0333345ef5d98ba865da1d3af0efbc4}\label{class_animacja_ad0333345ef5d98ba865da1d3af0efbc4}} 
+\index{Animacja@{Animacja}!rusz@{rusz}}
+\index{rusz@{rusz}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{rusz()}{rusz()}}
+{\footnotesize\ttfamily void Animacja\+::rusz (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{gdzie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zmienia pozycje sprite\textquotesingle{}a. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gdzie} & Vector2f na ktory ma przejsc sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animacja_ab274eaa04fe5bff0a43ccc7d7c1b0b87}\label{class_animacja_ab274eaa04fe5bff0a43ccc7d7c1b0b87}} 
+\index{Animacja@{Animacja}!zmienKlatke@{zmienKlatke}}
+\index{zmienKlatke@{zmienKlatke}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{zmienKlatke()}{zmienKlatke()}}
+{\footnotesize\ttfamily void Animacja\+::zmien\+Klatke (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Zmienia klatke na nastapna, po dotarciu na ostatnia klatke wraca do pierwszej. ~\newline
+ 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_animacja_ab43d112ef0cb4134996b061a1d95b433}\label{class_animacja_ab43d112ef0cb4134996b061a1d95b433}} 
+\index{Animacja@{Animacja}!dt@{dt}}
+\index{dt@{dt}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{dt}{dt}}
+{\footnotesize\ttfamily float Animacja\+::dt = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Licznik kontroli czasu. 
+
+\mbox{\Hypertarget{class_animacja_ab369a62d0a33b95116a2872e5556f7ba}\label{class_animacja_ab369a62d0a33b95116a2872e5556f7ba}} 
+\index{Animacja@{Animacja}!klatka@{klatka}}
+\index{klatka@{klatka}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{klatka}{klatka}}
+{\footnotesize\ttfamily int Animacja\+::klatka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Numer aktualnej klatki. 
+
+\mbox{\Hypertarget{class_animacja_acd79b74e003d1678b4d14f9df9f76403}\label{class_animacja_acd79b74e003d1678b4d14f9df9f76403}} 
+\index{Animacja@{Animacja}!klatki@{klatki}}
+\index{klatki@{klatki}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{klatki}{klatki}}
+{\footnotesize\ttfamily int Animacja\+::klatki\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ilosc klatek w teksturze. 
+
+\mbox{\Hypertarget{class_animacja_a1c8b1a859fd5fb38becd45477a1659ae}\label{class_animacja_a1c8b1a859fd5fb38becd45477a1659ae}} 
+\index{Animacja@{Animacja}!pionowa@{pionowa}}
+\index{pionowa@{pionowa}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{pionowa}{pionowa}}
+{\footnotesize\ttfamily bool Animacja\+::pionowa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Orientacja. 
+
+\mbox{\Hypertarget{class_animacja_a66c252a62b7aab18f37340779912c247}\label{class_animacja_a66c252a62b7aab18f37340779912c247}} 
+\index{Animacja@{Animacja}!przerwa@{przerwa}}
+\index{przerwa@{przerwa}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{przerwa}{przerwa}}
+{\footnotesize\ttfamily float Animacja\+::przerwa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Czas jaki ma uplynac miedzy klatkami. 
+
+\mbox{\Hypertarget{class_animacja_a032caf41600a729e94dc25942eb6e1fb}\label{class_animacja_a032caf41600a729e94dc25942eb6e1fb}} 
+\index{Animacja@{Animacja}!szerokosc@{szerokosc}}
+\index{szerokosc@{szerokosc}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{szerokosc}{szerokosc}}
+{\footnotesize\ttfamily int Animacja\+::szerokosc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Szerokosc klatki. 
+
+\mbox{\Hypertarget{class_animacja_a54aa86ac01fed5c7f5b58773b95eee63}\label{class_animacja_a54aa86ac01fed5c7f5b58773b95eee63}} 
+\index{Animacja@{Animacja}!szerokoscMAX@{szerokoscMAX}}
+\index{szerokoscMAX@{szerokoscMAX}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{szerokoscMAX}{szerokoscMAX}}
+{\footnotesize\ttfamily int Animacja\+::szerokosc\+M\+AX = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Maksymalna szerokosc na ktora moze dotrzec algorytm przed powrotem na poczatek. 
+
+\mbox{\Hypertarget{class_animacja_ae3705e23f21caeaffcb193480218f646}\label{class_animacja_ae3705e23f21caeaffcb193480218f646}} 
+\index{Animacja@{Animacja}!wysokosc@{wysokosc}}
+\index{wysokosc@{wysokosc}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{wysokosc}{wysokosc}}
+{\footnotesize\ttfamily int Animacja\+::wysokosc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+W\+Ysokosc klatki. 
+
+\mbox{\Hypertarget{class_animacja_ab9db3e337d2fb211834fb3002c6148b7}\label{class_animacja_ab9db3e337d2fb211834fb3002c6148b7}} 
+\index{Animacja@{Animacja}!wysokoscMAX@{wysokoscMAX}}
+\index{wysokoscMAX@{wysokoscMAX}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{wysokoscMAX}{wysokoscMAX}}
+{\footnotesize\ttfamily int Animacja\+::wysokosc\+M\+AX = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Maksymalna wysokosc na ktora moze dotrzec algorytm przed powrotem na poczatek. 
+
+\mbox{\Hypertarget{class_animacja_a00798807f26269250d839da3d729fc7f}\label{class_animacja_a00798807f26269250d839da3d729fc7f}} 
+\index{Animacja@{Animacja}!x@{x}}
+\index{x@{x}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Animacja\+::x = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pozycja x klatki. 
+
+\mbox{\Hypertarget{class_animacja_af098f53c2a5ef6fbff8d53d2c6d13d7a}\label{class_animacja_af098f53c2a5ef6fbff8d53d2c6d13d7a}} 
+\index{Animacja@{Animacja}!y@{y}}
+\index{y@{y}!Animacja@{Animacja}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Animacja\+::y = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pozycja y klatki. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_animacja_8h}{Animacja.\+h}}\end{DoxyCompactItemize}

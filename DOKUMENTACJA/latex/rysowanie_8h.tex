@@ -1,0 +1,81 @@
+\hypertarget{rysowanie_8h}{}\doxysection{Przemek/rysowanie.h File Reference}
+\label{rysowanie_8h}\index{Przemek/rysowanie.h@{Przemek/rysowanie.h}}
+{\ttfamily \#include $<$S\+F\+M\+L/\+Window.\+hpp$>$}\newline
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_viewport}{Viewport}}
+\begin{DoxyCompactList}\small\item\em klasa viewport reprezentuj¹ca prostok¹t obcinaj¹cy \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bounding_box}{Bounding\+Box}}
+\begin{DoxyCompactList}\small\item\em klasa boundingbox bedaca prostokatem okalajacym \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{rysowanie_8h_a95c2938e2bc5a467837ac203ee0f4a51}{linia\+\_\+powyzej45}} (\mbox{\hyperlink{class_point2_d}{Point2D}} a0, \mbox{\hyperlink{class_point2_d}{Point2D}} a1, sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em funkcja do rysowania lini która znajduje sie pod katem 45 stopni lub powyzej \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rysowanie_8h_aae3dd8940c3321fac58306a8b567e3eb}{linia\+\_\+ponizej45}} (\mbox{\hyperlink{class_point2_d}{Point2D}} a0, \mbox{\hyperlink{class_point2_d}{Point2D}} a1, sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em funkcja do rysowania lini która znajduje sie pod katem ponizej 45 stopni \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rysowanie_8h_af220e779d4c8b5a19bf331a9718efd6f}{wykonaj}} (\mbox{\hyperlink{class_point2_d}{Point2D}} a0, \mbox{\hyperlink{class_point2_d}{Point2D}} a1, sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em funckja sprawdzajaca ktora dokladnie funkcje rysowania lini ma wywolac \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rysowanie_8h_aae3dd8940c3321fac58306a8b567e3eb}\label{rysowanie_8h_aae3dd8940c3321fac58306a8b567e3eb}} 
+\index{rysowanie.h@{rysowanie.h}!linia\_ponizej45@{linia\_ponizej45}}
+\index{linia\_ponizej45@{linia\_ponizej45}!rysowanie.h@{rysowanie.h}}
+\doxysubsubsection{\texorpdfstring{linia\_ponizej45()}{linia\_ponizej45()}}
+{\footnotesize\ttfamily void linia\+\_\+ponizej45 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{a0,  }\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{a1,  }\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})}
+
+
+
+funkcja do rysowania lini która znajduje sie pod katem ponizej 45 stopni 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a0} & zmienna odpowiedzialna za przypisanie wektora ktory jest poczatkiem rysowanej linii \\
+\hline
+{\em a1} & zmienna odpowiedzialna za przypisanie wektora ktory jest koncem rysowanej linii \\
+\hline
+{\em target} & obiekt typu Render\+Target dla ktorego ma zostac narysowana linia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{rysowanie_8h_a95c2938e2bc5a467837ac203ee0f4a51}\label{rysowanie_8h_a95c2938e2bc5a467837ac203ee0f4a51}} 
+\index{rysowanie.h@{rysowanie.h}!linia\_powyzej45@{linia\_powyzej45}}
+\index{linia\_powyzej45@{linia\_powyzej45}!rysowanie.h@{rysowanie.h}}
+\doxysubsubsection{\texorpdfstring{linia\_powyzej45()}{linia\_powyzej45()}}
+{\footnotesize\ttfamily void linia\+\_\+powyzej45 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{a0,  }\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{a1,  }\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})}
+
+
+
+funkcja do rysowania lini która znajduje sie pod katem 45 stopni lub powyzej 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a0} & zmienna odpowiedzialna za przypisanie wektora ktory jest poczatkiem rysowanej linii \\
+\hline
+{\em a1} & zmienna odpowiedzialna za przypisanie wektora ktory jest koncem rysowanej linii \\
+\hline
+{\em target} & obiekt typu Render\+Target dla ktorego ma zostac narysowana linia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{rysowanie_8h_af220e779d4c8b5a19bf331a9718efd6f}\label{rysowanie_8h_af220e779d4c8b5a19bf331a9718efd6f}} 
+\index{rysowanie.h@{rysowanie.h}!wykonaj@{wykonaj}}
+\index{wykonaj@{wykonaj}!rysowanie.h@{rysowanie.h}}
+\doxysubsubsection{\texorpdfstring{wykonaj()}{wykonaj()}}
+{\footnotesize\ttfamily void wykonaj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{a0,  }\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{a1,  }\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})}
+
+
+
+funckja sprawdzajaca ktora dokladnie funkcje rysowania lini ma wywolac 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a0} & zmienna odpowiedzialna za przypisanie wektora ktory jest poczatkiem rysowanej linii \\
+\hline
+{\em a1} & zmienna odpowiedzialna za przypisanie wektora ktory jest koncem rysowanej linii \\
+\hline
+{\em target} & obiekt typu Render\+Target dla ktorego ma zostac narysowana linia \\
+\hline
+\end{DoxyParams}

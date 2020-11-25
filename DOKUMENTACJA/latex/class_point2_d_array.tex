@@ -1,0 +1,119 @@
+\hypertarget{class_point2_d_array}{}\doxysection{Point2\+D\+Array Class Reference}
+\label{class_point2_d_array}\index{Point2DArray@{Point2DArray}}
+
+
+Klasa odpowiedzialna za reprezentacje zbioru pixleli na ekranie dziedziczaca po klasie Vertex\+Array.  
+
+
+
+
+{\ttfamily \#include $<$Point2\+D\+Array.\+h$>$}
+
+Inheritance diagram for Point2\+D\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_point2_d_array}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point2_d_array_a3852568a5991f49f357ce5d341fda341}{Point2\+D\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny reprezentujacy pusty zbior pixeli wywolany na bazie Vertex\+Array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d_array_a7c1d7bf88142ec05a8e9d1ad81c74482}{Point2\+D\+Array}} (sf\+::\+Primitive\+Type pt, size\+\_\+t v)
+\begin{DoxyCompactList}\small\item\em Konstruktor przyjmujacy wartosc Primitive\+Type oraz size\+\_\+t odpowiedzialne za wielkosc oraz rodzaj zbioru. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d_array_a7a64b83efcfa22f3fc14f48e5f09afc5}{Point2\+D\+Array}} (std\+::vector$<$ sf\+::\+Vector2f $>$ v2f, sf\+::\+Color c)
+\begin{DoxyCompactList}\small\item\em Konstruktor pobierajacy wektor wektorow liczb zmiennoprzecinkowych oraz kolor do wypelnienia zbioru. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point2_d_array_a95c8d6afb96bf51864ba67cd76b2c1b3}{add2\+D\+Point}} (sf\+::\+Vector2f v2f)
+\begin{DoxyCompactList}\small\item\em Metoda umozliwiajaca dodanie punktu do zbioru. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ \mbox{\hyperlink{class_point2_d_array_a4b5346b2f74d7640b6e63900cb10c6b2}{p2d}}
+\begin{DoxyCompactList}\small\item\em Wlasny wektor \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacy zbior pixeli na ekranie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za reprezentacje zbioru pixleli na ekranie dziedziczaca po klasie Vertex\+Array. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_point2_d_array_a3852568a5991f49f357ce5d341fda341}\label{class_point2_d_array_a3852568a5991f49f357ce5d341fda341}} 
+\index{Point2DArray@{Point2DArray}!Point2DArray@{Point2DArray}}
+\index{Point2DArray@{Point2DArray}!Point2DArray@{Point2DArray}}
+\doxysubsubsection{\texorpdfstring{Point2DArray()}{Point2DArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Point2\+D\+Array\+::\+Point2\+D\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor domyslny reprezentujacy pusty zbior pixeli wywolany na bazie Vertex\+Array. 
+
+\mbox{\Hypertarget{class_point2_d_array_a7c1d7bf88142ec05a8e9d1ad81c74482}\label{class_point2_d_array_a7c1d7bf88142ec05a8e9d1ad81c74482}} 
+\index{Point2DArray@{Point2DArray}!Point2DArray@{Point2DArray}}
+\index{Point2DArray@{Point2DArray}!Point2DArray@{Point2DArray}}
+\doxysubsubsection{\texorpdfstring{Point2DArray()}{Point2DArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Point2\+D\+Array\+::\+Point2\+D\+Array (\begin{DoxyParamCaption}\item[{sf\+::\+Primitive\+Type}]{pt,  }\item[{size\+\_\+t}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor przyjmujacy wartosc Primitive\+Type oraz size\+\_\+t odpowiedzialne za wielkosc oraz rodzaj zbioru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy typ rysowanego prymitywu \\
+\hline
+{\em v} & Zadana wielkosc zbioru \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point2_d_array_a7a64b83efcfa22f3fc14f48e5f09afc5}\label{class_point2_d_array_a7a64b83efcfa22f3fc14f48e5f09afc5}} 
+\index{Point2DArray@{Point2DArray}!Point2DArray@{Point2DArray}}
+\index{Point2DArray@{Point2DArray}!Point2DArray@{Point2DArray}}
+\doxysubsubsection{\texorpdfstring{Point2DArray()}{Point2DArray()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Point2\+D\+Array\+::\+Point2\+D\+Array (\begin{DoxyParamCaption}\item[{std\+::vector$<$ sf\+::\+Vector2f $>$}]{v2f,  }\item[{sf\+::\+Color}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor pobierajacy wektor wektorow liczb zmiennoprzecinkowych oraz kolor do wypelnienia zbioru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v2f} & Wektor obiektow Vector2f reprezentujacych pozycje pixeli w zbiorze \\
+\hline
+{\em c} & \mbox{\hyperlink{class_obiekt}{Obiekt}} Color reprezentujacy kolor pixeli na ekranie \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_point2_d_array_a95c8d6afb96bf51864ba67cd76b2c1b3}\label{class_point2_d_array_a95c8d6afb96bf51864ba67cd76b2c1b3}} 
+\index{Point2DArray@{Point2DArray}!add2DPoint@{add2DPoint}}
+\index{add2DPoint@{add2DPoint}!Point2DArray@{Point2DArray}}
+\doxysubsubsection{\texorpdfstring{add2DPoint()}{add2DPoint()}}
+{\footnotesize\ttfamily void Point2\+D\+Array\+::add2\+D\+Point (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{v2f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda umozliwiajaca dodanie punktu do zbioru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v2f} & Wektor posiadajacy wartosci pozycji nowego pixela \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_point2_d_array_a4b5346b2f74d7640b6e63900cb10c6b2}\label{class_point2_d_array_a4b5346b2f74d7640b6e63900cb10c6b2}} 
+\index{Point2DArray@{Point2DArray}!p2d@{p2d}}
+\index{p2d@{p2d}!Point2DArray@{Point2DArray}}
+\doxysubsubsection{\texorpdfstring{p2d}{p2d}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_point2_d}{Point2D}}$>$ Point2\+D\+Array\+::p2d}
+
+
+
+Wlasny wektor \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacy zbior pixeli na ekranie. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_point2_d_array_8h}{Point2\+D\+Array.\+h}}\end{DoxyCompactItemize}

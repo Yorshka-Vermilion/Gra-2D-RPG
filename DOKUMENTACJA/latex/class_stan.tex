@@ -1,0 +1,211 @@
+\hypertarget{class_stan}{}\doxysection{Stan Class Reference}
+\label{class_stan}\index{Stan@{Stan}}
+
+
+\mbox{\hyperlink{class_stan}{Stan}} to klasa bazowa poszczególnych instancji w grze, takich jak \mbox{\hyperlink{class_menu_glowne}{Menu\+Glowne}}, \mbox{\hyperlink{class_gra}{Gra}}.  
+
+
+
+
+{\ttfamily \#include $<$Stan.\+h$>$}
+
+Inheritance diagram for Stan\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stan}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stan_ac2ff71cd72e26228c9d14b52a5460c8a}{Stan}} (sf\+::\+Render\+Window $\ast$\mbox{\hyperlink{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}{window}}, std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$\mbox{\hyperlink{class_stan_acd6f1d71e7f622492660fad6e7e2f616}{stos}}, sf\+::\+Event $\ast$\mbox{\hyperlink{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}{event}})
+\begin{DoxyCompactList}\small\item\em Tworzy nowy \mbox{\hyperlink{class_stan}{Stan}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_stan_a2dde2e9d9e66aade33b857cb64697cf3}{update}} (const float \&\mbox{\hyperlink{class_stan_a28c020d77ac16c3e0f37d05927f0717b}{dtime}})=0
+\begin{DoxyCompactList}\small\item\em Wirtualna funkcja sluzaca do odsiwezania stanu obiektu typu \mbox{\hyperlink{class_stan}{Stan}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_stan_af819ad0f6b5e69d441ae6495ea9ece5d}{draw}} (sf\+::\+Render\+Target $\ast$cel=nullptr)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna funkcja rysujaca. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stan_a667f2152e33cc36e504c4c4701e3a694}{sprawdz\+Mysz}} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza pozycje myszy oraz zapewnia, ze nacisniecie (przytrzymanie) klawisza myszy spowoduje jedna akcje zamiast, wielu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_stan_acd6f1d71e7f622492660fad6e7e2f616}{stos}}
+\begin{DoxyCompactList}\small\item\em Stos ze stanami. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_stan_a28c020d77ac16c3e0f37d05927f0717b}{dtime}}
+\begin{DoxyCompactList}\small\item\em Zmiana czasu. \end{DoxyCompactList}\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}{window}}
+\begin{DoxyCompactList}\small\item\em Okno. \end{DoxyCompactList}\item 
+sf\+::\+Event $\ast$ \mbox{\hyperlink{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}{event}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na eventy. \end{DoxyCompactList}\item 
+sf\+::\+Vector2i \mbox{\hyperlink{class_stan_ae2e629fecaaa7d1b6872462bf0ca6018}{pozycja\+\_\+kursora\+\_\+w\+\_\+oknie}}
+\begin{DoxyCompactList}\small\item\em Pozycja kursora w oknie. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_stan_a5ee4b57f06a2e6f40cd0352a389e8554}{pozycja\+\_\+kursora\+\_\+w\+\_\+grze}}
+\begin{DoxyCompactList}\small\item\em Pozycja kursora w grze. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_stan_a8407c45b30a429772941352bd8bc6140}{lewy}} = false
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stan}{Stan}} lewego przycisku myszy. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_stan_a40115d79445c785ac775708aa37dd3cb}{prawy}} = false
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stan}{Stan}} prawego przycisku myszy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_stan}{Stan}} to klasa bazowa poszczególnych instancji w grze, takich jak \mbox{\hyperlink{class_menu_glowne}{Menu\+Glowne}}, \mbox{\hyperlink{class_gra}{Gra}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stan_ac2ff71cd72e26228c9d14b52a5460c8a}\label{class_stan_ac2ff71cd72e26228c9d14b52a5460c8a}} 
+\index{Stan@{Stan}!Stan@{Stan}}
+\index{Stan@{Stan}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{Stan()}{Stan()}}
+{\footnotesize\ttfamily Stan\+::\+Stan (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window,  }\item[{std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$}]{stos,  }\item[{sf\+::\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tworzy nowy \mbox{\hyperlink{class_stan}{Stan}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Wskaznik na okno \\
+\hline
+{\em stos} & Wskaznik na stos z obiektami typu \mbox{\hyperlink{class_stan}{Stan}} \\
+\hline
+{\em event} & Eventy \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stan_af819ad0f6b5e69d441ae6495ea9ece5d}\label{class_stan_af819ad0f6b5e69d441ae6495ea9ece5d}} 
+\index{Stan@{Stan}!draw@{draw}}
+\index{draw@{draw}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Stan\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Wirtualna funkcja rysujaca. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & Wskaznik na obiekt Render\+Target w ktorym rysowane sa obiekty \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_menu_glowne_a96ea1632cd82be427d7cc68cf0c6f051}{Menu\+Glowne}}, and \mbox{\hyperlink{class_demo_a50d684b5b7e7f9da8e9fb49325ea8655}{Demo}}.
+
+\mbox{\Hypertarget{class_stan_a667f2152e33cc36e504c4c4701e3a694}\label{class_stan_a667f2152e33cc36e504c4c4701e3a694}} 
+\index{Stan@{Stan}!sprawdzMysz@{sprawdzMysz}}
+\index{sprawdzMysz@{sprawdzMysz}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{sprawdzMysz()}{sprawdzMysz()}}
+{\footnotesize\ttfamily void Stan\+::sprawdz\+Mysz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sprawdza pozycje myszy oraz zapewnia, ze nacisniecie (przytrzymanie) klawisza myszy spowoduje jedna akcje zamiast, wielu. 
+
+\mbox{\Hypertarget{class_stan_a2dde2e9d9e66aade33b857cb64697cf3}\label{class_stan_a2dde2e9d9e66aade33b857cb64697cf3}} 
+\index{Stan@{Stan}!update@{update}}
+\index{update@{update}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Stan\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Wirtualna funkcja sluzaca do odsiwezania stanu obiektu typu \mbox{\hyperlink{class_stan}{Stan}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dtime} & Kontrola czasu \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_menu_glowne_a15cdd836dbed8619fbd08e7e63f69b1e}{Menu\+Glowne}}, and \mbox{\hyperlink{class_demo_a1bd3d4c8bc829e4976620900443f113c}{Demo}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_stan_a28c020d77ac16c3e0f37d05927f0717b}\label{class_stan_a28c020d77ac16c3e0f37d05927f0717b}} 
+\index{Stan@{Stan}!dtime@{dtime}}
+\index{dtime@{dtime}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{dtime}{dtime}}
+{\footnotesize\ttfamily float Stan\+::dtime\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Zmiana czasu. 
+
+\mbox{\Hypertarget{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}\label{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}} 
+\index{Stan@{Stan}!event@{event}}
+\index{event@{event}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily sf\+::\+Event$\ast$ Stan\+::event\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Wskaznik na eventy. 
+
+\mbox{\Hypertarget{class_stan_a8407c45b30a429772941352bd8bc6140}\label{class_stan_a8407c45b30a429772941352bd8bc6140}} 
+\index{Stan@{Stan}!lewy@{lewy}}
+\index{lewy@{lewy}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{lewy}{lewy}}
+{\footnotesize\ttfamily bool Stan\+::lewy = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_stan}{Stan}} lewego przycisku myszy. 
+
+\mbox{\Hypertarget{class_stan_a5ee4b57f06a2e6f40cd0352a389e8554}\label{class_stan_a5ee4b57f06a2e6f40cd0352a389e8554}} 
+\index{Stan@{Stan}!pozycja\_kursora\_w\_grze@{pozycja\_kursora\_w\_grze}}
+\index{pozycja\_kursora\_w\_grze@{pozycja\_kursora\_w\_grze}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{pozycja\_kursora\_w\_grze}{pozycja\_kursora\_w\_grze}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Stan\+::pozycja\+\_\+kursora\+\_\+w\+\_\+grze\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pozycja kursora w grze. 
+
+\mbox{\Hypertarget{class_stan_ae2e629fecaaa7d1b6872462bf0ca6018}\label{class_stan_ae2e629fecaaa7d1b6872462bf0ca6018}} 
+\index{Stan@{Stan}!pozycja\_kursora\_w\_oknie@{pozycja\_kursora\_w\_oknie}}
+\index{pozycja\_kursora\_w\_oknie@{pozycja\_kursora\_w\_oknie}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{pozycja\_kursora\_w\_oknie}{pozycja\_kursora\_w\_oknie}}
+{\footnotesize\ttfamily sf\+::\+Vector2i Stan\+::pozycja\+\_\+kursora\+\_\+w\+\_\+oknie\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pozycja kursora w oknie. 
+
+\mbox{\Hypertarget{class_stan_a40115d79445c785ac775708aa37dd3cb}\label{class_stan_a40115d79445c785ac775708aa37dd3cb}} 
+\index{Stan@{Stan}!prawy@{prawy}}
+\index{prawy@{prawy}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{prawy}{prawy}}
+{\footnotesize\ttfamily bool Stan\+::prawy = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_stan}{Stan}} prawego przycisku myszy. 
+
+\mbox{\Hypertarget{class_stan_acd6f1d71e7f622492660fad6e7e2f616}\label{class_stan_acd6f1d71e7f622492660fad6e7e2f616}} 
+\index{Stan@{Stan}!stos@{stos}}
+\index{stos@{stos}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{stos}{stos}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{class_stan}{Stan}}$\ast$$>$$\ast$ Stan\+::stos\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Stos ze stanami. 
+
+\mbox{\Hypertarget{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}\label{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}} 
+\index{Stan@{Stan}!window@{window}}
+\index{window@{window}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ Stan\+::window\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Okno. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_stan_8h}{Stan.\+h}}\end{DoxyCompactItemize}

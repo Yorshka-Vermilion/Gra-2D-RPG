@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['s_128',['S',['../class_circle_primitive.html#a5ce118b0e6ae6b0416858e9e8f625125',1,'CirclePrimitive']]],
+  ['sebix_129',['Sebix',['../class_sebix.html',1,'']]],
+  ['sebix_2eh_130',['Sebix.h',['../_sebix_8h.html',1,'']]],
+  ['seta_131',['setA',['../class_moveport.html#a2300c98d71dee5d96bb683d5207e75bd',1,'Moveport']]],
+  ['setb_132',['setB',['../class_moveport.html#a82e127fa705b237a94549093c30ccb3b',1,'Moveport']]],
+  ['setc_133',['setC',['../class_moveport.html#a5ff0a607e8f9530a56aead2175ac536f',1,'Moveport']]],
+  ['setd_134',['setD',['../class_moveport.html#a548d2d3bd5b7751c6f5d88d58f8900bd',1,'Moveport']]],
+  ['setend_135',['setEnd',['../class_line_segment.html#a776b80acb195d393a7bb7b248de0732f',1,'LineSegment::setEnd(sf::Vector2f end)'],['../class_line_segment.html#a41e1923256ec74e41bd61752e3c1cd54',1,'LineSegment::setEnd(float x, float y)']]],
+  ['setframeratecap_136',['setFrameRateCap',['../class_engine.html#aa65adad0c39c89089d76e03a7b75333b',1,'Engine']]],
+  ['setfullscreen_137',['setFullScreen',['../class_engine.html#a9b27125fb41b363d1007cb9e5bc69def',1,'Engine']]],
+  ['setresolution_138',['setResolution',['../class_engine.html#ab525cead6507be6321eed4f19104642b',1,'Engine']]],
+  ['sets_139',['setS',['../class_circle_primitive.html#a2ddbe234d934cdfff6fc76b7c0f79586',1,'CirclePrimitive::setS(Point2D S)'],['../class_circle_primitive.html#ab02bb59d90c125b6ddb26c224c30ccb9',1,'CirclePrimitive::setS(float x, float y)']]],
+  ['setstart_140',['setStart',['../class_line_segment.html#aec2dbe8bc2b5d72f75165a7577cc86bc',1,'LineSegment::setStart(sf::Vector2f start)'],['../class_line_segment.html#a0e8233724dca6be7455a6b276c24746d',1,'LineSegment::setStart(float x, float y)']]],
+  ['silnik2d_2dsfml_2ecpp_141',['Silnik2D-SFML.cpp',['../_silnik2_d-_s_f_m_l_8cpp.html',1,'']]],
+  ['sprajt_142',['sprajt',['../class_demo.html#aa357786c87d926ecf71ffc42dd41b08f',1,'Demo::sprajt()'],['../class_obiekt.html#a5a1182776f2ef794f4f1be89b2316733',1,'Obiekt::sprajt()']]],
+  ['sprawdzmysz_143',['sprawdzMysz',['../class_stan.html#a667f2152e33cc36e504c4c4701e3a694',1,'Stan']]],
+  ['sprite_144',['sprite',['../class_demo.html#ab18cf5bfbc9d1a48cb4d9f0cf54f336e',1,'Demo']]],
+  ['stan_145',['Stan',['../class_stan.html',1,'Stan'],['../class_stan.html#ac2ff71cd72e26228c9d14b52a5460c8a',1,'Stan::Stan()']]],
+  ['stan_2eh_146',['Stan.h',['../_stan_8h.html',1,'']]],
+  ['start_147',['start',['../class_line_segment.html#aa9c45270cadd4d67f7427efcc552389b',1,'LineSegment::start()'],['../class_engine.html#a4d8066dd213a03f5420d1bf60f150ca7',1,'Engine::start()']]],
+  ['stos_148',['stos',['../class_engine.html#a77cacbb21b64142af4a076cd48b04048',1,'Engine::stos()'],['../class_stan.html#acd6f1d71e7f622492660fad6e7e2f616',1,'Stan::stos()']]],
+  ['stworz_149',['stworz',['../class_bitmap_handler.html#aacda98b2346da317dc75f2901eea747d',1,'BitmapHandler']]],
+  ['szerokosc_150',['szerokosc',['../class_animacja.html#a032caf41600a729e94dc25942eb6e1fb',1,'Animacja']]],
+  ['szerokoscmax_151',['szerokoscMAX',['../class_animacja.html#a54aa86ac01fed5c7f5b58773b95eee63',1,'Animacja']]],
+  ['szybkosc_152',['szybkosc',['../class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57',1,'ObslugaRuchuGracza']]]
+];

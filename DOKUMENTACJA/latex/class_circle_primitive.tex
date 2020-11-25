@@ -1,0 +1,189 @@
+\hypertarget{class_circle_primitive}{}\doxysection{Circle\+Primitive Class Reference}
+\label{class_circle_primitive}\index{CirclePrimitive@{CirclePrimitive}}
+
+
+Klasa opisująca okrag tworzony poprzez cztero oraz osmiokrotna symetrie.  
+
+
+
+
+{\ttfamily \#include $<$Circle\+Primitive.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_circle_primitive_a0deab1f10289aeed65a6b7fd1e2da3f0}{Circle\+Primitive}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny tworzacy pusty obiekt. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_circle_primitive_a7c36913452073ec494015cd70d2bbbfe}{Circle\+Primitive}} (\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_circle_primitive_a5ce118b0e6ae6b0416858e9e8f625125}{S}}, float \mbox{\hyperlink{class_circle_primitive_a6408074e7c417897daf59a845ddb56c2}{R}})
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzacy nowy obiekt okregu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_circle_primitive_a65acb62a253f9072de99fb234c9ffd8a}{getS}} ()
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za zwrocenie \mbox{\hyperlink{class_point2_d}{Point2D}} srodka okregu. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_circle_primitive_a530ef7ca616910f16b639d9f6d321b4b}{getR}} ()
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za zwrocenie wartosci promienia okregu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_primitive_a2ddbe234d934cdfff6fc76b7c0f79586}{setS}} (\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_circle_primitive_a5ce118b0e6ae6b0416858e9e8f625125}{S}})
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za ustawienie nowej wartosci srodka okregu na podstawie przekazanego parametru. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_primitive_ab02bb59d90c125b6ddb26c224c30ccb9}{setS}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za ustawienie nowej wartosci srodka okregu na podstawie przekazanego parametru. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_primitive_a1c0069a2b49124a010e335860b189517}{draw\+Four\+Circle}} (sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za rysowanie okregu metoda czterokrotnej symetrii na podstawie pol obiektu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_primitive_ae7eec3d13e21beb657ff291db677669e}{draw\+Eight\+Circle}} (sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za rysowanie okregu metoda osmiokrotnej symetrii na podstawie pol obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_circle_primitive_a5ce118b0e6ae6b0416858e9e8f625125}{S}}
+\begin{DoxyCompactList}\small\item\em Punkty klasy \mbox{\hyperlink{class_point2_d}{Point2D}} odpowiadajacy za wspolrzedne srodka okregu. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_circle_primitive_a6408074e7c417897daf59a845ddb56c2}{R}}
+\begin{DoxyCompactList}\small\item\em Liczba typu zmiennoprzecinkowego odpowiadajaca za dlugosc promienia okregu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa opisująca okrag tworzony poprzez cztero oraz osmiokrotna symetrie. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_circle_primitive_a0deab1f10289aeed65a6b7fd1e2da3f0}\label{class_circle_primitive_a0deab1f10289aeed65a6b7fd1e2da3f0}} 
+\index{CirclePrimitive@{CirclePrimitive}!CirclePrimitive@{CirclePrimitive}}
+\index{CirclePrimitive@{CirclePrimitive}!CirclePrimitive@{CirclePrimitive}}
+\doxysubsubsection{\texorpdfstring{CirclePrimitive()}{CirclePrimitive()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Circle\+Primitive\+::\+Circle\+Primitive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor domyslny tworzacy pusty obiekt. 
+
+\mbox{\Hypertarget{class_circle_primitive_a7c36913452073ec494015cd70d2bbbfe}\label{class_circle_primitive_a7c36913452073ec494015cd70d2bbbfe}} 
+\index{CirclePrimitive@{CirclePrimitive}!CirclePrimitive@{CirclePrimitive}}
+\index{CirclePrimitive@{CirclePrimitive}!CirclePrimitive@{CirclePrimitive}}
+\doxysubsubsection{\texorpdfstring{CirclePrimitive()}{CirclePrimitive()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Circle\+Primitive\+::\+Circle\+Primitive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{S,  }\item[{float}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor tworzacy nowy obiekt okregu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & Pozycja punktu srodka okregu \\
+\hline
+{\em R} & Dlugosc promienia okregu \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_circle_primitive_ae7eec3d13e21beb657ff291db677669e}\label{class_circle_primitive_ae7eec3d13e21beb657ff291db677669e}} 
+\index{CirclePrimitive@{CirclePrimitive}!drawEightCircle@{drawEightCircle}}
+\index{drawEightCircle@{drawEightCircle}!CirclePrimitive@{CirclePrimitive}}
+\doxysubsubsection{\texorpdfstring{drawEightCircle()}{drawEightCircle()}}
+{\footnotesize\ttfamily void Circle\+Primitive\+::draw\+Eight\+Circle (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za rysowanie okregu metoda osmiokrotnej symetrii na podstawie pol obiektu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowany okrag \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_circle_primitive_a1c0069a2b49124a010e335860b189517}\label{class_circle_primitive_a1c0069a2b49124a010e335860b189517}} 
+\index{CirclePrimitive@{CirclePrimitive}!drawFourCircle@{drawFourCircle}}
+\index{drawFourCircle@{drawFourCircle}!CirclePrimitive@{CirclePrimitive}}
+\doxysubsubsection{\texorpdfstring{drawFourCircle()}{drawFourCircle()}}
+{\footnotesize\ttfamily void Circle\+Primitive\+::draw\+Four\+Circle (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za rysowanie okregu metoda czterokrotnej symetrii na podstawie pol obiektu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowany okrag \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_circle_primitive_a530ef7ca616910f16b639d9f6d321b4b}\label{class_circle_primitive_a530ef7ca616910f16b639d9f6d321b4b}} 
+\index{CirclePrimitive@{CirclePrimitive}!getR@{getR}}
+\index{getR@{getR}!CirclePrimitive@{CirclePrimitive}}
+\doxysubsubsection{\texorpdfstring{getR()}{getR()}}
+{\footnotesize\ttfamily float Circle\+Primitive\+::getR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za zwrocenie wartosci promienia okregu. 
+
+\begin{DoxyReturn}{Returns}
+float -\/ Wartosc promienia okregu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_circle_primitive_a65acb62a253f9072de99fb234c9ffd8a}\label{class_circle_primitive_a65acb62a253f9072de99fb234c9ffd8a}} 
+\index{CirclePrimitive@{CirclePrimitive}!getS@{getS}}
+\index{getS@{getS}!CirclePrimitive@{CirclePrimitive}}
+\doxysubsubsection{\texorpdfstring{getS()}{getS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d}{Point2D}} Circle\+Primitive\+::getS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za zwrocenie \mbox{\hyperlink{class_point2_d}{Point2D}} srodka okregu. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_point2_d}{Point2D}} -\/ Punkt srodka okregu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_circle_primitive_ab02bb59d90c125b6ddb26c224c30ccb9}\label{class_circle_primitive_ab02bb59d90c125b6ddb26c224c30ccb9}} 
+\index{CirclePrimitive@{CirclePrimitive}!setS@{setS}}
+\index{setS@{setS}!CirclePrimitive@{CirclePrimitive}}
+\doxysubsubsection{\texorpdfstring{setS()}{setS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Circle\+Primitive\+::setS (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za ustawienie nowej wartosci srodka okregu na podstawie przekazanego parametru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Wartosc x nowego srodka okregu \\
+\hline
+{\em y} & Wartosc y nowego srodka okregu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_circle_primitive_a2ddbe234d934cdfff6fc76b7c0f79586}\label{class_circle_primitive_a2ddbe234d934cdfff6fc76b7c0f79586}} 
+\index{CirclePrimitive@{CirclePrimitive}!setS@{setS}}
+\index{setS@{setS}!CirclePrimitive@{CirclePrimitive}}
+\doxysubsubsection{\texorpdfstring{setS()}{setS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Circle\+Primitive\+::setS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{S }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za ustawienie nowej wartosci srodka okregu na podstawie przekazanego parametru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S} & \mbox{\hyperlink{class_point2_d}{Point2D}}, który ma zostac nowym srodkiem okregu \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_circle_primitive_a6408074e7c417897daf59a845ddb56c2}\label{class_circle_primitive_a6408074e7c417897daf59a845ddb56c2}} 
+\index{CirclePrimitive@{CirclePrimitive}!R@{R}}
+\index{R@{R}!CirclePrimitive@{CirclePrimitive}}
+\doxysubsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily float Circle\+Primitive\+::R\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Liczba typu zmiennoprzecinkowego odpowiadajaca za dlugosc promienia okregu. 
+
+\mbox{\Hypertarget{class_circle_primitive_a5ce118b0e6ae6b0416858e9e8f625125}\label{class_circle_primitive_a5ce118b0e6ae6b0416858e9e8f625125}} 
+\index{CirclePrimitive@{CirclePrimitive}!S@{S}}
+\index{S@{S}!CirclePrimitive@{CirclePrimitive}}
+\doxysubsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d}{Point2D}} Circle\+Primitive\+::S\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Punkty klasy \mbox{\hyperlink{class_point2_d}{Point2D}} odpowiadajacy za wspolrzedne srodka okregu. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_circle_primitive_8h}{Circle\+Primitive.\+h}}\end{DoxyCompactItemize}
