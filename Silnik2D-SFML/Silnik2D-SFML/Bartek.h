@@ -7,6 +7,7 @@
 #include "Bartek/Gracz.h"
 #include "Bartek/BitmapHandler.h"
 #include "Bartek/ObslugaRuchuGracza.h"
+#include "Bartek/Demo.h"
 #include "Bartek/Engine.h"
 
 
