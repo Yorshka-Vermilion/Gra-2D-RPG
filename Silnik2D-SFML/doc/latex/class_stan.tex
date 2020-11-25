@@ -1,0 +1,144 @@
+\hypertarget{class_stan}{}\doxysection{Stan Class Reference}
+\label{class_stan}\index{Stan@{Stan}}
+
+
+{\ttfamily \#include $<$Stan.\+h$>$}
+
+Inheritance diagram for Stan\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_stan}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stan_ac2ff71cd72e26228c9d14b52a5460c8a}{Stan}} (sf\+::\+Render\+Window $\ast$\mbox{\hyperlink{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}{window}}, std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$\mbox{\hyperlink{class_stan_acd6f1d71e7f622492660fad6e7e2f616}{stos}}, sf\+::\+Event $\ast$\mbox{\hyperlink{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}{event}})
+\item 
+virtual void \mbox{\hyperlink{class_stan_a2dde2e9d9e66aade33b857cb64697cf3}{update}} (const float \&\mbox{\hyperlink{class_stan_a28c020d77ac16c3e0f37d05927f0717b}{dtime}})=0
+\item 
+virtual void \mbox{\hyperlink{class_stan_af819ad0f6b5e69d441ae6495ea9ece5d}{draw}} (sf\+::\+Render\+Target $\ast$cel=nullptr)=0
+\begin{DoxyCompactList}\small\item\em Wirtualna funkcja aktualizuj¹ca stan. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stan_a667f2152e33cc36e504c4c4701e3a694}{sprawdz\+Mysz}} ()
+\begin{DoxyCompactList}\small\item\em Wirtualna funkcja rysuj¹ca. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_stan_acd6f1d71e7f622492660fad6e7e2f616}{stos}}
+\item 
+float \mbox{\hyperlink{class_stan_a28c020d77ac16c3e0f37d05927f0717b}{dtime}}
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}{window}}
+\item 
+sf\+::\+Event $\ast$ \mbox{\hyperlink{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}{event}}
+\item 
+sf\+::\+Vector2i \mbox{\hyperlink{class_stan_ae2e629fecaaa7d1b6872462bf0ca6018}{pozycja\+\_\+kursora\+\_\+w\+\_\+oknie}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_stan_a5ee4b57f06a2e6f40cd0352a389e8554}{pozycja\+\_\+kursora\+\_\+w\+\_\+grze}}
+\item 
+bool \mbox{\hyperlink{class_stan_a8407c45b30a429772941352bd8bc6140}{lewy}} = false
+\item 
+bool \mbox{\hyperlink{class_stan_a40115d79445c785ac775708aa37dd3cb}{prawy}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stan_ac2ff71cd72e26228c9d14b52a5460c8a}\label{class_stan_ac2ff71cd72e26228c9d14b52a5460c8a}} 
+\index{Stan@{Stan}!Stan@{Stan}}
+\index{Stan@{Stan}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{Stan()}{Stan()}}
+{\footnotesize\ttfamily Stan\+::\+Stan (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window,  }\item[{std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$}]{stos,  }\item[{sf\+::\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stan_af819ad0f6b5e69d441ae6495ea9ece5d}\label{class_stan_af819ad0f6b5e69d441ae6495ea9ece5d}} 
+\index{Stan@{Stan}!draw@{draw}}
+\index{draw@{draw}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Stan\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Wirtualna funkcja aktualizuj¹ca stan. 
+
+
+
+Implemented in \mbox{\hyperlink{class_menu_glowne_a96ea1632cd82be427d7cc68cf0c6f051}{Menu\+Glowne}}.
+
+\mbox{\Hypertarget{class_stan_a667f2152e33cc36e504c4c4701e3a694}\label{class_stan_a667f2152e33cc36e504c4c4701e3a694}} 
+\index{Stan@{Stan}!sprawdzMysz@{sprawdzMysz}}
+\index{sprawdzMysz@{sprawdzMysz}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{sprawdzMysz()}{sprawdzMysz()}}
+{\footnotesize\ttfamily void Stan\+::sprawdz\+Mysz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Wirtualna funkcja rysuj¹ca. 
+
+Sprawdza pozycje myszy, oraz zapewnia, ¿e nacisniêcie (przytrzymanie) klawisza myszy spowodujê jednokrotn¹ akcjê, zamiast ci¹g³ej\mbox{\Hypertarget{class_stan_a2dde2e9d9e66aade33b857cb64697cf3}\label{class_stan_a2dde2e9d9e66aade33b857cb64697cf3}} 
+\index{Stan@{Stan}!update@{update}}
+\index{update@{update}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Stan\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_menu_glowne_a15cdd836dbed8619fbd08e7e63f69b1e}{Menu\+Glowne}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_stan_a28c020d77ac16c3e0f37d05927f0717b}\label{class_stan_a28c020d77ac16c3e0f37d05927f0717b}} 
+\index{Stan@{Stan}!dtime@{dtime}}
+\index{dtime@{dtime}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{dtime}{dtime}}
+{\footnotesize\ttfamily float Stan\+::dtime\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}\label{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}} 
+\index{Stan@{Stan}!event@{event}}
+\index{event@{event}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily sf\+::\+Event$\ast$ Stan\+::event\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_stan_a8407c45b30a429772941352bd8bc6140}\label{class_stan_a8407c45b30a429772941352bd8bc6140}} 
+\index{Stan@{Stan}!lewy@{lewy}}
+\index{lewy@{lewy}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{lewy}{lewy}}
+{\footnotesize\ttfamily bool Stan\+::lewy = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_stan_a5ee4b57f06a2e6f40cd0352a389e8554}\label{class_stan_a5ee4b57f06a2e6f40cd0352a389e8554}} 
+\index{Stan@{Stan}!pozycja\_kursora\_w\_grze@{pozycja\_kursora\_w\_grze}}
+\index{pozycja\_kursora\_w\_grze@{pozycja\_kursora\_w\_grze}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{pozycja\_kursora\_w\_grze}{pozycja\_kursora\_w\_grze}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Stan\+::pozycja\+\_\+kursora\+\_\+w\+\_\+grze\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_stan_ae2e629fecaaa7d1b6872462bf0ca6018}\label{class_stan_ae2e629fecaaa7d1b6872462bf0ca6018}} 
+\index{Stan@{Stan}!pozycja\_kursora\_w\_oknie@{pozycja\_kursora\_w\_oknie}}
+\index{pozycja\_kursora\_w\_oknie@{pozycja\_kursora\_w\_oknie}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{pozycja\_kursora\_w\_oknie}{pozycja\_kursora\_w\_oknie}}
+{\footnotesize\ttfamily sf\+::\+Vector2i Stan\+::pozycja\+\_\+kursora\+\_\+w\+\_\+oknie\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_stan_a40115d79445c785ac775708aa37dd3cb}\label{class_stan_a40115d79445c785ac775708aa37dd3cb}} 
+\index{Stan@{Stan}!prawy@{prawy}}
+\index{prawy@{prawy}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{prawy}{prawy}}
+{\footnotesize\ttfamily bool Stan\+::prawy = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_stan_acd6f1d71e7f622492660fad6e7e2f616}\label{class_stan_acd6f1d71e7f622492660fad6e7e2f616}} 
+\index{Stan@{Stan}!stos@{stos}}
+\index{stos@{stos}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{stos}{stos}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{class_stan}{Stan}}$\ast$$>$$\ast$ Stan\+::stos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}\label{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}} 
+\index{Stan@{Stan}!window@{window}}
+\index{window@{window}!Stan@{Stan}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ Stan\+::window\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Arc/\+Desktop/\+Polibuda/\+Strona/\+Grafika-\/\+Projekt/\+Silnik2\+D-\/\+S\+F\+M\+L/\+Silnik2\+D-\/\+S\+F\+M\+L/\+Bartek/\mbox{\hyperlink{_stan_8h}{Stan.\+h}}\end{DoxyCompactItemize}

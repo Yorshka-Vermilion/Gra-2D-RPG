@@ -154,18 +154,27 @@
     <ClCompile Include="Silnik2D-SFML.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Animacja.h" />
     <ClInclude Include="Bartek.h" />
+    <ClInclude Include="Bartek\Animacja.h" />
+    <ClInclude Include="Bartek\BitmapHandler.h" />
+    <ClInclude Include="Bartek\Demo.h" />
     <ClInclude Include="Bartek\Engine.h" />
+    <ClInclude Include="Bartek\Funkcje.h" />
     <ClInclude Include="Bartek\Gra.h" />
+    <ClInclude Include="Bartek\Gracz.h" />
     <ClInclude Include="Bartek\MenuGlowne.h" />
     <ClInclude Include="Bartek\Obiekt.h" />
+    <ClInclude Include="Bartek\ObslugaRuchuGracza.h" />
     <ClInclude Include="Bartek\Stan.h" />
     <ClInclude Include="Przemek.h" />
     <ClInclude Include="Przemek\rysowanie.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Sebix.h" />
+    <ClInclude Include="Sebix\Funkcje.h" />
+    <ClInclude Include="Sebix\LineSegment.h" />
     <ClInclude Include="Sebix\Point2D.h" />
+    <ClInclude Include="Sebix\Point2DArray.h" />
+    <ClInclude Include="Sebix\Primitive2D.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Silnik2D-SFML.rc" />

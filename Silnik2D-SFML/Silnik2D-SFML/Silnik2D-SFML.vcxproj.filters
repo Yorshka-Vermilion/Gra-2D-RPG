@@ -62,8 +62,35 @@
     <ClInclude Include="Bartek\Engine.h">
       <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
-    <ClInclude Include="Animacja.h">
-      <Filter>Pliki nagłówkowe</Filter>
+    <ClInclude Include="Sebix\Funkcje.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\LineSegment.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Point2DArray.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Primitive2D.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Funkcje.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Animacja.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Gracz.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\BitmapHandler.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\ObslugaRuchuGracza.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Demo.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

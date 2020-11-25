@@ -5,7 +5,8 @@ int main()
 {
    Engine* gra = Engine::MakeEngine("Test",800,800);
    //gra->setFullScreen();
-   gra->setFrameRateCap(60);
+   gra->setFrameRateCap(100);
    gra->start();
-   
+
+   return 0;
 }
