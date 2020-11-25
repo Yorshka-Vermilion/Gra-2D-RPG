@@ -115,6 +115,7 @@ void wykonaj(Point2D a0, Point2D a1, sf::RenderTarget *target) {
 * @brief klasa viewport reprezentująca prostokąt obcinający
 */
 class Viewport { //klasa viewport reprezentująca prostokąt obcinający
+	public:
 	///wektor od ktorego zaczyna sie przekatna prostokata
 	Point2D b0;
 	///wektor na ktorym konczy sie przekatna prostokata	
