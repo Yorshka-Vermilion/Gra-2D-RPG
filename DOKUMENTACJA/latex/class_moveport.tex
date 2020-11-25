@@ -1,0 +1,377 @@
+\hypertarget{class_moveport}{}\doxysection{Moveport Class Reference}
+\label{class_moveport}\index{Moveport@{Moveport}}
+
+
+Klasa reprezentujaca prymityw obcinajacy.  
+
+
+
+
+{\ttfamily \#include $<$Moveport.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_moveport_a78c117a0cac9b45c4eeff5d48689ea82}{Moveport}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny reprezentujacy pusty obiekt prymitywu obcinajacego. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_moveport_a40fe5b72ff22870da75d99a4e4fdc968}{Moveport}} (\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} \mbox{\hyperlink{class_moveport_a1407ddb9b414c4b72e26818df2f7fe15}{p2da}})
+\begin{DoxyCompactList}\small\item\em Konstruktor definujacy wierzcholki prymitywu obcinajacego. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_moveport_a92252437c7c6582f23aa68439af90f0c}{returnA}} ()
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za zwrocenie \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacego pierwszy z wierzcholkow prymitywu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_moveport_af5a62f8b677f34f77e9aca3b66c624d3}{returnB}} ()
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za zwrocenie \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacego drugi z wierzcholkow prymitywu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_moveport_ad2c289d7429c932f943e2f23ffc1ded1}{returnC}} ()
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za zwrocenie \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacego trzeci z wierzcholkow prymitywu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_moveport_ae1731ec5dcbd1a624bf0dae6a674ba86}{returnD}} ()
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za zwrocenie \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacego czwarty z wierzcholkow prymitywu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_moveport_a2300c98d71dee5d96bb683d5207e75bd}{setA}} (sf\+::\+Vector2f v2f)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za ustawienie nowej pozycji dla juz istniejacego pierwszego wierzcholka. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_moveport_a82e127fa705b237a94549093c30ccb3b}{setB}} (sf\+::\+Vector2f v2f)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za ustawienie nowej pozycji dla juz istniejacego drugiego wierzcholka. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_moveport_a5ff0a607e8f9530a56aead2175ac536f}{setC}} (sf\+::\+Vector2f v2f)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za ustawienie nowej pozycji dla juz istniejacego trzeciego wierzcholka. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_moveport_a548d2d3bd5b7751c6f5d88d58f8900bd}{setD}} (sf\+::\+Vector2f v2f)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za ustawienie nowej pozycji dla juz istniejacego czwartego wierzcholka. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_moveport_ae5784aef010179c45bd24cedcb6d3088}{draw\+Viewport}} (sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za narysowanie na ekranie prymitywu obcinajacego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_moveport_ad7868877a36dd3de96f4b74840b0c089}{move\+Viewport}} ()
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za poruszanie prymitywem w momecie nacisniedcia klawisza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_moveport_aab7fd4fcc0df439cf3d755939ca05571}{check\+X\+Ypk}} ()
+\begin{DoxyCompactList}\small\item\em Metoda sprawdzajaca w czasie rzeczywistym, wartosci pozycji maksymalnej i minimalnej. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_moveport_aff270d4ceedc15113822e4d801f88adf}{cut\+Viewport\+Point}} (\mbox{\hyperlink{class_point2_d}{Point2D}} p2d, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdzajaca i wyswietlajaca punkt znajdujacy sie w obrebie prymitywu. \end{DoxyCompactList}\item 
+std\+::array$<$ int, 4 $>$ \mbox{\hyperlink{class_moveport_a5847981e01060b0151c5fa0e546c5709}{bit\+Check}} (\mbox{\hyperlink{class_point2_d}{Point2D}} p2d)
+\begin{DoxyCompactList}\small\item\em Metoda obliczajaca pozycje bitowa punktu dla algorytmu Cohen sutherland. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_line_segment}{Line\+Segment}} \mbox{\hyperlink{class_moveport_a6b6052bb5c1f23c622a900fa5f859dfb}{cut\+Viewport\+Line}} (\mbox{\hyperlink{class_line_segment}{Line\+Segment}} ls, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za przycinanie linii po przez prymityw z wykorzystaniem algorytmu Cohen sutherland. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_moveport_ad1e66c9f67dc3fd3b8581239644db744}{cut\+Viewport\+Lines}} (std\+::vector$<$ \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $>$ lss, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiedzialna za obcinanie zbioru linii. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} \mbox{\hyperlink{class_moveport_a1407ddb9b414c4b72e26818df2f7fe15}{p2da}}
+\begin{DoxyCompactList}\small\item\em Zbior punktow wierzcholkow prymitywu obcinajacego. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_moveport_a612d8bc13421a8ab82b6ac42adec9644}{xp}}
+\begin{DoxyCompactList}\small\item\em Pole reprezentujace obecnie najmniejsza wartosc pozycji x prymitywu. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_moveport_a6188cc523fe5b2de7c3adbb4c65f7497}{xk}}
+\begin{DoxyCompactList}\small\item\em Pole reprezentujace obecnie najwieksza wartosc pozycji x prymitywu. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_moveport_abb6da213301559e88850246b0337cfac}{yp}}
+\begin{DoxyCompactList}\small\item\em Pole reprezentujace obecnie najmniejsza wartosc pozycji y prymitywu. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_moveport_aec2c6dae2775537d8c0fb4c9349ce8c1}{yk}}
+\begin{DoxyCompactList}\small\item\em Pole reprezentujace obecnie najwieksza wartosc pozycji x prymitywu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujaca prymityw obcinajacy. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_moveport_a78c117a0cac9b45c4eeff5d48689ea82}\label{class_moveport_a78c117a0cac9b45c4eeff5d48689ea82}} 
+\index{Moveport@{Moveport}!Moveport@{Moveport}}
+\index{Moveport@{Moveport}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{Moveport()}{Moveport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Moveport\+::\+Moveport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor domyslny reprezentujacy pusty obiekt prymitywu obcinajacego. 
+
+\mbox{\Hypertarget{class_moveport_a40fe5b72ff22870da75d99a4e4fdc968}\label{class_moveport_a40fe5b72ff22870da75d99a4e4fdc968}} 
+\index{Moveport@{Moveport}!Moveport@{Moveport}}
+\index{Moveport@{Moveport}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{Moveport()}{Moveport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Moveport\+::\+Moveport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}}]{p2da }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor definujacy wierzcholki prymitywu obcinajacego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2da} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}, ktory ma zostac wyswietlony na ekranie. Reprezentuje zbior punktow wierzcholkow prymitywu \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_moveport_a5847981e01060b0151c5fa0e546c5709}\label{class_moveport_a5847981e01060b0151c5fa0e546c5709}} 
+\index{Moveport@{Moveport}!bitCheck@{bitCheck}}
+\index{bitCheck@{bitCheck}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{bitCheck()}{bitCheck()}}
+{\footnotesize\ttfamily std\+::array$<$int, 4$>$ Moveport\+::bit\+Check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{p2d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda obliczajaca pozycje bitowa punktu dla algorytmu Cohen sutherland. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2d} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacy punkt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::array$<$int, 4$>$ -\/ Zwrocona zostaje tablica zawierajaca reprezentacje bitowa punktu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_moveport_aab7fd4fcc0df439cf3d755939ca05571}\label{class_moveport_aab7fd4fcc0df439cf3d755939ca05571}} 
+\index{Moveport@{Moveport}!checkXYpk@{checkXYpk}}
+\index{checkXYpk@{checkXYpk}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{checkXYpk()}{checkXYpk()}}
+{\footnotesize\ttfamily void Moveport\+::check\+X\+Ypk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda sprawdzajaca w czasie rzeczywistym, wartosci pozycji maksymalnej i minimalnej. 
+
+\mbox{\Hypertarget{class_moveport_a6b6052bb5c1f23c622a900fa5f859dfb}\label{class_moveport_a6b6052bb5c1f23c622a900fa5f859dfb}} 
+\index{Moveport@{Moveport}!cutViewportLine@{cutViewportLine}}
+\index{cutViewportLine@{cutViewportLine}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{cutViewportLine()}{cutViewportLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_line_segment}{Line\+Segment}} Moveport\+::cut\+Viewport\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}}}]{ls,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za przycinanie linii po przez prymityw z wykorzystaniem algorytmu Cohen sutherland. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ls} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_line_segment}{Line\+Segment}} reprezentujacy linie na ekranie \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowana linia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_line_segment}{Line\+Segment}} -\/ Zwrocony zostaje fragment lini, zaleznie od efektu metody 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_moveport_ad1e66c9f67dc3fd3b8581239644db744}\label{class_moveport_ad1e66c9f67dc3fd3b8581239644db744}} 
+\index{Moveport@{Moveport}!cutViewportLines@{cutViewportLines}}
+\index{cutViewportLines@{cutViewportLines}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{cutViewportLines()}{cutViewportLines()}}
+{\footnotesize\ttfamily void Moveport\+::cut\+Viewport\+Lines (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $>$}]{lss,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za obcinanie zbioru linii. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lss} & Wektor obiektow typu \mbox{\hyperlink{class_line_segment}{Line\+Segment}}, zawierajacych roznego rodzaju odcinki \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego maja zostac narysowane linie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_moveport_aff270d4ceedc15113822e4d801f88adf}\label{class_moveport_aff270d4ceedc15113822e4d801f88adf}} 
+\index{Moveport@{Moveport}!cutViewportPoint@{cutViewportPoint}}
+\index{cutViewportPoint@{cutViewportPoint}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{cutViewportPoint()}{cutViewportPoint()}}
+{\footnotesize\ttfamily bool Moveport\+::cut\+Viewport\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{p2d,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda sprawdzajaca i wyswietlajaca punkt znajdujacy sie w obrebie prymitywu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2d} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d}{Point2D}}, ktory ma zostac sprawdzony pod wzgledem pozycji w prymitywie \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego maja zostac narysowane punkty \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ Zostaje zwrocone w sytuacji gdy punkt znajduje sie we wnetrzu prymitywu 
+
+false -\/ Zostaje zwrocone w sytuacji gdy punkt znajduje sie poza polem prymitywu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_moveport_ae5784aef010179c45bd24cedcb6d3088}\label{class_moveport_ae5784aef010179c45bd24cedcb6d3088}} 
+\index{Moveport@{Moveport}!drawViewport@{drawViewport}}
+\index{drawViewport@{drawViewport}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{drawViewport()}{drawViewport()}}
+{\footnotesize\ttfamily void Moveport\+::draw\+Viewport (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za narysowanie na ekranie prymitywu obcinajacego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowany prymityw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_moveport_ad7868877a36dd3de96f4b74840b0c089}\label{class_moveport_ad7868877a36dd3de96f4b74840b0c089}} 
+\index{Moveport@{Moveport}!moveViewport@{moveViewport}}
+\index{moveViewport@{moveViewport}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{moveViewport()}{moveViewport()}}
+{\footnotesize\ttfamily void Moveport\+::move\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za poruszanie prymitywem w momecie nacisniedcia klawisza. 
+
+\mbox{\Hypertarget{class_moveport_a92252437c7c6582f23aa68439af90f0c}\label{class_moveport_a92252437c7c6582f23aa68439af90f0c}} 
+\index{Moveport@{Moveport}!returnA@{returnA}}
+\index{returnA@{returnA}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{returnA()}{returnA()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d}{Point2D}} Moveport\+::returnA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za zwrocenie \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacego pierwszy z wierzcholkow prymitywu. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_point2_d}{Point2D}} -\/ Pierwszy wierzcholek prymitywu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_moveport_af5a62f8b677f34f77e9aca3b66c624d3}\label{class_moveport_af5a62f8b677f34f77e9aca3b66c624d3}} 
+\index{Moveport@{Moveport}!returnB@{returnB}}
+\index{returnB@{returnB}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{returnB()}{returnB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d}{Point2D}} Moveport\+::returnB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za zwrocenie \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacego drugi z wierzcholkow prymitywu. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_point2_d}{Point2D}} -\/ Drugi wierzcholek prymitywu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_moveport_ad2c289d7429c932f943e2f23ffc1ded1}\label{class_moveport_ad2c289d7429c932f943e2f23ffc1ded1}} 
+\index{Moveport@{Moveport}!returnC@{returnC}}
+\index{returnC@{returnC}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{returnC()}{returnC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d}{Point2D}} Moveport\+::returnC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za zwrocenie \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacego trzeci z wierzcholkow prymitywu. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_point2_d}{Point2D}} -\/ Trzeci wierzcholek prymitywu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_moveport_ae1731ec5dcbd1a624bf0dae6a674ba86}\label{class_moveport_ae1731ec5dcbd1a624bf0dae6a674ba86}} 
+\index{Moveport@{Moveport}!returnD@{returnD}}
+\index{returnD@{returnD}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{returnD()}{returnD()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d}{Point2D}} Moveport\+::returnD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za zwrocenie \mbox{\hyperlink{class_point2_d}{Point2D}} reprezentujacego czwarty z wierzcholkow prymitywu. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_point2_d}{Point2D}} -\/ Czwarty wierzcholek prymitywu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_moveport_a2300c98d71dee5d96bb683d5207e75bd}\label{class_moveport_a2300c98d71dee5d96bb683d5207e75bd}} 
+\index{Moveport@{Moveport}!setA@{setA}}
+\index{setA@{setA}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{setA()}{setA()}}
+{\footnotesize\ttfamily void Moveport\+::setA (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{v2f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za ustawienie nowej pozycji dla juz istniejacego pierwszego wierzcholka. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v2f} & Wektor z nowa pozycja pierwszego wierzcholka \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_moveport_a82e127fa705b237a94549093c30ccb3b}\label{class_moveport_a82e127fa705b237a94549093c30ccb3b}} 
+\index{Moveport@{Moveport}!setB@{setB}}
+\index{setB@{setB}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{setB()}{setB()}}
+{\footnotesize\ttfamily void Moveport\+::setB (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{v2f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za ustawienie nowej pozycji dla juz istniejacego drugiego wierzcholka. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v2f} & Wektor z nowa pozycja drugiego wierzcholka \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_moveport_a5ff0a607e8f9530a56aead2175ac536f}\label{class_moveport_a5ff0a607e8f9530a56aead2175ac536f}} 
+\index{Moveport@{Moveport}!setC@{setC}}
+\index{setC@{setC}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{setC()}{setC()}}
+{\footnotesize\ttfamily void Moveport\+::setC (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{v2f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za ustawienie nowej pozycji dla juz istniejacego trzeciego wierzcholka. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v2f} & Wektor z nowa pozycja trzeciego wierzcholka \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_moveport_a548d2d3bd5b7751c6f5d88d58f8900bd}\label{class_moveport_a548d2d3bd5b7751c6f5d88d58f8900bd}} 
+\index{Moveport@{Moveport}!setD@{setD}}
+\index{setD@{setD}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{setD()}{setD()}}
+{\footnotesize\ttfamily void Moveport\+::setD (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{v2f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda odpowiedzialna za ustawienie nowej pozycji dla juz istniejacego czwartego wierzcholka. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v2f} & Wektor z nowa pozycja czwartego wierzcholka \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_moveport_a1407ddb9b414c4b72e26818df2f7fe15}\label{class_moveport_a1407ddb9b414c4b72e26818df2f7fe15}} 
+\index{Moveport@{Moveport}!p2da@{p2da}}
+\index{p2da@{p2da}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{p2da}{p2da}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} Moveport\+::p2da\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zbior punktow wierzcholkow prymitywu obcinajacego. 
+
+\mbox{\Hypertarget{class_moveport_a6188cc523fe5b2de7c3adbb4c65f7497}\label{class_moveport_a6188cc523fe5b2de7c3adbb4c65f7497}} 
+\index{Moveport@{Moveport}!xk@{xk}}
+\index{xk@{xk}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{xk}{xk}}
+{\footnotesize\ttfamily float Moveport\+::xk\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole reprezentujace obecnie najwieksza wartosc pozycji x prymitywu. 
+
+\mbox{\Hypertarget{class_moveport_a612d8bc13421a8ab82b6ac42adec9644}\label{class_moveport_a612d8bc13421a8ab82b6ac42adec9644}} 
+\index{Moveport@{Moveport}!xp@{xp}}
+\index{xp@{xp}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{xp}{xp}}
+{\footnotesize\ttfamily float Moveport\+::xp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole reprezentujace obecnie najmniejsza wartosc pozycji x prymitywu. 
+
+\mbox{\Hypertarget{class_moveport_aec2c6dae2775537d8c0fb4c9349ce8c1}\label{class_moveport_aec2c6dae2775537d8c0fb4c9349ce8c1}} 
+\index{Moveport@{Moveport}!yk@{yk}}
+\index{yk@{yk}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{yk}{yk}}
+{\footnotesize\ttfamily float Moveport\+::yk\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole reprezentujace obecnie najwieksza wartosc pozycji x prymitywu. 
+
+\mbox{\Hypertarget{class_moveport_abb6da213301559e88850246b0337cfac}\label{class_moveport_abb6da213301559e88850246b0337cfac}} 
+\index{Moveport@{Moveport}!yp@{yp}}
+\index{yp@{yp}!Moveport@{Moveport}}
+\doxysubsubsection{\texorpdfstring{yp}{yp}}
+{\footnotesize\ttfamily float Moveport\+::yp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pole reprezentujace obecnie najmniejsza wartosc pozycji y prymitywu. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_moveport_8h}{Moveport.\+h}}\end{DoxyCompactItemize}

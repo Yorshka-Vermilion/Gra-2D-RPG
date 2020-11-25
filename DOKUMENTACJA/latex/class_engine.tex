@@ -1,0 +1,325 @@
+\hypertarget{class_engine}{}\doxysection{Engine Class Reference}
+\label{class_engine}\index{Engine@{Engine}}
+
+
+Glowna klasa silnika.  
+
+
+
+
+{\ttfamily \#include $<$Engine.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}{$\sim$\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Niszczy obiekt \mbox{\hyperlink{class_engine}{Engine}} oraz jego wszystkie wskazniki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a4d8066dd213a03f5420d1bf60f150ca7}{start}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja uruchamiajaca program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_ab525cead6507be6321eed4f19104642b}{set\+Resolution}} (float \mbox{\hyperlink{class_engine_ab75b6e8da35375f449bea43d4d24fc4d}{window\+\_\+width}}, float \mbox{\hyperlink{class_engine_af9c9ef4d3dc83611593c1ee600fd5c33}{window\+\_\+height}})
+\begin{DoxyCompactList}\small\item\em Ustawia wymiary okna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a9b27125fb41b363d1007cb9e5bc69def}{set\+Full\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Ustawia pelny obraz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_aa65adad0c39c89089d76e03a7b75333b}{set\+Frame\+Rate\+Cap}} (unsigned int l)
+\begin{DoxyCompactList}\small\item\em Ustawia limit wyswietlanych klatek. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_engine}{Engine}} $\ast$ \mbox{\hyperlink{class_engine_a9d4a4fdc224ba8147e9a5c6f9a16cf02}{Make\+Engine}} (std\+::string \mbox{\hyperlink{class_engine_afa47165fa768d2ecc4cff4b6f38c6cdd}{title}}, float \mbox{\hyperlink{class_engine_ab75b6e8da35375f449bea43d4d24fc4d}{window\+\_\+width}}, float \mbox{\hyperlink{class_engine_af9c9ef4d3dc83611593c1ee600fd5c33}{window\+\_\+height}})
+\begin{DoxyCompactList}\small\item\em Stworzenie singletonu silnika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_engine_a86b6c4f50407d4782571589c3ace0c66}{testy\+Wczytaj}} ()
+\begin{DoxyCompactList}\small\item\em Sluzy do wczytania/stworzenia testowanych obiektow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a920d6d8bedb16e1efcfb49d4757be122}{testy\+Run}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja do odpalania/renderowania testowanych obiektow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_engine_a8be9c795f452e71b41f5b38f4a5c178f}{Engine}} (std\+::string \mbox{\hyperlink{class_engine_afa47165fa768d2ecc4cff4b6f38c6cdd}{title}}, float \mbox{\hyperlink{class_engine_ab75b6e8da35375f449bea43d4d24fc4d}{window\+\_\+width}}, float \mbox{\hyperlink{class_engine_af9c9ef4d3dc83611593c1ee600fd5c33}{window\+\_\+height}})
+\begin{DoxyCompactList}\small\item\em Prywatny konstruktor, tworzy obiekt \mbox{\hyperlink{class_engine}{Engine}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a92f03a7e6e5eea83069711c4c173cc28}{make\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Tworzy nowe okno. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_ad2ff110d5a86c1cd60b541d65915ac48}{update}} ()
+\begin{DoxyCompactList}\small\item\em Odswieza stan silnika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a1b654dc41dfbcb5072147f33142b726e}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja rysujaca obiekty ktore znajduja sie w elemencie na szczycie stos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_aea8962717c90b089f124b71320973a84}{add\+Stan}} ()
+\begin{DoxyCompactList}\small\item\em Dodaje nowy stan na stos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_engine_ab75b6e8da35375f449bea43d4d24fc4d}{window\+\_\+width}}
+\begin{DoxyCompactList}\small\item\em Szerokosc okna. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_engine_af9c9ef4d3dc83611593c1ee600fd5c33}{window\+\_\+height}}
+\begin{DoxyCompactList}\small\item\em Wysokosc okna. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_engine_a7aa8736e4113aa5bb5c46a62a169053d}{dtime}}
+\begin{DoxyCompactList}\small\item\em Zmienna uzywana do kontroli czasu. \end{DoxyCompactList}\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_engine_acb19f573e60457464cc73625d7882653}{window}}
+\begin{DoxyCompactList}\small\item\em Okno. \end{DoxyCompactList}\item 
+sf\+::\+Clock \mbox{\hyperlink{class_engine_ad15b607cfc5e57f53e3a2d2378e2b297}{clock}}
+\begin{DoxyCompactList}\small\item\em Zegar. \end{DoxyCompactList}\item 
+sf\+::\+Event \mbox{\hyperlink{class_engine_a92aad922efb7ca6598ef6af502b0afcf}{event}}
+\begin{DoxyCompactList}\small\item\em Eventy. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_engine_afa47165fa768d2ecc4cff4b6f38c6cdd}{title}}
+\begin{DoxyCompactList}\small\item\em Tytul okna. \end{DoxyCompactList}\item 
+std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ \mbox{\hyperlink{class_engine_a77cacbb21b64142af4a076cd48b04048}{stos}}
+\begin{DoxyCompactList}\small\item\em Stos wskaznikow na stany. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Glowna klasa silnika. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_engine_a8be9c795f452e71b41f5b38f4a5c178f}\label{class_engine_a8be9c795f452e71b41f5b38f4a5c178f}} 
+\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily Engine\+::\+Engine (\begin{DoxyParamCaption}\item[{std\+::string}]{title,  }\item[{float}]{window\+\_\+width,  }\item[{float}]{window\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Prywatny konstruktor, tworzy obiekt \mbox{\hyperlink{class_engine}{Engine}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Tytul okna \\
+\hline
+{\em window\+\_\+width} & Szerokosc okna \\
+\hline
+{\em window\+\_\+height} & Wysokosc okna \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}\label{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}} 
+\index{Engine@{Engine}!````~Engine@{$\sim$Engine}}
+\index{````~Engine@{$\sim$Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{$\sim$Engine()}{~Engine()}}
+{\footnotesize\ttfamily Engine\+::$\sim$\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Niszczy obiekt \mbox{\hyperlink{class_engine}{Engine}} oraz jego wszystkie wskazniki. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_engine_aea8962717c90b089f124b71320973a84}\label{class_engine_aea8962717c90b089f124b71320973a84}} 
+\index{Engine@{Engine}!addStan@{addStan}}
+\index{addStan@{addStan}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{addStan()}{addStan()}}
+{\footnotesize\ttfamily void Engine\+::add\+Stan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Dodaje nowy stan na stos. 
+
+\mbox{\Hypertarget{class_engine_a1b654dc41dfbcb5072147f33142b726e}\label{class_engine_a1b654dc41dfbcb5072147f33142b726e}} 
+\index{Engine@{Engine}!draw@{draw}}
+\index{draw@{draw}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Engine\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Funkcja rysujaca obiekty ktore znajduja sie w elemencie na szczycie stos. 
+
+\mbox{\Hypertarget{class_engine_a9d4a4fdc224ba8147e9a5c6f9a16cf02}\label{class_engine_a9d4a4fdc224ba8147e9a5c6f9a16cf02}} 
+\index{Engine@{Engine}!MakeEngine@{MakeEngine}}
+\index{MakeEngine@{MakeEngine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{MakeEngine()}{MakeEngine()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_engine}{Engine}}$\ast$ Engine\+::\+Make\+Engine (\begin{DoxyParamCaption}\item[{std\+::string}]{title,  }\item[{float}]{window\+\_\+width,  }\item[{float}]{window\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Stworzenie singletonu silnika. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Tytul okna \\
+\hline
+{\em window\+\_\+width} & Szerokosc okna \\
+\hline
+{\em window\+\_\+height} & Wysokosc okna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Engine$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_engine_a92f03a7e6e5eea83069711c4c173cc28}\label{class_engine_a92f03a7e6e5eea83069711c4c173cc28}} 
+\index{Engine@{Engine}!makeWindow@{makeWindow}}
+\index{makeWindow@{makeWindow}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{makeWindow()}{makeWindow()}}
+{\footnotesize\ttfamily void Engine\+::make\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Tworzy nowe okno. 
+
+\mbox{\Hypertarget{class_engine_aa65adad0c39c89089d76e03a7b75333b}\label{class_engine_aa65adad0c39c89089d76e03a7b75333b}} 
+\index{Engine@{Engine}!setFrameRateCap@{setFrameRateCap}}
+\index{setFrameRateCap@{setFrameRateCap}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setFrameRateCap()}{setFrameRateCap()}}
+{\footnotesize\ttfamily void Engine\+::set\+Frame\+Rate\+Cap (\begin{DoxyParamCaption}\item[{unsigned int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ustawia limit wyswietlanych klatek. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Ilosc klatek \\
+\hline
+\end{DoxyParams}
+Ustawia limit klatek na sekunde\mbox{\Hypertarget{class_engine_a9b27125fb41b363d1007cb9e5bc69def}\label{class_engine_a9b27125fb41b363d1007cb9e5bc69def}} 
+\index{Engine@{Engine}!setFullScreen@{setFullScreen}}
+\index{setFullScreen@{setFullScreen}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setFullScreen()}{setFullScreen()}}
+{\footnotesize\ttfamily void Engine\+::set\+Full\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ustawia pelny obraz. 
+
+Ustawia pelny ekran\mbox{\Hypertarget{class_engine_ab525cead6507be6321eed4f19104642b}\label{class_engine_ab525cead6507be6321eed4f19104642b}} 
+\index{Engine@{Engine}!setResolution@{setResolution}}
+\index{setResolution@{setResolution}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{setResolution()}{setResolution()}}
+{\footnotesize\ttfamily void Engine\+::set\+Resolution (\begin{DoxyParamCaption}\item[{float}]{window\+\_\+width,  }\item[{float}]{window\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ustawia wymiary okna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+\_\+width} & Szerokosc \\
+\hline
+{\em window\+\_\+height} & Wysokosc \\
+\hline
+\end{DoxyParams}
+Ustawienie rozmiaru okna\mbox{\Hypertarget{class_engine_a4d8066dd213a03f5420d1bf60f150ca7}\label{class_engine_a4d8066dd213a03f5420d1bf60f150ca7}} 
+\index{Engine@{Engine}!start@{start}}
+\index{start@{start}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Engine\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja uruchamiajaca program. 
+
+\mbox{\Hypertarget{class_engine_a920d6d8bedb16e1efcfb49d4757be122}\label{class_engine_a920d6d8bedb16e1efcfb49d4757be122}} 
+\index{Engine@{Engine}!testyRun@{testyRun}}
+\index{testyRun@{testyRun}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{testyRun()}{testyRun()}}
+{\footnotesize\ttfamily void Engine\+::testy\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Funkcja do odpalania/renderowania testowanych obiektow. 
+
+\mbox{\Hypertarget{class_engine_a86b6c4f50407d4782571589c3ace0c66}\label{class_engine_a86b6c4f50407d4782571589c3ace0c66}} 
+\index{Engine@{Engine}!testyWczytaj@{testyWczytaj}}
+\index{testyWczytaj@{testyWczytaj}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{testyWczytaj()}{testyWczytaj()}}
+{\footnotesize\ttfamily void Engine\+::testy\+Wczytaj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Sluzy do wczytania/stworzenia testowanych obiektow. 
+
+\mbox{\Hypertarget{class_engine_ad2ff110d5a86c1cd60b541d65915ac48}\label{class_engine_ad2ff110d5a86c1cd60b541d65915ac48}} 
+\index{Engine@{Engine}!update@{update}}
+\index{update@{update}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Engine\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Odswieza stan silnika. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_engine_ad15b607cfc5e57f53e3a2d2378e2b297}\label{class_engine_ad15b607cfc5e57f53e3a2d2378e2b297}} 
+\index{Engine@{Engine}!clock@{clock}}
+\index{clock@{clock}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{clock}{clock}}
+{\footnotesize\ttfamily sf\+::\+Clock Engine\+::clock\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zegar. 
+
+\mbox{\Hypertarget{class_engine_a7aa8736e4113aa5bb5c46a62a169053d}\label{class_engine_a7aa8736e4113aa5bb5c46a62a169053d}} 
+\index{Engine@{Engine}!dtime@{dtime}}
+\index{dtime@{dtime}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{dtime}{dtime}}
+{\footnotesize\ttfamily float Engine\+::dtime\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zmienna uzywana do kontroli czasu. 
+
+\mbox{\Hypertarget{class_engine_a92aad922efb7ca6598ef6af502b0afcf}\label{class_engine_a92aad922efb7ca6598ef6af502b0afcf}} 
+\index{Engine@{Engine}!event@{event}}
+\index{event@{event}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily sf\+::\+Event Engine\+::event\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Eventy. 
+
+\mbox{\Hypertarget{class_engine_a77cacbb21b64142af4a076cd48b04048}\label{class_engine_a77cacbb21b64142af4a076cd48b04048}} 
+\index{Engine@{Engine}!stos@{stos}}
+\index{stos@{stos}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{stos}{stos}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{class_stan}{Stan}}$\ast$$>$ Engine\+::stos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stos wskaznikow na stany. 
+
+\mbox{\Hypertarget{class_engine_afa47165fa768d2ecc4cff4b6f38c6cdd}\label{class_engine_afa47165fa768d2ecc4cff4b6f38c6cdd}} 
+\index{Engine@{Engine}!title@{title}}
+\index{title@{title}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily std\+::string Engine\+::title\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tytul okna. 
+
+\mbox{\Hypertarget{class_engine_acb19f573e60457464cc73625d7882653}\label{class_engine_acb19f573e60457464cc73625d7882653}} 
+\index{Engine@{Engine}!window@{window}}
+\index{window@{window}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ Engine\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Okno. 
+
+\mbox{\Hypertarget{class_engine_af9c9ef4d3dc83611593c1ee600fd5c33}\label{class_engine_af9c9ef4d3dc83611593c1ee600fd5c33}} 
+\index{Engine@{Engine}!window\_height@{window\_height}}
+\index{window\_height@{window\_height}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{window\_height}{window\_height}}
+{\footnotesize\ttfamily float Engine\+::window\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wysokosc okna. 
+
+\mbox{\Hypertarget{class_engine_ab75b6e8da35375f449bea43d4d24fc4d}\label{class_engine_ab75b6e8da35375f449bea43d4d24fc4d}} 
+\index{Engine@{Engine}!window\_width@{window\_width}}
+\index{window\_width@{window\_width}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{window\_width}{window\_width}}
+{\footnotesize\ttfamily float Engine\+::window\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Szerokosc okna. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_engine_8h}{Engine.\+h}}\end{DoxyCompactItemize}

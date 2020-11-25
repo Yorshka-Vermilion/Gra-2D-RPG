@@ -1,0 +1,154 @@
+\hypertarget{class_obiekt}{}\doxysection{Obiekt Class Reference}
+\label{class_obiekt}\index{Obiekt@{Obiekt}}
+
+
+Klasa opisujaca kazdy obiekt w grze.  
+
+
+
+
+{\ttfamily \#include $<$Obiekt.\+h$>$}
+
+Inheritance diagram for Obiekt\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_obiekt}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obiekt_a03124928e33622a68b22f9bb7e1d8cf9}{Obiekt}} (std\+::string sciezka, sf\+::\+Vector2f pozycja)
+\begin{DoxyCompactList}\small\item\em Tworzy nowy \mbox{\hyperlink{class_obiekt}{Obiekt}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_obiekt_a6a20b741117cafcc4a538d3a2d43aad6}{zmien\+Teksture}} (std\+::string sciezka)
+\begin{DoxyCompactList}\small\item\em Podmienia teksture na podana w argumencie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_obiekt_aa9202b4cf6a327c24ac63b1821f3fc0a}{przestaw}} (sf\+::\+Vector2f gdzie)
+\begin{DoxyCompactList}\small\item\em Przestawia obiekt w inne miejsce. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_obiekt_aaea31a8611efee40f4254f206e597ccb}{rotuj}} (float kat)
+\begin{DoxyCompactList}\small\item\em Funkcja obraca obiekt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_obiekt_a7c6a32b37cffaf8755269f9260714c70}{przeskaluj}} (sf\+::\+Vector2f jak)
+\begin{DoxyCompactList}\small\item\em Skaluje obiekt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_obiekt_a5a1182776f2ef794f4f1be89b2316733}{sprajt}}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowujaca sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{class_obiekt_a22cbc86ca1d6cac0619039f146fc6684}{tekstura}}
+\begin{DoxyCompactList}\small\item\em Zmienna przechowujaca teksture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa opisujaca kazdy obiekt w grze. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_obiekt_a03124928e33622a68b22f9bb7e1d8cf9}\label{class_obiekt_a03124928e33622a68b22f9bb7e1d8cf9}} 
+\index{Obiekt@{Obiekt}!Obiekt@{Obiekt}}
+\index{Obiekt@{Obiekt}!Obiekt@{Obiekt}}
+\doxysubsubsection{\texorpdfstring{Obiekt()}{Obiekt()}}
+{\footnotesize\ttfamily Obiekt\+::\+Obiekt (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tworzy nowy \mbox{\hyperlink{class_obiekt}{Obiekt}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & Sciezka do pliku z tekstura/obrazkiem \\
+\hline
+{\em pozycja} & Pozycja poczatkowa obiektu \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_obiekt_a7c6a32b37cffaf8755269f9260714c70}\label{class_obiekt_a7c6a32b37cffaf8755269f9260714c70}} 
+\index{Obiekt@{Obiekt}!przeskaluj@{przeskaluj}}
+\index{przeskaluj@{przeskaluj}!Obiekt@{Obiekt}}
+\doxysubsubsection{\texorpdfstring{przeskaluj()}{przeskaluj()}}
+{\footnotesize\ttfamily void Obiekt\+::przeskaluj (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{jak }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Skaluje obiekt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jak} & O ile ma byc przeskalowany obiekt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obiekt_aa9202b4cf6a327c24ac63b1821f3fc0a}\label{class_obiekt_aa9202b4cf6a327c24ac63b1821f3fc0a}} 
+\index{Obiekt@{Obiekt}!przestaw@{przestaw}}
+\index{przestaw@{przestaw}!Obiekt@{Obiekt}}
+\doxysubsubsection{\texorpdfstring{przestaw()}{przestaw()}}
+{\footnotesize\ttfamily void Obiekt\+::przestaw (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{gdzie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Przestawia obiekt w inne miejsce. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gdzie} & Gdzie ma byc przestawiony obiekt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obiekt_aaea31a8611efee40f4254f206e597ccb}\label{class_obiekt_aaea31a8611efee40f4254f206e597ccb}} 
+\index{Obiekt@{Obiekt}!rotuj@{rotuj}}
+\index{rotuj@{rotuj}!Obiekt@{Obiekt}}
+\doxysubsubsection{\texorpdfstring{rotuj()}{rotuj()}}
+{\footnotesize\ttfamily void Obiekt\+::rotuj (\begin{DoxyParamCaption}\item[{float}]{kat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja obraca obiekt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kat} & O jaki kat ma byc obrocony sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_obiekt_a6a20b741117cafcc4a538d3a2d43aad6}\label{class_obiekt_a6a20b741117cafcc4a538d3a2d43aad6}} 
+\index{Obiekt@{Obiekt}!zmienTeksture@{zmienTeksture}}
+\index{zmienTeksture@{zmienTeksture}!Obiekt@{Obiekt}}
+\doxysubsubsection{\texorpdfstring{zmienTeksture()}{zmienTeksture()}}
+{\footnotesize\ttfamily void Obiekt\+::zmien\+Teksture (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Podmienia teksture na podana w argumencie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & Sciezka do pliku z teksura \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_obiekt_a5a1182776f2ef794f4f1be89b2316733}\label{class_obiekt_a5a1182776f2ef794f4f1be89b2316733}} 
+\index{Obiekt@{Obiekt}!sprajt@{sprajt}}
+\index{sprajt@{sprajt}!Obiekt@{Obiekt}}
+\doxysubsubsection{\texorpdfstring{sprajt}{sprajt}}
+{\footnotesize\ttfamily sf\+::\+Sprite Obiekt\+::sprajt}
+
+
+
+Zmienna przechowujaca sprite. 
+
+\mbox{\Hypertarget{class_obiekt_a22cbc86ca1d6cac0619039f146fc6684}\label{class_obiekt_a22cbc86ca1d6cac0619039f146fc6684}} 
+\index{Obiekt@{Obiekt}!tekstura@{tekstura}}
+\index{tekstura@{tekstura}!Obiekt@{Obiekt}}
+\doxysubsubsection{\texorpdfstring{tekstura}{tekstura}}
+{\footnotesize\ttfamily sf\+::\+Texture Obiekt\+::tekstura\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Zmienna przechowujaca teksture. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_obiekt_8h}{Obiekt.\+h}}\end{DoxyCompactItemize}

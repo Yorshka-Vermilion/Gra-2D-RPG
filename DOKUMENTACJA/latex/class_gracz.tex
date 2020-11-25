@@ -1,0 +1,147 @@
+\hypertarget{class_gracz}{}\doxysection{Gracz Class Reference}
+\label{class_gracz}\index{Gracz@{Gracz}}
+
+
+Klasa opisujaca gracza.  
+
+
+
+
+{\ttfamily \#include $<$Gracz.\+h$>$}
+
+Inheritance diagram for Gracz\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gracz}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gracz_a0d00d322b41ecce30c064c286b2ec875}{Gracz}} (std\+::string sciezka, sf\+::\+Vector2f pozycja, sf\+::\+Rectangle\+Shape \mbox{\hyperlink{class_gracz_af6a380c64bcdae717d65dc9a6f0d11f0}{ksztalt}})
+\begin{DoxyCompactList}\small\item\em Konsturktor obiektu \mbox{\hyperlink{class_gracz}{Gracz}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_ab6cce8a5a45fc545add7bffe8fcfecea}{debuguj}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wlaczajaca tryb debugowania. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_a08ecaeec6eedec2125ae21fc88b978a9}{rusz}} (sf\+::\+Vector2f gdzie)
+\begin{DoxyCompactList}\small\item\em Przeniesienie obiektu (gracza) na pozycje podana w argumencia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_adb0599d22c44bc1153d6cfd24a253d8b}{draw}} (sf\+::\+Render\+Target $\ast$cel)
+\begin{DoxyCompactList}\small\item\em Rysowanie obiektu (gracza) \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_gracz_afc90c4f02ae0371a612d225cb03740f0}{pobierz\+Pozycje}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca aktualna pozycje obiektu (gracza) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Rectangle\+Shape \mbox{\hyperlink{class_gracz_af6a380c64bcdae717d65dc9a6f0d11f0}{ksztalt}}
+\begin{DoxyCompactList}\small\item\em Prostokatny ksztalt gracza (jego wymiary, ramka) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gracz_ae650363a319d9bf171d28b7bbd85e095}{debug}} = false
+\begin{DoxyCompactList}\small\item\em Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplementowane) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Klasa opisujaca gracza. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_gracz_a0d00d322b41ecce30c064c286b2ec875}\label{class_gracz_a0d00d322b41ecce30c064c286b2ec875}} 
+\index{Gracz@{Gracz}!Gracz@{Gracz}}
+\index{Gracz@{Gracz}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{Gracz()}{Gracz()}}
+{\footnotesize\ttfamily Gracz\+::\+Gracz (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja,  }\item[{sf\+::\+Rectangle\+Shape}]{ksztalt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konsturktor obiektu \mbox{\hyperlink{class_gracz}{Gracz}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & Sciezka do pliku z obrazem gracza \\
+\hline
+{\em pozycja} & Pozycja poczatkowa gracza \\
+\hline
+{\em ksztalt} & \mbox{\hyperlink{class_obiekt}{Obiekt}} Rectangle\+Shape zawierajacy ksztalt gracza \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gracz_ab6cce8a5a45fc545add7bffe8fcfecea}\label{class_gracz_ab6cce8a5a45fc545add7bffe8fcfecea}} 
+\index{Gracz@{Gracz}!debuguj@{debuguj}}
+\index{debuguj@{debuguj}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{debuguj()}{debuguj()}}
+{\footnotesize\ttfamily void Gracz\+::debuguj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja wlaczajaca tryb debugowania. 
+
+\mbox{\Hypertarget{class_gracz_adb0599d22c44bc1153d6cfd24a253d8b}\label{class_gracz_adb0599d22c44bc1153d6cfd24a253d8b}} 
+\index{Gracz@{Gracz}!draw@{draw}}
+\index{draw@{draw}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Gracz\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rysowanie obiektu (gracza) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target wskazujacy na cel w ktorym bedzie renderowany sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gracz_afc90c4f02ae0371a612d225cb03740f0}\label{class_gracz_afc90c4f02ae0371a612d225cb03740f0}} 
+\index{Gracz@{Gracz}!pobierzPozycje@{pobierzPozycje}}
+\index{pobierzPozycje@{pobierzPozycje}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{pobierzPozycje()}{pobierzPozycje()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Gracz\+::pobierz\+Pozycje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca aktualna pozycje obiektu (gracza) 
+
+\begin{DoxyReturn}{Returns}
+sf\+::\+Vector2f Aktualna pozycja gracza 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gracz_a08ecaeec6eedec2125ae21fc88b978a9}\label{class_gracz_a08ecaeec6eedec2125ae21fc88b978a9}} 
+\index{Gracz@{Gracz}!rusz@{rusz}}
+\index{rusz@{rusz}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{rusz()}{rusz()}}
+{\footnotesize\ttfamily void Gracz\+::rusz (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{gdzie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Przeniesienie obiektu (gracza) na pozycje podana w argumencia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gdzie} & Pozycja na ktora gracz ma zostac przeniesiony \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gracz_ae650363a319d9bf171d28b7bbd85e095}\label{class_gracz_ae650363a319d9bf171d28b7bbd85e095}} 
+\index{Gracz@{Gracz}!debug@{debug}}
+\index{debug@{debug}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool Gracz\+::debug = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplementowane) 
+
+\mbox{\Hypertarget{class_gracz_af6a380c64bcdae717d65dc9a6f0d11f0}\label{class_gracz_af6a380c64bcdae717d65dc9a6f0d11f0}} 
+\index{Gracz@{Gracz}!ksztalt@{ksztalt}}
+\index{ksztalt@{ksztalt}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{ksztalt}{ksztalt}}
+{\footnotesize\ttfamily sf\+::\+Rectangle\+Shape Gracz\+::ksztalt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prostokatny ksztalt gracza (jego wymiary, ramka) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_gracz_8h}{Gracz.\+h}}\end{DoxyCompactItemize}

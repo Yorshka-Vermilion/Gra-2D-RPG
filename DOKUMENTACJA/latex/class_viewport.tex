@@ -1,0 +1,135 @@
+\hypertarget{class_viewport}{}\doxysection{Viewport Class Reference}
+\label{class_viewport}\index{Viewport@{Viewport}}
+
+
+klasa viewport reprezentuj¹ca prostok¹t obcinaj¹cy  
+
+
+
+
+{\ttfamily \#include $<$rysowanie.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_viewport_ac4af243ec8ab66f1257bc47dca87db72}{Viewport}} (std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ v2f)
+\begin{DoxyCompactList}\small\item\em konstruktor klasy viewport \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_viewport_a9fde8f966d9802dd42254acf0ed05386}{Viewport}} ()
+\begin{DoxyCompactList}\small\item\em konstruktor domyslny klasy viewport \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_viewport_ae9175bf56c97748028309d1dcb8d898d}{zmien\+\_\+wspolrzedne}} (\mbox{\hyperlink{class_point2_d}{Point2D}} q)
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za zmodyfikowanie prostokata \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_viewport_a63a328dc9b1ae177f33b4b7d8a36cab7}{wyswietl\+\_\+wspolrzedne}} ()
+\begin{DoxyCompactList}\small\item\em funkcja do wyswietlenia wspolrzednych prostokata \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_viewport_ad724f03a35b1fa7de3ae1e640e08b4f0}{prostokat\+\_\+obcinajacy}} (sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em funckcja rysujaca prostokat obcinajacy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_viewport_ad6d448acb334e4c496b7a60b4ecfc744}{b0}}
+\begin{DoxyCompactList}\small\item\em wektor od ktorego zaczyna sie przekatna prostokata \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_viewport_aa34f94c7890a1e25865cd8fb64849804}{b1}}
+\begin{DoxyCompactList}\small\item\em wektor na ktorym konczy sie przekatna prostokata ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa viewport reprezentuj¹ca prostok¹t obcinaj¹cy 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_viewport_ac4af243ec8ab66f1257bc47dca87db72}\label{class_viewport_ac4af243ec8ab66f1257bc47dca87db72}} 
+\index{Viewport@{Viewport}!Viewport@{Viewport}}
+\index{Viewport@{Viewport}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{Viewport()}{Viewport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Viewport\+::\+Viewport (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$}]{v2f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+konstruktor klasy viewport 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v2f} & przechowuje pozycje wektorow \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_viewport_a9fde8f966d9802dd42254acf0ed05386}\label{class_viewport_a9fde8f966d9802dd42254acf0ed05386}} 
+\index{Viewport@{Viewport}!Viewport@{Viewport}}
+\index{Viewport@{Viewport}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{Viewport()}{Viewport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Viewport\+::\+Viewport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+konstruktor domyslny klasy viewport 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_viewport_ad724f03a35b1fa7de3ae1e640e08b4f0}\label{class_viewport_ad724f03a35b1fa7de3ae1e640e08b4f0}} 
+\index{Viewport@{Viewport}!prostokat\_obcinajacy@{prostokat\_obcinajacy}}
+\index{prostokat\_obcinajacy@{prostokat\_obcinajacy}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{prostokat\_obcinajacy()}{prostokat\_obcinajacy()}}
+{\footnotesize\ttfamily void Viewport\+::prostokat\+\_\+obcinajacy (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+funckcja rysujaca prostokat obcinajacy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & obiekt typu Render\+Target ktory otrzymuje wspolrzedne linii \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_viewport_a63a328dc9b1ae177f33b4b7d8a36cab7}\label{class_viewport_a63a328dc9b1ae177f33b4b7d8a36cab7}} 
+\index{Viewport@{Viewport}!wyswietl\_wspolrzedne@{wyswietl\_wspolrzedne}}
+\index{wyswietl\_wspolrzedne@{wyswietl\_wspolrzedne}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{wyswietl\_wspolrzedne()}{wyswietl\_wspolrzedne()}}
+{\footnotesize\ttfamily void Viewport\+::wyswietl\+\_\+wspolrzedne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+funkcja do wyswietlenia wspolrzednych prostokata 
+
+\mbox{\Hypertarget{class_viewport_ae9175bf56c97748028309d1dcb8d898d}\label{class_viewport_ae9175bf56c97748028309d1dcb8d898d}} 
+\index{Viewport@{Viewport}!zmien\_wspolrzedne@{zmien\_wspolrzedne}}
+\index{zmien\_wspolrzedne@{zmien\_wspolrzedne}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{zmien\_wspolrzedne()}{zmien\_wspolrzedne()}}
+{\footnotesize\ttfamily void Viewport\+::zmien\+\_\+wspolrzedne (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{q }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+funkcja odpowiedzialna za zmodyfikowanie prostokata 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & zmienna odpowiedzialna za przekazywanie wspolrzednych wektora \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_viewport_ad6d448acb334e4c496b7a60b4ecfc744}\label{class_viewport_ad6d448acb334e4c496b7a60b4ecfc744}} 
+\index{Viewport@{Viewport}!b0@{b0}}
+\index{b0@{b0}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{b0}{b0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d}{Point2D}} Viewport\+::b0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wektor od ktorego zaczyna sie przekatna prostokata 
+
+\mbox{\Hypertarget{class_viewport_aa34f94c7890a1e25865cd8fb64849804}\label{class_viewport_aa34f94c7890a1e25865cd8fb64849804}} 
+\index{Viewport@{Viewport}!b1@{b1}}
+\index{b1@{b1}!Viewport@{Viewport}}
+\doxysubsubsection{\texorpdfstring{b1}{b1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d}{Point2D}} Viewport\+::b1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wektor na ktorym konczy sie przekatna prostokata ~\newline
+ 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Przemek/\mbox{\hyperlink{rysowanie_8h}{rysowanie.\+h}}\end{DoxyCompactItemize}

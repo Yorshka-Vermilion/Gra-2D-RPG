@@ -7,6 +7,10 @@
 #include "../Bartek.h"
 #include "../Przemek.h"
 
+/**
+* @brief Glowna klasa silnika
+*/
+
 class Engine
 {
 private:

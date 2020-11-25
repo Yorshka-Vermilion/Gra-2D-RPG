@@ -1,0 +1,347 @@
+\hypertarget{class_demo}{}\doxysection{Demo Class Reference}
+\label{class_demo}\index{Demo@{Demo}}
+
+
+{\ttfamily \#include $<$Demo.\+h$>$}
+
+Inheritance diagram for Demo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_demo}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_demo_aca958dc31b075cdf9e6c5e7d8ee012bf}{Demo}} (sf\+::\+Render\+Window $\ast$\mbox{\hyperlink{class_demo_af733960fc75e5f2851c7def33e37e485}{window}}, std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$\mbox{\hyperlink{class_stan_acd6f1d71e7f622492660fad6e7e2f616}{stos}}, sf\+::\+Event $\ast$\mbox{\hyperlink{class_demo_aeeb10923a29e8880d2606a0262dccaa8}{event}})
+\item 
+\mbox{\hyperlink{class_demo_a82bcc87814f02257d04a49400cc8052d}{$\sim$\+Demo}} ()
+\item 
+void \mbox{\hyperlink{class_demo_a1dc93d866e025f43a204a82da89a29a0}{demo\+Wczytaj}} ()
+\item 
+void \mbox{\hyperlink{class_demo_a50d684b5b7e7f9da8e9fb49325ea8655}{draw}} (sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em Wirtualna funkcja rysujaca. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_demo_a1bd3d4c8bc829e4976620900443f113c}{update}} (const float \&\mbox{\hyperlink{class_demo_abcefe26fcd960118c449b203193b9993}{dtime}})
+\begin{DoxyCompactList}\small\item\em Wirtualna funkcja sluzaca do odsiwezania stanu obiektu typu \mbox{\hyperlink{class_stan}{Stan}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_demo_af733960fc75e5f2851c7def33e37e485}{window}}
+\item 
+sf\+::\+Event $\ast$ \mbox{\hyperlink{class_demo_aeeb10923a29e8880d2606a0262dccaa8}{event}}
+\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_demo_a5df165b22824e7c0e0efbb2b47e170a1}{test\+Obrazu}}
+\item 
+\mbox{\hyperlink{class_animacja}{Animacja}} $\ast$ \mbox{\hyperlink{class_demo_ac6b33a76b42d46a2bc4ec6fcf8e57806}{test\+Animacji}}
+\item 
+\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$ \mbox{\hyperlink{class_demo_a6ac6837104f2b7d481180f2623d42b17}{gracz}}
+\item 
+\mbox{\hyperlink{class_obsluga_ruchu_gracza}{Obsluga\+Ruchu\+Gracza}} $\ast$ \mbox{\hyperlink{class_demo_a3e84a59d6fbee492e3f3517ea6842965}{g\+Ruch}}
+\item 
+\mbox{\hyperlink{class_bitmap_handler}{Bitmap\+Handler}} $\ast$ \mbox{\hyperlink{class_demo_a60a80a9ec81a6c24d8e7752be1fd1626}{bitmapa}}
+\item 
+\mbox{\hyperlink{class_bitmap_handler}{Bitmap\+Handler}} $\ast$ \mbox{\hyperlink{class_demo_a1c53117ca09fcaa575599a30672e5ce5}{obj}} \mbox{[}3\mbox{]}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{class_demo_a072772c93786944b8089a312eef4d809}{tekstura}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_demo_aa357786c87d926ecf71ffc42dd41b08f}{sprajt}}
+\item 
+float \mbox{\hyperlink{class_demo_abcefe26fcd960118c449b203193b9993}{dtime}}
+\item 
+bool \mbox{\hyperlink{class_demo_a5d8605d3be8aed2478480c0056d04bde}{nacisnieto}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_demo_a4e4c258dbb94224915820c1a858bfca1}{v1}}
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \mbox{\hyperlink{class_demo_a24a6f6312c4549ba86fb515ef377c35f}{v2}}
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \mbox{\hyperlink{class_demo_a1a8e7ba7a0ed768c40844572a81d1d48}{v3}}
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \mbox{\hyperlink{class_demo_aa9a30704cf186e7ec8d2a1d69b8bb04e}{v4}}
+\item 
+std\+::vector$<$ sf\+::\+Vector2f $>$ \mbox{\hyperlink{class_demo_aa8ba7d0ca99c7027d1cb8d0a090c342d}{v10}}
+\item 
+\mbox{\hyperlink{class_point2_d}{Point2D}} \mbox{\hyperlink{class_demo_a77a2325e8c50de7eac47d6b5f60e5e09}{p2d}}
+\item 
+\mbox{\hyperlink{class_line_segment}{Line\+Segment}} \mbox{\hyperlink{class_demo_a5b562548748e6fd2eda0bd092a548de2}{ls}}
+\item 
+\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} \mbox{\hyperlink{class_demo_abc0a47ad3c811f67d493ea69b4616e8a}{p2da2}}
+\item 
+\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} \mbox{\hyperlink{class_demo_ac4206a3bae409df2c051821419d66b49}{p2da3}}
+\item 
+\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} \mbox{\hyperlink{class_demo_ad3227ba5b8d8fecdb88e03238d508739}{p2da4}}
+\item 
+\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} \mbox{\hyperlink{class_demo_adb2e2555d9e5ee1a229cc51aee9a23c6}{p2da10}}
+\item 
+\mbox{\hyperlink{class_moveport}{Moveport}} \mbox{\hyperlink{class_demo_a331302acc3c30b82a3a6882cd1246f1c}{mp}}
+\item 
+sf\+::\+Image \mbox{\hyperlink{class_demo_a11c5698f7200976283ae414f8a7c88f5}{image}}
+\item 
+sf\+::\+Texture \mbox{\hyperlink{class_demo_a93bb13f44b376a29f471ca3d8da3fc57}{texture}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_demo_ab18cf5bfbc9d1a48cb4d9f0cf54f336e}{sprite}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ \mbox{\hyperlink{class_demo_a16955267830dc85e925c4f6e1ab59928}{p2dv}}
+\item 
+\mbox{\hyperlink{class_viewport}{Viewport}} \mbox{\hyperlink{class_demo_ad9ca431fcb26fdd119ca8fcc61989c30}{vp}}
+\item 
+\mbox{\hyperlink{class_bounding_box}{Bounding\+Box}} \mbox{\hyperlink{class_demo_ae0740efca098398a0fb4909e0229848a}{bb}}
+\item 
+int \mbox{\hyperlink{class_demo_a03c96cc7ee68bbfc098575749c9b7f07}{opcja}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_demo_aca958dc31b075cdf9e6c5e7d8ee012bf}\label{class_demo_aca958dc31b075cdf9e6c5e7d8ee012bf}} 
+\index{Demo@{Demo}!Demo@{Demo}}
+\index{Demo@{Demo}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{Demo()}{Demo()}}
+{\footnotesize\ttfamily Demo\+::\+Demo (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window,  }\item[{std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$}]{stos,  }\item[{sf\+::\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_demo_a82bcc87814f02257d04a49400cc8052d}\label{class_demo_a82bcc87814f02257d04a49400cc8052d}} 
+\index{Demo@{Demo}!````~Demo@{$\sim$Demo}}
+\index{````~Demo@{$\sim$Demo}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{$\sim$Demo()}{~Demo()}}
+{\footnotesize\ttfamily Demo\+::$\sim$\+Demo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_demo_a1dc93d866e025f43a204a82da89a29a0}\label{class_demo_a1dc93d866e025f43a204a82da89a29a0}} 
+\index{Demo@{Demo}!demoWczytaj@{demoWczytaj}}
+\index{demoWczytaj@{demoWczytaj}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{demoWczytaj()}{demoWczytaj()}}
+{\footnotesize\ttfamily void Demo\+::demo\+Wczytaj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Wczytuje testowane obiekty\mbox{\Hypertarget{class_demo_a50d684b5b7e7f9da8e9fb49325ea8655}\label{class_demo_a50d684b5b7e7f9da8e9fb49325ea8655}} 
+\index{Demo@{Demo}!draw@{draw}}
+\index{draw@{draw}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Demo\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Wirtualna funkcja rysujaca. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & Wskaznik na obiekt Render\+Target w ktorym rysowane sa obiekty \\
+\hline
+\end{DoxyParams}
+Funkcja rysujaca
+
+Implements \mbox{\hyperlink{class_stan_af819ad0f6b5e69d441ae6495ea9ece5d}{Stan}}.
+
+\mbox{\Hypertarget{class_demo_a1bd3d4c8bc829e4976620900443f113c}\label{class_demo_a1bd3d4c8bc829e4976620900443f113c}} 
+\index{Demo@{Demo}!update@{update}}
+\index{update@{update}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Demo\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Wirtualna funkcja sluzaca do odsiwezania stanu obiektu typu \mbox{\hyperlink{class_stan}{Stan}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dtime} & Kontrola czasu \\
+\hline
+\end{DoxyParams}
+Funkcja aktualizujaca stan
+
+Implements \mbox{\hyperlink{class_stan_a2dde2e9d9e66aade33b857cb64697cf3}{Stan}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_demo_ae0740efca098398a0fb4909e0229848a}\label{class_demo_ae0740efca098398a0fb4909e0229848a}} 
+\index{Demo@{Demo}!bb@{bb}}
+\index{bb@{bb}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{bb}{bb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bounding_box}{Bounding\+Box}} Demo\+::bb\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a60a80a9ec81a6c24d8e7752be1fd1626}\label{class_demo_a60a80a9ec81a6c24d8e7752be1fd1626}} 
+\index{Demo@{Demo}!bitmapa@{bitmapa}}
+\index{bitmapa@{bitmapa}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{bitmapa}{bitmapa}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bitmap_handler}{Bitmap\+Handler}}$\ast$ Demo\+::bitmapa\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_abcefe26fcd960118c449b203193b9993}\label{class_demo_abcefe26fcd960118c449b203193b9993}} 
+\index{Demo@{Demo}!dtime@{dtime}}
+\index{dtime@{dtime}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{dtime}{dtime}}
+{\footnotesize\ttfamily float Demo\+::dtime\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_aeeb10923a29e8880d2606a0262dccaa8}\label{class_demo_aeeb10923a29e8880d2606a0262dccaa8}} 
+\index{Demo@{Demo}!event@{event}}
+\index{event@{event}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily sf\+::\+Event$\ast$ Demo\+::event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a6ac6837104f2b7d481180f2623d42b17}\label{class_demo_a6ac6837104f2b7d481180f2623d42b17}} 
+\index{Demo@{Demo}!gracz@{gracz}}
+\index{gracz@{gracz}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{gracz}{gracz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gracz}{Gracz}}$\ast$ Demo\+::gracz\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a3e84a59d6fbee492e3f3517ea6842965}\label{class_demo_a3e84a59d6fbee492e3f3517ea6842965}} 
+\index{Demo@{Demo}!gRuch@{gRuch}}
+\index{gRuch@{gRuch}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{gRuch}{gRuch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obsluga_ruchu_gracza}{Obsluga\+Ruchu\+Gracza}}$\ast$ Demo\+::g\+Ruch\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a11c5698f7200976283ae414f8a7c88f5}\label{class_demo_a11c5698f7200976283ae414f8a7c88f5}} 
+\index{Demo@{Demo}!image@{image}}
+\index{image@{image}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily sf\+::\+Image Demo\+::image\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a5b562548748e6fd2eda0bd092a548de2}\label{class_demo_a5b562548748e6fd2eda0bd092a548de2}} 
+\index{Demo@{Demo}!ls@{ls}}
+\index{ls@{ls}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{ls}{ls}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_line_segment}{Line\+Segment}} Demo\+::ls\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a331302acc3c30b82a3a6882cd1246f1c}\label{class_demo_a331302acc3c30b82a3a6882cd1246f1c}} 
+\index{Demo@{Demo}!mp@{mp}}
+\index{mp@{mp}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{mp}{mp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_moveport}{Moveport}} Demo\+::mp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a5d8605d3be8aed2478480c0056d04bde}\label{class_demo_a5d8605d3be8aed2478480c0056d04bde}} 
+\index{Demo@{Demo}!nacisnieto@{nacisnieto}}
+\index{nacisnieto@{nacisnieto}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{nacisnieto}{nacisnieto}}
+{\footnotesize\ttfamily bool Demo\+::nacisnieto\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a1c53117ca09fcaa575599a30672e5ce5}\label{class_demo_a1c53117ca09fcaa575599a30672e5ce5}} 
+\index{Demo@{Demo}!obj@{obj}}
+\index{obj@{obj}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{obj}{obj}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bitmap_handler}{Bitmap\+Handler}}$\ast$ Demo\+::obj\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a03c96cc7ee68bbfc098575749c9b7f07}\label{class_demo_a03c96cc7ee68bbfc098575749c9b7f07}} 
+\index{Demo@{Demo}!opcja@{opcja}}
+\index{opcja@{opcja}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{opcja}{opcja}}
+{\footnotesize\ttfamily int Demo\+::opcja = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a77a2325e8c50de7eac47d6b5f60e5e09}\label{class_demo_a77a2325e8c50de7eac47d6b5f60e5e09}} 
+\index{Demo@{Demo}!p2d@{p2d}}
+\index{p2d@{p2d}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{p2d}{p2d}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d}{Point2D}} Demo\+::p2d\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_adb2e2555d9e5ee1a229cc51aee9a23c6}\label{class_demo_adb2e2555d9e5ee1a229cc51aee9a23c6}} 
+\index{Demo@{Demo}!p2da10@{p2da10}}
+\index{p2da10@{p2da10}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{p2da10}{p2da10}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} Demo\+::p2da10\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_abc0a47ad3c811f67d493ea69b4616e8a}\label{class_demo_abc0a47ad3c811f67d493ea69b4616e8a}} 
+\index{Demo@{Demo}!p2da2@{p2da2}}
+\index{p2da2@{p2da2}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{p2da2}{p2da2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} Demo\+::p2da2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_ac4206a3bae409df2c051821419d66b49}\label{class_demo_ac4206a3bae409df2c051821419d66b49}} 
+\index{Demo@{Demo}!p2da3@{p2da3}}
+\index{p2da3@{p2da3}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{p2da3}{p2da3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} Demo\+::p2da3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_ad3227ba5b8d8fecdb88e03238d508739}\label{class_demo_ad3227ba5b8d8fecdb88e03238d508739}} 
+\index{Demo@{Demo}!p2da4@{p2da4}}
+\index{p2da4@{p2da4}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{p2da4}{p2da4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} Demo\+::p2da4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a16955267830dc85e925c4f6e1ab59928}\label{class_demo_a16955267830dc85e925c4f6e1ab59928}} 
+\index{Demo@{Demo}!p2dv@{p2dv}}
+\index{p2dv@{p2dv}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{p2dv}{p2dv}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_point2_d}{Point2D}}$>$ Demo\+::p2dv\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_aa357786c87d926ecf71ffc42dd41b08f}\label{class_demo_aa357786c87d926ecf71ffc42dd41b08f}} 
+\index{Demo@{Demo}!sprajt@{sprajt}}
+\index{sprajt@{sprajt}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{sprajt}{sprajt}}
+{\footnotesize\ttfamily sf\+::\+Sprite Demo\+::sprajt\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_ab18cf5bfbc9d1a48cb4d9f0cf54f336e}\label{class_demo_ab18cf5bfbc9d1a48cb4d9f0cf54f336e}} 
+\index{Demo@{Demo}!sprite@{sprite}}
+\index{sprite@{sprite}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Demo\+::sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a072772c93786944b8089a312eef4d809}\label{class_demo_a072772c93786944b8089a312eef4d809}} 
+\index{Demo@{Demo}!tekstura@{tekstura}}
+\index{tekstura@{tekstura}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{tekstura}{tekstura}}
+{\footnotesize\ttfamily sf\+::\+Texture Demo\+::tekstura\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_ac6b33a76b42d46a2bc4ec6fcf8e57806}\label{class_demo_ac6b33a76b42d46a2bc4ec6fcf8e57806}} 
+\index{Demo@{Demo}!testAnimacji@{testAnimacji}}
+\index{testAnimacji@{testAnimacji}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{testAnimacji}{testAnimacji}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_animacja}{Animacja}}$\ast$ Demo\+::test\+Animacji\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a5df165b22824e7c0e0efbb2b47e170a1}\label{class_demo_a5df165b22824e7c0e0efbb2b47e170a1}} 
+\index{Demo@{Demo}!testObrazu@{testObrazu}}
+\index{testObrazu@{testObrazu}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{testObrazu}{testObrazu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Demo\+::test\+Obrazu\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a93bb13f44b376a29f471ca3d8da3fc57}\label{class_demo_a93bb13f44b376a29f471ca3d8da3fc57}} 
+\index{Demo@{Demo}!texture@{texture}}
+\index{texture@{texture}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily sf\+::\+Texture Demo\+::texture\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a4e4c258dbb94224915820c1a858bfca1}\label{class_demo_a4e4c258dbb94224915820c1a858bfca1}} 
+\index{Demo@{Demo}!v1@{v1}}
+\index{v1@{v1}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{v1}{v1}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Demo\+::v1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_aa8ba7d0ca99c7027d1cb8d0a090c342d}\label{class_demo_aa8ba7d0ca99c7027d1cb8d0a090c342d}} 
+\index{Demo@{Demo}!v10@{v10}}
+\index{v10@{v10}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{v10}{v10}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Vector2f$>$ Demo\+::v10\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a24a6f6312c4549ba86fb515ef377c35f}\label{class_demo_a24a6f6312c4549ba86fb515ef377c35f}} 
+\index{Demo@{Demo}!v2@{v2}}
+\index{v2@{v2}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{v2}{v2}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Vector2f$>$ Demo\+::v2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_a1a8e7ba7a0ed768c40844572a81d1d48}\label{class_demo_a1a8e7ba7a0ed768c40844572a81d1d48}} 
+\index{Demo@{Demo}!v3@{v3}}
+\index{v3@{v3}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{v3}{v3}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Vector2f$>$ Demo\+::v3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_aa9a30704cf186e7ec8d2a1d69b8bb04e}\label{class_demo_aa9a30704cf186e7ec8d2a1d69b8bb04e}} 
+\index{Demo@{Demo}!v4@{v4}}
+\index{v4@{v4}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{v4}{v4}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Vector2f$>$ Demo\+::v4\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_ad9ca431fcb26fdd119ca8fcc61989c30}\label{class_demo_ad9ca431fcb26fdd119ca8fcc61989c30}} 
+\index{Demo@{Demo}!vp@{vp}}
+\index{vp@{vp}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{vp}{vp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_viewport}{Viewport}} Demo\+::vp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_demo_af733960fc75e5f2851c7def33e37e485}\label{class_demo_af733960fc75e5f2851c7def33e37e485}} 
+\index{Demo@{Demo}!window@{window}}
+\index{window@{window}!Demo@{Demo}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ Demo\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_demo_8h}{Demo.\+h}}\end{DoxyCompactItemize}

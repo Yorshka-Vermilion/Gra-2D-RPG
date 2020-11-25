@@ -1,5 +1,8 @@
 #pragma once
 #include <stack>
+/**
+* @brief Stan to klasa bazowa poszczególnych instancji w grze, takich jak MenuGlowne, Gra
+*/
 class Stan 
 {
 protected:
