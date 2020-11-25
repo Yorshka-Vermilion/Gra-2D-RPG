@@ -2,7 +2,6 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
-//Trzeba dodaæ kszta³t (do kolizji) update tekstury (zmiana miejsca)
 
 class Obiekt
 {
@@ -17,9 +16,26 @@ public:
 		this->sprajt.setTexture(this->tekstura);
 		this->sprajt.setPosition(pozycja);
 	}
-	void WyczyscBitmape() { /// Czyszczenie tekstury;
-		tekstura.~Texture();
+	void zmienTeksture(std::string sciezka) { /// Zmiana tekstury obiektu
+		if (!tekstura.loadFromFile(sciezka)) {
+			std::cout << "Problem z zaladowaniem tekstury : " << sciezka << std::endl;
+		}
+		this->sprajt.setTexture(this->tekstura);
 	}
+
+	void przestaw(sf::Vector2f gdzie) { /// Funkcja przestawiaj¹ca sprite
+		this->sprajt.setPosition(gdzie);
+	}
+
+	void rotuj(float kat) { /// Funkcja obracajaca
+		this->sprajt.setRotation(kat);
+	}
+
+	void przeskaluj(sf::Vector2f jak) { /// Funkcja skalujaca
+		this->sprajt.setScale(jak);
+	}
+
+
 
 };
 

@@ -49,7 +49,7 @@ private:
 	void update() { /// Odswieza stan silnika
 		this->dtime = this->clock.restart().asSeconds(); // Aktualizuje delte czasu
 		
-		std::cout << 1.f / dtime << std::endl; // Wyswietla fps'y
+		//std::cout << 1.f / dtime << std::endl; // Wyswietla fps'y
 
 		while (this->window->pollEvent(event)) {
 			if (this->event.type == sf::Event::Closed) {
@@ -78,6 +78,14 @@ public:
 	static Engine* MakeEngine(std::string title, float window_width, float window_height) { /// Stworzenie singletonu silnika
 		static Engine instance(title,window_width,window_height);
 		return &instance;
+	}
+	~Engine() {
+		delete(this->window);
+		while (!this->stos.empty())
+		{
+			delete this->stos.top();
+			this->stos.pop();
+		}
 	}
 	
 	void start() { /// Funkcja uruchamiaj¹ca program

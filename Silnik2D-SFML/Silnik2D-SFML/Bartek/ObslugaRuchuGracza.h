@@ -3,7 +3,6 @@
 class ObslugaRuchuGracza
 {
 	Gracz *gracz; // Wskaznik na obiekt gracza
-	float zegar; // Zegar synchronizacji
 	float szybkosc; // Predkosc ruchu
 public:
 	ObslugaRuchuGracza(Gracz* gracz, float szybkosc) {
@@ -16,17 +15,17 @@ public:
 		float x = this->gracz->pobierzPozycje().x;
 		float y = this->gracz->pobierzPozycje().y;
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-			this->gracz->rusz(sf::Vector2f(x, y - (szybkosc/Zegar)));
+			this->gracz->rusz(sf::Vector2f(x, y - (szybkosc*Zegar)));
 		}
 		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-			this->gracz->rusz(sf::Vector2f(x, y + (szybkosc / Zegar)));
+			this->gracz->rusz(sf::Vector2f(x, y + (szybkosc * Zegar)));
 		}
 
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-			this->gracz->rusz(sf::Vector2f(x + (szybkosc / Zegar), y));
+			this->gracz->rusz(sf::Vector2f(x + (szybkosc * Zegar), y));
 		}
 		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-			this->gracz->rusz(sf::Vector2f(x - (szybkosc / Zegar), y));
+			this->gracz->rusz(sf::Vector2f(x - (szybkosc * Zegar), y));
 		}
 	}
 };
