@@ -11,6 +11,7 @@
  */
 class MenuGlowne : public Stan
 {
+	///Obiekt Demo
 	Demo* demo;
 
 public:

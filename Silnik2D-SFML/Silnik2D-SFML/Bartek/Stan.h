@@ -3,13 +3,22 @@
 class Stan 
 {
 protected:
-	std::stack<Stan*>* stos; /// Stos ze stanami
-	float dtime; /// Zmiana czasu
-	sf::RenderWindow* window; /// Okno
-	sf::Event* event; /// Wskaznik na eventy
-	sf::Vector2i pozycja_kursora_w_oknie; /// Pozycja kursora w oknie
-	sf::Vector2f pozycja_kursora_w_grze; /// Pozycja kursora w grze
-	bool lewy = false, prawy = false; /// Stan przycisku myszy
+	/// Stos ze stanami
+	std::stack<Stan*>* stos;
+	/// Zmiana czasu
+	float dtime; 
+	/// Okno
+	sf::RenderWindow* window; 
+	/// Wskaznik na eventy
+	sf::Event* event; 
+	/// Pozycja kursora w oknie
+	sf::Vector2i pozycja_kursora_w_oknie; 
+	/// Pozycja kursora w grze
+	sf::Vector2f pozycja_kursora_w_grze; 
+	/// Stan lewego przycisku myszy
+	bool lewy = false;
+	/// Stan prawego przycisku myszy
+	bool prawy = false;
 
 
 public:

@@ -9,9 +9,10 @@ class Gracz :
 	public Obiekt
 {
 private:
-
-	sf::RectangleShape ksztalt; /// Prostokatny ksztalt gracza (jego wymiary, ramka)
-	bool debug = false; /// Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplementowane)
+	/// Prostokatny ksztalt gracza (jego wymiary, ramka)
+	sf::RectangleShape ksztalt; 
+	/// Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplementowane)
+	bool debug = false;
 public:
 
 	/**

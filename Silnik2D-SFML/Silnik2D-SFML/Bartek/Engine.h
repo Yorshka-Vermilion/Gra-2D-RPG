@@ -10,14 +10,22 @@
 class Engine
 {
 private:
-	float window_width; /// Szerokosc okna
-	float window_height; /// Wysokosc okna
-	float dtime; /// Zmienna uzywana do kontroli czasu
-	sf::RenderWindow *window; /// Okno
-	sf::Clock clock; /// Zegar
-	sf::Event event; /// Eventy
-	std::string title; /// Tytul okna
-	std::stack<Stan*> stos; /// Stos wskaznikow na stany
+	/// Szerokosc okna
+	float window_width;
+	/// Wysokosc okna
+	float window_height; 
+	/// Zmienna uzywana do kontroli czasu
+	float dtime;
+	/// Okno
+	sf::RenderWindow *window;
+	/// Zegar
+	sf::Clock clock; 
+	/// Eventy
+	sf::Event event; 
+	/// Tytul okna
+	std::string title; 
+	/// Stos wskaznikow na stany
+	std::stack<Stan*> stos; 
 
 	//Testy
 	

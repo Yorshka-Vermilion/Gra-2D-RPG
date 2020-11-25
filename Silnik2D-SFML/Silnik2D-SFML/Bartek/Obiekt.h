@@ -10,9 +10,11 @@
 class Obiekt
 {
 protected:
-	sf::Texture tekstura; /// Zmienna przechowujaca teksture
+	/// Zmienna przechowujaca teksture
+	sf::Texture tekstura;
 public:
-	sf::Sprite sprajt; /// Zmienna przechowujaca sprite
+	/// Zmienna przechowujaca sprite
+	sf::Sprite sprajt;
 
 	/**
 	 * @brief Tworzy nowy Obiekt

@@ -9,7 +9,8 @@ class BitmapHandler {
 	
 
 public:
-	sf::Image obraz; /// Przechowuje obraz
+	/// Przechowuje obraz
+	sf::Image obraz; 
 
 	/**
 	 * @brief Tworzy nowy obraz

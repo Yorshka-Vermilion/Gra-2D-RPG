@@ -7,8 +7,10 @@
  */
 class ObslugaRuchuGracza
 {
-	Gracz *gracz; /// Wskaznik na obiekt gracza
-	float szybkosc; /// Predkosc ruchu
+	/// Wskaznik na obiekt gracza
+	Gracz *gracz; 
+	/// Predkosc ruchu
+	float szybkosc;
 public:
 	/**
 	 * @brief Tworzy nowy obiekt obslugi ruchu gracza
