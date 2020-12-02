@@ -10,15 +10,18 @@ class Mapa
 	float wysokosc;
 	float przerwa_pomiedzy;
 	sf::Vector2u pozycja_poczatkowa;
+	int dystans_tworzenia;
 
 public: 
-	Mapa(float przerwa_pomiedzy, sf::Vector2u pozycja_poczatkowa) {
+	Mapa(float przerwa_pomiedzy, sf::Vector2u pozycja_poczatkowa, int dystans_tworzenia = 9) {
+
 		this->przerwa_pomiedzy = przerwa_pomiedzy;
-		for (size_t i = 0; i < 5; i++) {
+		this->dystans_tworzenia = dystans_tworzenia;
+
+		for (size_t i = 0; i < dystans_tworzenia; i++) {
 			this->plytki.push_back(std::vector<Plytka*>());
-			for (size_t j = 0; j < 5; j++) {
+			for (size_t j = 0; j < dystans_tworzenia; j++) {
 				this->plytki[i].push_back(new Plytka("plytka2.png", sf::Vector2f(0, 0)));
-				//this->plytki[i].insert(this->plytki[i].begin(), new Plytka("kupa.png", sf::Vector2f(0, 0)));
 			}
 		}
 
@@ -26,6 +29,8 @@ public:
 		this->pozycja_poczatkowa = pozycja_poczatkowa;
 		this->pozycja_poczatkowa.x = this->pozycja_poczatkowa.x / 2;
 		this->pozycja_poczatkowa.y = this->pozycja_poczatkowa.y / 2;
+
+		
 
 		//RotujPlytki();
 		ZaktualizujRozmiarPlytki();
@@ -46,7 +51,7 @@ public:
 			size_t j = 0;
 			while (j < plytki[i].size()) {
 				this->plytki[i][j]->przestaw(sf::Vector2f(((szerokosc/2) * (j + 1)) - ((szerokosc/2)*i) + this->pozycja_poczatkowa.x-(szerokosc) ,
-					((wysokosc/2) * (j + 1 + i*2)) - ((wysokosc/2)*i) + this->pozycja_poczatkowa.y - (wysokosc*(plytki.size()-2))));
+					((wysokosc/2) * (j + 1 + i*2)) - ((wysokosc/2)*i) + this->pozycja_poczatkowa.y - (wysokosc*(plytki.size()-4))));
 				j++;
 			}
 			i++;
@@ -74,8 +79,8 @@ public:
 		while (i < plytki.size()) {
 			size_t j = 0;
 			while (j < plytki[i].size()) {
-				this->plytki[i][j]->rysuj(cel);
-				j++;
+					this->plytki[i][j]->rysuj(cel);
+					j++;
 			}
 			i++;
 		}
@@ -83,8 +88,8 @@ public:
 
 	void Przesun(int kierunek) { // 0 lewo, 1 prawo, 2 gora, 3 dol
 		if (!this->plytki.empty()) {
-			size_t v1s = this->plytki.size();
-			size_t v2s = this->plytki[0].size();
+			size_t v1s = dystans_tworzenia;
+			size_t v2s = dystans_tworzenia;
 			if (kierunek == 0) {
 				this->plytki.pop_back();
 				this->plytki.insert(this->plytki.begin(), std::vector<Plytka*>());

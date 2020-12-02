@@ -74,6 +74,9 @@ public:
 		this->sprajt.setScale(jak);
 	}
 
+	void setOriginOnMiddle() {
+		this->sprajt.setOrigin(sf::Vector2f(this->tekstura.getSize().x/2,this->tekstura.getSize().y/2));
+	}
 
 	sf::Vector2f PobierzRozmiar() {
 		return sf::Vector2f(this->sprajt.getGlobalBounds().width, this->sprajt.getGlobalBounds().height);
