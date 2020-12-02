@@ -3,7 +3,6 @@
 #include "../Sebix.h"
 #include "Gracz.h"
 #include "ObslugaRuchuGracza.h"
-#include "Demo.h"
 
 /**
  * @brief Klasa opisujaca MenuGlowne
@@ -12,7 +11,7 @@
 class MenuGlowne : public Stan
 {
 	///Obiekt Demo
-	Demo* demo;
+
 
 public:
 
@@ -24,8 +23,7 @@ public:
 	 * @param event Eventy
 	 */
 	MenuGlowne(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event) : Stan(window, stos, event) {
-		this->demo = new Demo(window, stos, event);
-		demo->demoWczytaj();
+	
 	}
 
 	/**
@@ -33,7 +31,7 @@ public:
 	 * 
 	 */
 	~MenuGlowne() {
-		delete(this->demo);
+	
 	}
 
 	/**
@@ -43,7 +41,7 @@ public:
 	 */
 	void draw(sf::RenderTarget* target) { /// Rysowanie obiektow na ekranie
 		if (!target) target = this->window;
-		demo->draw(target);
+	
 	};
 
 	/**
@@ -54,7 +52,7 @@ public:
 	void update(const float& dtime) { /// Odswiezenie stanu aktualnego "stanu"
 		this->dtime = dtime;
 		sprawdzMysz();
-		demo->update(dtime);
+
 	};
 };
 

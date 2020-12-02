@@ -71,12 +71,6 @@
     <ClInclude Include="Sebix\Point2DArray.h">
       <Filter>Pliki nagłówkowe\Sebix</Filter>
     </ClInclude>
-    <ClInclude Include="Sebix\Primitive2D.h">
-      <Filter>Pliki nagłówkowe\Sebix</Filter>
-    </ClInclude>
-    <ClInclude Include="Bartek\Funkcje.h">
-      <Filter>Pliki nagłówkowe\Bartek</Filter>
-    </ClInclude>
     <ClInclude Include="Bartek\Animacja.h">
       <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
@@ -89,8 +83,8 @@
     <ClInclude Include="Bartek\ObslugaRuchuGracza.h">
       <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
-    <ClInclude Include="Bartek\Demo.h">
-      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    <ClInclude Include="Sebix\Moveport.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

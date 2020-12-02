@@ -1,0 +1,6 @@
+Projekt nie zmiescił się w 50mb (same biblioteki ważą ponad 70), więc zamieszczam lniki do jego pobrania,
+oba zawierają to samo, więc miejsce pobrania to kwestia preferencji.
+
+https://github.com/Armata-Strigoi/Grafika-Projekt
+https://drive.google.com/file/d/1YzzJRNp-mvlkMMpG_TKBLVldtduC5quK/view?usp=sharing
+

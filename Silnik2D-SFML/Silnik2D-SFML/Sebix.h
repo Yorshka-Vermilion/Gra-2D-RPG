@@ -5,7 +5,6 @@
 #include "Sebix/Moveport.h"
 #include "Sebix/Point2DArray.h"
 #include "Sebix/LineSegment.h"
-#include "Sebix/CirclePrimitive.h"
 
 
 class Sebix {};

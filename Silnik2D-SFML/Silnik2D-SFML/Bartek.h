@@ -3,11 +3,9 @@
 #include "Bartek/Stan.h"
 #include "Bartek/MenuGlowne.h"
 #include "Bartek/Gra.h"
-#include "Bartek/Funkcje.h"
 #include "Bartek/Gracz.h"
 #include "Bartek/BitmapHandler.h"
 #include "Bartek/ObslugaRuchuGracza.h"
-#include "Bartek/Demo.h"
 #include "Bartek/Engine.h"
 
 
