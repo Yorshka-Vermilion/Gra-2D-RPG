@@ -3,6 +3,8 @@
 #include "../Sebix.h"
 #include "Gracz.h"
 #include "ObslugaRuchuGracza.h"
+#include "Mapa.h"
+
 
 /**
  * @brief Klasa opisujaca MenuGlowne
@@ -11,7 +13,7 @@
 class MenuGlowne : public Stan
 {
 	///Obiekt Demo
-
+	Mapa* map;
 
 public:
 
@@ -23,7 +25,7 @@ public:
 	 * @param event Eventy
 	 */
 	MenuGlowne(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event) : Stan(window, stos, event) {
-	
+		this->map = new Mapa(25, window->getSize());
 	}
 
 	/**
@@ -41,6 +43,7 @@ public:
 	 */
 	void draw(sf::RenderTarget* target) { /// Rysowanie obiektow na ekranie
 		if (!target) target = this->window;
+		this->map->draw(target);
 	
 	};
 
@@ -51,8 +54,15 @@ public:
 	 */
 	void update(const float& dtime) { /// Odswiezenie stanu aktualnego "stanu"
 		this->dtime = dtime;
-		sprawdzMysz();
+		if (!this->prawy && sf::Mouse::isButtonPressed(sf::Mouse::Right)) {
+			this->map->Przesun(2);
+		}
+		else if (!this->lewy && sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+			this->map->Przesun(3);
+		}
 
+		sprawdzMysz();
+		
 	};
 };
 

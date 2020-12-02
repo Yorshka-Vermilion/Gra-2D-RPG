@@ -30,6 +30,10 @@ public:
 		this->sprajt.setPosition(pozycja);
 	}
 
+	void rysuj(sf::RenderTarget* cel) {
+		cel->draw(this->sprajt);
+	}
+
 	/**
 	 * @brief Podmienia teksture na podana w argumencie
 	 * 
@@ -71,6 +75,9 @@ public:
 	}
 
 
+	sf::Vector2f PobierzRozmiar() {
+		return sf::Vector2f(this->sprajt.getGlobalBounds().width, this->sprajt.getGlobalBounds().height);
+	}
 
 };
 

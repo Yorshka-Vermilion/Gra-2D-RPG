@@ -160,9 +160,11 @@
     <ClInclude Include="Bartek\Engine.h" />
     <ClInclude Include="Bartek\Gra.h" />
     <ClInclude Include="Bartek\Gracz.h" />
+    <ClInclude Include="Bartek\Mapa.h" />
     <ClInclude Include="Bartek\MenuGlowne.h" />
     <ClInclude Include="Bartek\Obiekt.h" />
     <ClInclude Include="Bartek\ObslugaRuchuGracza.h" />
+    <ClInclude Include="Bartek\Plytka.h" />
     <ClInclude Include="Bartek\Stan.h" />
     <ClInclude Include="Przemek.h" />
     <ClInclude Include="Przemek\rysowanie.h" />

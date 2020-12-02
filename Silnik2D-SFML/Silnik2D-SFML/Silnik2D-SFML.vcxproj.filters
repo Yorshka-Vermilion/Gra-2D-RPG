@@ -86,6 +86,12 @@
     <ClInclude Include="Sebix\Moveport.h">
       <Filter>Pliki nagłówkowe\Sebix</Filter>
     </ClInclude>
+    <ClInclude Include="Bartek\Mapa.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Plytka.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Silnik2D-SFML.rc">
