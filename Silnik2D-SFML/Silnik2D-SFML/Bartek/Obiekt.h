@@ -30,7 +30,7 @@ public:
 		this->sprajt.setPosition(pozycja);
 	}
 
-	void rysuj(sf::RenderTarget* cel) {
+	void draw(sf::RenderTarget* cel) {
 		cel->draw(this->sprajt);
 	}
 
@@ -75,12 +75,11 @@ public:
 	}
 
 	void setOriginOnMiddle() {
-		this->sprajt.setOrigin(sf::Vector2f(this->tekstura.getSize().x/2,this->tekstura.getSize().y/2));
+		this->sprajt.setOrigin(sf::Vector2f(this->tekstura.getSize().x / 2, this->tekstura.getSize().y / 2));
 	}
 
 	sf::Vector2f PobierzRozmiar() {
 		return sf::Vector2f(this->sprajt.getGlobalBounds().width, this->sprajt.getGlobalBounds().height);
 	}
-
 };
 

@@ -167,10 +167,15 @@
     <ClInclude Include="Bartek\Plytka.h" />
     <ClInclude Include="Bartek\Stan.h" />
     <ClInclude Include="Przemek.h" />
+    <ClInclude Include="Przemek\menu.h" />
     <ClInclude Include="Przemek\rysowanie.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Sebix.h" />
+    <ClInclude Include="Sebix\Dialog.h" />
+    <ClInclude Include="Sebix\DialogWindow.h" />
+    <ClInclude Include="Sebix\DrzewoDialogow.h" />
     <ClInclude Include="Sebix\Funkcje.h" />
+    <ClInclude Include="Sebix\HUD.h" />
     <ClInclude Include="Sebix\LineSegment.h" />
     <ClInclude Include="Sebix\Moveport.h" />
     <ClInclude Include="Sebix\Point2D.h" />

@@ -79,7 +79,7 @@ public:
 		while (i < plytki.size()) {
 			size_t j = 0;
 			while (j < plytki[i].size()) {
-					this->plytki[i][j]->rysuj(cel);
+					this->plytki[i][j]->draw(cel);
 					j++;
 			}
 			i++;

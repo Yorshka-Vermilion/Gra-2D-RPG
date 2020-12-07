@@ -11,10 +11,18 @@ class Gracz :
 private:
 	/// Prostokatny ksztalt gracza (jego wymiary, ramka)
 	sf::RectangleShape ksztalt; 
+	
 	/// Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplementowane)
 	bool debug = false;
+	double zycie;
+	double mana;
+	double exp = 0;
 public:
-
+	double maxZycie;
+	double maxMana;
+	double maxExp;
+	int level = 1;
+	bool levelUp = false;
 	/**
 	 * @brief Konsturktor obiektu Gracz
 	 * 
@@ -22,11 +30,17 @@ public:
 	 * @param pozycja Pozycja poczatkowa gracza
 	 * @param ksztalt Obiekt RectangleShape zawierajacy ksztalt gracza
 	 */
-	Gracz(std::string sciezka, sf::Vector2f pozycja, sf::RectangleShape ksztalt) : Obiekt(sciezka, pozycja) {
+	Gracz(std::string sciezka, sf::Vector2f pozycja, sf::RectangleShape ksztalt, double maxZycie, double maxMana, double maxExp) : Obiekt(sciezka, pozycja) {
+		this->maxZycie = maxZycie;
+		this->maxMana = maxMana;
+		this->maxExp = maxExp;
+		this->zycie = maxZycie;
+		this->mana = maxMana;
 		this->ksztalt = ksztalt;
 		this->ksztalt.setPosition(pozycja);
 		this->sprajt.setPosition(pozycja);
 	}
+
 
 	/**
 	 * @brief Funkcja wlaczajaca tryb debugowania
@@ -53,16 +67,75 @@ public:
 	 */
 	void draw(sf::RenderTarget* cel) { 
 		cel->draw(this->sprajt);
+
 	}
-	
 	/**
 	 * @brief Zwraca aktualna pozycje obiektu (gracza)
 	 * 
 	 * @return sf::Vector2f Aktualna pozycja gracza
 	 */
-	sf::Vector2f pobierzPozycje() { 
+	sf::Vector2f pobierzPozycje() {
 		return this->ksztalt.getPosition();
 	}
 
+	double zwrocObecnyStanZdrowia() {
+		return this->zycie;
+	}
+
+	double zwrocObecnyStanMany() {
+		return this->mana;
+	}
+
+	void zadajObrazenia() {
+		if(this->zycie>0)
+			this->zycie--;
+	}
+
+	void uleczObrazenia() {
+		if (this->zycie < this->maxZycie)
+			this->zycie++;
+	}
+
+	void odejmijMane() {
+		if (this->mana > 0)
+			this->mana--;
+	}
+
+	void ladujMane() {
+		if (this->mana < this->maxMana)
+			this->mana++;
+	}
+
+	void dodajExp(int ilosc){
+		//std::cout << this->exp << " - " << this->maxExp << " -- " << this->level <<  std::endl;
+		if (this->exp < this->maxExp){
+			this->exp += ilosc;
+			sprawdzLevel();
+		}
+	}
+
+	void sprawdzLevel() {
+		if (this->exp >= this->maxExp) {
+			int exptmp = this->exp - this->maxExp;
+			this->level++;
+			this->exp = exptmp;
+			this->maxExp += this->maxExp * 0.2;
+			this->levelUp = true;
+			//std::cout << "Zmiana" << std::endl;
+		}
+	}
+
+	int zwrocLevel() {
+		return this->level;
+	}
+
+	void zmienStanLevel() {
+		if (this->levelUp == false) this->levelUp = true;
+		else this->levelUp = false;
+	}
+
+	double zwrocObecnyStanExp() {
+		return this->exp;
+	}
 };
 

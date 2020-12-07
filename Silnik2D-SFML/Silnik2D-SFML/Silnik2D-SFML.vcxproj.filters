@@ -29,19 +29,22 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Bartek.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Sebix.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="Przemek.h">
-      <Filter>Pliki nagłówkowe</Filter>
+    <ClInclude Include="Bartek\Animacja.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\BitmapHandler.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Engine.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
     <ClInclude Include="Bartek\Gra.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Gracz.h">
       <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
     <ClInclude Include="Bartek\MenuGlowne.h">
@@ -50,17 +53,14 @@
     <ClInclude Include="Bartek\Obiekt.h">
       <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
+    <ClInclude Include="Bartek\ObslugaRuchuGracza.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
     <ClInclude Include="Bartek\Stan.h">
       <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
-    <ClInclude Include="Sebix\Point2D.h">
-      <Filter>Pliki nagłówkowe\Sebix</Filter>
-    </ClInclude>
     <ClInclude Include="Przemek\rysowanie.h">
       <Filter>Pliki nagłówkowe\Przemek</Filter>
-    </ClInclude>
-    <ClInclude Include="Bartek\Engine.h">
-      <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
     <ClInclude Include="Sebix\Funkcje.h">
       <Filter>Pliki nagłówkowe\Sebix</Filter>
@@ -68,23 +68,38 @@
     <ClInclude Include="Sebix\LineSegment.h">
       <Filter>Pliki nagłówkowe\Sebix</Filter>
     </ClInclude>
+    <ClInclude Include="Sebix\Moveport.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Point2D.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
     <ClInclude Include="Sebix\Point2DArray.h">
       <Filter>Pliki nagłówkowe\Sebix</Filter>
     </ClInclude>
-    <ClInclude Include="Bartek\Animacja.h">
-      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    <ClInclude Include="Bartek.h">
+      <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="Bartek\Gracz.h">
-      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    <ClInclude Include="Przemek.h">
+      <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="Bartek\BitmapHandler.h">
-      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    <ClInclude Include="Sebix.h">
+      <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="Bartek\ObslugaRuchuGracza.h">
-      <Filter>Pliki nagłówkowe\Bartek</Filter>
-    </ClInclude>
-    <ClInclude Include="Sebix\Moveport.h">
+    <ClInclude Include="Sebix\HUD.h">
       <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Dialog.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\DrzewoDialogow.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\DialogWindow.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Przemek\menu.h">
+      <Filter>Pliki nagłówkowe\Przemek</Filter>
     </ClInclude>
     <ClInclude Include="Bartek\Mapa.h">
       <Filter>Pliki nagłówkowe\Bartek</Filter>
