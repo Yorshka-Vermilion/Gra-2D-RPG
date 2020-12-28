@@ -37,9 +37,9 @@ public:
 		this->maska->przeskaluj(sf::Vector2f(1.55, 1.15));
 
 		//Testy
-		this->animacje.push_back(new Animacja("animacja.png",350,350,32,32,12,1,true,false));
-		this->animacje.push_back(new Animacja("animacja.png", 30, 350, 32, 32, 12, 0.1, true, false));
-		this->animacje.push_back(new Animacja("animacja.png", 80, 350, 32, 32, 12, 0.75, true, false));
+		//this->animacje.push_back(new Animacja("animacja.png",350,350,32,32,12,1,true,false));
+		//this->animacje.push_back(new Animacja("animacja.png", 30, 350, 32, 32, 12, 0.1, true, false));
+		//this->animacje.push_back(new Animacja("animacja.png", 80, 350, 32, 32, 12, 0.75, true, false));
 	}
 
 	~Gra() {
@@ -95,6 +95,7 @@ public:
 			this->map->Przesun(1);
 		}
 		sprawdzMysz();
+		//this->map->podswietlKafelki(this->pozycja_kursora_w_grze);
 	};
 };
 

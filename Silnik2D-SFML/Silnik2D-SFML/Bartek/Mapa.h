@@ -86,6 +86,22 @@ public:
 		}
 	}
 
+	void podswietlKafelki(sf::Vector2f pozycjaMyszy) {
+		std::cout << pozycjaMyszy.x << std::endl;
+		size_t i = 0;
+		while (i < plytki.size()) {
+			size_t j = 0;
+			while (j < plytki[i].size()) {
+				if (this->plytki[i][j]->pobierzPozycje().contains(pozycjaMyszy)) {
+					std::cout << "chuj" << std::endl;
+				};
+				j++;
+			}
+			i++;
+		}
+		
+	}
+
 	void Przesun(int kierunek) { // 0 lewo, 1 prawo, 2 gora, 3 dol
 		if (!this->plytki.empty()) {
 			size_t v1s = dystans_tworzenia;

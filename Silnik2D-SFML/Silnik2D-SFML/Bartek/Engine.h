@@ -88,15 +88,15 @@ private:
 		this->dtime = this->clock.restart().asSeconds(); // Aktualizuje delte czasu
 		
 		//std::cout << 1.f / dtime << std::endl; // Wyswietla fps'y
-
+		if (!stos.empty()) {
+			this->stos.top()->update(dtime);
+		}
 		while (this->window->pollEvent(event)) {
 			if (this->event.type == sf::Event::Closed) {
 				this->window->close();
 			}
 		}
-		if (!stos.empty()) {
-			this->stos.top()->update(dtime);
-		}
+		
 	}
 
 
