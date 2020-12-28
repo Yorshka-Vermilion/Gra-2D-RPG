@@ -7,10 +7,18 @@ class Plytka : public Obiekt
 	/// Zmienna sluzaca do sprawdzania czy mozna przejsc na plytke
 	bool dostepna = true; 
 	Gracz* gracz = nullptr;
+	sf::Texture podswietlenie, zaznaczenie;
+	bool zaznaczona = false;
 
 public:
-	Plytka(std::string sciezka, sf::Vector2f pozycja) : Obiekt(sciezka, pozycja) {
-		
+	Plytka(std::string sciezka, std::string sciezka_podswietlenia, sf::Vector2f pozycja) : Obiekt(sciezka, pozycja) {
+		if (!this->podswietlenie.loadFromFile(sciezka_podswietlenia)) {
+			std::cout << "Blad ladowania tekstury podswietlenia plytki" << std::endl;
+		}
+
+		if (!this->zaznaczenie.loadFromFile("plytka4.png")) {
+			std::cout << "Blad ladowania tekstury podswietlenia plytki" << std::endl;
+		}
 
 	}
 	
@@ -25,6 +33,25 @@ public:
 		this->dostepna = jak;
 	}
 
+	void Podswietl() {
+		if(!this->zaznaczona)this->sprajt.setTexture(this->podswietlenie);
+	}
+
+	void WylaczPodswietlenie(bool force = false) {
+		if (force || !this->zaznaczona) { 
+			this->sprajt.setTexture(this->tekstura); 
+			this->zaznaczona = false;
+		}
+	}
+
+	void Zaznacz() {
+		if (!zaznaczona) { 
+			this->sprajt.setTexture(this->zaznaczenie);
+			this->zaznaczona = true;
+		}
+		else WylaczPodswietlenie(true);
+		
+	}
 
 };
 

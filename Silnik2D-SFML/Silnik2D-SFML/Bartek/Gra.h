@@ -24,7 +24,7 @@ class Gra : public Stan
 public:
 	Gra(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event) : Stan(window, stos, event) {
 		this->drzewo = new DrzewoDialogow();
-		this->gracz = new Gracz("Postac.png", sf::Vector2f(100, 100), sf::RectangleShape(sf::Vector2f(79, 63)),100,300,1000);
+		this->gracz = new Gracz("Postac.png", sf::Vector2f(100,100), sf::RectangleShape(sf::Vector2f(79, 63)),100,300,1000);
 		this->gRuch = new ObslugaRuchuGracza(this->gracz, 300,this->drzewo);
 		//this->hud = new HUD("gui.png", sf::Vector2f(window->getSize()), gracz);
 		this->map = new Mapa(25, window->getSize());
@@ -95,7 +95,17 @@ public:
 			this->map->Przesun(1);
 		}
 		sprawdzMysz();
-		//this->map->podswietlKafelki(this->pozycja_kursora_w_grze);
+		this->map->podswietlKafelki(this->pozycja_kursora_w_grze);
+		if ( this->event->type == sf::Event::MouseButtonPressed) {
+			if (!this->prawy &&  this->event->mouseButton.button == sf::Mouse::Right)
+			{
+				this->map->zaznaczKafelek();
+			}
+			else if (!this->lewy && this->event->mouseButton.button == sf::Mouse::Left)
+			{
+				this->map->Rusz();
+			}
+		}
 	};
 };
 
