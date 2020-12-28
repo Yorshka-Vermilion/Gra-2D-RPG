@@ -32,6 +32,10 @@ private:
 	float dt = 0;
 	/// Orientacja
 	bool pionowa; 
+	/// Czy animacja ma sie wykonywac w kolko czy tylko jednorazowo
+	bool jednorazowa;
+	/// Czy animacja jednorazowa sie skonczyla
+	bool skonczona = false;
 	
 	/**
 	 * @brief  Zmienia klatke na nastapna, po dotarciu na ostatnia klatke wraca do pierwszej.	
@@ -41,11 +45,21 @@ private:
 		if (dt > przerwa) { // Je�eli licznik jest wi�kszy ni� podana przerwa zmienia sie klatka animacji
 			if (pionowa) {
 				this->y += wysokosc;
-				if (this->y >= wysokoscMAX)this->y = 0;
+				if (this->y >= wysokoscMAX) {
+					if (this->jednorazowa == true) {
+						this->skonczona = true;
+					}
+					this->y = 0;
+				}
 			}
 			else {
 				this->x += szerokosc;
-				if (this->x >= wysokosc)this->x = 0;
+				if (this->x >= szerokoscMAX) {
+					if (this->jednorazowa == true) {
+						this->skonczona = true;
+					}
+					this->x = 0;
+				}
 			}
 			dt = 0; // Licznik jest resetowany
 		}
@@ -64,11 +78,12 @@ public:
 	* @param przerwa Czas przerwy
 	* @param pionowa Orientacja
 	*/
-	Animacja(std::string sciezka, int pozx, int pozy, int szerokosc, int wysokosc, int klatki, float przerwa, bool pionowa = true) : Obiekt(sciezka, sf::Vector2f(pozx, pozy)){
+	Animacja(std::string sciezka, int pozx, int pozy, int szerokosc, int wysokosc, int klatki, float przerwa, bool jednorazowa = false, bool pionowa = true) : Obiekt(sciezka, sf::Vector2f(pozx, pozy)){
 		this->szerokosc = szerokosc;
 		this->wysokosc = wysokosc;
 		this->klatki = klatki;
 		this->klatka = 1;
+		this->jednorazowa = jednorazowa;
 		this->pionowa = pionowa;
 		this->przerwa = przerwa;
 		if(pionowa) this->wysokoscMAX = wysokosc * klatki;
@@ -99,6 +114,16 @@ public:
 	 */
 	void rusz(sf::Vector2f gdzie) {
 		this->sprajt.setPosition(gdzie);
+	}
+
+	/**
+	* @brief Zwraca stan animacji
+	*/
+	bool koniec() {
+		if (this->skonczona == true) {
+			return true;
+		}
+		else return false;
 	}
 
 };

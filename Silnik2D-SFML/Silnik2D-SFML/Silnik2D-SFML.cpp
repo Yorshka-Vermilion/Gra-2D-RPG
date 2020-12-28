@@ -3,7 +3,7 @@
 
 int main()
 {
-   Engine* gra = Engine::MakeEngine("Test",1920,1080);
+   Engine* gra = Engine::MakeEngine("Test",700,700);
    //gra->setFullScreen();
    gra->setFrameRateCap(100);
    gra->start();
