@@ -41,7 +41,7 @@ public:
 	 * @param v2f Wektor posiadajacy wartosci pozycji nowego pixela
 	 */
 	void add2DPoint(sf::Vector2f v2f){
-		p2d.push_back(Point2D(v2f, p2d[0].color));
+		p2d.push_back(Point2D(v2f, sf::Color::Black));
 	}
 	
 };

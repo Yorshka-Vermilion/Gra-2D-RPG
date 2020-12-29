@@ -63,6 +63,7 @@ private:
 		this->title = title;
 		this->window_width = window_width;
 		this->window_height = window_height;
+		
 		makeWindow();
 		testyWczytaj();
 
@@ -76,6 +77,7 @@ private:
 	void makeWindow() {
 		if (window_width && window_height) {
 			this->window = new sf::RenderWindow(sf::VideoMode(this->window_width, this->window_height), this->title);
+			this->window->setKeyRepeatEnabled(false);
 		}
 	}
 
@@ -159,6 +161,7 @@ public:
 			update();
 			draw();	
 		}
+		// Tutaj trzeba dac usówanie zeby nie bylo wycieku pamieci z Gra.h
 	}
 
 

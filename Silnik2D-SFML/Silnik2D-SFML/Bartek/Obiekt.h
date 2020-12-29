@@ -46,7 +46,6 @@ public:
 		this->sprajt.setTexture(this->tekstura);
 	}
 
-
 	/**
 	 * @brief Przestawia obiekt w inne miejsce
 	 * 
@@ -84,6 +83,18 @@ public:
 
 	sf::Vector2f PobierzRozmiar() {
 		return sf::Vector2f(this->sprajt.getGlobalBounds().width, this->sprajt.getGlobalBounds().height);
+	}
+
+	void rozjasnij(float ile, int max = 0) {
+		if (max < 0) max = 0;
+		if (this->sprajt.getColor().a <= max) return;
+		this->sprajt.setColor(sf::Color(0, 0, 0, this->sprajt.getColor().a - ile));
+	}
+
+	void przyciemnij(float ile, int max = 500) {
+		if (max > 255) max = 255;
+		if (this->sprajt.getColor().a >= max) return;
+		this->sprajt.setColor(sf::Color(0, 0, 0, this->sprajt.getColor().a + ile));
 	}
 };
 

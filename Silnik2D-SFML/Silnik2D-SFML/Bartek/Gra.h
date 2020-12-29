@@ -4,6 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include "Mapa.h"
 #include <iostream>
+#include "RzucanieZaklec.h"
+#include "Dzwieki.h"
 
 
 /**
@@ -18,8 +20,12 @@ class Gra : public Stan
 	ObslugaRuchuGracza* gRuch;
 	HUD* hud;
 	DrzewoDialogow* drzewo;
+	RzucanieZaklec* rzucanie_zaklec;
+	Dzwieki* dzwieki;
 
 	std::vector<Animacja*> animacje;
+
+	bool LCTRL;
 
 public:
 	Gra(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event) : Stan(window, stos, event) {
@@ -35,11 +41,14 @@ public:
 		this->maska->setOriginOnMiddle();
 		this->maska->przestaw(sf::Vector2f(990, 540));
 		this->maska->przeskaluj(sf::Vector2f(1.55, 1.15));
+		
 
 		//Testy
 		//this->animacje.push_back(new Animacja("animacja.png",350,350,32,32,12,1,true,false));
 		//this->animacje.push_back(new Animacja("animacja.png", 30, 350, 32, 32, 12, 0.1, true, false));
 		//this->animacje.push_back(new Animacja("animacja.png", 80, 350, 32, 32, 12, 0.75, true, false));
+		this->rzucanie_zaklec = new RzucanieZaklec();
+		this->dzwieki = new Dzwieki();
 	}
 
 	~Gra() {
@@ -70,12 +79,14 @@ public:
 		if (!target) target = this->window;
 		this->map->draw(target);
 		this->gracz->draw(target);
-		//this->maska->draw(target);
+		this->maska->draw(target);
 		//this->hud->draw(target);
 
 		//Testy
 		//this->animacje.at(0)->animuj(target,this->dtime);
 		obslugaAnimacji(target);
+
+		this->rzucanie_zaklec->draw(target, pozycja_kursora_w_grze);
 	};
 
 	void update(const float& dtime) { /// Odswiezenie stanu aktualnego "stanu"
@@ -96,15 +107,65 @@ public:
 		}
 		sprawdzMysz();
 		this->map->podswietlKafelki(this->pozycja_kursora_w_grze);
-		if ( this->event->type == sf::Event::MouseButtonPressed) {
-			if (!this->prawy &&  this->event->mouseButton.button == sf::Mouse::Right)
-			{
-				this->map->zaznaczKafelek();
+
+
+
+
+		while (this->window->pollEvent(*this->event)) {
+			if (this->event->type == sf::Event::KeyPressed) { // Wejscie w rzucanie czarow
+				if (this->event->key.code == sf::Keyboard::LControl) {
+					this->LCTRL = true;
+					this->dzwieki->lista_dzwiekow.at(0)->graj();
+				}
 			}
-			else if (!this->lewy && this->event->mouseButton.button == sf::Mouse::Left)
-			{
-				this->map->Rusz();
+			else if (this->event->type == sf::Event::KeyReleased) { // Wyjscie z rzucania czarow
+				if (this->event->key.code == sf::Keyboard::LControl) {
+					this->LCTRL = false;
+
+					std::cout << this->rzucanie_zaklec->rzucaj() << std::endl;//Komunikat o blednej kombinacji zaklecja/za malej ilosci many itd.
+					//Tylko zrobione po ludzku nie w konsoli
+					
+					this->rzucanie_zaklec->wyczyscLinie();
+					this->dzwieki->lista_dzwiekow.at(0)->stop();
+				}
 			}
+
+			if (this->LCTRL == true) {
+				if (this->event->type == sf::Event::MouseButtonPressed) {
+					if (this->event->mouseButton.button == sf::Mouse::Left)
+					{
+						this->rzucanie_zaklec->zapiszPoczatek(pozycja_kursora_w_grze);
+					}
+				}
+				else if (this->event->type == sf::Event::MouseButtonReleased) {
+					if (this->event->mouseButton.button == sf::Mouse::Left) {
+						this->rzucanie_zaklec->zapiszKoniec(pozycja_kursora_w_grze);
+					}
+				}
+			}
+			else if (this->event->type == sf::Event::Closed) {
+				this->window->close(); // Potencjalny wyciek pamieci @@@@@@@@@@@@@@@@@@@@@@@@@
+			}
+			else {
+				if (this->event->type == sf::Event::MouseButtonPressed) {
+					if (this->event->mouseButton.button == sf::Mouse::Right)
+					{
+						this->map->zaznaczKafelek();
+					}
+					else if (this->event->mouseButton.button == sf::Mouse::Left)
+					{
+						this->map->Rusz();
+					}
+				}
+			}
+		}
+
+		//Rozjasnienie podczas rzucania czarow
+		if (this->LCTRL == true) {
+			this->maska->rozjasnij(0.1, 200);
+		}
+		else { // Przyciemnienie z powrotem
+			this->maska->przyciemnij(1);
 		}
 	};
 };
