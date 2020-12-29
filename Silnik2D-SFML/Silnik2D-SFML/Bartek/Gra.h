@@ -115,7 +115,7 @@ public:
 			if (this->event->type == sf::Event::KeyPressed) { // Wejscie w rzucanie czarow
 				if (this->event->key.code == sf::Keyboard::LControl) {
 					this->LCTRL = true;
-					this->dzwieki->lista_dzwiekow.at(0)->graj();
+					this->dzwieki->graj(0);
 				}
 			}
 			else if (this->event->type == sf::Event::KeyReleased) { // Wyjscie z rzucania czarow
@@ -126,7 +126,7 @@ public:
 					//Tylko zrobione po ludzku nie w konsoli
 					
 					this->rzucanie_zaklec->wyczyscLinie();
-					this->dzwieki->lista_dzwiekow.at(0)->stop();
+					this->dzwieki->stop(0);
 				}
 			}
 
@@ -159,6 +159,7 @@ public:
 				}
 			}
 		}
+		this->dzwieki->update();
 
 		//Rozjasnienie podczas rzucania czarow
 		if (this->LCTRL == true) {
