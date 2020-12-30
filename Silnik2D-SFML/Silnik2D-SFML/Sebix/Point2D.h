@@ -7,6 +7,7 @@
  * 
  */
 class Point2D : public sf::Vertex {
+
 public:
 	/**
 	 * @brief Konstruktor wywolywany na bazie klasy Vertex

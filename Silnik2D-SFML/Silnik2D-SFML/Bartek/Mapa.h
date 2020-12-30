@@ -2,7 +2,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Plytka.h"
-#include <math.h> 
+#include "Gracz.h"
 
 class Mapa
 {
@@ -12,18 +12,19 @@ class Mapa
 	float przerwa_pomiedzy;
 	sf::Vector2u pozycja_poczatkowa;
 	int dystans_tworzenia;
-	sf::Vector2i aktualnie_podswietlona_plytka,aktualnie_zaznaczona_plytka;
+	sf::Vector2i aktualnie_podswietlona_plytka, aktualnie_zaznaczona_plytka;
+	Gracz* gracz;
 
 public: 
-	Mapa(float przerwa_pomiedzy, sf::Vector2u pozycja_poczatkowa, int dystans_tworzenia = 9) {
-
+	Mapa(float przerwa_pomiedzy, sf::Vector2u pozycja_poczatkowa,Gracz* gracz, int dystans_tworzenia = 12) {
 		this->przerwa_pomiedzy = przerwa_pomiedzy;
 		this->dystans_tworzenia = dystans_tworzenia;
+		this->gracz = gracz;
 
 		for (size_t i = 0; i < dystans_tworzenia; i++) {
 			this->plytki.push_back(std::vector<Plytka*>());
 			for (size_t j = 0; j < dystans_tworzenia; j++) {
-				this->plytki[i].push_back(new Plytka("plytka2.png", "plytka3.png", sf::Vector2f(0, 0)));
+				this->plytki[i].push_back(new Plytka("plytka2.png","plytka3.png", sf::Vector2f(0, 0)));
 			}
 		}
 
@@ -34,7 +35,6 @@ public:
 
 		//Laduje teksture podswietlenia
 		this->aktualnie_podswietlona_plytka.x = -1;
-		
 
 		//RotujPlytki();
 		ZaktualizujRozmiarPlytki();
@@ -49,21 +49,22 @@ public:
 	}
 
 	void UstawPlytki() {
-		PrzypiszBohatera();
 		size_t i = 0;
 		while (i < plytki.size()) {
 			size_t j = 0;
 			while (j < plytki[i].size()) {
+				this->plytki[i][j]->setOriginOnMiddle();
 				this->plytki[i][j]->przestaw(sf::Vector2f(((szerokosc/2) * (j + 1)) - ((szerokosc/2)*i) + this->pozycja_poczatkowa.x-(szerokosc) ,
 					((wysokosc/2) * (j + 1 + i*2)) - ((wysokosc/2)*i) + this->pozycja_poczatkowa.y - (wysokosc*(plytki.size()-4))));
 				j++;
 			}
 			i++;
 		}
+		PrzypiszBohatera();
 	}
 
 	void PrzypiszBohatera() { // Przypisuje bohatera do plytki
-		//this->plytki[dystans_tworzenia / 2 - 1, dystans_tworzenia / 2]->PrzypiszGracza();
+		this->plytki[this->plytki.size() / 2][this->plytki[this->plytki.size() / 2].size() / 2]->PrzypiszGracza(this->gracz);
 	}
 
 	void RotujPlytki() {
@@ -90,10 +91,9 @@ public:
 		}
 	}
 
-
 	void podswietlKafelki(sf::Vector2f pozycjaMyszy) {
 		size_t i = 0;
-		if (this->aktualnie_podswietlona_plytka.x >= 0) { 
+		if (this->aktualnie_podswietlona_plytka.x >= 0) {
 			this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->WylaczPodswietlenie();
 			this->aktualnie_podswietlona_plytka.x = -1;
 		}
@@ -101,7 +101,7 @@ public:
 		float prev = szerokosc * 2;
 		while (i < plytki.size()) {
 			size_t j = 0;
-			
+
 			while (j < plytki[i].size()) {
 				sf::FloatRect FR = this->plytki[i][j]->pobierzPozycje();
 
@@ -111,8 +111,8 @@ public:
 
 				float odleglosc = std::sqrt(pow(pozycjaMyszy.x - srodek.x, 2) + pow(pozycjaMyszy.y - srodek.y, 2));
 
-				
-				if (odleglosc < szerokosc/2) {
+
+				if (odleglosc < szerokosc / 2) {
 					if (odleglosc < prev) {
 						//this->plytki[i][j]->Podswietl();
 						prev = odleglosc;
@@ -124,9 +124,9 @@ public:
 			}
 			i++;
 		}
-		
-		if(prev < szerokosc/2)this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->Podswietl();
-		
+
+		if (prev < szerokosc / 2)this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->Podswietl();
+
 	}
 
 	void zaznaczKafelek() {
@@ -140,7 +140,7 @@ public:
 	void Rusz() {
 		if (this->aktualnie_zaznaczona_plytka.x >= 0)this->plytki[aktualnie_zaznaczona_plytka.x][aktualnie_zaznaczona_plytka.y]->WylaczPodswietlenie(true);
 
-		if (aktualnie_podswietlona_plytka == sf::Vector2i(dystans_tworzenia/2-1,dystans_tworzenia/2)) {
+		if (aktualnie_podswietlona_plytka == sf::Vector2i(dystans_tworzenia / 2 - 1, dystans_tworzenia / 2)) {
 			this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->WylaczPodswietlenie();
 			Przesun(0);
 		}
@@ -149,17 +149,17 @@ public:
 			Przesun(1);
 		}
 
-		else if (aktualnie_podswietlona_plytka == sf::Vector2i(dystans_tworzenia / 2, dystans_tworzenia / 2-1)) {
+		else if (aktualnie_podswietlona_plytka == sf::Vector2i(dystans_tworzenia / 2, dystans_tworzenia / 2 - 1)) {
 			this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->WylaczPodswietlenie();
 			Przesun(2);
 		}
 
-		else if (aktualnie_podswietlona_plytka == sf::Vector2i(dystans_tworzenia / 2, dystans_tworzenia / 2+1)) {
+		else if (aktualnie_podswietlona_plytka == sf::Vector2i(dystans_tworzenia / 2, dystans_tworzenia / 2 + 1)) {
 			this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->WylaczPodswietlenie();
 			Przesun(3);
 		}
 
-	
+
 	}
 
 	void Przesun(int kierunek) { // 0 lewo, 1 prawo, 2 gora, 3 dol
@@ -170,14 +170,14 @@ public:
 				this->plytki.pop_back();
 				this->plytki.insert(this->plytki.begin(), std::vector<Plytka*>());
 				for (size_t j = 0; j < v2s; j++) {
-					this->plytki[0].push_back(new Plytka("plytka3.png", "plytka2.png", sf::Vector2f(0, 0)));
+					this->plytki[0].push_back(new Plytka("plytka3.png","plytka2.png", sf::Vector2f(0, 0)));
 				}
 			}
 			else if (kierunek == 1) {
 				this->plytki.erase(this->plytki.begin());
 				this->plytki.push_back(std::vector<Plytka*>());
 				for (size_t j = 0; j < v2s; j++) {
-					this->plytki[v1s-1].push_back(new Plytka("plytka3.png", "plytka2.png", sf::Vector2f(0, 0)));
+					this->plytki[v1s-1].push_back(new Plytka("plytka3.png","plytka2.png", sf::Vector2f(0, 0)));
 				}
 			}
 			else if (kierunek == 2) {

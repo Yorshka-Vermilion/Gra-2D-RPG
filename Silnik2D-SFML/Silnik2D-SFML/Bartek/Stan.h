@@ -67,8 +67,6 @@ public:
 		}
 		else this->prawy = false;
 		//std::cout << pozycja_kursora_w_oknie.x << pozycja_kursora_w_oknie.y << std::endl;
-		this->pozycja_kursora_w_grze.x = this->pozycja_kursora_w_oknie.x;
-		this->pozycja_kursora_w_grze.y = this->pozycja_kursora_w_oknie.y;
 	}
 };
 

@@ -2,31 +2,35 @@
 #include "../Bartek/Obiekt.h";
 
 class Zycie : public Obiekt {
-	bool active = true;
+	float diameter;
+	sf::Vector2f hpPos;
+	sf::CircleShape hpCircle;
 public:
 	Zycie(std::string sciezka, sf::Vector2f pozycja) : Obiekt(sciezka, pozycja) {
-		this->sprajt.setPosition(pozycja);
+		this->diameter = 100;
+		this->hpPos = sf::Vector2f(pozycja.x-this->diameter /2, pozycja.y - this->diameter / 2);
+		this->zrobHP();
+		
 	}
 
 	void draw(sf::RenderTarget* cel) {
-			cel->draw(this->sprajt);
+		cel->draw(this->hpCircle);
+		cel->draw(this->sprajt);
 	}
 
-	void zmienStan() {
-		if (this->active == false) {
-			this->active = true;
-			this->zmienTeksture("life.png");
-		}
-		else {
-			this->active = false;
-			this->zmienTeksture("emptylife.png");
-		}
+	void zrobHP() {
+		this->sprajt.setPosition(this->hpPos);
+		this->hpCircle.setRadius(this->diameter);
+		this->hpCircle.setOrigin(this->hpPos);
+		this->hpCircle.setPosition(this->hpPos);
+		this->sprajt.setOrigin(this->diameter, this->diameter);
+		this->hpCircle.setFillColor(sf::Color(250, 20, 20, 200));
 	}
 
-	bool sprawdzStan() {
-		return this->active;
+	void updateHP(double obecneHP, double maxHP) {
+		float procent = obecneHP / maxHP;
+		this->hpCircle.setRadius(procent * this->diameter);
+		this->hpCircle.setOrigin(this->hpCircle.getRadius(), this->hpCircle.getRadius());
 	}
+
 };
-
-
-

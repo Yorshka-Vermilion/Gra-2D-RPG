@@ -4,7 +4,7 @@
 
 /**
  * @brief Klasa odpowiedzialna za reprezentacje zbioru pixleli na ekranie dziedziczaca po klasie VertexArray
- * 
+ *
  */
 class Point2DArray : public sf::VertexArray {
 public:
@@ -12,12 +12,12 @@ public:
 	std::vector<Point2D> p2d;
 	/**
 	 * @brief Konstruktor domyslny reprezentujacy pusty zbior pixeli wywolany na bazie VertexArray
-	 * 
+	 *
 	 */
 	Point2DArray() : sf::VertexArray() {}
 	/**
 	 * @brief Konstruktor przyjmujacy wartosc PrimitiveType oraz size_t odpowiedzialne za wielkosc oraz rodzaj zbioru
-	 * 
+	 *
 	 * @param pt Obiekt reprezentujacy typ rysowanego prymitywu
 	 * @param v Zadana wielkosc zbioru
 	 */
@@ -25,7 +25,7 @@ public:
 
 	/**
 	 * @brief Konstruktor pobierajacy wektor wektorow liczb zmiennoprzecinkowych oraz kolor do wypelnienia zbioru
-	 * 
+	 *
 	 * @param v2f Wektor obiektow Vector2f reprezentujacych pozycje pixeli w zbiorze
 	 * @param c Obiekt Color reprezentujacy kolor pixeli na ekranie
 	 */
@@ -37,11 +37,11 @@ public:
 
 	/**
 	 * @brief Metoda umozliwiajaca dodanie punktu do zbioru
-	 * 
+	 *
 	 * @param v2f Wektor posiadajacy wartosci pozycji nowego pixela
 	 */
-	void add2DPoint(sf::Vector2f v2f){
+	void add2DPoint(sf::Vector2f v2f) {
 		p2d.push_back(Point2D(v2f, sf::Color::Black));
 	}
-	
+
 };

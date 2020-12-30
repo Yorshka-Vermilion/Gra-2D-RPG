@@ -46,6 +46,7 @@ public:
 		this->sprajt.setTexture(this->tekstura);
 	}
 
+
 	/**
 	 * @brief Przestawia obiekt w inne miejsce
 	 * 
@@ -77,12 +78,12 @@ public:
 		this->sprajt.setOrigin(sf::Vector2f(this->tekstura.getSize().x / 2, this->tekstura.getSize().y / 2));
 	}
 
-	sf::FloatRect pobierzPozycje() {
-		return this->sprajt.getGlobalBounds();
-	}
-
 	sf::Vector2f PobierzRozmiar() {
 		return sf::Vector2f(this->sprajt.getGlobalBounds().width, this->sprajt.getGlobalBounds().height);
+	}
+
+	sf::FloatRect pobierzPozycje() {
+		return this->sprajt.getGlobalBounds();
 	}
 
 	void rozjasnij(float ile, int max = 0) {

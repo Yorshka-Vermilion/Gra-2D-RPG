@@ -5,7 +5,7 @@
 
 /**
  * @brief Klasa obsługująca animacje
- * 
+ *
  */
 class Animacja : public Obiekt
 {
@@ -13,33 +13,33 @@ private:
 	/// Pozycja x klatki
 	int x = 0;
 	/// Pozycja y klatki
-	int y = 0; 
+	int y = 0;
 	/// Szerokosc klatki
-	int szerokosc; 
+	int szerokosc;
 	/// WYsokosc klatki
-	int wysokosc; 
+	int wysokosc;
 	/// Ilosc klatek w teksturze
-	int klatki; 
+	int klatki;
 	/// Numer aktualnej klatki
-	int klatka; 
+	int klatka;
 	/// Maksymalna wysokosc na ktora moze dotrzec algorytm przed powrotem na poczatek
-	int wysokoscMAX = 0; 
+	int wysokoscMAX = 0;
 	/// Maksymalna szerokosc na ktora moze dotrzec algorytm przed powrotem na poczatek
-	int szerokoscMAX = 0; 
+	int szerokoscMAX = 0;
 	/// Czas jaki ma uplynac miedzy klatkami
-	float przerwa; 
+	float przerwa;
 	/// Licznik kontroli czasu
 	float dt = 0;
 	/// Orientacja
-	bool pionowa; 
+	bool pionowa;
 	/// Czy animacja ma sie wykonywac w kolko czy tylko jednorazowo
 	bool jednorazowa;
 	/// Czy animacja jednorazowa sie skonczyla
 	bool skonczona = false;
-	
+
 	/**
-	 * @brief  Zmienia klatke na nastapna, po dotarciu na ostatnia klatke wraca do pierwszej.	
-	 * 
+	 * @brief  Zmienia klatke na nastapna, po dotarciu na ostatnia klatke wraca do pierwszej.
+	 *
 	 */
 	void zmienKlatke() {
 		if (dt > przerwa) { // Je�eli licznik jest wi�kszy ni� podana przerwa zmienia sie klatka animacji
@@ -68,7 +68,7 @@ private:
 public:
 	/**
 	* @brief Konstruktor klasy animacja
-	* 
+	*
 	* @param sciezka Sciezka do pliku z tekstura
 	* @param pozx Pozycja startowa
 	* @param pozy Pozycja startowa
@@ -78,7 +78,7 @@ public:
 	* @param przerwa Czas przerwy
 	* @param pionowa Orientacja
 	*/
-	Animacja(std::string sciezka, int pozx, int pozy, int szerokosc, int wysokosc, int klatki, float przerwa, bool jednorazowa = false, bool pionowa = true) : Obiekt(sciezka, sf::Vector2f(pozx, pozy)){
+	Animacja(std::string sciezka, int pozx, int pozy, int szerokosc, int wysokosc, int klatki, float przerwa, bool jednorazowa = false, bool pionowa = true) : Obiekt(sciezka, sf::Vector2f(pozx, pozy)) {
 		this->szerokosc = szerokosc;
 		this->wysokosc = wysokosc;
 		this->klatki = klatki;
@@ -86,7 +86,7 @@ public:
 		this->jednorazowa = jednorazowa;
 		this->pionowa = pionowa;
 		this->przerwa = przerwa;
-		if(pionowa) this->wysokoscMAX = wysokosc * klatki;
+		if (pionowa) this->wysokoscMAX = wysokosc * klatki;
 		else this->szerokoscMAX = szerokosc * klatki;
 
 		//Sprite
@@ -96,11 +96,11 @@ public:
 
 	/**
 	 * @brief Rysuje i zmienia klatki animacji
-	 * 
+	 *
 	 * @param cel Obiekt typu RenderTarget w ktorym ma byc wyswietlany obraz
 	 * @param dtime Kontrola czasu
 	 */
-	void animuj(sf::RenderTarget *cel, const float& dtime) {
+	void animuj(sf::RenderTarget* cel, const float& dtime) {
 		cel->draw(this->sprajt);
 		this->dt += dtime;
 		zmienKlatke();
@@ -109,7 +109,7 @@ public:
 
 	/**
 	 * @brief Zmienia pozycje sprite'a
-	 * 
+	 *
 	 * @param gdzie Vector2f na ktory ma przejsc sprite
 	 */
 	void rusz(sf::Vector2f gdzie) {

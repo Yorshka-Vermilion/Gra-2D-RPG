@@ -38,7 +38,6 @@ public:
 		center = menu[1].getLocalBounds();
 		menu[1].setOrigin(center.left + center.width / 2, center.top + center.height / 2);
 		menu[1].setPosition(sf::Vector2f(this->szerokosc / 2, (this->wysokosc / 2)+100));
-		
 
 		WybranaOpcja = 0;
 	}

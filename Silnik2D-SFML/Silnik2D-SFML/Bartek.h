@@ -8,9 +8,6 @@
 #include "Bartek/ObslugaRuchuGracza.h"
 #include "Bartek/Engine.h"
 
-
-
-
 class Bartek
 {
 };

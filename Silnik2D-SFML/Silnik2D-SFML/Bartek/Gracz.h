@@ -17,6 +17,7 @@ private:
 	double zycie;
 	double mana;
 	double exp = 0;
+	std::string nazwa;
 public:
 	double maxZycie;
 	double maxMana;
@@ -30,15 +31,17 @@ public:
 	 * @param pozycja Pozycja poczatkowa gracza
 	 * @param ksztalt Obiekt RectangleShape zawierajacy ksztalt gracza
 	 */
-	Gracz(std::string sciezka, sf::Vector2f pozycja, sf::RectangleShape ksztalt, double maxZycie, double maxMana, double maxExp) : Obiekt(sciezka, pozycja) {
+	Gracz(std::string sciezka, sf::Vector2f pozycja, double maxZycie, double maxMana, double maxExp) : Obiekt(sciezka, pozycja) {
 		this->maxZycie = maxZycie;
 		this->maxMana = maxMana;
 		this->maxExp = maxExp;
 		this->zycie = maxZycie;
 		this->mana = maxMana;
-		this->ksztalt = ksztalt;
-		this->ksztalt.setPosition(pozycja);
+		this->ksztalt = sf::RectangleShape(sf::Vector2f(this->sprajt.getTexture()->getSize()));
+		this->setOriginOnMiddle();
 		this->sprajt.setPosition(pozycja);
+		this->ksztalt.setOrigin(this->sprajt.getOrigin());
+		this->ksztalt.setPosition(pozycja);
 	}
 
 
@@ -66,7 +69,10 @@ public:
 	 * @param cel Obiekt typu RenderTarget wskazujacy na cel w ktorym bedzie renderowany sprite
 	 */
 	void draw(sf::RenderTarget* cel) { 
+	//	cel->draw(this->ksztalt);
 		cel->draw(this->sprajt);
+		
+		//draw2DPoint(Point2D(sf::Vector2f(this->sprajt.getOrigin()), sf::Color::Magenta), cel);
 
 	}
 	/**
@@ -120,7 +126,7 @@ public:
 			this->level++;
 			this->exp = exptmp;
 			this->maxExp += this->maxExp * 0.2;
-			this->levelUp = true;
+			this->zmienStanLevel();
 			//std::cout << "Zmiana" << std::endl;
 		}
 	}

@@ -4,7 +4,7 @@
 
 class Dzwieki
 {
-	
+
 
 public:
 	std::vector<Dzwiek*> lista_dzwiekow;

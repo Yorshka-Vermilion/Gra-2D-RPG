@@ -8,7 +8,7 @@ class Dzwiek
 	sf::SoundBuffer buffer;
 	sf::Sound sound;
 	int volume;
-	bool sciszany = false , przyglaszany = false;
+	bool sciszany = false, przyglaszany = false;
 public:
 	Dzwiek(std::string sciezka, int volume = 10) {
 		if (!buffer.loadFromFile(sciezka)) {
@@ -33,7 +33,7 @@ public:
 
 	void update() {
 		if (this->sciszany == true) {
-			
+
 			if (this->sound.getVolume() <= 1) {
 				this->sound.setVolume(0);
 				this->sound.stop();

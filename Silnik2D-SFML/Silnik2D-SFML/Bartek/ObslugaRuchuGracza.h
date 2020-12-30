@@ -77,9 +77,6 @@ public:
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::O)) {
 				this->drzewo->dodajDialog();
 			}
-			/*if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::U)) {
-				this->drzewo->usunDialog();
-			}*/
 	}
 };
 

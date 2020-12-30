@@ -9,7 +9,9 @@
 #include "Sebix/Dialog.h"
 #include "Sebix/DrzewoDialogow.h"
 #include "Sebix/DialogWindow.h"
-
+#include "Sebix/Zycie.h"
+#include "Sebix/Mana.h"
+#include "Sebix/Exp.h"
 
 class Sebix {};
 

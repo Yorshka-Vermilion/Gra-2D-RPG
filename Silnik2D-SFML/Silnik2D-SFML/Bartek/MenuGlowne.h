@@ -5,7 +5,7 @@
 #include "Gracz.h"
 #include "ObslugaRuchuGracza.h"
 #include "Obiekt.h"
-#include "Gra.h"
+#include "../Sebix/Creator.h"
 
 
 /**
@@ -53,7 +53,7 @@ public:
 		if (sf::Event::KeyPressed) {
 			if (event->key.code == sf::Keyboard::Key::Enter) {
 				if (menu->Nacisnieta_opcja() == 0) {
-					this->stos->push(new Gra(window, stos, event));
+					this->stos->push(new Creator(window, stos, event));
 				}
 				else if (menu->Nacisnieta_opcja() == 1) {
 					window->close();
@@ -79,7 +79,9 @@ public:
 	 */
 	void update(const float& dtime) { /// Odswiezenie stanu aktualnego "stanu"
 		this->dtime = dtime;
-		Poruszanie_po_menu();
+		while (this->window->pollEvent(*this->event)) {
+			Poruszanie_po_menu();
+		}
 		Wybieranie_w_menu();
 		sprawdzMysz();
 	};
