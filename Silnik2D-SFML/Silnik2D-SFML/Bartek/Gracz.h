@@ -1,5 +1,6 @@
 #pragma once
 #include "Obiekt.h"
+#include "../Sebix/Statystyki.h"
 
 /**
  * @brief Klasa opisujaca gracza
@@ -17,6 +18,8 @@ private:
 	double zycie;
 	double mana;
 	double exp = 0;
+	
+
 	std::string nazwa;
 public:
 	double maxZycie;
@@ -24,6 +27,7 @@ public:
 	double maxExp;
 	int level = 1;
 	bool levelUp = false;
+	Statystyki* statystyki;
 	/**
 	 * @brief Konsturktor obiektu Gracz
 	 * 
@@ -32,8 +36,10 @@ public:
 	 * @param ksztalt Obiekt RectangleShape zawierajacy ksztalt gracza
 	 */
 	Gracz(std::string sciezka, sf::Vector2f pozycja, double maxZycie, double maxMana, double maxExp) : Obiekt(sciezka, pozycja) {
-		this->maxZycie = maxZycie;
-		this->maxMana = maxMana;
+		this->statystyki = new Statystyki(3, 0.1, 0.1, 0.1);
+		this->maxZycie = maxZycie + this->statystyki->obliczSila(maxZycie);
+		this->maxMana = maxMana + this->statystyki->obliczInteligencja(maxMana);
+		//std::cout << this->maxZycie << " Creator " << this->maxMana << std::endl;
 		this->maxExp = maxExp;
 		this->zycie = maxZycie;
 		this->mana = maxMana;

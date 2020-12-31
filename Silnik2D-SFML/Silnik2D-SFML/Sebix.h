@@ -12,6 +12,10 @@
 #include "Sebix/Zycie.h"
 #include "Sebix/Mana.h"
 #include "Sebix/Exp.h"
+#include "Sebix/Camera.h"
+#include "Sebix/Creator.h"
+#include "Sebix/Statystyki.h"
+#include "Sebix/StatInGame.h"
 
 class Sebix {};
 

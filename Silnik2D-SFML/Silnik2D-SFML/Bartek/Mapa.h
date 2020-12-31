@@ -16,7 +16,7 @@ class Mapa
 	Gracz* gracz;
 
 public: 
-	Mapa(float przerwa_pomiedzy, sf::Vector2u pozycja_poczatkowa,Gracz* gracz, int dystans_tworzenia = 12) {
+	Mapa(float przerwa_pomiedzy, sf::Vector2u pozycja_poczatkowa,Gracz* gracz, int dystans_tworzenia = 17) {
 		this->przerwa_pomiedzy = przerwa_pomiedzy;
 		this->dystans_tworzenia = dystans_tworzenia;
 		this->gracz = gracz;

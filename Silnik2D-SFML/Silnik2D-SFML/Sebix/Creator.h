@@ -18,7 +18,7 @@ class Creator : public Stan
 	Gracz* gracz;
 	Camera* cameraPlayer;
 	sf::Font czcionka;
-	sf::Text nazwa,rt,gt,bt;
+	sf::Text nazwa,rt,gt,bt,sila,dmg,inteligencja;
 	std::string nazwaStd = "Mag";
 	int r, g, b;
 	Obiekt* rr;
@@ -27,17 +27,27 @@ class Creator : public Stan
 	Obiekt* gl;
 	Obiekt* br;
 	Obiekt* bl;
+	Obiekt* buttonSila;
+	Obiekt* buttonDmg;
+	Obiekt* buttonInteligencja;
 	Obiekt* check;
 
 
 public:
 	Creator(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event) : Stan(window, stos, event) {
+		this->makeCreator();
+	}
+
+	void makeCreator() {
 		this->gracz = new Gracz("H11.png", sf::Vector2f(200, 200), 100, 300, 1000);
-		this->cameraPlayer = new Camera(sf::Vector2f(window->getSize().x, window->getSize().y),0.2);
+		this->cameraPlayer = new Camera(sf::Vector2f(window->getSize().x, window->getSize().y), 0.2);
 		this->nazwa = this->zrobTekst("Bandwidth 8x8.ttf", sf::Vector2f(200, 130));
 		this->rt = this->zrobTekst("Bandwidth 8x8.ttf", sf::Vector2f(85, 140));
 		this->gt = this->zrobTekst("Bandwidth 8x8.ttf", sf::Vector2f(85, 190));
 		this->bt = this->zrobTekst("Bandwidth 8x8.ttf", sf::Vector2f(85, 240));
+		this->sila = this->zrobTekst("Bandwidth 8x8.ttf", sf::Vector2f(300, 140));
+		this->dmg = this->zrobTekst("Bandwidth 8x8.ttf", sf::Vector2f(300, 190));
+		this->inteligencja = this->zrobTekst("Bandwidth 8x8.ttf", sf::Vector2f(300, 240));
 		this->r = this->g = this->b = 255;
 
 		//Przyciski
@@ -50,14 +60,45 @@ public:
 		this->check = new Obiekt("check.png", sf::Vector2f(0, 0));
 		this->check->setOriginOnMiddle();
 		this->check->przestaw(sf::Vector2f(200, 270));
+		this->buttonSila = new Obiekt("plus.png", sf::Vector2f(0, 0));
+		this->buttonSila->przeskaluj(sf::Vector2f(0.5, 0.5));
+		this->buttonSila->setOriginOnMiddle();
+		this->buttonSila->przestaw(sf::Vector2f(375, 140));
+		this->buttonDmg = new Obiekt("plus.png", sf::Vector2f(0, 0));
+		this->buttonDmg->przeskaluj(sf::Vector2f(0.5, 0.5));
+		this->buttonDmg->setOriginOnMiddle();
+		this->buttonDmg->przestaw(sf::Vector2f(375, 190));
+		this->buttonInteligencja = new Obiekt("plus.png", sf::Vector2f(0, 0));
+		this->buttonInteligencja->przeskaluj(sf::Vector2f(0.5, 0.5));
+		this->buttonInteligencja->setOriginOnMiddle();
+		this->buttonInteligencja->przestaw(sf::Vector2f(375, 240));
+
+
+		this->sila.setString(std::string("Sila: ").append(std::to_string(this->gracz->statystyki->zwrocSila())));
+		sf::Vector2f pozycja = this->sila.getPosition();
+		sf::FloatRect center = this->sila.getLocalBounds();
+		this->sila.setOrigin(center.left + center.width / 2, center.top + center.height / 2);
+		this->sila.setPosition(pozycja);
+
+		this->dmg.setString(std::string("Magic Damage: ").append(std::to_string(this->gracz->statystyki->zwrocDmg())));
+		pozycja = this->dmg.getPosition();
+		center = this->dmg.getLocalBounds();
+		this->dmg.setOrigin(center.left + center.width / 2, center.top + center.height / 2);
+		this->dmg.setPosition(pozycja);
+
+		this->inteligencja.setString(std::string("Inteligencja: ").append(std::to_string(this->gracz->statystyki->zwrocInteligencja())));
+		pozycja = this->inteligencja.getPosition();
+		center = this->inteligencja.getLocalBounds();
+		this->inteligencja.setOrigin(center.left + center.width / 2, center.top + center.height / 2);
+		this->inteligencja.setPosition(pozycja);
 
 		this->rt.setString(std::to_string(this->r));
 		this->rt.setFillColor(sf::Color(r, this->rr->sprajt.getColor().g, this->rr->sprajt.getColor().b));
-		sf::Vector2f pozycja = this->rt.getPosition();
-		sf::FloatRect center = this->rt.getLocalBounds();
+		pozycja = this->rt.getPosition();
+		center = this->rt.getLocalBounds();
 		this->rt.setOrigin(center.left + center.width / 2, center.top + center.height / 2);
 		this->rt.setPosition(pozycja);
-		
+
 		this->gt.setString(std::to_string(this->g));
 		this->gt.setFillColor(sf::Color(this->gr->sprajt.getColor().r, g, this->gr->sprajt.getColor().b));
 		pozycja = this->gt.getPosition();
@@ -153,7 +194,11 @@ public:
 
 	void checkCharacter(bool kiedy) {
 		if (kiedy == true && this->check->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y)){
-			this->stos->push(new Gra(window, stos, event,this->gracz));
+			if(this->gracz->statystyki->zwrocIloscDostepnychPunktow() == 0)
+				this->stos->push(new Gra(window, stos, event,this->gracz));
+			else {
+				std::cout << "Wydaj pozosta³e punkty umiejetnosci!" << std::endl;
+			}
 		}
 	}
 
@@ -165,6 +210,9 @@ public:
 		delete(this->br);
 		delete(this->bl);
 		delete(this->bg);
+		delete(this->buttonSila);
+		delete(this->buttonDmg);
+		delete(this->buttonInteligencja);
 		delete(this->check);
 		delete(this->cameraPlayer);
 		delete(this->gracz);
@@ -180,7 +228,12 @@ public:
 		this->gracz->draw(target);
 		target->draw(this->nazwa);
 
-
+		this->buttonSila->draw(target);
+		target->draw(this->sila);
+		this->buttonDmg->draw(target);
+		target->draw(this->dmg);
+		this->buttonInteligencja->draw(target);
+		target->draw(this->inteligencja);
 		this->check->draw(target);
 		this->rr->draw(target);
 		this->rl->draw(target);
@@ -198,7 +251,23 @@ public:
 	void update(const float& dtime) { // Odswiezenie stanu aktualnego "stanu"
 		this->dtime = dtime;
 		this->cameraPlayer->update(this->gracz);
+		sprawdzMysz();
 		while (this->window->pollEvent(*this->event)) {
+			if (this->lewy == true && this->buttonSila->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y) && this->gracz->statystyki->zwrocIloscDostepnychPunktow()>0) {
+				this->gracz->statystyki->dodajSila();
+				this->gracz->maxZycie = this->gracz->maxZycie + this->gracz->statystyki->obliczSila(this->gracz->maxZycie);
+				this->sila.setString(std::string("Sila: ").append(std::to_string(this->gracz->statystyki->zwrocSila())));
+			}
+			if (this->lewy == true && this->buttonDmg->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y) && this->gracz->statystyki->zwrocIloscDostepnychPunktow() > 0) {
+				this->gracz->statystyki->dodajDmg();
+				this->dmg.setString(std::string("Magic Damage: ").append(std::to_string(this->gracz->statystyki->zwrocDmg())));
+			}
+			if (this->lewy == true && this->buttonInteligencja->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y) && this->gracz->statystyki->zwrocIloscDostepnychPunktow() > 0) {
+				this->gracz->statystyki->dodajInteligencja();
+				this->gracz->maxMana = this->gracz->maxMana + this->gracz->statystyki->obliczInteligencja(this->gracz->maxMana);
+				this->inteligencja.setString(std::string("Inteligencja: ").append(std::to_string(this->gracz->statystyki->zwrocInteligencja())));
+			}
+
 			if (this->event->type == sf::Event::KeyPressed) {
 				if (this->event->key.code == sf::Keyboard::BackSpace) {
 					if (!this->nazwaStd.empty())this->nazwaStd.pop_back();
@@ -219,8 +288,6 @@ public:
 		sf::FloatRect center = this->nazwa.getLocalBounds();
 		this->nazwa.setOrigin(center.left + center.width / 2, center.top + center.height / 2);
 		this->nazwa.setPosition(pozycja);
-		sprawdzMysz();
-		checkCharacter(this->lewy);
 		addR(this->lewy);
 		subR(this->lewy);
 		addG(this->lewy);
@@ -228,6 +295,7 @@ public:
 		addB(this->lewy);
 		subB(this->lewy);
 		this->gracz->sprajt.setColor(sf::Color(this->r, this->g, this->b));
+		checkCharacter(this->lewy);
 	};
 
 	sf::Text zrobTekst(std::string sciezka, sf::Vector2f pozycja) {
