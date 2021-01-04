@@ -15,13 +15,13 @@ private:
 	
 	/// Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplementowane)
 	bool debug = false;
-	double zycie;
-	double mana;
-	double exp = 0;
 	
-
-	std::string nazwa;
 public:
+	double zycie = 0;
+	double mana = 0;
+	double exp = 0;
+	std::string nazwa;
+
 	double maxZycie;
 	double maxMana;
 	double maxExp;
@@ -50,6 +50,10 @@ public:
 		this->ksztalt.setPosition(pozycja);
 	}
 
+
+	~Gracz() {
+		delete(this->statystyki);
+	}
 
 	/**
 	 * @brief Funkcja wlaczajaca tryb debugowania
@@ -98,27 +102,27 @@ public:
 		return this->mana;
 	}
 
-	void zadajObrazenia() {
+	void zadajObrazenia(double ile = 1) {
 		if(this->zycie>0)
-			this->zycie--;
+			this->zycie -= ile;
 	}
 
-	void uleczObrazenia() {
+	void uleczObrazenia(double ile = 1) {
 		if (this->zycie < this->maxZycie)
-			this->zycie++;
+			this->zycie+=ile;
 	}
 
-	void odejmijMane() {
+	void odejmijMane(double ile = 1) {
 		if (this->mana > 0)
-			this->mana--;
+			this->mana-=ile;
 	}
 
-	void ladujMane() {
+	void ladujMane(double ile = 1) {
 		if (this->mana < this->maxMana)
-			this->mana++;
+			this->mana+=ile;
 	}
 
-	void dodajExp(int ilosc){
+	void dodajExp(double ilosc){
 		//std::cout << this->exp << " - " << this->maxExp << " -- " << this->level <<  std::endl;
 		if (this->exp < this->maxExp){
 			this->exp += ilosc;
@@ -133,6 +137,8 @@ public:
 			this->exp = exptmp;
 			this->maxExp += this->maxExp * 0.2;
 			this->zmienStanLevel();
+			this->setFullZycie();
+			this->setFullMana();
 			//std::cout << "Zmiana" << std::endl;
 		}
 	}
@@ -148,6 +154,26 @@ public:
 
 	double zwrocObecnyStanExp() {
 		return this->exp;
+	}
+
+	void setNazwa(std::string nazwa) {
+		this->nazwa = nazwa;
+	}
+
+	std::string zwrocNazwa() {
+		return this->nazwa;
+	}
+
+	void setFullZycie() {
+		this->zycie = maxZycie;
+	}
+
+	void setFullMana() {
+		this->mana = maxMana;
+	}
+
+	bool isDead() {
+		if (this->zycie < 0) return true;
 	}
 };
 

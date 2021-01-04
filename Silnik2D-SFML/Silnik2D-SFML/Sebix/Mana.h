@@ -28,6 +28,7 @@ public:
 	}
 
 	void updateMana(double obecnaMana, double maxMana) {
+		if (obecnaMana < 0) obecnaMana = 0;
 		float procent = obecnaMana / maxMana;
 		this->manaCircle.setRadius(procent * this->diameter);
 		this->manaCircle.setOrigin(this->manaCircle.getRadius(), this->manaCircle.getRadius());

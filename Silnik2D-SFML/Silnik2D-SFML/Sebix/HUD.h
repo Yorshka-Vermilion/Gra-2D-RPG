@@ -122,6 +122,7 @@ public:
 						this->gracz->statystyki->dodajSila();
 						this->gracz->maxZycie = this->gracz->maxZycie + this->gracz->statystyki->obliczSila(this->gracz->maxZycie);
 						this->statystykiWGrze->aktualizujSila("Sila: ", this->gracz->statystyki->zwrocSila());
+						this->gracz->setFullZycie();
 
 					}
 				}
@@ -131,6 +132,7 @@ public:
 					this->podswietlDmg();
 					if (lewy == true && this->gracz->statystyki->zwrocIloscDostepnychPunktow() > 0) {
 						this->gracz->statystyki->dodajDmg();
+						this->gracz->statystyki->mnoznikDmg = 0.1 * this->gracz->statystyki->zwrocDmg();
 						this->statystykiWGrze->aktualizujDmg("Magic Damage: ", this->gracz->statystyki->zwrocDmg());
 					}
 				}
@@ -142,6 +144,7 @@ public:
 						this->gracz->statystyki->dodajInteligencja();
 						this->gracz->maxMana = this->gracz->maxMana + this->gracz->statystyki->obliczInteligencja(this->gracz->maxMana);
 						this->statystykiWGrze->aktualizujInteligencja("Inteligencja: ", this->gracz->statystyki->zwrocInteligencja());
+						this->gracz->setFullMana();
 					}
 				}
 				else this->przyciemnijInteligencja();

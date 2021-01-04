@@ -5,6 +5,8 @@
 #include <SFML/Graphics.hpp>
 #include "../Sebix/Funkcje.h"
 #include "../Sebix/Point2DArray.h"
+#include "Gracz.h"
+#include "Plytka.h"
 #include <cmath>
 
 enum spelle {LEWO,PRAWO,GORA,DOL};
@@ -14,21 +16,23 @@ class RzucanieZaklec
 	std::vector<Zaklecie*> zaklecia;
 	std::vector<Point2DArray> linie;
 	Point2DArray tmp;
+	Gracz* gracz;
 	
 public:
-	RzucanieZaklec() {
+	RzucanieZaklec(Gracz* gracz) {
 		//Robienie zaklec
+		this->gracz = gracz;
 		std::vector<int> tm;
 		tm.push_back(PRAWO);
 		tm.push_back(PRAWO);
 		tm.push_back(LEWO);
-		this->zaklecia.push_back(new Zaklecie(tm,100,"FIREBALL"));
+		this->zaklecia.push_back(new Zaklecie(tm,100,100,"FIREBALL"));
 
 		tm.clear();
 		tm.push_back(GORA);
 		tm.push_back(DOL);
 		tm.push_back(PRAWO);
-		this->zaklecia.push_back(new Zaklecie(tm, 50, "BLYSKAWICA"));
+		this->zaklecia.push_back(new Zaklecie(tm, 50,25, "BLYSKAWICA"));
 	}
 
 	int oblicz() {
@@ -60,13 +64,21 @@ public:
 		} return -1;
 	}
 
-	std::string rzucaj() {
+	std::string rzucaj(Plytka* plytka) {
 		int o = oblicz();
-		if (o >= 0) {
-			return "Rzucono czar " + this->zaklecia.at(o)->getNazwa();
+		if (o >= 0 && plytka->zwrocObiekt() != nullptr) {
+			if (this->gracz->mana >= this->zaklecia.at(o)->getManaCost()){
+				this->gracz->odejmijMane(this->zaklecia.at(o)->getManaCost());
+				zadajObrazenia(plytka,this->zaklecia.at(o)->getDmg());
+				return "Rzucono czar " + this->zaklecia.at(o)->getNazwa();
+			}
+			return "Zbyt mala ilosc many";
 		}
-
 		return "Nie rzucono czaru";
+	}
+
+	void zadajObrazenia(Plytka* plytka, int dmg) {
+		plytka->zwrocObiekt()->dealDmg(dmg + this->gracz->statystyki->obliczDmg(dmg));
 	}
 
 	void zapiszPoczatek(sf::Vector2f gdzie) {
@@ -97,6 +109,8 @@ public:
 		this->linie.clear();
 		this->tmp.clear();
 	}
+
+
 
 };
 

@@ -28,6 +28,7 @@ public:
 	}
 
 	void updateHP(double obecneHP, double maxHP) {
+		if (obecneHP < 0) obecneHP = 0;
 		float procent = obecneHP / maxHP;
 		this->hpCircle.setRadius(procent * this->diameter);
 		this->hpCircle.setOrigin(this->hpCircle.getRadius(), this->hpCircle.getRadius());

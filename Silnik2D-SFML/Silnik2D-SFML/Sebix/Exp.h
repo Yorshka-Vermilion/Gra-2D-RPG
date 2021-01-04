@@ -40,11 +40,10 @@ public:
 	}
 
 	void updateExp(double obecneExp, double maxExp, bool levelUp) {
+		if (obecneExp < 0) obecneExp = 0;
+		else if (obecneExp > maxExp) obecneExp = maxExp;
 		float procent = obecneExp / maxExp;
 		if(activeOrb >= 0 && activeOrb < this->maxOrbs){
-			//float equalizer = this->diameter / (procent * this->diameter);
-			//std::cout << "Full " << procent << " Orb " << this->orbGate << " Max " << this->maxOrbs << " Active " << this->activeOrb << " Equalizer " << equalizer << std::endl;
-			//this->expCircle[activeOrb].setRadius(procent*(this->diameter*equalizer));
 			this->expCircle[activeOrb].setRadius(procent * this->diameter);
 			this->expCircle[activeOrb].setOrigin(this->expCircle[activeOrb].getRadius(), this->expCircle[activeOrb].getRadius());
 			if (levelUp == true) {

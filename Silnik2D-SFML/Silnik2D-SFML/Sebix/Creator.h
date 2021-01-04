@@ -194,8 +194,11 @@ public:
 
 	void checkCharacter(bool kiedy) {
 		if (kiedy == true && this->check->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y)){
-			if(this->gracz->statystyki->zwrocIloscDostepnychPunktow() == 0)
+			if (this->gracz->statystyki->zwrocIloscDostepnychPunktow() == 0){
+				this->gracz->setFullZycie();
+				this->gracz->setFullMana();
 				this->stos->push(new Gra(window, stos, event,this->gracz));
+			}
 			else {
 				std::cout << "Wydaj pozosta³e punkty umiejetnosci!" << std::endl;
 			}
@@ -260,6 +263,7 @@ public:
 			}
 			if (this->lewy == true && this->buttonDmg->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y) && this->gracz->statystyki->zwrocIloscDostepnychPunktow() > 0) {
 				this->gracz->statystyki->dodajDmg();
+				this->gracz->statystyki->mnoznikDmg = 0.1 * this->gracz->statystyki->zwrocDmg();
 				this->dmg.setString(std::string("Magic Damage: ").append(std::to_string(this->gracz->statystyki->zwrocDmg())));
 			}
 			if (this->lewy == true && this->buttonInteligencja->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y) && this->gracz->statystyki->zwrocIloscDostepnychPunktow() > 0) {
@@ -288,6 +292,7 @@ public:
 		sf::FloatRect center = this->nazwa.getLocalBounds();
 		this->nazwa.setOrigin(center.left + center.width / 2, center.top + center.height / 2);
 		this->nazwa.setPosition(pozycja);
+		this->gracz->nazwa = nazwaStd;
 		addR(this->lewy);
 		subR(this->lewy);
 		addG(this->lewy);

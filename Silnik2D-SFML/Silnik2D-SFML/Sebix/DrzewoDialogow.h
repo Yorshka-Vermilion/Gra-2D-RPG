@@ -6,9 +6,6 @@
 class DrzewoDialogow {
 	std::vector<Dialog*> dialogi;
 public:
-	friend std::ostream& operator <<(std::ostream& out, const DrzewoDialogow& drzewo);
-	friend std::istream& operator >>(std::istream& in, const DrzewoDialogow& drzewo);
-
 	DrzewoDialogow(bool czyStworzyc = false) {
 		if(czyStworzyc==true)stworzDialog();
 	}
@@ -43,13 +40,16 @@ public:
 		this->dialogi[klucz]->usunOkno();
 	}
 
-	int przeprowadzDialog() {
-		std::cout << "Podaj klucz dialogu do odczytania" << std::endl;
+	int przeprowadzDialog(int ist = -1) {
 		int klucz = 0;
-		std::cin >> klucz;
-		while (klucz<0 || klucz>this->dialogi.size()) {
+		if (ist == -1) {
+			std::cout << "Podaj klucz dialogu do odczytania" << std::endl;
 			std::cin >> klucz;
+			while (klucz<0 || klucz>this->dialogi.size()) {
+				std::cin >> klucz;
+			}
 		}
+		else klucz = ist;
 		if (!this->dialogi[klucz]->dialog.empty()) {
 			Wiadomosc* start = this->dialogi[klucz]->dialog[0];
 			while (true) {
@@ -70,26 +70,4 @@ public:
 		}
 		return -1;
 	}
-
-	bool zapisz() {
-		return true;
-	}
-
-	bool wczytaj() {
-		return true;
-	}
-
-
-
-
 };
-
-std::ostream& operator << (std::ostream& out, DrzewoDialogow drzewo) {
-
-	return out;
-}
-
-std::istream& operator >> (std::istream& in, DrzewoDialogow drzewo) {
-
-	return in;
-}

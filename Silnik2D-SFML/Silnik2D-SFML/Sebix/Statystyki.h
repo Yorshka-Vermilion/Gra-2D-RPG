@@ -2,6 +2,8 @@
 #include "../Bartek/Obiekt.h";
 
 class Statystyki{
+public:
+
 	int sila = 1;
 	float mnoznikSila;
 	int magicDmg = 1;
@@ -9,7 +11,6 @@ class Statystyki{
 	int inteligencja = 1;
 	float mnoznikInteligencja;
 	int dostepnePunkty;
-public:
 	Statystyki(int dostepnePunkty, float mnoznikSila, float mnoznikDmg, float mnoznikInteligencja){
 		this->dostepnePunkty = dostepnePunkty;
 		this->mnoznikSila = mnoznikSila;
@@ -23,7 +24,7 @@ public:
 	}
 
 	float obliczDmg(int dmg) {
-		return dmg*(this->magicDmg * this->mnoznikDmg);
+		return dmg * this->mnoznikDmg;
 	}
 
 	float obliczInteligencja(int mana) {

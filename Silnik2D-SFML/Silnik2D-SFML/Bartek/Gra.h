@@ -15,6 +15,9 @@
  */
 class Gra : public Stan
 {
+	
+
+public:
 	Mapa* map;
 	Obiekt* maska;
 	Gracz* gracz;
@@ -28,10 +31,10 @@ class Gra : public Stan
 
 	bool LCTRL;
 
-public:
 	Gra(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event,Gracz* gracz) : Stan(window, stos, event) {
 		this->drzewo = new DrzewoDialogow();
 		this->gracz = gracz;
+		this->rzucanie_zaklec = new RzucanieZaklec(this->gracz);
 		//std::cout << this->gracz->maxZycie << " Gra " << this->gracz->maxMana << std::endl;
 		this->gRuch = new ObslugaRuchuGracza(this->gracz, 300,this->drzewo);
 		this->map = new Mapa(25, window->getSize(),this->gracz);
@@ -48,7 +51,6 @@ public:
 		//this->animacje.push_back(new Animacja("animacja.png", 350, 350, 32, 32, 12, 1, true, false));
 		//this->animacje.push_back(new Animacja("animacja.png", 30, 350, 32, 32, 12, 0.1, true, false));
 		//this->animacje.push_back(new Animacja("animacja.png", 80, 350, 32, 32, 12, 0.75, true, false));
-		this->rzucanie_zaklec = new RzucanieZaklec();
 		this->dzwieki = new Dzwieki();
 	}
 
@@ -103,6 +105,7 @@ public:
 			this->hud->update();
 			this->gRuch->update(dtime);
 			this->cameraPlayer->update(this->gracz);
+			this->map->update();
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S)) {
 				this->map->Przesun(2);
 			}
@@ -114,6 +117,30 @@ public:
 			}
 			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::C)) {
 				this->map->Przesun(1);
+			}
+			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::F5)) {
+				std::remove("Save.txt");
+				std::ofstream save;
+				int r = this->gracz->sprajt.getColor().r;
+				int g = this->gracz->sprajt.getColor().g;
+				int b = this->gracz->sprajt.getColor().b;
+				save.open("Save.txt", std::ios::in | std::ios::out | std::ios::trunc);
+				save << this->gracz->zwrocObecnyStanZdrowia() << "\n";
+				save << this->gracz->maxZycie << "\n";
+				save << this->gracz->zwrocObecnyStanMany() << "\n";
+				save << this->gracz->maxMana << "\n";
+				save << this->gracz->zwrocLevel() << "\n";
+				save << this->gracz->zwrocObecnyStanExp() << "\n";
+				save << this->gracz->maxExp << "\n";
+				save << this->gracz->zwrocNazwa() << "\n";
+				save << this->gracz->statystyki->zwrocSila() << "\n";
+				save << this->gracz->statystyki->zwrocDmg() << "\n";
+				save << this->gracz->statystyki->zwrocInteligencja() << "\n";
+				save << this->gracz->statystyki->zwrocIloscDostepnychPunktow() << "\n";
+				save << r << "\n";
+				save << g << "\n";
+				save << b << "\n";
+				save.close();
 			}
 			
 			//this->map->podswietlKafelki(this->pozycja_kursora_w_grze);
@@ -130,7 +157,7 @@ public:
 					if (this->event->key.code == sf::Keyboard::LControl) {
 						this->LCTRL = false;
 
-						std::cout << this->rzucanie_zaklec->rzucaj() << std::endl;//Komunikat o blednej kombinacji zaklecja/za malej ilosci many itd.
+						std::cout << this->rzucanie_zaklec->rzucaj(this->map->zwrocAktualnieZaznaczona()) << std::endl;//Komunikat o blednej kombinacji zaklecja/za malej ilosci many itd.
 						//Tylko zrobione po ludzku nie w konsoli
 
 						this->rzucanie_zaklec->wyczyscLinie();

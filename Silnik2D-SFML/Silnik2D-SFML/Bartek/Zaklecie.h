@@ -3,11 +3,13 @@ class Zaklecie
 {
 	std::vector<int> obraz;
 	double dmg;
+	double mana;
 	std::string nazwa;
 public:
-	Zaklecie(std::vector<int> obraz, double dmg, std::string nazwa) {//Jeszcze jakis wskaznik na animacje czy cos
+	Zaklecie(std::vector<int> obraz, double dmg, double mana, std::string nazwa) {//Jeszcze jakis wskaznik na animacje czy cos
 		this->obraz = obraz;
 		this->dmg = dmg;
+		this->mana = mana;
 		this->nazwa = nazwa;
 	}
 
@@ -23,6 +25,14 @@ public:
 
 	std::string getNazwa() {
 		return this->nazwa;
+	}
+
+	double getDmg() {
+		return this->dmg;
+	}
+
+	double getManaCost() {
+		return this->mana;
 	}
 
 };
