@@ -86,6 +86,7 @@ public:
 		this->map->draw(target);
 		this->gracz->draw(target);
 		this->rzucanie_zaklec->draw(target, pozycja_kursora_w_grze);
+		this->map->animuj(target, this->dtime);
 		target->setView(target->getDefaultView());
 		this->maska->draw(target);
 		this->hud->draw(target);
@@ -179,7 +180,7 @@ public:
 					}
 				}
 				else if (this->event->type == sf::Event::Closed) {
-					this->window->close(); // Potencjalny wyciek pamieci @@@@@@@@@@@@@@@@@@@@@@@@@
+					this->window->close();
 				}
 				else {
 					if (this->event->type == sf::Event::MouseButtonPressed) {

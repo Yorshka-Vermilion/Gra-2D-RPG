@@ -157,6 +157,8 @@
     <ClInclude Include="Bartek.h" />
     <ClInclude Include="Bartek\Animacja.h" />
     <ClInclude Include="Bartek\BitmapHandler.h" />
+    <ClInclude Include="Bartek\Dzwiek.h" />
+    <ClInclude Include="Bartek\Dzwieki.h" />
     <ClInclude Include="Bartek\Engine.h" />
     <ClInclude Include="Bartek\Gra.h" />
     <ClInclude Include="Bartek\Gracz.h" />
@@ -165,21 +167,31 @@
     <ClInclude Include="Bartek\Obiekt.h" />
     <ClInclude Include="Bartek\ObslugaRuchuGracza.h" />
     <ClInclude Include="Bartek\Plytka.h" />
+    <ClInclude Include="Bartek\RzucanieZaklec.h" />
     <ClInclude Include="Bartek\Stan.h" />
+    <ClInclude Include="Bartek\Zaklecie.h" />
     <ClInclude Include="Przemek.h" />
     <ClInclude Include="Przemek\menu.h" />
     <ClInclude Include="Przemek\rysowanie.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Sebix.h" />
+    <ClInclude Include="Sebix\Camera.h" />
+    <ClInclude Include="Sebix\Creator.h" />
     <ClInclude Include="Sebix\Dialog.h" />
     <ClInclude Include="Sebix\DialogWindow.h" />
     <ClInclude Include="Sebix\DrzewoDialogow.h" />
+    <ClInclude Include="Sebix\Exp.h" />
     <ClInclude Include="Sebix\Funkcje.h" />
     <ClInclude Include="Sebix\HUD.h" />
     <ClInclude Include="Sebix\LineSegment.h" />
+    <ClInclude Include="Sebix\Mana.h" />
     <ClInclude Include="Sebix\Moveport.h" />
+    <ClInclude Include="Sebix\ObiektOtoczenia.h" />
     <ClInclude Include="Sebix\Point2D.h" />
     <ClInclude Include="Sebix\Point2DArray.h" />
+    <ClInclude Include="Sebix\StatInGame.h" />
+    <ClInclude Include="Sebix\Statystyki.h" />
+    <ClInclude Include="Sebix\Zycie.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Silnik2D-SFML.rc" />

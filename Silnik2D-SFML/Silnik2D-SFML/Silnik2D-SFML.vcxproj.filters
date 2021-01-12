@@ -107,6 +107,42 @@
     <ClInclude Include="Bartek\Plytka.h">
       <Filter>Pliki nagłówkowe\Bartek</Filter>
     </ClInclude>
+    <ClInclude Include="Bartek\Dzwiek.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Dzwieki.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\RzucanieZaklec.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Bartek\Zaklecie.h">
+      <Filter>Pliki nagłówkowe\Bartek</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Camera.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Creator.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Exp.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Mana.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\ObiektOtoczenia.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\StatInGame.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Statystyki.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\Zycie.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Silnik2D-SFML.rc">

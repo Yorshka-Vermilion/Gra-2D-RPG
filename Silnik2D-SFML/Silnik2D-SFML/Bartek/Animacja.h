@@ -126,4 +126,22 @@ public:
 		else return false;
 	}
 
+	/**
+	* @brief Ustawia origin na srodku sprite'a
+	*/
+	void setOriginOnMiddle() {
+		this->sprajt.setOrigin(sf::Vector2f(this->szerokosc/2, this->wysokosc/2));
+	}
+
+	/**
+	* @brief Resetuje stan animacji do początkowej wartosci
+	*/
+	void zresetuj() {
+		if (this->skonczona == true) {
+			this->x = 0;
+			this->y = 0;
+			this->skonczona = false;
+		}
+	}
+
 };

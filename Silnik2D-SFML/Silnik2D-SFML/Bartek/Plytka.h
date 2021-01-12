@@ -1,6 +1,7 @@
 #pragma once
 #include "Obiekt.h"
 #include "Gracz.h"
+#include "Zaklecie.h"
 #include "../Sebix/ObiektOtoczenia.h"
 
 class Plytka : public Obiekt
@@ -10,8 +11,15 @@ class Plytka : public Obiekt
 	sf::Texture podswietlenie, zaznaczenie;
 	bool zaznaczona = false;
 	ObiektOtoczenia* otoczenie = nullptr;
+	Zaklecie* zaklecie = nullptr;
 
 public:
+	void DodajZaklecie(Zaklecie* zaklecie) {
+		this->zaklecie = zaklecie;
+		this->zaklecie->zresetuj();
+		this->zaklecie->ustaw(sf::Vector2f(this->sprajt.getPosition().x,this->sprajt.getPosition().y));
+	}
+
 	Plytka(std::string sciezka, std::string sciezka_podswietlenia, sf::Vector2f pozycja) : Obiekt(sciezka, pozycja) {
 		if (!this->podswietlenie.loadFromFile(sciezka_podswietlenia)) {
 			std::cout << "Blad ladowania tekstury podswietlenia plytki" << std::endl;
@@ -33,6 +41,14 @@ public:
 			this->otoczenie->draw(cel);
 	}
 
+	void animuj(sf::RenderTarget* cel, const float& dtime) {
+		if (this->zaklecie != nullptr) {
+			if (this->zaklecie->update(cel, dtime)) {
+				this->zaklecie = nullptr;
+			};
+		}
+	}
+
 	double update() {
 		if (this->otoczenie != nullptr) {
 			if (this->otoczenie->checkZycie() == true){
@@ -43,6 +59,7 @@ public:
 				return returnExpValue;
 			}
 		}
+		
 		return 0;
 	}
 

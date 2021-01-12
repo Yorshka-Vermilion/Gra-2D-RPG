@@ -117,6 +117,18 @@ public:
 		}
 	}
 
+	void animuj(sf::RenderTarget* okno, const float& dtime) {
+		size_t i = 0;
+		while (i < plytki.size()) {
+			size_t j = 0;
+			while (j < plytki[i].size()) {
+				this->plytki[i][j]->animuj(okno, dtime);
+				j++;
+			}
+			i++;
+		}
+	}
+
 	void update() {
 		size_t i = 0;
 		while (i < plytki.size()) {
@@ -178,9 +190,11 @@ public:
 	void Rusz() {
 		if (this->aktualnie_zaznaczona_plytka.x >= 0)this->plytki[aktualnie_zaznaczona_plytka.x][aktualnie_zaznaczona_plytka.y]->WylaczPodswietlenie(true);
 		if (this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->zwrocDostepnosc() == true){
-			if (this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->zwrocObiekt()->zwrocFlage() == 2) {
-				this->gracz->zadajObrazenia(this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->zwrocObiekt()->zwrocZycie());
-				this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->zwrocObiekt()->setZycie(0);
+			if (NULL != this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->zwrocObiekt()) {
+				if (this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->zwrocObiekt()->zwrocFlage() == 2) {
+					this->gracz->zadajObrazenia(this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->zwrocObiekt()->zwrocZycie());
+					this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->zwrocObiekt()->setZycie(0);
+				}
 			}
 			if (aktualnie_podswietlona_plytka == sf::Vector2i(dystans_tworzenia / 2 - 1, dystans_tworzenia / 2)){
 				this->plytki[aktualnie_podswietlona_plytka.x][aktualnie_podswietlona_plytka.y]->WylaczPodswietlenie();
@@ -211,31 +225,31 @@ public:
 				this->plytki.pop_back();
 				this->plytki.insert(this->plytki.begin(), std::vector<Plytka*>());
 				for (size_t j = 0; j < v2s; j++) {
-					this->random = rand() % 3;
-					this->plytki[0].push_back(new Plytka(obr[random], obr[3], sf::Vector2f(0, 0)));
+					this->plytki[0].push_back(new Plytka(obr[rand() % 3], obr[3], sf::Vector2f(0, 0)));
+					if (rand() % 5 == 0) PrzypiszObiekt("beczka.png", 0, j, 100, rand()%100, sf::Vector2f(0.15, 0.15), 2);
 				}
 			}
 			else if (kierunek == 1) {
 				this->plytki.erase(this->plytki.begin());
 				this->plytki.push_back(std::vector<Plytka*>());
 				for (size_t j = 0; j < v2s; j++) {
-					this->random = rand() % 3;
-					this->plytki[v1s-1].push_back(new Plytka(obr[random], obr[3], sf::Vector2f(0, 0)));
+					this->plytki[v1s-1].push_back(new Plytka(obr[rand() % 3], obr[3], sf::Vector2f(0, 0)));
+					if (rand() % 5 == 0) PrzypiszObiekt("beczka.png", v2s-1, j, 100, rand()%100, sf::Vector2f(0.15, 0.15), 2);
 				}
 			}
 			else if (kierunek == 2) {
 				for (size_t i = 0; i < v1s; i++) {
 					this->plytki[i].pop_back();
-					this->random = rand() % 3;
-					this->plytki[i].insert(this->plytki[i].begin(), new Plytka(obr[3], obr[random + 1], sf::Vector2f(0, 0)));
+					this->plytki[i].insert(this->plytki[i].begin(), new Plytka(obr[rand()%3], obr[3], sf::Vector2f(0, 0)));
+					if(rand()%5 == 0) PrzypiszObiekt("beczka.png", i, 0, 100, rand() %100, sf::Vector2f(0.15, 0.15), 2);
 				}
 				
 			}
 			else if (kierunek == 3) {
 				for (size_t i = 0; i < v1s; i++) {
-					this->random = rand() % 3;
 					this->plytki[i].erase(this->plytki[i].begin());
-					this->plytki[i].push_back(new Plytka(obr[random], obr[3], sf::Vector2f(0, 0)));
+					this->plytki[i].push_back(new Plytka(obr[rand() % 3], obr[3], sf::Vector2f(0, 0)));
+					if (rand() % 5 == 0) PrzypiszObiekt("beczka.png", i, v1s-1, 100, rand()%100, sf::Vector2f(0.15, 0.15), 2);
 				}
 			}
 			UstawPlytki();

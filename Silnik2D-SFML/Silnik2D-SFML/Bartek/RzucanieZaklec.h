@@ -26,13 +26,13 @@ public:
 		tm.push_back(PRAWO);
 		tm.push_back(PRAWO);
 		tm.push_back(LEWO);
-		this->zaklecia.push_back(new Zaklecie(tm,100,100,"FIREBALL"));
+		this->zaklecia.push_back(new Zaklecie(tm,100,100,"FIREBALL", new Animacja("fireball.png", 0, 0, 148, 140, 8, 0.05, true, false)));
 
 		tm.clear();
 		tm.push_back(GORA);
 		tm.push_back(DOL);
 		tm.push_back(PRAWO);
-		this->zaklecia.push_back(new Zaklecie(tm, 50,25, "BLYSKAWICA"));
+		this->zaklecia.push_back(new Zaklecie(tm, 50,25, "BLYSKAWICA", new Animacja("lightning.png", 0, 0, 160, 240, 5, 0.1, true, false)));
 	}
 
 	int oblicz() {
@@ -70,6 +70,7 @@ public:
 			if (this->gracz->mana >= this->zaklecia.at(o)->getManaCost()){
 				this->gracz->odejmijMane(this->zaklecia.at(o)->getManaCost());
 				zadajObrazenia(plytka,this->zaklecia.at(o)->getDmg());
+				plytka->DodajZaklecie(this->zaklecia.at(o));
 				return "Rzucono czar " + this->zaklecia.at(o)->getNazwa();
 			}
 			return "Zbyt mala ilosc many";
