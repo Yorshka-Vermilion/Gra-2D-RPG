@@ -85,6 +85,12 @@ public:
 		target->draw(this->inteligencja);
 	}
 
+	void drawStat(sf::RenderTarget* target) {
+		target->draw(this->sila);
+		target->draw(this->dmg);
+		target->draw(this->inteligencja);
+	}
+
 	void aktualizujSila(std::string tresc, int wartosc) {
 		this->sila.setString(std::string(tresc).append(std::to_string(wartosc)));
 	}

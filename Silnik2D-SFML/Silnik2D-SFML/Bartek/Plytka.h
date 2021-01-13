@@ -25,7 +25,7 @@ public:
 			std::cout << "Blad ladowania tekstury podswietlenia plytki" << std::endl;
 		}
 
-		if (!this->zaznaczenie.loadFromFile("plytka4.png")) {
+		if (!this->zaznaczenie.loadFromFile("zaznaczenie.png")) {
 			std::cout << "Blad ladowania tekstury podswietlenia plytki" << std::endl;
 		}
 

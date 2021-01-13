@@ -15,13 +15,11 @@ private:
 	
 	/// Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplementowane)
 	bool debug = false;
-	
 public:
 	double zycie = 0;
 	double mana = 0;
 	double exp = 0;
 	std::string nazwa;
-
 	double maxZycie;
 	double maxMana;
 	double maxExp;
@@ -108,16 +106,19 @@ public:
 	}
 
 	void uleczObrazenia(double ile = 1) {
+		if (ile + this->zycie >= maxZycie) this->zycie = this->maxZycie;
 		if (this->zycie < this->maxZycie)
 			this->zycie+=ile;
 	}
 
 	void odejmijMane(double ile = 1) {
+		if (this->mana - ile <= 0) this->mana = 0;
 		if (this->mana > 0)
 			this->mana-=ile;
 	}
 
 	void ladujMane(double ile = 1) {
+		if (ile + this->mana >= maxMana) this->mana = this->maxMana;
 		if (this->mana < this->maxMana)
 			this->mana+=ile;
 	}

@@ -30,6 +30,8 @@ public:
 		this->sprajt.setPosition(pozycja);
 	}
 
+	Obiekt(){}
+
 	void draw(sf::RenderTarget* cel) {
 		cel->draw(this->sprajt);
 	}

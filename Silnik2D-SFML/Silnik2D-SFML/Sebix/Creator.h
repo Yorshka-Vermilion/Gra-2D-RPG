@@ -31,6 +31,7 @@ class Creator : public Stan
 	Obiekt* buttonDmg;
 	Obiekt* buttonInteligencja;
 	Obiekt* check;
+	bool goBack = false;
 
 
 public:
@@ -198,6 +199,7 @@ public:
 				this->gracz->setFullZycie();
 				this->gracz->setFullMana();
 				this->stos->push(new Gra(window, stos, event,this->gracz));
+				this->goBack = true;
 			}
 			else {
 				std::cout << "Wydaj pozosta³e punkty umiejetnosci!" << std::endl;
@@ -252,7 +254,9 @@ public:
 	};
 
 	void update(const float& dtime) { // Odswiezenie stanu aktualnego "stanu"
+		if (this->goBack == true) this->stos->pop();
 		this->dtime = dtime;
+		
 		this->cameraPlayer->update(this->gracz);
 		sprawdzMysz();
 		while (this->window->pollEvent(*this->event)) {
@@ -280,6 +284,9 @@ public:
 				else if ((this->event->key.code == sf::Keyboard::Space) && (this->nazwaStd.size() < 10)) {
 					this->nazwaStd.push_back(' ');
 					this->nazwaStd.pop_back();
+				}
+				else if (this->event->key.code == sf::Keyboard::Escape) {
+					this->goBack = true;
 				}
 			}
 			else if ((this->event->type == sf::Event::TextEntered) && (this->nazwaStd.size() < 10)) {

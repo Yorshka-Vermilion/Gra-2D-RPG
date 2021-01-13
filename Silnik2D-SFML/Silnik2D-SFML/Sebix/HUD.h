@@ -76,6 +76,10 @@ public:
 		return this->statystykiWGrze->zwrocPrzyciskInteligencja();
 	}
 
+	StatInGame* zwrocStatystyki() {
+		return this->statystykiWGrze;
+	}
+
 	void zrobTekst(std::string sciezka, sf::Vector2f pozycja) {
 		if (!this->czcionka.loadFromFile(sciezka)) {
 			std::cout << "Nie udalo sie zaladowac czcionki" << std::endl;

@@ -15,8 +15,6 @@
  */
 class Gra : public Stan
 {
-	
-
 public:
 	Mapa* map;
 	Obiekt* maska;
@@ -30,6 +28,7 @@ public:
 	Dzwieki* dzwieki;
 
 	bool LCTRL;
+	bool LALT = false;
 
 	Gra(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event,Gracz* gracz) : Stan(window, stos, event) {
 		this->drzewo = new DrzewoDialogow();
@@ -89,6 +88,7 @@ public:
 		this->map->animuj(target, this->dtime);
 		target->setView(target->getDefaultView());
 		this->maska->draw(target);
+		if(this->LALT == true) this->hud->zwrocStatystyki()->drawStat(target);
 		this->hud->draw(target);
 		
 
@@ -102,24 +102,13 @@ public:
 		//std::cout << pozycja_kursora_w_grze.x << " " << pozycja_kursora_w_grze.y << std::endl;
 		this->pozycja_kursora_w_grze = sf::Vector2f(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y);
 		sprawdzMysz();
+		if (this->gracz->isDead() == true) this->stos->pop();
 		if (!this->hud->sprawdzajPodswietlenia((sf::Vector2f)this->pozycja_kursora_w_oknie,this->lewy) || this->hud->returnIsAble() == false){
 			this->hud->update();
 			this->gRuch->update(dtime);
 			this->cameraPlayer->update(this->gracz);
 			this->map->update();
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S)) {
-				this->map->Przesun(2);
-			}
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::X)) {
-				this->map->Przesun(3);
-			}
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Z)) {
-				this->map->Przesun(0);
-			}
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::C)) {
-				this->map->Przesun(1);
-			}
-			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::F5)) {
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::F5)) {
 				std::remove("Save.txt");
 				std::ofstream save;
 				int r = this->gracz->sprajt.getColor().r;
@@ -146,12 +135,18 @@ public:
 			
 			//this->map->podswietlKafelki(this->pozycja_kursora_w_grze);
 
-		
+			
 			while (this->window->pollEvent(*this->event)) {
 				if (this->event->type == sf::Event::KeyPressed) { // Wejscie w rzucanie czarow
 					if (this->event->key.code == sf::Keyboard::LControl) {
 						this->LCTRL = true;
 						this->dzwieki->graj(0);
+					}
+					else if (this->event->key.code == sf::Keyboard::LAlt) {
+						this->LALT = true;
+					}
+					else if (this->event->key.code == sf::Keyboard::Escape) {
+						this->stos->pop();
 					}
 				}
 				else if (this->event->type == sf::Event::KeyReleased) { // Wyjscie z rzucania czarow
@@ -163,6 +158,9 @@ public:
 
 						this->rzucanie_zaklec->wyczyscLinie();
 						this->dzwieki->stop(0);
+					}
+					else if (this->event->key.code == sf::Keyboard::LAlt) {
+						this->LALT = false;
 					}
 				}
 
@@ -190,7 +188,14 @@ public:
 						}
 						else if (this->event->mouseButton.button == sf::Mouse::Left)
 						{
-							this->map->Rusz();
+							if(this->map->Rusz() == true){
+								this->gracz->ladujMane(this->gracz->maxMana * 0.1);
+								for (int i = 0; i < this->map->zwrocDystansTworzenia(); i++) {
+									for (int j = 0; j < this->map->zwrocDystansTworzenia(); j++) {
+										this->map->plytki[i][j]->zwrocObiekt()->atak(this->gracz,i,j);
+									}
+								}
+							}
 						}
 					}
 				}
