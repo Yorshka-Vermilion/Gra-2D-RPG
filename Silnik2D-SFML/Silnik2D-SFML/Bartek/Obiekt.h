@@ -32,6 +32,12 @@ public:
 
 	Obiekt(){}
 
+
+	/**
+	* @brief Funkcja rysuje obiekt
+	*
+	* @param cel Wskaznik na RenderTarget w ktorym ma odbywac sie rysowanie
+	*/
 	void draw(sf::RenderTarget* cel) {
 		cel->draw(this->sprajt);
 	}
@@ -76,24 +82,45 @@ public:
 		this->sprajt.setScale(jak);
 	}
 
+	/**
+	* @brief Funkcja ustawia 'origin' na srodku sprite'a
+	*/
 	void setOriginOnMiddle() {
 		this->sprajt.setOrigin(sf::Vector2f(this->tekstura.getSize().x / 2, this->tekstura.getSize().y / 2));
 	}
 
+	/**
+	* @brief Funkcja zwraca rozmiar sprite'a
+	*/
 	sf::Vector2f PobierzRozmiar() {
 		return sf::Vector2f(this->sprajt.getGlobalBounds().width, this->sprajt.getGlobalBounds().height);
 	}
 
+	/**
+	* @brief Funkcja zwraca rozmiar sprite'a
+	*/
 	sf::FloatRect pobierzPozycje() {
 		return this->sprajt.getGlobalBounds();
 	}
 
+	/**
+	* @brief Funkcja rozjasnia obiekt
+	*
+	* @param ile O ile ma byc rozjasniony obiekt
+	* @param max Maksymalna wartosc rozjasnienia
+	*/
 	void rozjasnij(float ile, int max = 0) {
 		if (max < 0) max = 0;
 		if (this->sprajt.getColor().a <= max) return;
 		this->sprajt.setColor(sf::Color(0, 0, 0, this->sprajt.getColor().a - ile));
 	}
 
+	/**
+	* @brief Funkcja przyciemnia obiekt
+	*
+	* @param ile O ile ma byc przyciemniony obiekt
+	* @param max Maksymalna wartosc przyciemniona
+	*/
 	void przyciemnij(float ile, int max = 500) {
 		if (max > 255) max = 255;
 		if (this->sprajt.getColor().a >= max) return;

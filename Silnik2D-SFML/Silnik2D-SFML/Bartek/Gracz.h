@@ -16,22 +16,35 @@ private:
 	/// Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplementowane)
 	bool debug = false;
 public:
+	/// Zycie gracza
 	double zycie = 0;
+	/// Mana gracza
 	double mana = 0;
+	/// Doswiadczenie gracza
 	double exp = 0;
+	/// Nazwa gracza
 	std::string nazwa;
+	/// Maksymalne zycie gracza
 	double maxZycie;
+	/// Maksymalna mana gracza
 	double maxMana;
+	/// Doswiadcznenie potrzebne do awansu
 	double maxExp;
+	/// Poziom gracza
 	int level = 1;
+	/// Flaga oznaczajaca czy gracz wszedl na nowy poziom doswiadczenia
 	bool levelUp = false;
+	/// Wskaznik na statystyki 
 	Statystyki* statystyki;
+
 	/**
 	 * @brief Konsturktor obiektu Gracz
 	 * 
 	 * @param sciezka Sciezka do pliku z obrazem gracza
 	 * @param pozycja Pozycja poczatkowa gracza
-	 * @param ksztalt Obiekt RectangleShape zawierajacy ksztalt gracza
+	 * @param maxZycie Maksymalne zycie gracza
+	 * @param maxMana Maksymalna mana gracza
+	 * @param maxExp Doswiadcznenie potrzebne do awansu
 	 */
 	Gracz(std::string sciezka, sf::Vector2f pozycja, double maxZycie, double maxMana, double maxExp) : Obiekt(sciezka, pozycja) {
 		this->statystyki = new Statystyki(3, 0.1, 0.1, 0.1);
@@ -48,7 +61,10 @@ public:
 		this->ksztalt.setPosition(pozycja);
 	}
 
-
+	/**
+	 * @brief Dekonstruktor gracza
+	 *
+	 */
 	~Gracz() {
 		delete(this->statystyki);
 	}
@@ -92,37 +108,70 @@ public:
 		return this->ksztalt.getPosition();
 	}
 
+	/**
+	 * @brief Funkcja zwraca obecny stan zdrowia gracza
+	 *
+	 */
 	double zwrocObecnyStanZdrowia() {
 		return this->zycie;
 	}
 
+	/**
+	 * @brief Funkcja zwraca obecny stan many gracza
+	 *
+	 */
 	double zwrocObecnyStanMany() {
 		return this->mana;
 	}
 
+	/**
+	 * @brief Funkcja zadaje obrazanie graczowi
+	 *
+	 * @param ile Ile obrazen nalezy odjac od puli zdrowia gracza
+	 */
 	void zadajObrazenia(double ile = 1) {
 		if(this->zycie>0)
 			this->zycie -= ile;
 	}
 
+	/**
+	 * @brief Funkcja leczy gracza
+	 *
+	 * @param ile Ile punktow zycia nalezy dodac do puli zdrowia gracza
+	 */
 	void uleczObrazenia(double ile = 1) {
 		if (ile + this->zycie >= maxZycie) this->zycie = this->maxZycie;
 		if (this->zycie < this->maxZycie)
 			this->zycie+=ile;
 	}
 
+	/**
+	 * @brief Funkcja zabiera mane gracza
+	 *
+	 * @param ile Ile many nalezy odjac z puli many
+	 */
 	void odejmijMane(double ile = 1) {
 		if (this->mana - ile <= 0) this->mana = 0;
 		if (this->mana > 0)
 			this->mana-=ile;
 	}
 
+	/**
+	 * @brief Funkcja dodaje mane graczowi
+	 *
+	 * @param ile Ile many nalezy dodac do puli many
+	 */
 	void ladujMane(double ile = 1) {
 		if (ile + this->mana >= maxMana) this->mana = this->maxMana;
 		if (this->mana < this->maxMana)
 			this->mana+=ile;
 	}
 
+	/**
+	 * @brief Funkcja dodaje doswiadczenie graczowi
+	 *
+	 * @param ilosc Ile doswiadczenia nalezy dodac
+	 */
 	void dodajExp(double ilosc){
 		//std::cout << this->exp << " - " << this->maxExp << " -- " << this->level <<  std::endl;
 		if (this->exp < this->maxExp){
@@ -131,6 +180,10 @@ public:
 		}
 	}
 
+	/**
+	 * @brief Funkcja sprawdza czy gracz wszedl na nowy poziom doswiadczenia
+	 *
+	 */
 	void sprawdzLevel() {
 		if (this->exp >= this->maxExp) {
 			int exptmp = this->exp - this->maxExp;
@@ -144,37 +197,69 @@ public:
 		}
 	}
 
+	/**
+	 * @brief Funkcja zwraca poziom gracza
+	 *
+	 */
 	int zwrocLevel() {
 		return this->level;
 	}
 
+	/**
+	 * @brief Funkcja zmienia flage levelUp na przeciwny stan
+	 *
+	 */
 	void zmienStanLevel() {
 		if (this->levelUp == false) this->levelUp = true;
 		else this->levelUp = false;
 	}
 
+	/**
+	 * @brief Funkcja zwraca opecna ilosc doswiadczenia gracza
+	 *
+	 */
 	double zwrocObecnyStanExp() {
 		return this->exp;
 	}
 
+	/**
+	 * @brief Funkcja ustawia nazwe gracza
+	 *
+	 */
 	void setNazwa(std::string nazwa) {
 		this->nazwa = nazwa;
 	}
 
+	/**
+	 * @brief Funkcja zwraca nazwe gracza
+	 *
+	 */
 	std::string zwrocNazwa() {
 		return this->nazwa;
 	}
 
+	/**
+	 * @brief Funkcja ustawia zycie gracza na maxZycie
+	 *
+	 */
 	void setFullZycie() {
 		this->zycie = maxZycie;
 	}
 
+	/**
+	 * @brief Funkcja ustawia mane gracza na maxMana
+	 *
+	 */
 	void setFullMana() {
 		this->mana = maxMana;
 	}
 
+	/**
+	 * @brief Funkcja sprawdza czy gracz nie zyje, jesli umarl (jeko zycie spadlo do zera) zwraca true
+	 *
+	 */
 	bool isDead() {
-		if (this->zycie < 0) return true;
+		if (this->zycie <= 0) return true;
 	}
 };
 

@@ -9,16 +9,31 @@
 #include "Plytka.h"
 #include <cmath>
 
+/// Kierunki rzucania czarow
 enum spelle {LEWO,PRAWO,GORA,DOL};
 
+/**
+	 * @brief Klasa obslugujaca rzucanie zaklec
+	 *
+	 */
 class RzucanieZaklec
 {
+	/// Vector przechowujacy wszystkie dostepne w grze zaklecia
 	std::vector<Zaklecie*> zaklecia;
+	/// Vector przechowujacy linie rysujace sie na ekranie podczas rzucania czaru
 	std::vector<Point2DArray> linie;
+	/// Tymczasowa klasa Point2DArray ktora przechowuje pojedyncza linie
 	Point2DArray tmp;
+	/// Wskaznik na gracza
 	Gracz* gracz;
 	
 public:
+
+	/**
+	 * @brief Konstruktor rzucania zaklec
+	 *
+	 * @param gracz Wskaznik na gracza
+	 */
 	RzucanieZaklec(Gracz* gracz) {
 		//Robienie zaklec
 		this->gracz = gracz;
@@ -35,6 +50,10 @@ public:
 		this->zaklecia.push_back(new Zaklecie(tm, 50,25, "BLYSKAWICA", new Animacja("lightning.png", 0, 0, 160, 240, 5, 0.1, true, false)));
 	}
 
+	/**
+	 * @brief Funkcja oblicza kierunei narysowanych lini oraz zwraca index zaklecia jesli kierunki lini pokryly sie z jakims zakleciem w vectorze zaklecia 
+	 *
+	 */
 	int oblicz() {
 		std::vector<int> kierunki;
 		for (size_t i = 0; i < this->linie.size(); i++) {
@@ -56,6 +75,12 @@ public:
 		else return -1;
 	}
 
+
+	/**
+	 * @brief Funkcja sprawdza czy jakiekolwiek zaklecie i jego kierunki odpowiadaja vectorowi kierunkow podanemu w argumencie
+	 *
+	 * @param kierunki Vector kierunkow ktore odpowiadaja narysowanym linia
+	 */
 	size_t sprawdz(std::vector<int> kierunki) {
 		for (size_t i = 0; i < zaklecia.size(); i++) {
 			if (this->zaklecia.at(i)->sprawdz(kierunki)) {
@@ -64,6 +89,11 @@ public:
 		} return -1;
 	}
 
+	/**
+	 * @brief Funkcja obslugujaca rzucanie zaklec, zwraca odpowiedni komunikat w postaci string'a
+	 *
+	 * @param plytka Wskaznik na plytke na ktorej ma byc rzucony czar
+	 */
 	std::string rzucaj(Plytka* plytka) {
 		int o = oblicz();
 		if (o >= 0 && plytka->zwrocObiekt() != nullptr) {
@@ -78,21 +108,43 @@ public:
 		return "Nie rzucono czaru";
 	}
 
+	/**
+	 * @brief Funkcja zadaje obrazenia obiektowi znajdujacemu sie na plytce
+	 *
+	 * @param plytka Wskaznik na plytke na ktorej stoi obiekt
+	 * @param dmg Ilosc obrazen do zadania
+	 */
 	void zadajObrazenia(Plytka* plytka, int dmg) {
 		plytka->zwrocObiekt()->dealDmg(dmg + this->gracz->statystyki->obliczDmg(dmg));
 	}
 
+	/**
+	 * @brief Funkcja zapisujaca poczatek lini rysowanej w celu rzucania zaklecia
+	 *
+	 * @param gdzie Pozycja piksela na ktorym zaczeto rysowanie lini
+	 */
 	void zapiszPoczatek(sf::Vector2f gdzie) {
 		this->tmp = Point2DArray();
 		this->tmp.add2DPoint(gdzie);
 	}
 
+	/**
+	 * @brief Funkcja zapisujaca koniec lini rysowanej w celu rzucania zaklecia
+	 *
+	 * @param gdzie Pozycja piksela na ktorym skonczono rysowanie lini
+	 */
 	void zapiszKoniec(sf::Vector2f gdzie) {
 		this->tmp.add2DPoint(gdzie);
 		this->linie.push_back(tmp);
 		this->tmp.clear();
 	}
 
+	/**
+	 * @brief Funkcja zapisujaca rysujaca linie rzucania zaklec
+	 *
+	 * @param target Cel rysowania
+	 * @param myszka Aktualna pozycja myszy w celu rysowania z punktu poczatkowego do myszy
+	 */
 	void draw(sf::RenderTarget* target, sf::Vector2f myszka) {
 		size_t rozmiar = this->linie.size();
 		for (size_t i = 0; i < rozmiar; i++) {
@@ -105,7 +157,11 @@ public:
 		}
 		
 	}
-	
+
+	/**
+	 * @brief Funkcja czyszczaca linie po rzuceniu czaru
+	 *
+	 */
 	void wyczyscLinie() {
 		this->linie.clear();
 		this->tmp.clear();

@@ -16,20 +16,41 @@
 class Gra : public Stan
 {
 public:
+	/// Wskaznik na mape
 	Mapa* map;
+	/// Wskaznik na maske
 	Obiekt* maska;
+	/// Wskaznik na gracza
 	Gracz* gracz;
+	/// Wskaznik na obsluge ruchu gracza umozliwiajaca ruch
 	ObslugaRuchuGracza* gRuch;
+	/// Wskaznik na HUD
 	HUD* hud;
+	/// Wskaznik na drzewo dialogow
 	DrzewoDialogow* drzewo;
+	/// Wskaznik na kamere
 	Camera* cameraPlayer;
+	/// Vector wskaznokow na animacje
 	std::vector<Animacja*> animacje;
+	/// Wskaznik na klase obslugujaca rzucenia zaklec
 	RzucanieZaklec* rzucanie_zaklec;
+	/// Wskaznik na klase obslugujaca dzwieki
 	Dzwieki* dzwieki;
 
+	/// Flaga sygnalizujaca stan przycisku lewy CTRL
 	bool LCTRL;
+	/// Flaga sygnalizujaca stan przycisku lewy ALT
 	bool LALT = false;
 
+
+	/**
+	 * @brief Konstruktor gry
+	 *
+	 * @param window Wskaznik na okno
+	 * @param stos Wskaznik na stos wskaznikow na stany
+	 * @param event Wskaznik na eventy
+	 * @param gracz Wskaznik na gracza
+	 */
 	Gra(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event,Gracz* gracz) : Stan(window, stos, event) {
 		this->drzewo = new DrzewoDialogow();
 		this->gracz = gracz;
@@ -53,6 +74,9 @@ public:
 		this->dzwieki = new Dzwieki();
 	}
 
+	/**
+	 * @brief Dekonstruktor gry
+	 */
 	~Gra() {
 		delete(this->map);
 		delete(this->maska);
@@ -67,6 +91,7 @@ public:
 		delete(this->window);
 	}
 
+	/*
 	void obslugaAnimacji(sf::RenderTarget* target) {
 		size_t zasieg = this->animacje.size();
 		for (size_t i = 0; i < zasieg; i++) {
@@ -77,9 +102,14 @@ public:
 				zasieg--;
 			}
 		}
-	}
+	}*/
 
-	void draw(sf::RenderTarget* target) { /// Rysowanie obiektow na ekranie
+	/**
+	 * @brief Rysowanie obiektow na ekranie
+	 *
+	 * @param target Wskaznik na cel rysowania
+	 */
+	void draw(sf::RenderTarget* target) {
 		if (!target) target = this->window;
 		target->setView(this->cameraPlayer->returnView());
 		this->map->draw(target);
@@ -97,7 +127,13 @@ public:
 		//obslugaAnimacji(target);
 	};
 
-	void update(const float& dtime) { /// Odswiezenie stanu aktualnego "stanu"
+
+	/**
+	 * @brief Odswiezenie stanu gry
+	 *
+	 * @param dtime Delta czasu (timer)
+	 */
+	void update(const float& dtime) {
 		this->dtime = dtime;
 		//std::cout << pozycja_kursora_w_grze.x << " " << pozycja_kursora_w_grze.y << std::endl;
 		this->pozycja_kursora_w_grze = sf::Vector2f(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y);
@@ -192,7 +228,8 @@ public:
 								this->gracz->ladujMane(this->gracz->maxMana * 0.1);
 								for (int i = 0; i < this->map->zwrocDystansTworzenia(); i++) {
 									for (int j = 0; j < this->map->zwrocDystansTworzenia(); j++) {
-										this->map->plytki[i][j]->zwrocObiekt()->atak(this->gracz,i,j);
+										if (this->map->plytki[i][j]->otoczenie != nullptr)
+											this->map->plytki[i][j]->zwrocObiekt()->atak(this->gracz,i,j);
 									}
 								}
 							}

@@ -37,6 +37,9 @@ public:
 
 	}
 
+	/**
+	* @brief Funkcja obsluguje poruszanie sie po menu za pomoca strzalki w gore i w dol
+	*/
 	void Poruszanie_po_menu() {
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
 			menu->PoruszanieWGore();
@@ -47,6 +50,9 @@ public:
 		}
 	}
 
+	/**
+	* @brief Funkcja obsluguje wybieranie zaznaczonej opcji w menu
+	*/
 	void Wybieranie_w_menu() {
 		if (sf::Event::KeyPressed) {
 			if (event->key.code == sf::Keyboard::Key::Enter) {

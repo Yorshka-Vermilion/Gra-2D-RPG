@@ -12,7 +12,7 @@ class ObslugaRuchuGracza
 	Gracz *gracz; 
 	/// Predkosc ruchu
 	float szybkosc;
-	
+	/// Wskaznik na drzewo dialogow
 	DrzewoDialogow* drzewo;
 
 public:
@@ -27,6 +27,9 @@ public:
 		this->szybkosc = szybkosc;
 		this->drzewo = drzewo;
 	}
+	/**
+	* @brief Dekonstruktor obslugi ruchu gracza
+	*/
 	~ObslugaRuchuGracza() {
 		delete(this->gracz);
 	}
