@@ -2,7 +2,7 @@
 \label{class_obsluga_ruchu_gracza}\index{ObslugaRuchuGracza@{ObslugaRuchuGracza}}
 
 
-Klasa sluzaca do obslugi ruchu gracza.  
+Klasa sluzaca do obslugi debugu gracza.  
 
 
 
@@ -12,8 +12,10 @@ Klasa sluzaca do obslugi ruchu gracza.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_obsluga_ruchu_gracza_a381756630c4270fddb3e69e045743199}{Obsluga\+Ruchu\+Gracza}} (\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$\mbox{\hyperlink{class_obsluga_ruchu_gracza_a6e0c9ede11df7999f957bf6c04d29408}{gracz}}, float \mbox{\hyperlink{class_obsluga_ruchu_gracza_a71b18dfd0ca490bce975f916024f7a57}{szybkosc}})
+\mbox{\hyperlink{class_obsluga_ruchu_gracza_aa2f9b93df67aa8260486917b3216411c}{Obsluga\+Ruchu\+Gracza}} (\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$\mbox{\hyperlink{class_obsluga_ruchu_gracza_a6e0c9ede11df7999f957bf6c04d29408}{gracz}}, float \mbox{\hyperlink{class_obsluga_ruchu_gracza_a71b18dfd0ca490bce975f916024f7a57}{szybkosc}}, \mbox{\hyperlink{class_drzewo_dialogow}{Drzewo\+Dialogow}} $\ast$\mbox{\hyperlink{class_obsluga_ruchu_gracza_af52b4add2996cc78610cad55ab01fafd}{drzewo}})
 \begin{DoxyCompactList}\small\item\em Tworzy nowy obiekt obslugi ruchu gracza. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obsluga_ruchu_gracza_a3a2eff65f3a4b6d12825bfa03a27dbee}{$\sim$\+Obsluga\+Ruchu\+Gracza}} ()
+\begin{DoxyCompactList}\small\item\em Dekonstruktor obslugi ruchu gracza. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_obsluga_ruchu_gracza_a9ac7b4ca6a4bb42efedc984b32b84b84}{update}} (const float \&Zegar)
 \begin{DoxyCompactList}\small\item\em Odswieza stan obiektu \mbox{\hyperlink{class_obsluga_ruchu_gracza}{Obsluga\+Ruchu\+Gracza}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
@@ -22,18 +24,24 @@ void \mbox{\hyperlink{class_obsluga_ruchu_gracza_a9ac7b4ca6a4bb42efedc984b32b84b
 \mbox{\hyperlink{class_gracz}{Gracz}} $\ast$ \mbox{\hyperlink{class_obsluga_ruchu_gracza_a6e0c9ede11df7999f957bf6c04d29408}{gracz}}
 \begin{DoxyCompactList}\small\item\em Wskaznik na obiekt gracza. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_obsluga_ruchu_gracza_a71b18dfd0ca490bce975f916024f7a57}{szybkosc}}
-\begin{DoxyCompactList}\small\item\em Predkosc ruchu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Predkosc ruchu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drzewo_dialogow}{Drzewo\+Dialogow}} $\ast$ \mbox{\hyperlink{class_obsluga_ruchu_gracza_af52b4add2996cc78610cad55ab01fafd}{drzewo}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na drzewo dialogow. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Klasa sluzaca do obslugi ruchu gracza. 
+Klasa sluzaca do obslugi debugu gracza. 
+
+Definition at line 9 of file Obsluga\+Ruchu\+Gracza.\+h.
+
+
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_obsluga_ruchu_gracza_a381756630c4270fddb3e69e045743199}\label{class_obsluga_ruchu_gracza_a381756630c4270fddb3e69e045743199}} 
+\mbox{\Hypertarget{class_obsluga_ruchu_gracza_aa2f9b93df67aa8260486917b3216411c}\label{class_obsluga_ruchu_gracza_aa2f9b93df67aa8260486917b3216411c}} 
 \index{ObslugaRuchuGracza@{ObslugaRuchuGracza}!ObslugaRuchuGracza@{ObslugaRuchuGracza}}
 \index{ObslugaRuchuGracza@{ObslugaRuchuGracza}!ObslugaRuchuGracza@{ObslugaRuchuGracza}}
 \doxysubsubsection{\texorpdfstring{ObslugaRuchuGracza()}{ObslugaRuchuGracza()}}
-{\footnotesize\ttfamily Obsluga\+Ruchu\+Gracza\+::\+Obsluga\+Ruchu\+Gracza (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$}]{gracz,  }\item[{float}]{szybkosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Obsluga\+Ruchu\+Gracza\+::\+Obsluga\+Ruchu\+Gracza (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$}]{gracz,  }\item[{float}]{szybkosc,  }\item[{\mbox{\hyperlink{class_drzewo_dialogow}{Drzewo\+Dialogow}} $\ast$}]{drzewo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -46,6 +54,24 @@ Tworzy nowy obiekt obslugi ruchu gracza.
 {\em szybkosc} & Szybkosc ruchu \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 25 of file Obsluga\+Ruchu\+Gracza.\+h.
+
+\mbox{\Hypertarget{class_obsluga_ruchu_gracza_a3a2eff65f3a4b6d12825bfa03a27dbee}\label{class_obsluga_ruchu_gracza_a3a2eff65f3a4b6d12825bfa03a27dbee}} 
+\index{ObslugaRuchuGracza@{ObslugaRuchuGracza}!````~ObslugaRuchuGracza@{$\sim$ObslugaRuchuGracza}}
+\index{````~ObslugaRuchuGracza@{$\sim$ObslugaRuchuGracza}!ObslugaRuchuGracza@{ObslugaRuchuGracza}}
+\doxysubsubsection{\texorpdfstring{$\sim$ObslugaRuchuGracza()}{~ObslugaRuchuGracza()}}
+{\footnotesize\ttfamily Obsluga\+Ruchu\+Gracza\+::$\sim$\+Obsluga\+Ruchu\+Gracza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dekonstruktor obslugi ruchu gracza. 
+
+
+
+Definition at line 33 of file Obsluga\+Ruchu\+Gracza.\+h.
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -66,7 +92,25 @@ Odswieza stan obiektu \mbox{\hyperlink{class_obsluga_ruchu_gracza}{Obsluga\+Ruch
 \end{DoxyParams}
 
 
+Definition at line 42 of file Obsluga\+Ruchu\+Gracza.\+h.
+
+
+
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_obsluga_ruchu_gracza_af52b4add2996cc78610cad55ab01fafd}\label{class_obsluga_ruchu_gracza_af52b4add2996cc78610cad55ab01fafd}} 
+\index{ObslugaRuchuGracza@{ObslugaRuchuGracza}!drzewo@{drzewo}}
+\index{drzewo@{drzewo}!ObslugaRuchuGracza@{ObslugaRuchuGracza}}
+\doxysubsubsection{\texorpdfstring{drzewo}{drzewo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drzewo_dialogow}{Drzewo\+Dialogow}}$\ast$ Obsluga\+Ruchu\+Gracza\+::drzewo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wskaznik na drzewo dialogow. 
+
+
+
+Definition at line 16 of file Obsluga\+Ruchu\+Gracza.\+h.
+
 \mbox{\Hypertarget{class_obsluga_ruchu_gracza_a6e0c9ede11df7999f957bf6c04d29408}\label{class_obsluga_ruchu_gracza_a6e0c9ede11df7999f957bf6c04d29408}} 
 \index{ObslugaRuchuGracza@{ObslugaRuchuGracza}!gracz@{gracz}}
 \index{gracz@{gracz}!ObslugaRuchuGracza@{ObslugaRuchuGracza}}
@@ -77,6 +121,10 @@ Odswieza stan obiektu \mbox{\hyperlink{class_obsluga_ruchu_gracza}{Obsluga\+Ruch
 
 Wskaznik na obiekt gracza. 
 
+
+
+Definition at line 12 of file Obsluga\+Ruchu\+Gracza.\+h.
+
 \mbox{\Hypertarget{class_obsluga_ruchu_gracza_a71b18dfd0ca490bce975f916024f7a57}\label{class_obsluga_ruchu_gracza_a71b18dfd0ca490bce975f916024f7a57}} 
 \index{ObslugaRuchuGracza@{ObslugaRuchuGracza}!szybkosc@{szybkosc}}
 \index{szybkosc@{szybkosc}!ObslugaRuchuGracza@{ObslugaRuchuGracza}}
@@ -86,6 +134,10 @@ Wskaznik na obiekt gracza.
 
 
 Predkosc ruchu. 
+
+
+
+Definition at line 14 of file Obsluga\+Ruchu\+Gracza.\+h.
 
 
 

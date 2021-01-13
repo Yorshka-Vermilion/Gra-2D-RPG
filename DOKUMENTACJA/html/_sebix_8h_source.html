@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Sebix.h Source File</title>
+<title>Grafika - Projekt: Sebix.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Grafika - Projekt
    </div>
   </td>
  </tr>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_sebix_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,27 +87,52 @@ $(function() {
 <div class="contents">
 <a href="_sebix_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;SFML\Graphics.hpp&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sebix_2_funkcje_8h.html">Sebix/Funkcje.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_funkcje_8h.html">Sebix/Funkcje.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_point2_d_8h.html">Sebix/Point2D.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_moveport_8h.html">Sebix/Moveport.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_point2_d_array_8h.html">Sebix/Point2DArray.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_line_segment_8h.html">Sebix/LineSegment.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_circle_primitive_8h.html">Sebix/CirclePrimitive.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_sebix.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sebix.html">Sebix</a> {};</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_h_u_d_8h.html">Sebix/HUD.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_dialog_8h.html">Sebix/Dialog.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_drzewo_dialogow_8h.html">Sebix/DrzewoDialogow.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_zycie_8h.html">Sebix/Zycie.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mana_8h.html">Sebix/Mana.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_exp_8h.html">Sebix/Exp.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_camera_8h.html">Sebix/Camera.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_creator_8h.html">Sebix/Creator.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_statystyki_8h.html">Sebix/Statystyki.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_stat_in_game_8h.html">Sebix/StatInGame.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_obiekt_otoczenia_8h.html">Sebix/ObiektOtoczenia.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_okno_dialog_8h.html">Sebix/OknoDialog.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_sebix.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sebix.html">Sebix</a> {};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_sebix_html"><div class="ttname"><a href="class_sebix.html">Sebix</a></div><div class="ttdef"><b>Definition:</b> Sebix.h:11</div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="a_obiekt_otoczenia_8h_html"><div class="ttname"><a href="_obiekt_otoczenia_8h.html">ObiektOtoczenia.h</a></div></div>
+<div class="ttc" id="aclass_sebix_html"><div class="ttname"><a href="class_sebix.html">Sebix</a></div><div class="ttdef"><b>Definition:</b> <a href="_sebix_8h_source.html#l00021">Sebix.h:21</a></div></div>
+<div class="ttc" id="a_mana_8h_html"><div class="ttname"><a href="_mana_8h.html">Mana.h</a></div></div>
 <div class="ttc" id="a_point2_d_8h_html"><div class="ttname"><a href="_point2_d_8h.html">Point2D.h</a></div></div>
+<div class="ttc" id="a_h_u_d_8h_html"><div class="ttname"><a href="_h_u_d_8h.html">HUD.h</a></div></div>
 <div class="ttc" id="a_moveport_8h_html"><div class="ttname"><a href="_moveport_8h.html">Moveport.h</a></div></div>
-<div class="ttc" id="a_sebix_2_funkcje_8h_html"><div class="ttname"><a href="_sebix_2_funkcje_8h.html">Funkcje.h</a></div></div>
+<div class="ttc" id="a_okno_dialog_8h_html"><div class="ttname"><a href="_okno_dialog_8h.html">OknoDialog.h</a></div></div>
+<div class="ttc" id="a_exp_8h_html"><div class="ttname"><a href="_exp_8h.html">Exp.h</a></div></div>
+<div class="ttc" id="a_funkcje_8h_html"><div class="ttname"><a href="_funkcje_8h.html">Funkcje.h</a></div></div>
+<div class="ttc" id="a_drzewo_dialogow_8h_html"><div class="ttname"><a href="_drzewo_dialogow_8h.html">DrzewoDialogow.h</a></div></div>
+<div class="ttc" id="a_stat_in_game_8h_html"><div class="ttname"><a href="_stat_in_game_8h.html">StatInGame.h</a></div></div>
 <div class="ttc" id="a_line_segment_8h_html"><div class="ttname"><a href="_line_segment_8h.html">LineSegment.h</a></div></div>
+<div class="ttc" id="a_dialog_8h_html"><div class="ttname"><a href="_dialog_8h.html">Dialog.h</a></div></div>
+<div class="ttc" id="a_camera_8h_html"><div class="ttname"><a href="_camera_8h.html">Camera.h</a></div></div>
 <div class="ttc" id="a_point2_d_array_8h_html"><div class="ttname"><a href="_point2_d_array_8h.html">Point2DArray.h</a></div></div>
-<div class="ttc" id="a_circle_primitive_8h_html"><div class="ttname"><a href="_circle_primitive_8h.html">CirclePrimitive.h</a></div></div>
+<div class="ttc" id="a_statystyki_8h_html"><div class="ttname"><a href="_statystyki_8h.html">Statystyki.h</a></div></div>
+<div class="ttc" id="a_zycie_8h_html"><div class="ttname"><a href="_zycie_8h.html">Zycie.h</a></div></div>
+<div class="ttc" id="a_creator_8h_html"><div class="ttname"><a href="_creator_8h.html">Creator.h</a></div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_sebix_8h.html">Sebix.h</a></li>
+    <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
 </body>
 </html>

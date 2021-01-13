@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['obj_358',['obj',['../class_demo.html#a1c53117ca09fcaa575599a30672e5ce5',1,'Demo']]],
-  ['obraz_359',['obraz',['../class_bitmap_handler.html#a15bfa307df5b04dbc4dab397cda1674a',1,'BitmapHandler']]],
-  ['opcja_360',['opcja',['../class_demo.html#a03c96cc7ee68bbfc098575749c9b7f07',1,'Demo']]]
+  ['klatka_810',['klatka',['../class_animacja.html#ab369a62d0a33b95116a2872e5556f7ba',1,'Animacja']]],
+  ['klatki_811',['klatki',['../class_animacja.html#acd79b74e003d1678b4d14f9df9f76403',1,'Animacja']]],
+  ['ksztalt_812',['ksztalt',['../class_gracz.html#af6a380c64bcdae717d65dc9a6f0d11f0',1,'Gracz']]]
 ];

@@ -1,0 +1,436 @@
+\hypertarget{class_stat_in_game}{}\doxysection{Stat\+In\+Game Class Reference}
+\label{class_stat_in_game}\index{StatInGame@{StatInGame}}
+
+
+Klasa odpowiedzialna za reprezentacje statystyk w trakcie rozgrywki.  
+
+
+
+
+{\ttfamily \#include $<$Stat\+In\+Game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stat_in_game_a1786854ca05bd9c35ad77073fef8cb77}{Stat\+In\+Game}} (int \mbox{\hyperlink{class_stat_in_game_afc2f0bb6dc3e6ed7b34dd7f857dfeeb7}{sila}}, int \mbox{\hyperlink{class_stat_in_game_a2bb6747c94a5ec7fb9c9b47f55e6e820}{dmg}}, int \mbox{\hyperlink{class_stat_in_game_a30b9fa77a36b7e40bcee2c1ffa474a79}{inteligencja}})
+\begin{DoxyCompactList}\small\item\em Konstruktor budujacy statystyki w trakcie rozgrywki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stat_in_game_a7cbfe4bb487c07b7218c21531ee9c18e}{make\+In\+Game\+Stat}} (int \mbox{\hyperlink{class_stat_in_game_afc2f0bb6dc3e6ed7b34dd7f857dfeeb7}{sila}}, int \mbox{\hyperlink{class_stat_in_game_a2bb6747c94a5ec7fb9c9b47f55e6e820}{dmg}}, int \mbox{\hyperlink{class_stat_in_game_a30b9fa77a36b7e40bcee2c1ffa474a79}{inteligencja}})
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za zbudowanie menu statystyk. \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_stat_in_game_adde8b7902a42c681e20e75c931b280f2}{zrob\+Tekst}} (std\+::string sciezka, sf\+::\+Vector2f pozycja, std\+::string tresc, int wartosc)
+\begin{DoxyCompactList}\small\item\em Funkcja tworzaca reprezentacje graficzna w formie tekstu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_stat_in_game_af2c52b47d37de070eb4b2aeba00e5476}{zwroc\+Okno}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za zwrocenie wskaznika na tylnia czesc menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_stat_in_game_a3cfe5c65d354ebfe676bb92729a7c176}{zwroc\+Przycisk\+Sila}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za zwrocenie wskaznika na przycisk sily z menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_stat_in_game_adad24d49f7b7a993859534fcebc188a7}{zwroc\+Przycisk\+Dmg}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za zwrocenie wskaznika na przycisk dmg z menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_stat_in_game_a0b224d442ca2c6f936a05f0f7a0fc06b}{zwroc\+Przycisk\+Inteligencja}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za zwrocenie wskaznika na przycisk inteligencji z menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stat_in_game_a2b02896087939c3e0710003ecf0be4c5}{draw}} (sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za rysowanie menu na ekranie w trakcie gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stat_in_game_af78fbd8b2c4f9930c9a2f3c6e3199a24}{draw\+Stat}} (sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za wyswietlanie podgladu statystyk. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stat_in_game_ae86533380a4554b6748f364cc0d9ec81}{aktualizuj\+Sila}} (std\+::string tresc, int wartosc)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za aktualizacje wartosci sily w menu statystyk. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stat_in_game_a7dfe2bde6b20cd3db8501a54fb96c136}{aktualizuj\+Dmg}} (std\+::string tresc, int wartosc)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za aktualizacje wartosci dmg w menu statystyk. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stat_in_game_a068c2a1e9a64ab6da7fdb54b38cebd29}{aktualizuj\+Inteligencja}} (std\+::string tresc, int wartosc)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za aktualizacje wartosci inteligencji w menu statystyk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Text \mbox{\hyperlink{class_stat_in_game_afc2f0bb6dc3e6ed7b34dd7f857dfeeb7}{sila}}
+\begin{DoxyCompactList}\small\item\em Reprezentacja tekstowana w oknie punktow sily \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_stat_in_game_a2bb6747c94a5ec7fb9c9b47f55e6e820}{dmg}}
+\begin{DoxyCompactList}\small\item\em Reprezentacja tekstowana w oknie punktow dmg \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_stat_in_game_a30b9fa77a36b7e40bcee2c1ffa474a79}{inteligencja}}
+\begin{DoxyCompactList}\small\item\em Reprezentacja tekstowana w oknie punktow inteligencji \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_stat_in_game_ab25dc2e460064e6dd8241d6e1f412bb2}{back}}
+\begin{DoxyCompactList}\small\item\em Przycisk reprezentujacy tlo menu rozdawania statystyk+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_stat_in_game_acc927dafaf47844b24a37e879d5584c4}{button\+Sila}}
+\begin{DoxyCompactList}\small\item\em Przycisk reprezentujacy opcje dodania punktow w sile \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_stat_in_game_a0ae564a25661bb73e01c52571dad6ca5}{button\+Dmg}}
+\begin{DoxyCompactList}\small\item\em Przycisk reprezentujacy opcje dodania punktow w dmg \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_stat_in_game_abca70e48b8d1cf90b65cf4316df2d44a}{button\+Inteligencja}}
+\begin{DoxyCompactList}\small\item\em Przycisk reprezentujacy opcje dodania punktow w inteligencje \end{DoxyCompactList}\item 
+sf\+::\+Font \mbox{\hyperlink{class_stat_in_game_a9c12c9e1687f4d81d68b2245f71fa890}{czcionka}}
+\begin{DoxyCompactList}\small\item\em Czcionka wyswietlajaca sie w menu statystyk \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za reprezentacje statystyk w trakcie rozgrywki. 
+
+Definition at line 8 of file Stat\+In\+Game.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stat_in_game_a1786854ca05bd9c35ad77073fef8cb77}\label{class_stat_in_game_a1786854ca05bd9c35ad77073fef8cb77}} 
+\index{StatInGame@{StatInGame}!StatInGame@{StatInGame}}
+\index{StatInGame@{StatInGame}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{StatInGame()}{StatInGame()}}
+{\footnotesize\ttfamily Stat\+In\+Game\+::\+Stat\+In\+Game (\begin{DoxyParamCaption}\item[{int}]{sila,  }\item[{int}]{dmg,  }\item[{int}]{inteligencja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor budujacy statystyki w trakcie rozgrywki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sila} & ilosc punktow ktore posiada bohater w sile \\
+\hline
+{\em dmg} & ilosc punktow ktore posiada bohater w dmg \\
+\hline
+{\em inteligencja} & ilosc punktow ktore posiada bohater w inteligencji \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file Stat\+In\+Game.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stat_in_game_a7dfe2bde6b20cd3db8501a54fb96c136}\label{class_stat_in_game_a7dfe2bde6b20cd3db8501a54fb96c136}} 
+\index{StatInGame@{StatInGame}!aktualizujDmg@{aktualizujDmg}}
+\index{aktualizujDmg@{aktualizujDmg}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{aktualizujDmg()}{aktualizujDmg()}}
+{\footnotesize\ttfamily void Stat\+In\+Game\+::aktualizuj\+Dmg (\begin{DoxyParamCaption}\item[{std\+::string}]{tresc,  }\item[{int}]{wartosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za aktualizacje wartosci dmg w menu statystyk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tresc} & tresc statystyki \\
+\hline
+{\em wartosc} & wartosc punktow jaka ma sie wyswietlac \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 184 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_a068c2a1e9a64ab6da7fdb54b38cebd29}\label{class_stat_in_game_a068c2a1e9a64ab6da7fdb54b38cebd29}} 
+\index{StatInGame@{StatInGame}!aktualizujInteligencja@{aktualizujInteligencja}}
+\index{aktualizujInteligencja@{aktualizujInteligencja}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{aktualizujInteligencja()}{aktualizujInteligencja()}}
+{\footnotesize\ttfamily void Stat\+In\+Game\+::aktualizuj\+Inteligencja (\begin{DoxyParamCaption}\item[{std\+::string}]{tresc,  }\item[{int}]{wartosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za aktualizacje wartosci inteligencji w menu statystyk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tresc} & tresc statystyki \\
+\hline
+{\em wartosc} & wartosc punktow jaka ma sie wyswietlac \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 193 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_ae86533380a4554b6748f364cc0d9ec81}\label{class_stat_in_game_ae86533380a4554b6748f364cc0d9ec81}} 
+\index{StatInGame@{StatInGame}!aktualizujSila@{aktualizujSila}}
+\index{aktualizujSila@{aktualizujSila}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{aktualizujSila()}{aktualizujSila()}}
+{\footnotesize\ttfamily void Stat\+In\+Game\+::aktualizuj\+Sila (\begin{DoxyParamCaption}\item[{std\+::string}]{tresc,  }\item[{int}]{wartosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za aktualizacje wartosci sily w menu statystyk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tresc} & tresc statystyki \\
+\hline
+{\em wartosc} & wartosc punktow jaka ma sie wyswietlac \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 175 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_a2b02896087939c3e0710003ecf0be4c5}\label{class_stat_in_game_a2b02896087939c3e0710003ecf0be4c5}} 
+\index{StatInGame@{StatInGame}!draw@{draw}}
+\index{draw@{draw}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Stat\+In\+Game\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za rysowanie menu na ekranie w trakcie gry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & okno w ktorym ma byc przedstawiane menu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 149 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_af78fbd8b2c4f9930c9a2f3c6e3199a24}\label{class_stat_in_game_af78fbd8b2c4f9930c9a2f3c6e3199a24}} 
+\index{StatInGame@{StatInGame}!drawStat@{drawStat}}
+\index{drawStat@{drawStat}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{drawStat()}{drawStat()}}
+{\footnotesize\ttfamily void Stat\+In\+Game\+::draw\+Stat (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za wyswietlanie podgladu statystyk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & okno w ktorym ma byc przedstawiane menu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 163 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_a7cbfe4bb487c07b7218c21531ee9c18e}\label{class_stat_in_game_a7cbfe4bb487c07b7218c21531ee9c18e}} 
+\index{StatInGame@{StatInGame}!makeInGameStat@{makeInGameStat}}
+\index{makeInGameStat@{makeInGameStat}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{makeInGameStat()}{makeInGameStat()}}
+{\footnotesize\ttfamily void Stat\+In\+Game\+::make\+In\+Game\+Stat (\begin{DoxyParamCaption}\item[{int}]{sila,  }\item[{int}]{dmg,  }\item[{int}]{inteligencja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za zbudowanie menu statystyk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sila} & ilosc punktow ktore posiada bohater w sile \\
+\hline
+{\em dmg} & ilosc punktow ktore posiada bohater w dmg \\
+\hline
+{\em inteligencja} & ilosc punktow ktore posiada bohater w inteligencji \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_adde8b7902a42c681e20e75c931b280f2}\label{class_stat_in_game_adde8b7902a42c681e20e75c931b280f2}} 
+\index{StatInGame@{StatInGame}!zrobTekst@{zrobTekst}}
+\index{zrobTekst@{zrobTekst}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{zrobTekst()}{zrobTekst()}}
+{\footnotesize\ttfamily sf\+::\+Text Stat\+In\+Game\+::zrob\+Tekst (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja,  }\item[{std\+::string}]{tresc,  }\item[{int}]{wartosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja tworzaca reprezentacje graficzna w formie tekstu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & odpowiada za znajdowanie pliku reprezentujacego statystyki \\
+\hline
+{\em pozycja} & odpowaida za pozycje w ktorej maja sie znajdowac statystyki \\
+\hline
+{\em tresc} & nazwa wybranej statystyki \\
+\hline
+{\em wartosc} & wartosc wybranej statystyki\textbackslash{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Text zwraca gotowy obraz reprezentujacy statystyke 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_af2c52b47d37de070eb4b2aeba00e5476}\label{class_stat_in_game_af2c52b47d37de070eb4b2aeba00e5476}} 
+\index{StatInGame@{StatInGame}!zwrocOkno@{zwrocOkno}}
+\index{zwrocOkno@{zwrocOkno}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{zwrocOkno()}{zwrocOkno()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Stat\+In\+Game\+::zwroc\+Okno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za zwrocenie wskaznika na tylnia czesc menu. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_obiekt}{Obiekt}} zwraca wskaznik na tlo statystyk 
+\end{DoxyReturn}
+
+
+Definition at line 117 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_adad24d49f7b7a993859534fcebc188a7}\label{class_stat_in_game_adad24d49f7b7a993859534fcebc188a7}} 
+\index{StatInGame@{StatInGame}!zwrocPrzyciskDmg@{zwrocPrzyciskDmg}}
+\index{zwrocPrzyciskDmg@{zwrocPrzyciskDmg}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{zwrocPrzyciskDmg()}{zwrocPrzyciskDmg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Stat\+In\+Game\+::zwroc\+Przycisk\+Dmg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za zwrocenie wskaznika na przycisk dmg z menu. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_obiekt}{Obiekt}} zwraca wskaznik na przycisk dmg 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_a0b224d442ca2c6f936a05f0f7a0fc06b}\label{class_stat_in_game_a0b224d442ca2c6f936a05f0f7a0fc06b}} 
+\index{StatInGame@{StatInGame}!zwrocPrzyciskInteligencja@{zwrocPrzyciskInteligencja}}
+\index{zwrocPrzyciskInteligencja@{zwrocPrzyciskInteligencja}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{zwrocPrzyciskInteligencja()}{zwrocPrzyciskInteligencja()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Stat\+In\+Game\+::zwroc\+Przycisk\+Inteligencja (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za zwrocenie wskaznika na przycisk inteligencji z menu. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_obiekt}{Obiekt}} zwraca wskaznik na przycisk inteligencji 
+\end{DoxyReturn}
+
+
+Definition at line 141 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_a3cfe5c65d354ebfe676bb92729a7c176}\label{class_stat_in_game_a3cfe5c65d354ebfe676bb92729a7c176}} 
+\index{StatInGame@{StatInGame}!zwrocPrzyciskSila@{zwrocPrzyciskSila}}
+\index{zwrocPrzyciskSila@{zwrocPrzyciskSila}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{zwrocPrzyciskSila()}{zwrocPrzyciskSila()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Stat\+In\+Game\+::zwroc\+Przycisk\+Sila (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za zwrocenie wskaznika na przycisk sily z menu. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_obiekt}{Obiekt}} zwraca wskaznik na przycisk sily 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file Stat\+In\+Game.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_stat_in_game_ab25dc2e460064e6dd8241d6e1f412bb2}\label{class_stat_in_game_ab25dc2e460064e6dd8241d6e1f412bb2}} 
+\index{StatInGame@{StatInGame}!back@{back}}
+\index{back@{back}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{back}{back}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Stat\+In\+Game\+::back\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk reprezentujacy tlo menu rozdawania statystyk+ 
+
+
+
+Definition at line 12 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_a0ae564a25661bb73e01c52571dad6ca5}\label{class_stat_in_game_a0ae564a25661bb73e01c52571dad6ca5}} 
+\index{StatInGame@{StatInGame}!buttonDmg@{buttonDmg}}
+\index{buttonDmg@{buttonDmg}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{buttonDmg}{buttonDmg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Stat\+In\+Game\+::button\+Dmg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk reprezentujacy opcje dodania punktow w dmg 
+
+
+
+Definition at line 20 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_abca70e48b8d1cf90b65cf4316df2d44a}\label{class_stat_in_game_abca70e48b8d1cf90b65cf4316df2d44a}} 
+\index{StatInGame@{StatInGame}!buttonInteligencja@{buttonInteligencja}}
+\index{buttonInteligencja@{buttonInteligencja}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{buttonInteligencja}{buttonInteligencja}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Stat\+In\+Game\+::button\+Inteligencja\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk reprezentujacy opcje dodania punktow w inteligencje 
+
+
+
+Definition at line 24 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_acc927dafaf47844b24a37e879d5584c4}\label{class_stat_in_game_acc927dafaf47844b24a37e879d5584c4}} 
+\index{StatInGame@{StatInGame}!buttonSila@{buttonSila}}
+\index{buttonSila@{buttonSila}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{buttonSila}{buttonSila}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Stat\+In\+Game\+::button\+Sila\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przycisk reprezentujacy opcje dodania punktow w sile 
+
+
+
+Definition at line 16 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_a9c12c9e1687f4d81d68b2245f71fa890}\label{class_stat_in_game_a9c12c9e1687f4d81d68b2245f71fa890}} 
+\index{StatInGame@{StatInGame}!czcionka@{czcionka}}
+\index{czcionka@{czcionka}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{czcionka}{czcionka}}
+{\footnotesize\ttfamily sf\+::\+Font Stat\+In\+Game\+::czcionka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Czcionka wyswietlajaca sie w menu statystyk 
+
+
+
+Definition at line 28 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_a2bb6747c94a5ec7fb9c9b47f55e6e820}\label{class_stat_in_game_a2bb6747c94a5ec7fb9c9b47f55e6e820}} 
+\index{StatInGame@{StatInGame}!dmg@{dmg}}
+\index{dmg@{dmg}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{dmg}{dmg}}
+{\footnotesize\ttfamily sf\+::\+Text Stat\+In\+Game\+::dmg}
+
+
+
+Reprezentacja tekstowana w oknie punktow dmg 
+
+
+
+Definition at line 37 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_a30b9fa77a36b7e40bcee2c1ffa474a79}\label{class_stat_in_game_a30b9fa77a36b7e40bcee2c1ffa474a79}} 
+\index{StatInGame@{StatInGame}!inteligencja@{inteligencja}}
+\index{inteligencja@{inteligencja}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{inteligencja}{inteligencja}}
+{\footnotesize\ttfamily sf\+::\+Text Stat\+In\+Game\+::inteligencja}
+
+
+
+Reprezentacja tekstowana w oknie punktow inteligencji 
+
+
+
+Definition at line 41 of file Stat\+In\+Game.\+h.
+
+\mbox{\Hypertarget{class_stat_in_game_afc2f0bb6dc3e6ed7b34dd7f857dfeeb7}\label{class_stat_in_game_afc2f0bb6dc3e6ed7b34dd7f857dfeeb7}} 
+\index{StatInGame@{StatInGame}!sila@{sila}}
+\index{sila@{sila}!StatInGame@{StatInGame}}
+\doxysubsubsection{\texorpdfstring{sila}{sila}}
+{\footnotesize\ttfamily sf\+::\+Text Stat\+In\+Game\+::sila}
+
+
+
+Reprezentacja tekstowana w oknie punktow sily 
+
+
+
+Definition at line 33 of file Stat\+In\+Game.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_stat_in_game_8h}{Stat\+In\+Game.\+h}}\end{DoxyCompactItemize}

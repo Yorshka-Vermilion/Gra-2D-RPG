@@ -1,62 +1,136 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+
 #include <iostream>
 #include <vector>
 #include <string>
 constexpr auto MAX = 5;
 
 struct Wiadomosc;
-
+/**
+	 * @brief Struktura odpowiadajaca tworzenie postaci w dialogcach
+	 */
 struct Opcje {
+	/// <summary>
+	/// Tresc opcji
+	/// </summary>
 	std::string tresc;
+	/// <summary>
+	/// Kolejna wiadomosc w kolejce
+	/// </summary>
 	Wiadomosc* wiadomosc;
 
+	/**
+	 * @brief Konstruktor opcji
+	 *
+	 * @param tresc Tresc wiadomosci
+	 * @param wiadomosc Odpowiedzialna za przydzielenie wiadomosci do opcji
+	 */
 	Opcje(std::string tresc, Wiadomosc* wiadomosc) {
 		this->tresc = tresc;
 		this->wiadomosc = wiadomosc;
 	}
-
+	/**
+	 * @brief Pozwala edytowac tresc odpowiedzi
+	 *
+	 * @param tresc Nowa tresc dla odpowiedzi
+	 */
 	void edytujTrescOdpowiedzi(std::string tresc) {
 		this->tresc = tresc;
 	}
-
+	/**
+	 * @brief Pozwala edytowaæ pelna wiadomosc w dialogu
+	 *
+	 * @param wiadomosc Wskaznik na wiadomosc ktora ma zostac przypisana jako nowa wiadomosc docelowa
+	 */
 	void edytujOknoDocelowe(Wiadomosc* wiadomosc) {
 		this->wiadomosc = wiadomosc;
 	}
 };
 
+/**
+	 * @brief Reprezentuje wiadomosc w dialogach
+	 */
 struct Wiadomosc {
+	/// <summary>
+	/// Okresla tresc wiadomosci
+	/// </summary>
 	std::string tresc;
+	/// <summary>
+	/// Wektor odpowiedzi okreslajacy konsekwencje decyzji
+	/// </summary>
 	std::vector <Opcje> odpowiedzi;
 
+	/**
+	 * @brief Konstruktor domyslny pustej wiadomosci
+	 *
+	 */
 	Wiadomosc(){}
+	/**
+	 * @brief Konstruktor tworzacy wiadomosc
+	 *
+	 * @param tresc Odpowiada za tresc wiadomosci
+	 */
 	Wiadomosc(std::string tresc) {
 		this->tresc = tresc;
 	}
-
+	/**
+	 * @brief Funkcja pozwala edytowac tresc wiadomosci
+	 *
+	 * @param tresc okresla nowa tresc odpowiedzi
+	 */
 	void edytujTrescWiadomosci(std::string tresc) {
 		this->tresc = tresc;
 	}
-
+	/**
+	 * @brief Funkcja pozwala na dodanie nowej odpowiedzi do wiadomosci
+	 *
+	 * @param inputOdpowiedzi tresc odpowiedzi
+	 * @param wiadomosc Wskaznik na wiadomosci do ktorej ma sie odnosic odpowiedz
+	 */
 	void dodajOpcje(std::string inputOdpowiedzi, Wiadomosc *wiadomosc) {
 		this->odpowiedzi.push_back(Opcje(inputOdpowiedzi, wiadomosc));
 	}
 };
 
+/**
+	 * @brief Klasa reprezentujaca dialog
+	 *
+	 */
 class Dialog {
 public:
+	/// <summary>
+	/// Wektor wskaznikow na odpowiedzi okreslajacy dialog
+	/// </summary>
 	std::vector<Wiadomosc*> dialog;
+	/**
+	 * @brief Konstruktor domyslny tworzacy nowy dialog
+	 *
+	 */
 	Dialog() {
 		stworzGalaz();
 	}
+	/**
+	 * @brief Dekonstruktor dialogow
+	 *
+	 */
 	~Dialog() {
 		usunGalaz();
 	}
 
+	/**
+	 * @brief Odswiezenie stanu gry
+	 *
+	 * @param dtime Delta czasu (timer)
+	 * @return int zwraca wielkosc dialogu
+	 */
 	int zwrocWielkoscGalezi() {
 		return this->dialog.size();
 	}
-
+	/**
+	 * @brief Funkcja odpowiada za stworzenie pelnego dialogu poprzez konsole
+	 *
+	 */
 	void stworzGalaz() {
 		int ilosc = 0;
 		Wiadomosc* rozmowa[MAX];
@@ -100,6 +174,10 @@ public:
 		}
 	}
 
+	/**
+	 * @brief Funkcja pozwala na dodanie nowego dialogu
+	 *
+	 */
 	void dodajNoweOkno() {
 		Wiadomosc* nowy = new Wiadomosc;
 		int klucz = 0;
@@ -135,6 +213,10 @@ public:
 		this->dialog.push_back(nowy);
 	}
 
+	/**
+	 * @brief Funkcja odpowiada za usuniecie dialogu
+	 *
+	 */
 	void usunOkno() {
 		int klucz = 0;
 		std::cout << "Podaj klucz okna do usuniêcia z dialogu" << std::endl;
@@ -153,7 +235,10 @@ public:
 		this->dialog.erase(this->dialog.begin() + klucz);
 		std::cout << this->dialog.size() << std::endl;
 	}
-
+	/**
+	 * @brief Funkcja odpowiada za usuniecie wszystkich dialogow
+	 *
+	 */
 	void usunGalaz() {
 		for (int i = 0; i < dialog.size(); i++) {
 			delete this->dialog[i];

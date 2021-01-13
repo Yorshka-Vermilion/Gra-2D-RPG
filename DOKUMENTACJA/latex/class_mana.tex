@@ -1,0 +1,176 @@
+\hypertarget{class_mana}{}\doxysection{Mana Class Reference}
+\label{class_mana}\index{Mana@{Mana}}
+
+
+Klasa odpowiada za reprezentacje graficzna many bohatera.  
+
+
+
+
+{\ttfamily \#include $<$Mana.\+h$>$}
+
+Inheritance diagram for Mana\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mana}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mana_a785eee0b606ba37c19bb4a4cd0922d84}{Mana}} (std\+::string sciezka, sf\+::\+Vector2f pozycja)
+\begin{DoxyCompactList}\small\item\em Konstruktor odpowiedzialny za zbudowanie many. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mana_aa684861f928e36585d460adbc17f57d1}{draw}} (sf\+::\+Render\+Target $\ast$cel)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajca za rysowanie many. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mana_aaa4f084292c2e632b38aeb6bf82dc812}{zrob\+Mana}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za zbudowanie kuli many. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mana_a4e0aec0d441081f054f0746207b0c020}{update\+Mana}} (double obecna\+Mana, double max\+Mana)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za reprezentacje aktualizacji many bohatera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_mana_aa156743255c9abe391f71ac0525d7557}{diameter}}
+\begin{DoxyCompactList}\small\item\em Wartosc okreslajaca srednice okregu \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_mana_aa1b6a5eef1ae028ec2a137462ba9ce6a}{mana\+Pos}}
+\begin{DoxyCompactList}\small\item\em Pozycja many bohatera \end{DoxyCompactList}\item 
+sf\+::\+Circle\+Shape \mbox{\hyperlink{class_mana_a69080bb35928d5ff2e550a0c43ad449b}{mana\+Circle}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy kule many bohatera \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiada za reprezentacje graficzna many bohatera. 
+
+Definition at line 8 of file Mana.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mana_a785eee0b606ba37c19bb4a4cd0922d84}\label{class_mana_a785eee0b606ba37c19bb4a4cd0922d84}} 
+\index{Mana@{Mana}!Mana@{Mana}}
+\index{Mana@{Mana}!Mana@{Mana}}
+\doxysubsubsection{\texorpdfstring{Mana()}{Mana()}}
+{\footnotesize\ttfamily Mana\+::\+Mana (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor odpowiedzialny za zbudowanie many. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & odpowiada za znajdowanie sie pliku reprezentujacego mane \\
+\hline
+{\em pozycja} & odpowaida za pozycje w ktorej ma sie znajdowac mane \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Mana.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mana_aa684861f928e36585d460adbc17f57d1}\label{class_mana_aa684861f928e36585d460adbc17f57d1}} 
+\index{Mana@{Mana}!draw@{draw}}
+\index{draw@{draw}!Mana@{Mana}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Mana\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajca za rysowanie many. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & odpowiada za okno w którym ma zostac narysowany obiekt \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file Mana.\+h.
+
+\mbox{\Hypertarget{class_mana_a4e0aec0d441081f054f0746207b0c020}\label{class_mana_a4e0aec0d441081f054f0746207b0c020}} 
+\index{Mana@{Mana}!updateMana@{updateMana}}
+\index{updateMana@{updateMana}!Mana@{Mana}}
+\doxysubsubsection{\texorpdfstring{updateMana()}{updateMana()}}
+{\footnotesize\ttfamily void Mana\+::update\+Mana (\begin{DoxyParamCaption}\item[{double}]{obecna\+Mana,  }\item[{double}]{max\+Mana }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za reprezentacje aktualizacji many bohatera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obecna\+Mana} & obecny stan many bohatera \\
+\hline
+{\em max\+Mana} & maksymalny stan many bohatera \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file Mana.\+h.
+
+\mbox{\Hypertarget{class_mana_aaa4f084292c2e632b38aeb6bf82dc812}\label{class_mana_aaa4f084292c2e632b38aeb6bf82dc812}} 
+\index{Mana@{Mana}!zrobMana@{zrobMana}}
+\index{zrobMana@{zrobMana}!Mana@{Mana}}
+\doxysubsubsection{\texorpdfstring{zrobMana()}{zrobMana()}}
+{\footnotesize\ttfamily void Mana\+::zrob\+Mana (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za zbudowanie kuli many. 
+
+
+
+Definition at line 46 of file Mana.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mana_aa156743255c9abe391f71ac0525d7557}\label{class_mana_aa156743255c9abe391f71ac0525d7557}} 
+\index{Mana@{Mana}!diameter@{diameter}}
+\index{diameter@{diameter}!Mana@{Mana}}
+\doxysubsubsection{\texorpdfstring{diameter}{diameter}}
+{\footnotesize\ttfamily float Mana\+::diameter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc okreslajaca srednice okregu 
+
+
+
+Definition at line 12 of file Mana.\+h.
+
+\mbox{\Hypertarget{class_mana_a69080bb35928d5ff2e550a0c43ad449b}\label{class_mana_a69080bb35928d5ff2e550a0c43ad449b}} 
+\index{Mana@{Mana}!manaCircle@{manaCircle}}
+\index{manaCircle@{manaCircle}!Mana@{Mana}}
+\doxysubsubsection{\texorpdfstring{manaCircle}{manaCircle}}
+{\footnotesize\ttfamily sf\+::\+Circle\+Shape Mana\+::mana\+Circle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy kule many bohatera 
+
+
+
+Definition at line 20 of file Mana.\+h.
+
+\mbox{\Hypertarget{class_mana_aa1b6a5eef1ae028ec2a137462ba9ce6a}\label{class_mana_aa1b6a5eef1ae028ec2a137462ba9ce6a}} 
+\index{Mana@{Mana}!manaPos@{manaPos}}
+\index{manaPos@{manaPos}!Mana@{Mana}}
+\doxysubsubsection{\texorpdfstring{manaPos}{manaPos}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Mana\+::mana\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pozycja many bohatera 
+
+
+
+Definition at line 16 of file Mana.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_mana_8h}{Mana.\+h}}\end{DoxyCompactItemize}

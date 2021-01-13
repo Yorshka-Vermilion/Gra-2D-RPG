@@ -6,6 +6,7 @@
 #include "Mana.h"
 #include "Exp.h"
 #include "StatInGame.h"
+#include "OknoDialog.h"
 
 class HUD {
 	Gracz* gracz;
@@ -13,6 +14,7 @@ class HUD {
 	Mana* mana;
 	Exp* exp;
 	StatInGame* statystykiWGrze;
+	
 	
 	bool isAble = false;
 	sf::Font czcionka;

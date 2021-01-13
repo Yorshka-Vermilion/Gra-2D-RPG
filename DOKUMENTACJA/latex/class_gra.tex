@@ -18,20 +18,342 @@ Inheritance diagram for Gra\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_gra_a909c15a27debfe81bf2b84a8c915a4ad}{Gra}} (sf\+::\+Render\+Window $\ast$\mbox{\hyperlink{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}{window}}, std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$\mbox{\hyperlink{class_stan_acd6f1d71e7f622492660fad6e7e2f616}{stos}}, sf\+::\+Event $\ast$\mbox{\hyperlink{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}{event}})
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_gra_a52598d9ba5e05786615a0885f8cac2f8}{Gra}} (sf\+::\+Render\+Window $\ast$\mbox{\hyperlink{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}{window}}, std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$\mbox{\hyperlink{class_stan_acd6f1d71e7f622492660fad6e7e2f616}{stos}}, sf\+::\+Event $\ast$\mbox{\hyperlink{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}{event}}, \mbox{\hyperlink{class_gracz}{Gracz}} $\ast$\mbox{\hyperlink{class_gra_a1f69f71283d01e91a46793f6511b24ba}{gracz}})
+\begin{DoxyCompactList}\small\item\em Konstruktor gry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gra_add375b896f5dc3b2ddfb0d145b43f740}{$\sim$\+Gra}} ()
+\begin{DoxyCompactList}\small\item\em Dekonstruktor gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gra_a285e3f52d7c777e4122e9d168d61083f}{draw}} (sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em Rysowanie obiektow na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gra_af3540ecc70f43aafd2d4ae0876e3ecb6}{update}} (const float \&\mbox{\hyperlink{class_stan_a28c020d77ac16c3e0f37d05927f0717b}{dtime}})
+\begin{DoxyCompactList}\small\item\em Odswiezenie stanu gry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mapa}{Mapa}} $\ast$ \mbox{\hyperlink{class_gra_ae4d367fbfd5cf8c957f3c72038924026}{map}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na mape. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_gra_ac23fafd6a47a894dc0866dae228c248d}{maska}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na maske. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$ \mbox{\hyperlink{class_gra_a1f69f71283d01e91a46793f6511b24ba}{gracz}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na gracza. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obsluga_ruchu_gracza}{Obsluga\+Ruchu\+Gracza}} $\ast$ \mbox{\hyperlink{class_gra_a6a55f368adaff5ca1a3f2a4d8d26416b}{g\+Ruch}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na obsluge ruchu gracza umozliwiajaca ruch. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_h_u_d}{H\+UD}} $\ast$ \mbox{\hyperlink{class_gra_a28dbd88f911bff2f22425cfe4b7f5eec}{hud}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na \mbox{\hyperlink{class_h_u_d}{H\+UD}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_drzewo_dialogow}{Drzewo\+Dialogow}} $\ast$ \mbox{\hyperlink{class_gra_a878a34120a50dced857960193e4a8d94}{drzewo}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na drzewo dialogow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera}{Camera}} $\ast$ \mbox{\hyperlink{class_gra_a991362183442922e416e75a2ac922568}{camera\+Player}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na kamere. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_animacja}{Animacja}} $\ast$ $>$ \mbox{\hyperlink{class_gra_a7964b66f383e7becd2c3a329fb0c8eec}{animacje}}
+\begin{DoxyCompactList}\small\item\em Vector wskaznokow na animacje. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rzucanie_zaklec}{Rzucanie\+Zaklec}} $\ast$ \mbox{\hyperlink{class_gra_ac83b3f27aaffc336ccacf462d01cfb18}{rzucanie\+\_\+zaklec}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na klase obslugujaca rzucenia zaklec. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dzwieki}{Dzwieki}} $\ast$ \mbox{\hyperlink{class_gra_ab534aee223e5fe1257defc9b6283e10e}{dzwieki}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na klase obslugujaca dzwieki. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_okno_dialog}{Okno\+Dialog}} $\ast$ \mbox{\hyperlink{class_gra_ab8ab3a662443889d362d9fc7ade953d7}{okno}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na klase obslugujaca okna dialogow \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gra_a7c2062856e3c245748bb59245e683841}{interakcja}} = false
+\begin{DoxyCompactList}\small\item\em Flaga sygnalizujaca stan interakcji z obiektem/postacia \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gra_a7fa772ff1f76419a5cb87197cd16ce57}{L\+C\+T\+RL}}
+\begin{DoxyCompactList}\small\item\em Flaga sygnalizujaca stan przycisku lewy C\+T\+RL. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gra_ae5d1f1f96b35e873aa9de9c837682e30}{L\+A\+LT}} = false
+\begin{DoxyCompactList}\small\item\em Flaga sygnalizujaca stan przycisku lewy A\+LT. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
 Klasa w ktorej bedzie znajdowal sie kod gry. 
 
+Definition at line 16 of file Gra.\+h.
+
+
+
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_gra_a909c15a27debfe81bf2b84a8c915a4ad}\label{class_gra_a909c15a27debfe81bf2b84a8c915a4ad}} 
+\mbox{\Hypertarget{class_gra_a52598d9ba5e05786615a0885f8cac2f8}\label{class_gra_a52598d9ba5e05786615a0885f8cac2f8}} 
 \index{Gra@{Gra}!Gra@{Gra}}
 \index{Gra@{Gra}!Gra@{Gra}}
 \doxysubsubsection{\texorpdfstring{Gra()}{Gra()}}
-{\footnotesize\ttfamily Gra\+::\+Gra (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window,  }\item[{std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$}]{stos,  }\item[{sf\+::\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Gra\+::\+Gra (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window,  }\item[{std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$}]{stos,  }\item[{sf\+::\+Event $\ast$}]{event,  }\item[{\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$}]{gracz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor gry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Wskaznik na okno \\
+\hline
+{\em stos} & Wskaznik na stos wskaznikow na stany \\
+\hline
+{\em event} & Wskaznik na eventy \\
+\hline
+{\em gracz} & Wskaznik na gracza \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_add375b896f5dc3b2ddfb0d145b43f740}\label{class_gra_add375b896f5dc3b2ddfb0d145b43f740}} 
+\index{Gra@{Gra}!````~Gra@{$\sim$Gra}}
+\index{````~Gra@{$\sim$Gra}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{$\sim$Gra()}{~Gra()}}
+{\footnotesize\ttfamily Gra\+::$\sim$\+Gra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dekonstruktor gry. 
+
+
+
+Definition at line 87 of file Gra.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gra_a285e3f52d7c777e4122e9d168d61083f}\label{class_gra_a285e3f52d7c777e4122e9d168d61083f}} 
+\index{Gra@{Gra}!draw@{draw}}
+\index{draw@{draw}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Gra\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Rysowanie obiektow na ekranie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Wskaznik na cel rysowania \\
+\hline
+\end{DoxyParams}
+Rysowanie obiektow na ekranie
+
+Implements \mbox{\hyperlink{class_stan_af819ad0f6b5e69d441ae6495ea9ece5d}{Stan}}.
+
+
+
+Definition at line 107 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_af3540ecc70f43aafd2d4ae0876e3ecb6}\label{class_gra_af3540ecc70f43aafd2d4ae0876e3ecb6}} 
+\index{Gra@{Gra}!update@{update}}
+\index{update@{update}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Gra\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Odswiezenie stanu gry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dtime} & Delta czasu (timer) \\
+\hline
+\end{DoxyParams}
+Odswiezenie stanu aktualnego \char`\"{}stanu\char`\"{}
+
+Implements \mbox{\hyperlink{class_stan_a2dde2e9d9e66aade33b857cb64697cf3}{Stan}}.
+
+
+
+Definition at line 130 of file Gra.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_gra_a7964b66f383e7becd2c3a329fb0c8eec}\label{class_gra_a7964b66f383e7becd2c3a329fb0c8eec}} 
+\index{Gra@{Gra}!animacje@{animacje}}
+\index{animacje@{animacje}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{animacje}{animacje}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_animacja}{Animacja}}$\ast$$>$ Gra\+::animacje}
+
+
+
+Vector wskaznokow na animacje. 
+
+
+
+Definition at line 34 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_a991362183442922e416e75a2ac922568}\label{class_gra_a991362183442922e416e75a2ac922568}} 
+\index{Gra@{Gra}!cameraPlayer@{cameraPlayer}}
+\index{cameraPlayer@{cameraPlayer}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{cameraPlayer}{cameraPlayer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera}{Camera}}$\ast$ Gra\+::camera\+Player}
+
+
+
+Wskaznik na kamere. 
+
+
+
+Definition at line 32 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_a878a34120a50dced857960193e4a8d94}\label{class_gra_a878a34120a50dced857960193e4a8d94}} 
+\index{Gra@{Gra}!drzewo@{drzewo}}
+\index{drzewo@{drzewo}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{drzewo}{drzewo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drzewo_dialogow}{Drzewo\+Dialogow}}$\ast$ Gra\+::drzewo}
+
+
+
+Wskaznik na drzewo dialogow. 
+
+
+
+Definition at line 30 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_ab534aee223e5fe1257defc9b6283e10e}\label{class_gra_ab534aee223e5fe1257defc9b6283e10e}} 
+\index{Gra@{Gra}!dzwieki@{dzwieki}}
+\index{dzwieki@{dzwieki}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{dzwieki}{dzwieki}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dzwieki}{Dzwieki}}$\ast$ Gra\+::dzwieki}
+
+
+
+Wskaznik na klase obslugujaca dzwieki. 
+
+
+
+Definition at line 38 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_a1f69f71283d01e91a46793f6511b24ba}\label{class_gra_a1f69f71283d01e91a46793f6511b24ba}} 
+\index{Gra@{Gra}!gracz@{gracz}}
+\index{gracz@{gracz}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{gracz}{gracz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gracz}{Gracz}}$\ast$ Gra\+::gracz}
+
+
+
+Wskaznik na gracza. 
+
+
+
+Definition at line 24 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_a6a55f368adaff5ca1a3f2a4d8d26416b}\label{class_gra_a6a55f368adaff5ca1a3f2a4d8d26416b}} 
+\index{Gra@{Gra}!gRuch@{gRuch}}
+\index{gRuch@{gRuch}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{gRuch}{gRuch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obsluga_ruchu_gracza}{Obsluga\+Ruchu\+Gracza}}$\ast$ Gra\+::g\+Ruch}
+
+
+
+Wskaznik na obsluge ruchu gracza umozliwiajaca ruch. 
+
+
+
+Definition at line 26 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_a28dbd88f911bff2f22425cfe4b7f5eec}\label{class_gra_a28dbd88f911bff2f22425cfe4b7f5eec}} 
+\index{Gra@{Gra}!hud@{hud}}
+\index{hud@{hud}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{hud}{hud}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_h_u_d}{H\+UD}}$\ast$ Gra\+::hud}
+
+
+
+Wskaznik na \mbox{\hyperlink{class_h_u_d}{H\+UD}}. 
+
+
+
+Definition at line 28 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_a7c2062856e3c245748bb59245e683841}\label{class_gra_a7c2062856e3c245748bb59245e683841}} 
+\index{Gra@{Gra}!interakcja@{interakcja}}
+\index{interakcja@{interakcja}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{interakcja}{interakcja}}
+{\footnotesize\ttfamily bool Gra\+::interakcja = false}
+
+
+
+Flaga sygnalizujaca stan interakcji z obiektem/postacia 
+
+
+
+Definition at line 47 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_ae5d1f1f96b35e873aa9de9c837682e30}\label{class_gra_ae5d1f1f96b35e873aa9de9c837682e30}} 
+\index{Gra@{Gra}!LALT@{LALT}}
+\index{LALT@{LALT}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{LALT}{LALT}}
+{\footnotesize\ttfamily bool Gra\+::\+L\+A\+LT = false}
+
+
+
+Flaga sygnalizujaca stan przycisku lewy A\+LT. 
+
+
+
+Definition at line 51 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_a7fa772ff1f76419a5cb87197cd16ce57}\label{class_gra_a7fa772ff1f76419a5cb87197cd16ce57}} 
+\index{Gra@{Gra}!LCTRL@{LCTRL}}
+\index{LCTRL@{LCTRL}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{LCTRL}{LCTRL}}
+{\footnotesize\ttfamily bool Gra\+::\+L\+C\+T\+RL}
+
+
+
+Flaga sygnalizujaca stan przycisku lewy C\+T\+RL. 
+
+
+
+Definition at line 49 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_ae4d367fbfd5cf8c957f3c72038924026}\label{class_gra_ae4d367fbfd5cf8c957f3c72038924026}} 
+\index{Gra@{Gra}!map@{map}}
+\index{map@{map}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mapa}{Mapa}}$\ast$ Gra\+::map}
+
+
+
+Wskaznik na mape. 
+
+
+
+Definition at line 20 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_ac23fafd6a47a894dc0866dae228c248d}\label{class_gra_ac23fafd6a47a894dc0866dae228c248d}} 
+\index{Gra@{Gra}!maska@{maska}}
+\index{maska@{maska}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{maska}{maska}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Gra\+::maska}
+
+
+
+Wskaznik na maske. 
+
+
+
+Definition at line 22 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_ab8ab3a662443889d362d9fc7ade953d7}\label{class_gra_ab8ab3a662443889d362d9fc7ade953d7}} 
+\index{Gra@{Gra}!okno@{okno}}
+\index{okno@{okno}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{okno}{okno}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_okno_dialog}{Okno\+Dialog}}$\ast$ Gra\+::okno}
+
+
+
+Wskaznik na klase obslugujaca okna dialogow 
+
+
+
+Definition at line 42 of file Gra.\+h.
+
+\mbox{\Hypertarget{class_gra_ac83b3f27aaffc336ccacf462d01cfb18}\label{class_gra_ac83b3f27aaffc336ccacf462d01cfb18}} 
+\index{Gra@{Gra}!rzucanie\_zaklec@{rzucanie\_zaklec}}
+\index{rzucanie\_zaklec@{rzucanie\_zaklec}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{rzucanie\_zaklec}{rzucanie\_zaklec}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rzucanie_zaklec}{Rzucanie\+Zaklec}}$\ast$ Gra\+::rzucanie\+\_\+zaklec}
+
+
+
+Wskaznik na klase obslugujaca rzucenia zaklec. 
+
+
+
+Definition at line 36 of file Gra.\+h.
 
 
 

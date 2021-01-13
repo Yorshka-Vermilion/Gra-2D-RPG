@@ -1,26 +1,6 @@
 var searchData=
 [
-  ['p2d_96',['p2d',['../class_demo.html#a77a2325e8c50de7eac47d6b5f60e5e09',1,'Demo::p2d()'],['../class_point2_d_array.html#a4b5346b2f74d7640b6e63900cb10c6b2',1,'Point2DArray::p2d()']]],
-  ['p2da_97',['p2da',['../class_moveport.html#a1407ddb9b414c4b72e26818df2f7fe15',1,'Moveport']]],
-  ['p2da10_98',['p2da10',['../class_demo.html#adb2e2555d9e5ee1a229cc51aee9a23c6',1,'Demo']]],
-  ['p2da2_99',['p2da2',['../class_demo.html#abc0a47ad3c811f67d493ea69b4616e8a',1,'Demo']]],
-  ['p2da3_100',['p2da3',['../class_demo.html#ac4206a3bae409df2c051821419d66b49',1,'Demo']]],
-  ['p2da4_101',['p2da4',['../class_demo.html#ad3227ba5b8d8fecdb88e03238d508739',1,'Demo']]],
-  ['p2dv_102',['p2dv',['../class_demo.html#a16955267830dc85e925c4f6e1ab59928',1,'Demo']]],
-  ['pionowa_103',['pionowa',['../class_animacja.html#a1c8b1a859fd5fb38becd45477a1659ae',1,'Animacja']]],
-  ['pobierzpozycje_104',['pobierzPozycje',['../class_gracz.html#afc90c4f02ae0371a612d225cb03740f0',1,'Gracz']]],
-  ['point2d_105',['Point2D',['../class_point2_d.html',1,'Point2D'],['../class_point2_d.html#adf5e22f00fd325514bba2d2d3b9c57bc',1,'Point2D::Point2D(const sf::Vector2f &amp;xy, const sf::Color &amp;color)'],['../class_point2_d.html#a15b72818ebe63800166ee9196099701f',1,'Point2D::Point2D(const sf::Vector2f &amp;xy)'],['../class_point2_d.html#a2415006d697f1c222c17254bdd302098',1,'Point2D::Point2D()']]],
-  ['point2d_2eh_106',['Point2D.h',['../_point2_d_8h.html',1,'']]],
-  ['point2darray_107',['Point2DArray',['../class_point2_d_array.html',1,'Point2DArray'],['../class_point2_d_array.html#a3852568a5991f49f357ce5d341fda341',1,'Point2DArray::Point2DArray()'],['../class_point2_d_array.html#a7c1d7bf88142ec05a8e9d1ad81c74482',1,'Point2DArray::Point2DArray(sf::PrimitiveType pt, size_t v)'],['../class_point2_d_array.html#a7a64b83efcfa22f3fc14f48e5f09afc5',1,'Point2DArray::Point2DArray(std::vector&lt; sf::Vector2f &gt; v2f, sf::Color c)']]],
-  ['point2darray_2eh_108',['Point2DArray.h',['../_point2_d_array_8h.html',1,'']]],
-  ['pozycja_5fkursora_5fw_5fgrze_109',['pozycja_kursora_w_grze',['../class_stan.html#a5ee4b57f06a2e6f40cd0352a389e8554',1,'Stan']]],
-  ['pozycja_5fkursora_5fw_5foknie_110',['pozycja_kursora_w_oknie',['../class_stan.html#ae2e629fecaaa7d1b6872462bf0ca6018',1,'Stan']]],
-  ['prawy_111',['prawy',['../class_stan.html#a40115d79445c785ac775708aa37dd3cb',1,'Stan']]],
-  ['prostokat_5fobcinajacy_112',['prostokat_obcinajacy',['../class_viewport.html#ad724f03a35b1fa7de3ae1e640e08b4f0',1,'Viewport::prostokat_obcinajacy()'],['../class_bounding_box.html#a8cb7efc5a4b5ce7cdd05e88fe24100bd',1,'BoundingBox::prostokat_obcinajacy()']]],
-  ['prostokat_5fobcinajacy_5f2_113',['prostokat_obcinajacy_2',['../class_bounding_box.html#abe23f1ff107c6277159bb9760d437ea3',1,'BoundingBox']]],
-  ['przemek_114',['Przemek',['../class_przemek.html',1,'']]],
-  ['przemek_2eh_115',['Przemek.h',['../_przemek_8h.html',1,'']]],
-  ['przerwa_116',['przerwa',['../class_animacja.html#a66c252a62b7aab18f37340779912c247',1,'Animacja']]],
-  ['przeskaluj_117',['przeskaluj',['../class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70',1,'Obiekt']]],
-  ['przestaw_118',['przestaw',['../class_obiekt.html#aa9202b4cf6a327c24ac63b1821f3fc0a',1,'Obiekt']]]
+  ['nacisnieta_5fopcja_185',['Nacisnieta_opcja',['../class_menu.html#a40888a9077c520f093586da913c619e8',1,'Menu']]],
+  ['nazwa_186',['nazwa',['../class_gracz.html#a54aa4df1eabf66f24ad82de91056c0d3',1,'Gracz::nazwa()'],['../class_zaklecie.html#a77d3a9c8b0479d914e969014bc44519d',1,'Zaklecie::nazwa()'],['../class_creator.html#a85c9c3f661612f5836f7fe02f42a34ec',1,'Creator::nazwa()']]],
+  ['nazwastd_187',['nazwaStd',['../class_creator.html#a92356995e10b2ae742f1c87d828c6e0d',1,'Creator']]]
 ];

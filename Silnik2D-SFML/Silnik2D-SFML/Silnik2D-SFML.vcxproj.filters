@@ -95,9 +95,6 @@
     <ClInclude Include="Sebix\DrzewoDialogow.h">
       <Filter>Pliki nagłówkowe\Sebix</Filter>
     </ClInclude>
-    <ClInclude Include="Sebix\DialogWindow.h">
-      <Filter>Pliki nagłówkowe\Sebix</Filter>
-    </ClInclude>
     <ClInclude Include="Przemek\menu.h">
       <Filter>Pliki nagłówkowe\Przemek</Filter>
     </ClInclude>
@@ -141,6 +138,9 @@
       <Filter>Pliki nagłówkowe\Sebix</Filter>
     </ClInclude>
     <ClInclude Include="Sebix\Zycie.h">
+      <Filter>Pliki nagłówkowe\Sebix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sebix\OknoDialog.h">
       <Filter>Pliki nagłówkowe\Sebix</Filter>
     </ClInclude>
   </ItemGroup>

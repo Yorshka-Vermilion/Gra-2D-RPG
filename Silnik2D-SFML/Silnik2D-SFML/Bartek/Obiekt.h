@@ -29,10 +29,10 @@ public:
 		this->sprajt.setTexture(this->tekstura);
 		this->sprajt.setPosition(pozycja);
 	}
-
+	/**
+	 * @brief Tworzy nowy pusty Obiekt
+	 */
 	Obiekt(){}
-
-
 	/**
 	* @brief Funkcja rysuje obiekt
 	*
@@ -81,28 +81,24 @@ public:
 	void przeskaluj(sf::Vector2f jak) {
 		this->sprajt.setScale(jak);
 	}
-
 	/**
 	* @brief Funkcja ustawia 'origin' na srodku sprite'a
 	*/
 	void setOriginOnMiddle() {
 		this->sprajt.setOrigin(sf::Vector2f(this->tekstura.getSize().x / 2, this->tekstura.getSize().y / 2));
 	}
-
 	/**
 	* @brief Funkcja zwraca rozmiar sprite'a
 	*/
 	sf::Vector2f PobierzRozmiar() {
 		return sf::Vector2f(this->sprajt.getGlobalBounds().width, this->sprajt.getGlobalBounds().height);
 	}
-
 	/**
 	* @brief Funkcja zwraca rozmiar sprite'a
 	*/
 	sf::FloatRect pobierzPozycje() {
 		return this->sprajt.getGlobalBounds();
 	}
-
 	/**
 	* @brief Funkcja rozjasnia obiekt
 	*
@@ -114,7 +110,6 @@ public:
 		if (this->sprajt.getColor().a <= max) return;
 		this->sprajt.setColor(sf::Color(0, 0, 0, this->sprajt.getColor().a - ile));
 	}
-
 	/**
 	* @brief Funkcja przyciemnia obiekt
 	*

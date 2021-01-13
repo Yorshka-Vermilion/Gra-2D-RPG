@@ -1,0 +1,176 @@
+\hypertarget{class_zycie}{}\doxysection{Zycie Class Reference}
+\label{class_zycie}\index{Zycie@{Zycie}}
+
+
+Klasa odpowiada za reprezentacje graficzna zdrowia bohatera.  
+
+
+
+
+{\ttfamily \#include $<$Zycie.\+h$>$}
+
+Inheritance diagram for Zycie\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_zycie}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_zycie_ac2a4a998f393aa8711b394347171ef72}{Zycie}} (std\+::string sciezka, sf\+::\+Vector2f pozycja)
+\begin{DoxyCompactList}\small\item\em Konstruktor odpowiedzialny za zbudowanie zycia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zycie_a71c9fdcb4f803bb38af09be49fc53374}{draw}} (sf\+::\+Render\+Target $\ast$cel)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajca za rysowanie zdrowia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zycie_a3199061ebd7bb76b36e74df8a9895787}{zrob\+HP}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za zbudowanie kuli zdrowia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zycie_a77e1f79570b15cdfe4ab8a92e6038371}{update\+HP}} (double obecne\+HP, double max\+HP)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za reprezentacje aktualizacji zdrowia bohatera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_zycie_a26404f436b00fee32e6052eef8bdcd0a}{diameter}}
+\begin{DoxyCompactList}\small\item\em Wartosc okreslajaca srednice okregu \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_zycie_a13e0fc3137b529e7ec6e1f6a94f82a2d}{hp\+Pos}}
+\begin{DoxyCompactList}\small\item\em Pozycja zdrowia bohatera \end{DoxyCompactList}\item 
+sf\+::\+Circle\+Shape \mbox{\hyperlink{class_zycie_a9e3d8789b1dec4ca8a3b869377172ecc}{hp\+Circle}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy kule zdrowia bohatera \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiada za reprezentacje graficzna zdrowia bohatera. 
+
+Definition at line 8 of file Zycie.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_zycie_ac2a4a998f393aa8711b394347171ef72}\label{class_zycie_ac2a4a998f393aa8711b394347171ef72}} 
+\index{Zycie@{Zycie}!Zycie@{Zycie}}
+\index{Zycie@{Zycie}!Zycie@{Zycie}}
+\doxysubsubsection{\texorpdfstring{Zycie()}{Zycie()}}
+{\footnotesize\ttfamily Zycie\+::\+Zycie (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor odpowiedzialny za zbudowanie zycia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & odpowiada za znajdowanie sie pliku reprezentujacego zdrowie \\
+\hline
+{\em pozycja} & odpowaida za pozycje w ktorej ma sie znajdowac zdrowie \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Zycie.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_zycie_a71c9fdcb4f803bb38af09be49fc53374}\label{class_zycie_a71c9fdcb4f803bb38af09be49fc53374}} 
+\index{Zycie@{Zycie}!draw@{draw}}
+\index{draw@{draw}!Zycie@{Zycie}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Zycie\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajca za rysowanie zdrowia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & odpowiada za okno w którym ma zostac narysowany obiekt \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file Zycie.\+h.
+
+\mbox{\Hypertarget{class_zycie_a77e1f79570b15cdfe4ab8a92e6038371}\label{class_zycie_a77e1f79570b15cdfe4ab8a92e6038371}} 
+\index{Zycie@{Zycie}!updateHP@{updateHP}}
+\index{updateHP@{updateHP}!Zycie@{Zycie}}
+\doxysubsubsection{\texorpdfstring{updateHP()}{updateHP()}}
+{\footnotesize\ttfamily void Zycie\+::update\+HP (\begin{DoxyParamCaption}\item[{double}]{obecne\+HP,  }\item[{double}]{max\+HP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za reprezentacje aktualizacji zdrowia bohatera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obecne\+HP} & obecny stan zdrowia bohatera \\
+\hline
+{\em max\+HP} & maksymalny stan zdrowia bohatera \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file Zycie.\+h.
+
+\mbox{\Hypertarget{class_zycie_a3199061ebd7bb76b36e74df8a9895787}\label{class_zycie_a3199061ebd7bb76b36e74df8a9895787}} 
+\index{Zycie@{Zycie}!zrobHP@{zrobHP}}
+\index{zrobHP@{zrobHP}!Zycie@{Zycie}}
+\doxysubsubsection{\texorpdfstring{zrobHP()}{zrobHP()}}
+{\footnotesize\ttfamily void Zycie\+::zrob\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za zbudowanie kuli zdrowia. 
+
+
+
+Definition at line 48 of file Zycie.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_zycie_a26404f436b00fee32e6052eef8bdcd0a}\label{class_zycie_a26404f436b00fee32e6052eef8bdcd0a}} 
+\index{Zycie@{Zycie}!diameter@{diameter}}
+\index{diameter@{diameter}!Zycie@{Zycie}}
+\doxysubsubsection{\texorpdfstring{diameter}{diameter}}
+{\footnotesize\ttfamily float Zycie\+::diameter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc okreslajaca srednice okregu 
+
+
+
+Definition at line 12 of file Zycie.\+h.
+
+\mbox{\Hypertarget{class_zycie_a9e3d8789b1dec4ca8a3b869377172ecc}\label{class_zycie_a9e3d8789b1dec4ca8a3b869377172ecc}} 
+\index{Zycie@{Zycie}!hpCircle@{hpCircle}}
+\index{hpCircle@{hpCircle}!Zycie@{Zycie}}
+\doxysubsubsection{\texorpdfstring{hpCircle}{hpCircle}}
+{\footnotesize\ttfamily sf\+::\+Circle\+Shape Zycie\+::hp\+Circle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy kule zdrowia bohatera 
+
+
+
+Definition at line 20 of file Zycie.\+h.
+
+\mbox{\Hypertarget{class_zycie_a13e0fc3137b529e7ec6e1f6a94f82a2d}\label{class_zycie_a13e0fc3137b529e7ec6e1f6a94f82a2d}} 
+\index{Zycie@{Zycie}!hpPos@{hpPos}}
+\index{hpPos@{hpPos}!Zycie@{Zycie}}
+\doxysubsubsection{\texorpdfstring{hpPos}{hpPos}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Zycie\+::hp\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pozycja zdrowia bohatera 
+
+
+
+Definition at line 16 of file Zycie.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_zycie_8h}{Zycie.\+h}}\end{DoxyCompactItemize}

@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Member List</title>
+<title>Grafika - Projekt: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Grafika - Projekt
    </div>
   </td>
  </tr>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_gracz.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Gracz Member List</div>  </div>
@@ -69,23 +89,57 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="class_gracz.html">Gracz</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#ae650363a319d9bf171d28b7bbd85e095">debug</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_gracz.html#ab6cce8a5a45fc545add7bffe8fcfecea">debuguj</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#a8fd5909bc95d18f691fce23eaac10b16">dodajExp</a>(double ilosc)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#adb0599d22c44bc1153d6cfd24a253d8b">draw</a>(sf::RenderTarget *cel)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_gracz.html#a0d00d322b41ecce30c064c286b2ec875">Gracz</a>(std::string sciezka, sf::Vector2f pozycja, sf::RectangleShape ksztalt)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#ae9c43563d7c05d67851772586aae6839">exp</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#a827962206c5e5084dc3c109d543789c9">Gracz</a>(std::string sciezka, sf::Vector2f pozycja, double maxZycie, double maxMana, double maxExp)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#ada2370df573fd05ba5ac18c307f3ac9d">isDead</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#af6a380c64bcdae717d65dc9a6f0d11f0">ksztalt</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#a823762befd97d92fe3c5fa4e5f42d665">ladujMane</a>(double ile=1)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#a45ba018dbf1ee7cde9ec45bded07deaf">level</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#a20b380245fc77a771e7321fd2a1b73ed">levelUp</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#a3384a684397e713f00be1b7de3d8589a">mana</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#a8e78d52a26daa6588ef1f1071ac1f2e3">maxExp</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#af5ff4016882cb510148eadf2ac68f44e">maxMana</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#aeed5d9c00d66e35d02fda1c61f18e065">maxZycie</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#a54aa4df1eabf66f24ad82de91056c0d3">nazwa</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_obiekt.html#a03124928e33622a68b22f9bb7e1d8cf9">Obiekt</a>(std::string sciezka, sf::Vector2f pozycja)</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_obiekt.html#ac8e27a872226e2b55c6f42c0677e5d00">Obiekt</a>()</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#a955089ea65682c5a258e5de7dacb1638">odejmijMane</a>(double ile=1)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#afc90c4f02ae0371a612d225cb03740f0">pobierzPozycje</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">przeskaluj</a>(sf::Vector2f jak)</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_obiekt.html#aa9202b4cf6a327c24ac63b1821f3fc0a">przestaw</a>(sf::Vector2f gdzie)</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_obiekt.html#a3bca4542d722dfc07bb905dfb021cfea">PobierzRozmiar</a>()</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">przeskaluj</a>(sf::Vector2f jak)</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_obiekt.html#aa9202b4cf6a327c24ac63b1821f3fc0a">przestaw</a>(sf::Vector2f gdzie)</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_obiekt.html#a0308862e97a4e26eedb6481ca9da7957">przyciemnij</a>(float ile, int max=500)</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_obiekt.html#aaea31a8611efee40f4254f206e597ccb">rotuj</a>(float kat)</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#a08ecaeec6eedec2125ae21fc88b978a9">rusz</a>(sf::Vector2f gdzie)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_obiekt.html#a5a1182776f2ef794f4f1be89b2316733">sprajt</a></td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_obiekt.html#a22cbc86ca1d6cac0619039f146fc6684">tekstura</a></td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_obiekt.html#a9fe13261fdb4a04f8fb89178e12047f2">rozjasnij</a>(float ile, int max=0)</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#a08ecaeec6eedec2125ae21fc88b978a9">rusz</a>(sf::Vector2f gdzie)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#a0ed8d4d528be73fd5954abe5f5330a8f">setFullMana</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#a9e5a2db3ad699bd64f268f2e301c35ba">setFullZycie</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#adb7d47b5f79cab567d015c7b5d7c3861">setNazwa</a>(std::string nazwa)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_obiekt.html#aeffd4b81169593dc52b4c41943cf6613">setOriginOnMiddle</a>()</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_obiekt.html#a5a1182776f2ef794f4f1be89b2316733">sprajt</a></td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#add30b9b56414594935ab3c865980ecc3">sprawdzLevel</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#ad2bd300a00c1f0e38576e3a7be4d5ca6">statystyki</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_obiekt.html#a22cbc86ca1d6cac0619039f146fc6684">tekstura</a></td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#a130171d28b911cb9ae43eb9b65737e62">uleczObrazenia</a>(double ile=1)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#a07cd133530b9e2ed7dee7aeb874131d1">zadajObrazenia</a>(double ile=1)</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#af9c5975a68adfbcd86a00f13e64145fc">zmienStanLevel</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">zmienTeksture</a>(std::string sciezka)</td><td class="entry"><a class="el" href="class_obiekt.html">Obiekt</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#aa080bc5626ac00482f289af2dcb01744">zwrocLevel</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#a2440fe6a8464872488fb16b2b8b437a0">zwrocNazwa</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#a41043d90737bd0586a71cd4d9ea4a575">zwrocObecnyStanExp</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#ab8dd37a019a60619a6e7033c3cc295a0">zwrocObecnyStanMany</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#a1cadf49edd872141e2b2f895e7535c12">zwrocObecnyStanZdrowia</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_gracz.html#ad577a31620d58ab10d61f3e556ceffe3">zycie</a></td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_gracz.html#abdad0e2d01ae6c1acaa0cd43d0787fc0">~Gracz</a>()</td><td class="entry"><a class="el" href="class_gracz.html">Gracz</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
 </body>
 </html>

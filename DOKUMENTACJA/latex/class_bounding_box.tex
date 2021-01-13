@@ -16,16 +16,8 @@ klasa boundingbox bedaca prostokatem okalajacym
 \begin{DoxyCompactList}\small\item\em konstruktor domyslny klasy boundingbox \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_bounding_box_a6e401c4da5839950f1f30c8b8c4d1208}{Bounding\+Box}} ()
 \begin{DoxyCompactList}\small\item\em konstruktor domyslny klasy boundingbox \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_bounding_box_a6e50bdfdafa79047deed48bae45604d3}{zmien\+\_\+wspolrzedne}} (\mbox{\hyperlink{class_point2_d}{Point2D}} w)
-\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za zmodyfikowanie prostokata \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_bounding_box_a978a55a02ac28040515dc613914be8bb}{wyswietl\+\_\+wspolrzedne}} ()
-\begin{DoxyCompactList}\small\item\em funkcja do wyswietlenia wspolrzednych prostokata \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_bounding_box_a8cb7efc5a4b5ce7cdd05e88fe24100bd}{prostokat\+\_\+obcinajacy}} (sf\+::\+Render\+Target $\ast$target)
-\begin{DoxyCompactList}\small\item\em funckcja rysujaca pierwszy prostokat \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_bounding_box_abe23f1ff107c6277159bb9760d437ea3}{prostokat\+\_\+obcinajacy\+\_\+2}} (sf\+::\+Render\+Target $\ast$target)
-\begin{DoxyCompactList}\small\item\em funckcja rysujaca drugi prostokat \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_bounding_box_ac6feebbe21b36ebf921c7e253824a613}{kolizja}} ()
-\begin{DoxyCompactList}\small\item\em funckcja sprawdzajaca czy wystapily kolizje \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,6 +33,10 @@ void \mbox{\hyperlink{class_bounding_box_ac6feebbe21b36ebf921c7e253824a613}{koli
 
 \doxysubsection{Detailed Description}
 klasa boundingbox bedaca prostokatem okalajacym 
+
+Definition at line 11 of file rysowanie.\+h.
+
+
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_bounding_box_a85f0126abc969d8fa946bc35ce4ac20a}\label{class_bounding_box_a85f0126abc969d8fa946bc35ce4ac20a}} 
@@ -58,6 +54,10 @@ konstruktor domyslny klasy boundingbox
 {\em v2f} & przechowuje pozycje wektorow \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 26 of file rysowanie.\+h.
+
 \mbox{\Hypertarget{class_bounding_box_a6e401c4da5839950f1f30c8b8c4d1208}\label{class_bounding_box_a6e401c4da5839950f1f30c8b8c4d1208}} 
 \index{BoundingBox@{BoundingBox}!BoundingBox@{BoundingBox}}
 \index{BoundingBox@{BoundingBox}!BoundingBox@{BoundingBox}}
@@ -70,6 +70,10 @@ konstruktor domyslny klasy boundingbox
 
 
 
+Definition at line 36 of file rysowanie.\+h.
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_bounding_box_ac6feebbe21b36ebf921c7e253824a613}\label{class_bounding_box_ac6feebbe21b36ebf921c7e253824a613}} 
 \index{BoundingBox@{BoundingBox}!kolizja@{kolizja}}
@@ -79,63 +83,8 @@ konstruktor domyslny klasy boundingbox
 
 
 
-funckcja sprawdzajaca czy wystapily kolizje 
+Definition at line 38 of file rysowanie.\+h.
 
-\mbox{\Hypertarget{class_bounding_box_a8cb7efc5a4b5ce7cdd05e88fe24100bd}\label{class_bounding_box_a8cb7efc5a4b5ce7cdd05e88fe24100bd}} 
-\index{BoundingBox@{BoundingBox}!prostokat\_obcinajacy@{prostokat\_obcinajacy}}
-\index{prostokat\_obcinajacy@{prostokat\_obcinajacy}!BoundingBox@{BoundingBox}}
-\doxysubsubsection{\texorpdfstring{prostokat\_obcinajacy()}{prostokat\_obcinajacy()}}
-{\footnotesize\ttfamily void Bounding\+Box\+::prostokat\+\_\+obcinajacy (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-funckcja rysujaca pierwszy prostokat 
-
-
-\begin{DoxyParams}{Parameters}
-{\em target} & obiekt typu Render\+Target ktory otrzymuje wspolrzedne linii \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{class_bounding_box_abe23f1ff107c6277159bb9760d437ea3}\label{class_bounding_box_abe23f1ff107c6277159bb9760d437ea3}} 
-\index{BoundingBox@{BoundingBox}!prostokat\_obcinajacy\_2@{prostokat\_obcinajacy\_2}}
-\index{prostokat\_obcinajacy\_2@{prostokat\_obcinajacy\_2}!BoundingBox@{BoundingBox}}
-\doxysubsubsection{\texorpdfstring{prostokat\_obcinajacy\_2()}{prostokat\_obcinajacy\_2()}}
-{\footnotesize\ttfamily void Bounding\+Box\+::prostokat\+\_\+obcinajacy\+\_\+2 (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-funckcja rysujaca drugi prostokat 
-
-
-\begin{DoxyParams}{Parameters}
-{\em target} & obiekt typu Render\+Target ktory otrzymuje wspolrzedne linii \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{class_bounding_box_a978a55a02ac28040515dc613914be8bb}\label{class_bounding_box_a978a55a02ac28040515dc613914be8bb}} 
-\index{BoundingBox@{BoundingBox}!wyswietl\_wspolrzedne@{wyswietl\_wspolrzedne}}
-\index{wyswietl\_wspolrzedne@{wyswietl\_wspolrzedne}!BoundingBox@{BoundingBox}}
-\doxysubsubsection{\texorpdfstring{wyswietl\_wspolrzedne()}{wyswietl\_wspolrzedne()}}
-{\footnotesize\ttfamily void Bounding\+Box\+::wyswietl\+\_\+wspolrzedne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-funkcja do wyswietlenia wspolrzednych prostokata 
-
-\mbox{\Hypertarget{class_bounding_box_a6e50bdfdafa79047deed48bae45604d3}\label{class_bounding_box_a6e50bdfdafa79047deed48bae45604d3}} 
-\index{BoundingBox@{BoundingBox}!zmien\_wspolrzedne@{zmien\_wspolrzedne}}
-\index{zmien\_wspolrzedne@{zmien\_wspolrzedne}!BoundingBox@{BoundingBox}}
-\doxysubsubsection{\texorpdfstring{zmien\_wspolrzedne()}{zmien\_wspolrzedne()}}
-{\footnotesize\ttfamily void Bounding\+Box\+::zmien\+\_\+wspolrzedne (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-funkcja odpowiedzialna za zmodyfikowanie prostokata 
-
-
-\begin{DoxyParams}{Parameters}
-{\em w} & zmienna odpowiedzialna za przekazywanie wspolrzednych wektora \\
-\hline
-\end{DoxyParams}
 
 
 \doxysubsection{Member Data Documentation}
@@ -149,6 +98,10 @@ funkcja odpowiedzialna za zmodyfikowanie prostokata
 
 wektor od ktorego zaczyna sie przekatna pierwszego prostokata 
 
+
+
+Definition at line 14 of file rysowanie.\+h.
+
 \mbox{\Hypertarget{class_bounding_box_a61e911ddb2058c7af855d93cfa1fab34}\label{class_bounding_box_a61e911ddb2058c7af855d93cfa1fab34}} 
 \index{BoundingBox@{BoundingBox}!d1@{d1}}
 \index{d1@{d1}!BoundingBox@{BoundingBox}}
@@ -158,6 +111,10 @@ wektor od ktorego zaczyna sie przekatna pierwszego prostokata
 
 
 wektor na ktorym konczy sie przekatna pierwszego prostokata 
+
+
+
+Definition at line 16 of file rysowanie.\+h.
 
 \mbox{\Hypertarget{class_bounding_box_afc7c8abbddeca7384d22b2fdd0e9aeae}\label{class_bounding_box_afc7c8abbddeca7384d22b2fdd0e9aeae}} 
 \index{BoundingBox@{BoundingBox}!d2@{d2}}
@@ -169,6 +126,10 @@ wektor na ktorym konczy sie przekatna pierwszego prostokata
 
 wektor od ktorego zaczyna sie przekatna drugiego prostokata 
 
+
+
+Definition at line 18 of file rysowanie.\+h.
+
 \mbox{\Hypertarget{class_bounding_box_abd614080e5055121c83118f255f32a57}\label{class_bounding_box_abd614080e5055121c83118f255f32a57}} 
 \index{BoundingBox@{BoundingBox}!d3@{d3}}
 \index{d3@{d3}!BoundingBox@{BoundingBox}}
@@ -178,6 +139,10 @@ wektor od ktorego zaczyna sie przekatna drugiego prostokata
 
 
 wektor na ktorym konczy sie przekatna drugiego prostokata 
+
+
+
+Definition at line 20 of file rysowanie.\+h.
 
 
 

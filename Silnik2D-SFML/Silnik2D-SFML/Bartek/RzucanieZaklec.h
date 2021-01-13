@@ -11,7 +11,6 @@
 
 /// Kierunki rzucania czarow
 enum spelle {LEWO,PRAWO,GORA,DOL};
-
 /**
 	 * @brief Klasa obslugujaca rzucanie zaklec
 	 *
@@ -28,7 +27,6 @@ class RzucanieZaklec
 	Gracz* gracz;
 	
 public:
-
 	/**
 	 * @brief Konstruktor rzucania zaklec
 	 *
@@ -49,10 +47,10 @@ public:
 		tm.push_back(PRAWO);
 		this->zaklecia.push_back(new Zaklecie(tm, 50,25, "BLYSKAWICA", new Animacja("lightning.png", 0, 0, 160, 240, 5, 0.1, true, false)));
 	}
-
 	/**
-	 * @brief Funkcja oblicza kierunei narysowanych lini oraz zwraca index zaklecia jesli kierunki lini pokryly sie z jakims zakleciem w vectorze zaklecia 
-	 *
+	 * @brief Funkcja oblicza kierunei narysowanych lini oraz zwraca index zaklecia jesli kierunki lini pokryly sie z jakims zakleciem w vectorze zaklecia
+	 * @return int numer zaklecia ktore zgadza sie ze wskazanymi znakami
+	 * @return -1 gdy narysowane linie nie odpowiadaja zadnemu z czarow
 	 */
 	int oblicz() {
 		std::vector<int> kierunki;
@@ -74,12 +72,12 @@ public:
 		}
 		else return -1;
 	}
-
-
 	/**
 	 * @brief Funkcja sprawdza czy jakiekolwiek zaklecie i jego kierunki odpowiadaja vectorowi kierunkow podanemu w argumencie
 	 *
 	 * @param kierunki Vector kierunkow ktore odpowiadaja narysowanym linia
+	 * @return i zwraca numer wskazanego zaklecia ze zbioru
+	 * @return -1 gdy odpowiadajace zaklecie nie znajduje wie w zbiorze
 	 */
 	size_t sprawdz(std::vector<int> kierunki) {
 		for (size_t i = 0; i < zaklecia.size(); i++) {
@@ -88,11 +86,11 @@ public:
 			}
 		} return -1;
 	}
-
 	/**
 	 * @brief Funkcja obslugujaca rzucanie zaklec, zwraca odpowiedni komunikat w postaci string'a
 	 *
 	 * @param plytka Wskaznik na plytke na ktorej ma byc rzucony czar
+	 * @return string zwraca komunikat zaleznie od efektu rzuconego czaru
 	 */
 	std::string rzucaj(Plytka* plytka) {
 		int o = oblicz();
@@ -107,7 +105,6 @@ public:
 		}
 		return "Nie rzucono czaru";
 	}
-
 	/**
 	 * @brief Funkcja zadaje obrazenia obiektowi znajdujacemu sie na plytce
 	 *
@@ -117,7 +114,6 @@ public:
 	void zadajObrazenia(Plytka* plytka, int dmg) {
 		plytka->zwrocObiekt()->dealDmg(dmg + this->gracz->statystyki->obliczDmg(dmg));
 	}
-
 	/**
 	 * @brief Funkcja zapisujaca poczatek lini rysowanej w celu rzucania zaklecia
 	 *
@@ -127,7 +123,6 @@ public:
 		this->tmp = Point2DArray();
 		this->tmp.add2DPoint(gdzie);
 	}
-
 	/**
 	 * @brief Funkcja zapisujaca koniec lini rysowanej w celu rzucania zaklecia
 	 *
@@ -138,7 +133,6 @@ public:
 		this->linie.push_back(tmp);
 		this->tmp.clear();
 	}
-
 	/**
 	 * @brief Funkcja zapisujaca rysujaca linie rzucania zaklec
 	 *
@@ -157,7 +151,6 @@ public:
 		}
 		
 	}
-
 	/**
 	 * @brief Funkcja czyszczaca linie po rzuceniu czaru
 	 *
@@ -166,8 +159,5 @@ public:
 		this->linie.clear();
 		this->tmp.clear();
 	}
-
-
-
 };
 

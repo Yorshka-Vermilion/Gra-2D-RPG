@@ -1,15 +1,10 @@
 var searchData=
 [
-  ['p2d_361',['p2d',['../class_demo.html#a77a2325e8c50de7eac47d6b5f60e5e09',1,'Demo::p2d()'],['../class_point2_d_array.html#a4b5346b2f74d7640b6e63900cb10c6b2',1,'Point2DArray::p2d()']]],
-  ['p2da_362',['p2da',['../class_moveport.html#a1407ddb9b414c4b72e26818df2f7fe15',1,'Moveport']]],
-  ['p2da10_363',['p2da10',['../class_demo.html#adb2e2555d9e5ee1a229cc51aee9a23c6',1,'Demo']]],
-  ['p2da2_364',['p2da2',['../class_demo.html#abc0a47ad3c811f67d493ea69b4616e8a',1,'Demo']]],
-  ['p2da3_365',['p2da3',['../class_demo.html#ac4206a3bae409df2c051821419d66b49',1,'Demo']]],
-  ['p2da4_366',['p2da4',['../class_demo.html#ad3227ba5b8d8fecdb88e03238d508739',1,'Demo']]],
-  ['p2dv_367',['p2dv',['../class_demo.html#a16955267830dc85e925c4f6e1ab59928',1,'Demo']]],
-  ['pionowa_368',['pionowa',['../class_animacja.html#a1c8b1a859fd5fb38becd45477a1659ae',1,'Animacja']]],
-  ['pozycja_5fkursora_5fw_5fgrze_369',['pozycja_kursora_w_grze',['../class_stan.html#a5ee4b57f06a2e6f40cd0352a389e8554',1,'Stan']]],
-  ['pozycja_5fkursora_5fw_5foknie_370',['pozycja_kursora_w_oknie',['../class_stan.html#ae2e629fecaaa7d1b6872462bf0ca6018',1,'Stan']]],
-  ['prawy_371',['prawy',['../class_stan.html#a40115d79445c785ac775708aa37dd3cb',1,'Stan']]],
-  ['przerwa_372',['przerwa',['../class_animacja.html#a66c252a62b7aab18f37340779912c247',1,'Animacja']]]
+  ['lalt_813',['LALT',['../class_gra.html#ae5d1f1f96b35e873aa9de9c837682e30',1,'Gra']]],
+  ['lctrl_814',['LCTRL',['../class_gra.html#a7fa772ff1f76419a5cb87197cd16ce57',1,'Gra']]],
+  ['level_815',['level',['../class_gracz.html#a45ba018dbf1ee7cde9ec45bded07deaf',1,'Gracz::level()'],['../class_h_u_d.html#a7c83161fd8d89265eeb1d3f6f729fe68',1,'HUD::level()']]],
+  ['levelup_816',['levelUp',['../class_gracz.html#a20b380245fc77a771e7321fd2a1b73ed',1,'Gracz']]],
+  ['lewy_817',['lewy',['../class_stan.html#a8407c45b30a429772941352bd8bc6140',1,'Stan']]],
+  ['linie_818',['linie',['../class_rzucanie_zaklec.html#a654a117b8d037c4a3bd73b798de3aed7',1,'RzucanieZaklec']]],
+  ['lista_5fdzwiekow_819',['lista_dzwiekow',['../class_dzwieki.html#a1ee1c5a1b4a1d078a731ebbd6e9fcef7',1,'Dzwieki']]]
 ];

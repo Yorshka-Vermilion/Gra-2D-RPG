@@ -1,0 +1,277 @@
+\hypertarget{class_okno_dialog}{}\doxysection{Okno\+Dialog Class Reference}
+\label{class_okno_dialog}\index{OknoDialog@{OknoDialog}}
+
+
+Klasa odpowiada za reprezentacje graficzna dialogow oraz interakcji.  
+
+
+
+
+{\ttfamily \#include $<$Okno\+Dialog.\+h$>$}
+
+Inheritance diagram for Okno\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_okno_dialog}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_okno_dialog_a08db43b9a17492657de79a0c779af76f}{Okno\+Dialog}} (std\+::string sciezka, sf\+::\+Vector2f pozycja)
+\begin{DoxyCompactList}\small\item\em Konstruktor odpowiedzialny za okna dialgou w rozgrywce. \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_okno_dialog_a7e70d05e2c6a578cdd7646037c0fae5a}{zrob\+Tekst}} (std\+::string sciezka, sf\+::\+Vector2f pozycja)
+\begin{DoxyCompactList}\small\item\em Funkcja tworzaca reprezentacje graficzna w formie tekstu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_okno_dialog_a1fa916d1e5f021b9b1521a69a3bf5cb7}{draw}} (sf\+::\+Render\+Target $\ast$cel)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajca za rysowanie okna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_okno_dialog_a6d2a86dc09c4f87f563a2105d50418a5}{ustaw\+Interakcje}} (std\+::string tresc, std\+::string \mbox{\hyperlink{class_okno_dialog_a083c6eb40a4263408c75129e11387d74}{odp1}}, std\+::string \mbox{\hyperlink{class_okno_dialog_a0f27c449350b9a3d34d4211cfe9ef44c}{odp2}}, std\+::string \mbox{\hyperlink{class_okno_dialog_afef5a9b8f4e16f80b0dae8aa924ed2be}{result1}}, std\+::string \mbox{\hyperlink{class_okno_dialog_a9f1ced0b3c8c28a75768626caf07b915}{result2}})
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajca za ustawienie odpowiednich wiadomosci dialogu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_okno_dialog_acb6b8a273d8e0e94bad55304226a273b}{rozegraj\+Interakcje}} (int x)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajca za ustawienie odpowiedniej wartosci definiujacej rezultat dialogu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_okno_dialog_a20ca48168709c30f0657b3d91901b2b2}{wynik}} = 0
+\begin{DoxyCompactList}\small\item\em wynik interakcji z obiektem/postacia \end{DoxyCompactList}\item 
+sf\+::\+Font \mbox{\hyperlink{class_okno_dialog_a927ec65ccfd12575fa477a8d66fecd23}{czcionka}}
+\begin{DoxyCompactList}\small\item\em czcionka reprezentujaca tresc dialogow w sposob graficzny \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_okno_dialog_aa53d01f6e77d3d44fb0de3bbf302f71f}{tresc\+Okno}}
+\begin{DoxyCompactList}\small\item\em tresc glownej wiadomosci graficznej z dialogu \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_okno_dialog_a083c6eb40a4263408c75129e11387d74}{odp1}}
+\begin{DoxyCompactList}\small\item\em tresc pierwszej odpowiedzi wiadomosci graficznej z dialogu \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_okno_dialog_a0f27c449350b9a3d34d4211cfe9ef44c}{odp2}}
+\begin{DoxyCompactList}\small\item\em tresc drugiej odpowiedzi wiadomosci graficznej z dialogu \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_okno_dialog_afef5a9b8f4e16f80b0dae8aa924ed2be}{result1}}
+\begin{DoxyCompactList}\small\item\em tresc pierwszego wyniku wiadomosci graficznej z dialogu \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_okno_dialog_a9f1ced0b3c8c28a75768626caf07b915}{result2}}
+\begin{DoxyCompactList}\small\item\em tresc drugiego wyniku wiadomosci graficznej z dialogu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiada za reprezentacje graficzna dialogow oraz interakcji. 
+
+Definition at line 7 of file Okno\+Dialog.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_okno_dialog_a08db43b9a17492657de79a0c779af76f}\label{class_okno_dialog_a08db43b9a17492657de79a0c779af76f}} 
+\index{OknoDialog@{OknoDialog}!OknoDialog@{OknoDialog}}
+\index{OknoDialog@{OknoDialog}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{OknoDialog()}{OknoDialog()}}
+{\footnotesize\ttfamily Okno\+Dialog\+::\+Okno\+Dialog (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor odpowiedzialny za okna dialgou w rozgrywce. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & odpowiada za znajdowanie sie pliku reprezentujacego tlo okna \\
+\hline
+{\em pozycja} & odpowaida za pozycje w ktorej ma sie znajdowac okno \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file Okno\+Dialog.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_okno_dialog_a1fa916d1e5f021b9b1521a69a3bf5cb7}\label{class_okno_dialog_a1fa916d1e5f021b9b1521a69a3bf5cb7}} 
+\index{OknoDialog@{OknoDialog}!draw@{draw}}
+\index{draw@{draw}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Okno\+Dialog\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajca za rysowanie okna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & odpowiada za okno w którym ma zostac narysowany obiekt \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 85 of file Okno\+Dialog.\+h.
+
+\mbox{\Hypertarget{class_okno_dialog_acb6b8a273d8e0e94bad55304226a273b}\label{class_okno_dialog_acb6b8a273d8e0e94bad55304226a273b}} 
+\index{OknoDialog@{OknoDialog}!rozegrajInterakcje@{rozegrajInterakcje}}
+\index{rozegrajInterakcje@{rozegrajInterakcje}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{rozegrajInterakcje()}{rozegrajInterakcje()}}
+{\footnotesize\ttfamily void Okno\+Dialog\+::rozegraj\+Interakcje (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajca za ustawienie odpowiedniej wartosci definiujacej rezultat dialogu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & wartosc ustalajaca wynik uzyskanej interakcji \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 117 of file Okno\+Dialog.\+h.
+
+\mbox{\Hypertarget{class_okno_dialog_a6d2a86dc09c4f87f563a2105d50418a5}\label{class_okno_dialog_a6d2a86dc09c4f87f563a2105d50418a5}} 
+\index{OknoDialog@{OknoDialog}!ustawInterakcje@{ustawInterakcje}}
+\index{ustawInterakcje@{ustawInterakcje}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{ustawInterakcje()}{ustawInterakcje()}}
+{\footnotesize\ttfamily void Okno\+Dialog\+::ustaw\+Interakcje (\begin{DoxyParamCaption}\item[{std\+::string}]{tresc,  }\item[{std\+::string}]{odp1,  }\item[{std\+::string}]{odp2,  }\item[{std\+::string}]{result1,  }\item[{std\+::string}]{result2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajca za ustawienie odpowiednich wiadomosci dialogu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tresc} & tresc wiadomosci glownej w dialogu \\
+\hline
+{\em odp1} & tresc pierwszej odpowiedzi w dialogu \\
+\hline
+{\em odp2} & tresc drugiej odpowiedziw dialogu \\
+\hline
+{\em result1} & tresc pierwszego wyniku z dialogu \\
+\hline
+{\em result2} & tresc drugiego wyniku z dialogu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file Okno\+Dialog.\+h.
+
+\mbox{\Hypertarget{class_okno_dialog_a7e70d05e2c6a578cdd7646037c0fae5a}\label{class_okno_dialog_a7e70d05e2c6a578cdd7646037c0fae5a}} 
+\index{OknoDialog@{OknoDialog}!zrobTekst@{zrobTekst}}
+\index{zrobTekst@{zrobTekst}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{zrobTekst()}{zrobTekst()}}
+{\footnotesize\ttfamily sf\+::\+Text Okno\+Dialog\+::zrob\+Tekst (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja tworzaca reprezentacje graficzna w formie tekstu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & odpowiada za znajdowanie pliku reprezentujacego czcionke \\
+\hline
+{\em pozycja} & odpowaida za pozycje w ktorej ma sie znajdowac tekst \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Text zwraca gotowy obraz reprezentujacy wiadomosc 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file Okno\+Dialog.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_okno_dialog_a927ec65ccfd12575fa477a8d66fecd23}\label{class_okno_dialog_a927ec65ccfd12575fa477a8d66fecd23}} 
+\index{OknoDialog@{OknoDialog}!czcionka@{czcionka}}
+\index{czcionka@{czcionka}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{czcionka}{czcionka}}
+{\footnotesize\ttfamily sf\+::\+Font Okno\+Dialog\+::czcionka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+czcionka reprezentujaca tresc dialogow w sposob graficzny 
+
+
+
+Definition at line 15 of file Okno\+Dialog.\+h.
+
+\mbox{\Hypertarget{class_okno_dialog_a083c6eb40a4263408c75129e11387d74}\label{class_okno_dialog_a083c6eb40a4263408c75129e11387d74}} 
+\index{OknoDialog@{OknoDialog}!odp1@{odp1}}
+\index{odp1@{odp1}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{odp1}{odp1}}
+{\footnotesize\ttfamily sf\+::\+Text Okno\+Dialog\+::odp1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+tresc pierwszej odpowiedzi wiadomosci graficznej z dialogu 
+
+
+
+Definition at line 23 of file Okno\+Dialog.\+h.
+
+\mbox{\Hypertarget{class_okno_dialog_a0f27c449350b9a3d34d4211cfe9ef44c}\label{class_okno_dialog_a0f27c449350b9a3d34d4211cfe9ef44c}} 
+\index{OknoDialog@{OknoDialog}!odp2@{odp2}}
+\index{odp2@{odp2}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{odp2}{odp2}}
+{\footnotesize\ttfamily sf\+::\+Text Okno\+Dialog\+::odp2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+tresc drugiej odpowiedzi wiadomosci graficznej z dialogu 
+
+
+
+Definition at line 27 of file Okno\+Dialog.\+h.
+
+\mbox{\Hypertarget{class_okno_dialog_afef5a9b8f4e16f80b0dae8aa924ed2be}\label{class_okno_dialog_afef5a9b8f4e16f80b0dae8aa924ed2be}} 
+\index{OknoDialog@{OknoDialog}!result1@{result1}}
+\index{result1@{result1}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{result1}{result1}}
+{\footnotesize\ttfamily sf\+::\+Text Okno\+Dialog\+::result1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+tresc pierwszego wyniku wiadomosci graficznej z dialogu 
+
+
+
+Definition at line 31 of file Okno\+Dialog.\+h.
+
+\mbox{\Hypertarget{class_okno_dialog_a9f1ced0b3c8c28a75768626caf07b915}\label{class_okno_dialog_a9f1ced0b3c8c28a75768626caf07b915}} 
+\index{OknoDialog@{OknoDialog}!result2@{result2}}
+\index{result2@{result2}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{result2}{result2}}
+{\footnotesize\ttfamily sf\+::\+Text Okno\+Dialog\+::result2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+tresc drugiego wyniku wiadomosci graficznej z dialogu 
+
+
+
+Definition at line 35 of file Okno\+Dialog.\+h.
+
+\mbox{\Hypertarget{class_okno_dialog_aa53d01f6e77d3d44fb0de3bbf302f71f}\label{class_okno_dialog_aa53d01f6e77d3d44fb0de3bbf302f71f}} 
+\index{OknoDialog@{OknoDialog}!trescOkno@{trescOkno}}
+\index{trescOkno@{trescOkno}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{trescOkno}{trescOkno}}
+{\footnotesize\ttfamily sf\+::\+Text Okno\+Dialog\+::tresc\+Okno\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+tresc glownej wiadomosci graficznej z dialogu 
+
+
+
+Definition at line 19 of file Okno\+Dialog.\+h.
+
+\mbox{\Hypertarget{class_okno_dialog_a20ca48168709c30f0657b3d91901b2b2}\label{class_okno_dialog_a20ca48168709c30f0657b3d91901b2b2}} 
+\index{OknoDialog@{OknoDialog}!wynik@{wynik}}
+\index{wynik@{wynik}!OknoDialog@{OknoDialog}}
+\doxysubsubsection{\texorpdfstring{wynik}{wynik}}
+{\footnotesize\ttfamily int Okno\+Dialog\+::wynik = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wynik interakcji z obiektem/postacia 
+
+
+
+Definition at line 11 of file Okno\+Dialog.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_okno_dialog_8h}{Okno\+Dialog.\+h}}\end{DoxyCompactItemize}

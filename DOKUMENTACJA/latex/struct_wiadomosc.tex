@@ -1,0 +1,151 @@
+\hypertarget{struct_wiadomosc}{}\doxysection{Wiadomosc Struct Reference}
+\label{struct_wiadomosc}\index{Wiadomosc@{Wiadomosc}}
+
+
+Reprezentuje wiadomosc w dialogach.  
+
+
+
+
+{\ttfamily \#include $<$Dialog.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_wiadomosc_a77c4cb14ba4df9c4a4bcd74285f832d6}{Wiadomosc}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyslny pustej wiadomosci. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_wiadomosc_a1cbdfbf3275ed1337da84d7d0ad3c726}{Wiadomosc}} (std\+::string \mbox{\hyperlink{struct_wiadomosc_ac7908bcf2a28e418d573ddd8c3ad21e0}{tresc}})
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzacy wiadomosc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_wiadomosc_a34d2f58cd0ffa94aeb3a06e3178de2c0}{edytuj\+Tresc\+Wiadomosci}} (std\+::string \mbox{\hyperlink{struct_wiadomosc_ac7908bcf2a28e418d573ddd8c3ad21e0}{tresc}})
+\begin{DoxyCompactList}\small\item\em Funkcja pozwala edytowac tresc wiadomosci. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_wiadomosc_a5e0d39f63014dd49e9f56f69eac1808e}{dodaj\+Opcje}} (std\+::string input\+Odpowiedzi, \mbox{\hyperlink{struct_wiadomosc}{Wiadomosc}} $\ast$wiadomosc)
+\begin{DoxyCompactList}\small\item\em Funkcja pozwala na dodanie nowej odpowiedzi do wiadomosci. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{struct_wiadomosc_ac7908bcf2a28e418d573ddd8c3ad21e0}{tresc}}
+\begin{DoxyCompactList}\small\item\em Okresla tresc wiadomosci \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_opcje}{Opcje}} $>$ \mbox{\hyperlink{struct_wiadomosc_aaf7a76d7c9e9e0a711c02bd9dce56361}{odpowiedzi}}
+\begin{DoxyCompactList}\small\item\em Wektor odpowiedzi okreslajacy konsekwencje decyzji \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentuje wiadomosc w dialogach. 
+
+Definition at line 54 of file Dialog.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_wiadomosc_a77c4cb14ba4df9c4a4bcd74285f832d6}\label{struct_wiadomosc_a77c4cb14ba4df9c4a4bcd74285f832d6}} 
+\index{Wiadomosc@{Wiadomosc}!Wiadomosc@{Wiadomosc}}
+\index{Wiadomosc@{Wiadomosc}!Wiadomosc@{Wiadomosc}}
+\doxysubsubsection{\texorpdfstring{Wiadomosc()}{Wiadomosc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Wiadomosc\+::\+Wiadomosc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor domyslny pustej wiadomosci. 
+
+
+
+Definition at line 68 of file Dialog.\+h.
+
+\mbox{\Hypertarget{struct_wiadomosc_a1cbdfbf3275ed1337da84d7d0ad3c726}\label{struct_wiadomosc_a1cbdfbf3275ed1337da84d7d0ad3c726}} 
+\index{Wiadomosc@{Wiadomosc}!Wiadomosc@{Wiadomosc}}
+\index{Wiadomosc@{Wiadomosc}!Wiadomosc@{Wiadomosc}}
+\doxysubsubsection{\texorpdfstring{Wiadomosc()}{Wiadomosc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Wiadomosc\+::\+Wiadomosc (\begin{DoxyParamCaption}\item[{std\+::string}]{tresc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor tworzacy wiadomosc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tresc} & Odpowiada za tresc wiadomosci \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 74 of file Dialog.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_wiadomosc_a5e0d39f63014dd49e9f56f69eac1808e}\label{struct_wiadomosc_a5e0d39f63014dd49e9f56f69eac1808e}} 
+\index{Wiadomosc@{Wiadomosc}!dodajOpcje@{dodajOpcje}}
+\index{dodajOpcje@{dodajOpcje}!Wiadomosc@{Wiadomosc}}
+\doxysubsubsection{\texorpdfstring{dodajOpcje()}{dodajOpcje()}}
+{\footnotesize\ttfamily void Wiadomosc\+::dodaj\+Opcje (\begin{DoxyParamCaption}\item[{std\+::string}]{input\+Odpowiedzi,  }\item[{\mbox{\hyperlink{struct_wiadomosc}{Wiadomosc}} $\ast$}]{wiadomosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja pozwala na dodanie nowej odpowiedzi do wiadomosci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Odpowiedzi} & tresc odpowiedzi \\
+\hline
+{\em wiadomosc} & Wskaznik na wiadomosci do ktorej ma sie odnosic odpowiedz \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file Dialog.\+h.
+
+\mbox{\Hypertarget{struct_wiadomosc_a34d2f58cd0ffa94aeb3a06e3178de2c0}\label{struct_wiadomosc_a34d2f58cd0ffa94aeb3a06e3178de2c0}} 
+\index{Wiadomosc@{Wiadomosc}!edytujTrescWiadomosci@{edytujTrescWiadomosci}}
+\index{edytujTrescWiadomosci@{edytujTrescWiadomosci}!Wiadomosc@{Wiadomosc}}
+\doxysubsubsection{\texorpdfstring{edytujTrescWiadomosci()}{edytujTrescWiadomosci()}}
+{\footnotesize\ttfamily void Wiadomosc\+::edytuj\+Tresc\+Wiadomosci (\begin{DoxyParamCaption}\item[{std\+::string}]{tresc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja pozwala edytowac tresc wiadomosci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tresc} & okresla nowa tresc odpowiedzi \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file Dialog.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_wiadomosc_aaf7a76d7c9e9e0a711c02bd9dce56361}\label{struct_wiadomosc_aaf7a76d7c9e9e0a711c02bd9dce56361}} 
+\index{Wiadomosc@{Wiadomosc}!odpowiedzi@{odpowiedzi}}
+\index{odpowiedzi@{odpowiedzi}!Wiadomosc@{Wiadomosc}}
+\doxysubsubsection{\texorpdfstring{odpowiedzi}{odpowiedzi}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_opcje}{Opcje}}$>$ Wiadomosc\+::odpowiedzi}
+
+
+
+Wektor odpowiedzi okreslajacy konsekwencje decyzji 
+
+
+
+Definition at line 62 of file Dialog.\+h.
+
+\mbox{\Hypertarget{struct_wiadomosc_ac7908bcf2a28e418d573ddd8c3ad21e0}\label{struct_wiadomosc_ac7908bcf2a28e418d573ddd8c3ad21e0}} 
+\index{Wiadomosc@{Wiadomosc}!tresc@{tresc}}
+\index{tresc@{tresc}!Wiadomosc@{Wiadomosc}}
+\doxysubsubsection{\texorpdfstring{tresc}{tresc}}
+{\footnotesize\ttfamily std\+::string Wiadomosc\+::tresc}
+
+
+
+Okresla tresc wiadomosci 
+
+
+
+Definition at line 58 of file Dialog.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_dialog_8h}{Dialog.\+h}}\end{DoxyCompactItemize}

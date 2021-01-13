@@ -1,0 +1,393 @@
+\hypertarget{class_h_u_d}{}\doxysection{H\+UD Class Reference}
+\label{class_h_u_d}\index{HUD@{HUD}}
+
+
+{\ttfamily \#include $<$H\+U\+D.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_h_u_d_add0b9b154b1dde8a2301d33def18b828}{H\+UD}} (sf\+::\+Vector2f pozycja, \mbox{\hyperlink{class_gracz}{Gracz}} $\ast$\mbox{\hyperlink{class_h_u_d_a3e77e4e177791b4e6db4b55072779266}{gracz}})
+\item 
+\mbox{\hyperlink{class_h_u_d_a1e1140a40e4bf72a45acf9f7b2119323}{$\sim$\+H\+UD}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_abfa5fda3363853eb735fa16e4dc71918}{update}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_aac271366d4bce12228d8bbfc663725d1}{draw}} (sf\+::\+Render\+Target $\ast$target)
+\item 
+bool \mbox{\hyperlink{class_h_u_d_a4662a1797ff3a28f5385fe082b4cf0db}{return\+Is\+Able}} ()
+\item 
+bool \mbox{\hyperlink{class_h_u_d_af474d40c637eba84540a3bfe128d42f7}{change\+Is\+Able}} ()
+\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_h_u_d_a66825d35e5bc54b93f1a5a2d03d982f2}{zwroc\+Do\+Sily}} ()
+\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_h_u_d_a5b924725218c3c78208391fe19ea4dbe}{zwroc\+Do\+Dmg}} ()
+\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_h_u_d_a820d21b06c0a588a26d8cacabe2e6d30}{zwroc\+Do\+Inteligencji}} ()
+\item 
+\mbox{\hyperlink{class_stat_in_game}{Stat\+In\+Game}} $\ast$ \mbox{\hyperlink{class_h_u_d_aee5d94decc41b24c0b5ed39faa7b1afa}{zwroc\+Statystyki}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_a757c1989adfeafbb742f4f7fc75bd083}{zrob\+Tekst}} (std\+::string sciezka, sf\+::\+Vector2f pozycja)
+\item 
+void \mbox{\hyperlink{class_h_u_d_adda9d2cdc98d5d57fe3cd80579907d17}{update\+Exp}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_a078b6cfbab97bd41511c4257495cd00e}{update\+Level}} ()
+\item 
+bool \mbox{\hyperlink{class_h_u_d_aec5c61b5a504963e978f6de74d8add2e}{sprawdzaj\+Podswietlenia}} (sf\+::\+Vector2f mysz, bool lewy)
+\item 
+void \mbox{\hyperlink{class_h_u_d_ac6382f356b4cc1da8a41d3c33612468a}{przyciemnij\+Sila}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_ab9c98e778708876eeb7d056fcd001ba9}{podswietl\+Sila}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_ac171b765dc5174f9e1a4294646c26794}{przyciemnij\+Dmg}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_a0aacb79cd6c0eb87b16d286e3df26f08}{podswietl\+Dmg}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_a785eb65a623a2194922de1c4591cd370}{przyciemnij\+Inteligencja}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_a00b8f995828734d28d1df1534b2edf33}{podswietl\+Inteligencja}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_a605fd5edd8dea211db39254fb9b6a861}{przyciemnij\+Okno}} ()
+\item 
+void \mbox{\hyperlink{class_h_u_d_afd2b29bc52befefbf69c653d36c1b815}{podswietl\+Okno}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$ \mbox{\hyperlink{class_h_u_d_a3e77e4e177791b4e6db4b55072779266}{gracz}}
+\item 
+\mbox{\hyperlink{class_zycie}{Zycie}} $\ast$ \mbox{\hyperlink{class_h_u_d_a3af087600139e759726834d512e27fe2}{zycie}}
+\item 
+\mbox{\hyperlink{class_mana}{Mana}} $\ast$ \mbox{\hyperlink{class_h_u_d_a5fd0ea606b3e1c8b6fc250daaa947759}{mana}}
+\item 
+\mbox{\hyperlink{class_exp}{Exp}} $\ast$ \mbox{\hyperlink{class_h_u_d_a30c0a7821713a2de8985c324081f225b}{exp}}
+\item 
+\mbox{\hyperlink{class_stat_in_game}{Stat\+In\+Game}} $\ast$ \mbox{\hyperlink{class_h_u_d_a59ce102396078699f893f6e5bf381ad5}{statystyki\+W\+Grze}}
+\item 
+bool \mbox{\hyperlink{class_h_u_d_aea64d53410a8e19a560ad96c3ec7fce9}{is\+Able}} = false
+\item 
+sf\+::\+Font \mbox{\hyperlink{class_h_u_d_a5cd2fba5765fa7eed90a69b6a68e1451}{czcionka}}
+\item 
+sf\+::\+Text \mbox{\hyperlink{class_h_u_d_a7c83161fd8d89265eeb1d3f6f729fe68}{level}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 11 of file H\+U\+D.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_h_u_d_add0b9b154b1dde8a2301d33def18b828}\label{class_h_u_d_add0b9b154b1dde8a2301d33def18b828}} 
+\index{HUD@{HUD}!HUD@{HUD}}
+\index{HUD@{HUD}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{HUD()}{HUD()}}
+{\footnotesize\ttfamily H\+U\+D\+::\+H\+UD (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pozycja,  }\item[{\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$}]{gracz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a1e1140a40e4bf72a45acf9f7b2119323}\label{class_h_u_d_a1e1140a40e4bf72a45acf9f7b2119323}} 
+\index{HUD@{HUD}!````~HUD@{$\sim$HUD}}
+\index{````~HUD@{$\sim$HUD}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{$\sim$HUD()}{~HUD()}}
+{\footnotesize\ttfamily H\+U\+D\+::$\sim$\+H\+UD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file H\+U\+D.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_h_u_d_af474d40c637eba84540a3bfe128d42f7}\label{class_h_u_d_af474d40c637eba84540a3bfe128d42f7}} 
+\index{HUD@{HUD}!changeIsAble@{changeIsAble}}
+\index{changeIsAble@{changeIsAble}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{changeIsAble()}{changeIsAble()}}
+{\footnotesize\ttfamily bool H\+U\+D\+::change\+Is\+Able (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 64 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_aac271366d4bce12228d8bbfc663725d1}\label{class_h_u_d_aac271366d4bce12228d8bbfc663725d1}} 
+\index{HUD@{HUD}!draw@{draw}}
+\index{draw@{draw}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void H\+U\+D\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 48 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a0aacb79cd6c0eb87b16d286e3df26f08}\label{class_h_u_d_a0aacb79cd6c0eb87b16d286e3df26f08}} 
+\index{HUD@{HUD}!podswietlDmg@{podswietlDmg}}
+\index{podswietlDmg@{podswietlDmg}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{podswietlDmg()}{podswietlDmg()}}
+{\footnotesize\ttfamily void H\+U\+D\+::podswietl\+Dmg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 179 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a00b8f995828734d28d1df1534b2edf33}\label{class_h_u_d_a00b8f995828734d28d1df1534b2edf33}} 
+\index{HUD@{HUD}!podswietlInteligencja@{podswietlInteligencja}}
+\index{podswietlInteligencja@{podswietlInteligencja}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{podswietlInteligencja()}{podswietlInteligencja()}}
+{\footnotesize\ttfamily void H\+U\+D\+::podswietl\+Inteligencja (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 191 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_afd2b29bc52befefbf69c653d36c1b815}\label{class_h_u_d_afd2b29bc52befefbf69c653d36c1b815}} 
+\index{HUD@{HUD}!podswietlOkno@{podswietlOkno}}
+\index{podswietlOkno@{podswietlOkno}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{podswietlOkno()}{podswietlOkno()}}
+{\footnotesize\ttfamily void H\+U\+D\+::podswietl\+Okno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 202 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_ab9c98e778708876eeb7d056fcd001ba9}\label{class_h_u_d_ab9c98e778708876eeb7d056fcd001ba9}} 
+\index{HUD@{HUD}!podswietlSila@{podswietlSila}}
+\index{podswietlSila@{podswietlSila}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{podswietlSila()}{podswietlSila()}}
+{\footnotesize\ttfamily void H\+U\+D\+::podswietl\+Sila (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 167 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_ac171b765dc5174f9e1a4294646c26794}\label{class_h_u_d_ac171b765dc5174f9e1a4294646c26794}} 
+\index{HUD@{HUD}!przyciemnijDmg@{przyciemnijDmg}}
+\index{przyciemnijDmg@{przyciemnijDmg}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{przyciemnijDmg()}{przyciemnijDmg()}}
+{\footnotesize\ttfamily void H\+U\+D\+::przyciemnij\+Dmg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 173 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a785eb65a623a2194922de1c4591cd370}\label{class_h_u_d_a785eb65a623a2194922de1c4591cd370}} 
+\index{HUD@{HUD}!przyciemnijInteligencja@{przyciemnijInteligencja}}
+\index{przyciemnijInteligencja@{przyciemnijInteligencja}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{przyciemnijInteligencja()}{przyciemnijInteligencja()}}
+{\footnotesize\ttfamily void H\+U\+D\+::przyciemnij\+Inteligencja (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 185 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a605fd5edd8dea211db39254fb9b6a861}\label{class_h_u_d_a605fd5edd8dea211db39254fb9b6a861}} 
+\index{HUD@{HUD}!przyciemnijOkno@{przyciemnijOkno}}
+\index{przyciemnijOkno@{przyciemnijOkno}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{przyciemnijOkno()}{przyciemnijOkno()}}
+{\footnotesize\ttfamily void H\+U\+D\+::przyciemnij\+Okno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 197 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_ac6382f356b4cc1da8a41d3c33612468a}\label{class_h_u_d_ac6382f356b4cc1da8a41d3c33612468a}} 
+\index{HUD@{HUD}!przyciemnijSila@{przyciemnijSila}}
+\index{przyciemnijSila@{przyciemnijSila}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{przyciemnijSila()}{przyciemnijSila()}}
+{\footnotesize\ttfamily void H\+U\+D\+::przyciemnij\+Sila (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 161 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a4662a1797ff3a28f5385fe082b4cf0db}\label{class_h_u_d_a4662a1797ff3a28f5385fe082b4cf0db}} 
+\index{HUD@{HUD}!returnIsAble@{returnIsAble}}
+\index{returnIsAble@{returnIsAble}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{returnIsAble()}{returnIsAble()}}
+{\footnotesize\ttfamily bool H\+U\+D\+::return\+Is\+Able (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_aec5c61b5a504963e978f6de74d8add2e}\label{class_h_u_d_aec5c61b5a504963e978f6de74d8add2e}} 
+\index{HUD@{HUD}!sprawdzajPodswietlenia@{sprawdzajPodswietlenia}}
+\index{sprawdzajPodswietlenia@{sprawdzajPodswietlenia}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{sprawdzajPodswietlenia()}{sprawdzajPodswietlenia()}}
+{\footnotesize\ttfamily bool H\+U\+D\+::sprawdzaj\+Podswietlenia (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{mysz,  }\item[{bool}]{lewy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 117 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_abfa5fda3363853eb735fa16e4dc71918}\label{class_h_u_d_abfa5fda3363853eb735fa16e4dc71918}} 
+\index{HUD@{HUD}!update@{update}}
+\index{update@{update}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void H\+U\+D\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_adda9d2cdc98d5d57fe3cd80579907d17}\label{class_h_u_d_adda9d2cdc98d5d57fe3cd80579907d17}} 
+\index{HUD@{HUD}!updateExp@{updateExp}}
+\index{updateExp@{updateExp}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{updateExp()}{updateExp()}}
+{\footnotesize\ttfamily void H\+U\+D\+::update\+Exp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a078b6cfbab97bd41511c4257495cd00e}\label{class_h_u_d_a078b6cfbab97bd41511c4257495cd00e}} 
+\index{HUD@{HUD}!updateLevel@{updateLevel}}
+\index{updateLevel@{updateLevel}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{updateLevel()}{updateLevel()}}
+{\footnotesize\ttfamily void H\+U\+D\+::update\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 108 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a757c1989adfeafbb742f4f7fc75bd083}\label{class_h_u_d_a757c1989adfeafbb742f4f7fc75bd083}} 
+\index{HUD@{HUD}!zrobTekst@{zrobTekst}}
+\index{zrobTekst@{zrobTekst}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{zrobTekst()}{zrobTekst()}}
+{\footnotesize\ttfamily void H\+U\+D\+::zrob\+Tekst (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a5b924725218c3c78208391fe19ea4dbe}\label{class_h_u_d_a5b924725218c3c78208391fe19ea4dbe}} 
+\index{HUD@{HUD}!zwrocDoDmg@{zwrocDoDmg}}
+\index{zwrocDoDmg@{zwrocDoDmg}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{zwrocDoDmg()}{zwrocDoDmg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ H\+U\+D\+::zwroc\+Do\+Dmg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 73 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a820d21b06c0a588a26d8cacabe2e6d30}\label{class_h_u_d_a820d21b06c0a588a26d8cacabe2e6d30}} 
+\index{HUD@{HUD}!zwrocDoInteligencji@{zwrocDoInteligencji}}
+\index{zwrocDoInteligencji@{zwrocDoInteligencji}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{zwrocDoInteligencji()}{zwrocDoInteligencji()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ H\+U\+D\+::zwroc\+Do\+Inteligencji (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 77 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a66825d35e5bc54b93f1a5a2d03d982f2}\label{class_h_u_d_a66825d35e5bc54b93f1a5a2d03d982f2}} 
+\index{HUD@{HUD}!zwrocDoSily@{zwrocDoSily}}
+\index{zwrocDoSily@{zwrocDoSily}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{zwrocDoSily()}{zwrocDoSily()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ H\+U\+D\+::zwroc\+Do\+Sily (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 69 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_aee5d94decc41b24c0b5ed39faa7b1afa}\label{class_h_u_d_aee5d94decc41b24c0b5ed39faa7b1afa}} 
+\index{HUD@{HUD}!zwrocStatystyki@{zwrocStatystyki}}
+\index{zwrocStatystyki@{zwrocStatystyki}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{zwrocStatystyki()}{zwrocStatystyki()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stat_in_game}{Stat\+In\+Game}}$\ast$ H\+U\+D\+::zwroc\+Statystyki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 81 of file H\+U\+D.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_h_u_d_a5cd2fba5765fa7eed90a69b6a68e1451}\label{class_h_u_d_a5cd2fba5765fa7eed90a69b6a68e1451}} 
+\index{HUD@{HUD}!czcionka@{czcionka}}
+\index{czcionka@{czcionka}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{czcionka}{czcionka}}
+{\footnotesize\ttfamily sf\+::\+Font H\+U\+D\+::czcionka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 20 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a30c0a7821713a2de8985c324081f225b}\label{class_h_u_d_a30c0a7821713a2de8985c324081f225b}} 
+\index{HUD@{HUD}!exp@{exp}}
+\index{exp@{exp}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{exp}{exp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_exp}{Exp}}$\ast$ H\+U\+D\+::exp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 15 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a3e77e4e177791b4e6db4b55072779266}\label{class_h_u_d_a3e77e4e177791b4e6db4b55072779266}} 
+\index{HUD@{HUD}!gracz@{gracz}}
+\index{gracz@{gracz}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{gracz}{gracz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gracz}{Gracz}}$\ast$ H\+U\+D\+::gracz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 12 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_aea64d53410a8e19a560ad96c3ec7fce9}\label{class_h_u_d_aea64d53410a8e19a560ad96c3ec7fce9}} 
+\index{HUD@{HUD}!isAble@{isAble}}
+\index{isAble@{isAble}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{isAble}{isAble}}
+{\footnotesize\ttfamily bool H\+U\+D\+::is\+Able = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a7c83161fd8d89265eeb1d3f6f729fe68}\label{class_h_u_d_a7c83161fd8d89265eeb1d3f6f729fe68}} 
+\index{HUD@{HUD}!level@{level}}
+\index{level@{level}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily sf\+::\+Text H\+U\+D\+::level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 21 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a5fd0ea606b3e1c8b6fc250daaa947759}\label{class_h_u_d_a5fd0ea606b3e1c8b6fc250daaa947759}} 
+\index{HUD@{HUD}!mana@{mana}}
+\index{mana@{mana}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{mana}{mana}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mana}{Mana}}$\ast$ H\+U\+D\+::mana\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 14 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a59ce102396078699f893f6e5bf381ad5}\label{class_h_u_d_a59ce102396078699f893f6e5bf381ad5}} 
+\index{HUD@{HUD}!statystykiWGrze@{statystykiWGrze}}
+\index{statystykiWGrze@{statystykiWGrze}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{statystykiWGrze}{statystykiWGrze}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_stat_in_game}{Stat\+In\+Game}}$\ast$ H\+U\+D\+::statystyki\+W\+Grze\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file H\+U\+D.\+h.
+
+\mbox{\Hypertarget{class_h_u_d_a3af087600139e759726834d512e27fe2}\label{class_h_u_d_a3af087600139e759726834d512e27fe2}} 
+\index{HUD@{HUD}!zycie@{zycie}}
+\index{zycie@{zycie}!HUD@{HUD}}
+\doxysubsubsection{\texorpdfstring{zycie}{zycie}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_zycie}{Zycie}}$\ast$ H\+U\+D\+::zycie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file H\+U\+D.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_h_u_d_8h}{H\+U\+D.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,431 @@
+\hypertarget{class_plytka}{}\doxysection{Plytka Class Reference}
+\label{class_plytka}\index{Plytka@{Plytka}}
+
+
+{\ttfamily \#include $<$Plytka.\+h$>$}
+
+Inheritance diagram for Plytka\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_plytka}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_plytka_a57f791c6ad98ce5e2e744ac2523e5f59}{Dodaj\+Zaklecie}} (\mbox{\hyperlink{class_zaklecie}{Zaklecie}} $\ast$\mbox{\hyperlink{class_plytka_afc861c47e82885cca9b4cfde4d4dbf99}{zaklecie}})
+\begin{DoxyCompactList}\small\item\em Funkcja dodajaca zaklecie na plytke (w celu animacji) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_plytka_ab77cfc04c615e75878366841efc199ad}{Plytka}} (std\+::string sciezka, std\+::string sciezka\+\_\+podswietlenia, sf\+::\+Vector2f pozycja)
+\begin{DoxyCompactList}\small\item\em Konstruktor plytki. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_plytka_a4cf223c06f8767065a7d5bdc68a2f2a3}{$\sim$\+Plytka}} ()
+\begin{DoxyCompactList}\small\item\em Dekonstruktor plytki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plytka_a16f882c812e3eedf26506380467c0f47}{draw}} (sf\+::\+Render\+Target $\ast$cel)
+\begin{DoxyCompactList}\small\item\em Funkcja rysujaca plytke na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plytka_a0275b9c5849f72d33a6e888fac4b8d41}{animuj}} (sf\+::\+Render\+Target $\ast$cel, const float \&dtime)
+\begin{DoxyCompactList}\small\item\em Funkcja animujaca zaklecie znajdujace sie na plytce. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_plytka_a0bec13932c4f635bc40afeaf6b0cca55}{update}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja aktualizujaca stan plytki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plytka_abcbaf5f9110d9630f8487cc7d1f5704e}{Przypisz\+Gracza}} (\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$gracz)
+\begin{DoxyCompactList}\small\item\em Funkcja przypisujaca gracza do plytki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plytka_a6c074d2d74be5486731934f4fdcdf747}{Przypisz\+Obiekt}} (\mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} $\ast$obiekt)
+\begin{DoxyCompactList}\small\item\em Funkcja przypisujaca obiekt do plytki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plytka_a264ff4d9748fd49da12fcf7e39ef9a24}{Zmien\+Dostepnosc}} (bool jak)
+\begin{DoxyCompactList}\small\item\em Funkcja zmieniajaca dostepnasc plytki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plytka_a4b84b251078982aa508a2445b55bfbac}{Podswietl}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja podswietlajaca plytke (ustawia teksture podswietlenia) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plytka_ac00b2499c85a2d6d5bcece30082da295}{Wylacz\+Podswietlenie}} (bool force=false)
+\begin{DoxyCompactList}\small\item\em Funkcja wylaczajaca podswietlenie (wraca do domyslnej tekstury) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plytka_a26cee2e76f9077fdee06b048168e3445}{Zaznacz}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zaznaczajaca plytke (ustawia teksture zaznaczenia) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} $\ast$ \mbox{\hyperlink{class_plytka_ae5d69e04a621b422b57104005d9c4671}{zwroc\+Obiekt}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca \mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} ktory znajduje sie na plytce, jesli nie znajduje sie zaden zwraca nullptr. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plytka_a23eef63201979ef0247aa1bd12187e5d}{zwroc\+Dostepnosc}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca typ logiczny wskazujacy na dostepnasc plytki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plytka_a1d620dce1c78e428027e75409f152fe5}{aktualizuj\+Obiekt}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja aktualizuje pozycje obiektu znajdujacego sie na plytce (przy przesuwaniu, razem z plytka przesuwa sie obiekt) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} $\ast$ \mbox{\hyperlink{class_plytka_af4056f8d5a906a81b229f7d42e21e677}{otoczenie}} = nullptr
+\begin{DoxyCompactList}\small\item\em Wskaznik na obiekt otorzenia ktory moze znajdowac sie na plytce. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_plytka_a5a7c836c73eb0e314c627bc27ceba5ff}{dostepna}} = true
+\begin{DoxyCompactList}\small\item\em Zmienna sluzaca do sprawdzania czy mozna przejsc na plytke. \end{DoxyCompactList}\item 
+sf\+::\+Texture \mbox{\hyperlink{class_plytka_a746fa8cf891878101938539a4cc23686}{podswietlenie}}
+\begin{DoxyCompactList}\small\item\em Tekstura podswietlenia. \end{DoxyCompactList}\item 
+sf\+::\+Texture \mbox{\hyperlink{class_plytka_a17e639671bb6f56b457de652b1d5c72d}{zaznaczenie}}
+\begin{DoxyCompactList}\small\item\em Tekstura zaznaczenia. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plytka_a3f6a37128dafc37d7eb0e4e838239962}{zaznaczona}} = false
+\begin{DoxyCompactList}\small\item\em Flaga sygnalizujaca czy \mbox{\hyperlink{class_plytka}{Plytka}} jest aktualnie zaznaczona. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_zaklecie}{Zaklecie}} $\ast$ \mbox{\hyperlink{class_plytka_afc861c47e82885cca9b4cfde4d4dbf99}{zaklecie}} = nullptr
+\begin{DoxyCompactList}\small\item\em Wskaznik na zaklecie ktore moze znajdowac sie na plytce. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 7 of file Plytka.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_plytka_ab77cfc04c615e75878366841efc199ad}\label{class_plytka_ab77cfc04c615e75878366841efc199ad}} 
+\index{Plytka@{Plytka}!Plytka@{Plytka}}
+\index{Plytka@{Plytka}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{Plytka()}{Plytka()}}
+{\footnotesize\ttfamily Plytka\+::\+Plytka (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{std\+::string}]{sciezka\+\_\+podswietlenia,  }\item[{sf\+::\+Vector2f}]{pozycja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor plytki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & Sciezka do tekstury plytki \\
+\hline
+{\em sciezka\+\_\+podswietlenia} & Sciezka do tekstury podswietlenia plytki \\
+\hline
+{\em pozycja} & Pozycja plytki \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a4cf223c06f8767065a7d5bdc68a2f2a3}\label{class_plytka_a4cf223c06f8767065a7d5bdc68a2f2a3}} 
+\index{Plytka@{Plytka}!````~Plytka@{$\sim$Plytka}}
+\index{````~Plytka@{$\sim$Plytka}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{$\sim$Plytka()}{~Plytka()}}
+{\footnotesize\ttfamily Plytka\+::$\sim$\+Plytka (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dekonstruktor plytki. 
+
+
+
+Definition at line 53 of file Plytka.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_plytka_a1d620dce1c78e428027e75409f152fe5}\label{class_plytka_a1d620dce1c78e428027e75409f152fe5}} 
+\index{Plytka@{Plytka}!aktualizujObiekt@{aktualizujObiekt}}
+\index{aktualizujObiekt@{aktualizujObiekt}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{aktualizujObiekt()}{aktualizujObiekt()}}
+{\footnotesize\ttfamily void Plytka\+::aktualizuj\+Obiekt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja aktualizuje pozycje obiektu znajdujacego sie na plytce (przy przesuwaniu, razem z plytka przesuwa sie obiekt) 
+
+
+
+Definition at line 173 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a0275b9c5849f72d33a6e888fac4b8d41}\label{class_plytka_a0275b9c5849f72d33a6e888fac4b8d41}} 
+\index{Plytka@{Plytka}!animuj@{animuj}}
+\index{animuj@{animuj}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{animuj()}{animuj()}}
+{\footnotesize\ttfamily void Plytka\+::animuj (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel,  }\item[{const float \&}]{dtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja animujaca zaklecie znajdujace sie na plytce. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & Wskaznik na cel rysowania \\
+\hline
+{\em dtime} & Delta czasu (timer) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a57f791c6ad98ce5e2e744ac2523e5f59}\label{class_plytka_a57f791c6ad98ce5e2e744ac2523e5f59}} 
+\index{Plytka@{Plytka}!DodajZaklecie@{DodajZaklecie}}
+\index{DodajZaklecie@{DodajZaklecie}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{DodajZaklecie()}{DodajZaklecie()}}
+{\footnotesize\ttfamily void Plytka\+::\+Dodaj\+Zaklecie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_zaklecie}{Zaklecie}} $\ast$}]{zaklecie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja dodajaca zaklecie na plytke (w celu animacji) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zaklecie} & Wskaznik na zaklecie ktore ma byc zanimowane na tej plytce \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a16f882c812e3eedf26506380467c0f47}\label{class_plytka_a16f882c812e3eedf26506380467c0f47}} 
+\index{Plytka@{Plytka}!draw@{draw}}
+\index{draw@{draw}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Plytka\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja rysujaca plytke na ekranie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & Wskaznik na cel rysowania \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a4b84b251078982aa508a2445b55bfbac}\label{class_plytka_a4b84b251078982aa508a2445b55bfbac}} 
+\index{Plytka@{Plytka}!Podswietl@{Podswietl}}
+\index{Podswietl@{Podswietl}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{Podswietl()}{Podswietl()}}
+{\footnotesize\ttfamily void Plytka\+::\+Podswietl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja podswietlajaca plytke (ustawia teksture podswietlenia) 
+
+
+
+Definition at line 127 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_abcbaf5f9110d9630f8487cc7d1f5704e}\label{class_plytka_abcbaf5f9110d9630f8487cc7d1f5704e}} 
+\index{Plytka@{Plytka}!PrzypiszGracza@{PrzypiszGracza}}
+\index{PrzypiszGracza@{PrzypiszGracza}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{PrzypiszGracza()}{PrzypiszGracza()}}
+{\footnotesize\ttfamily void Plytka\+::\+Przypisz\+Gracza (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$}]{gracz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja przypisujaca gracza do plytki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obiekt} & Wskaznik na gracza do przypisania \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 101 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a6c074d2d74be5486731934f4fdcdf747}\label{class_plytka_a6c074d2d74be5486731934f4fdcdf747}} 
+\index{Plytka@{Plytka}!PrzypiszObiekt@{PrzypiszObiekt}}
+\index{PrzypiszObiekt@{PrzypiszObiekt}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{PrzypiszObiekt()}{PrzypiszObiekt()}}
+{\footnotesize\ttfamily void Plytka\+::\+Przypisz\+Obiekt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} $\ast$}]{obiekt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja przypisujaca obiekt do plytki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obiekt} & Wskaznik na obiekt do przypisania \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a0bec13932c4f635bc40afeaf6b0cca55}\label{class_plytka_a0bec13932c4f635bc40afeaf6b0cca55}} 
+\index{Plytka@{Plytka}!update@{update}}
+\index{update@{update}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily double Plytka\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja aktualizujaca stan plytki. 
+
+\begin{DoxyReturn}{Returns}
+double zwraca wartosc punktow doswiadczenia ktore ma uzyskac gracz 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_ac00b2499c85a2d6d5bcece30082da295}\label{class_plytka_ac00b2499c85a2d6d5bcece30082da295}} 
+\index{Plytka@{Plytka}!WylaczPodswietlenie@{WylaczPodswietlenie}}
+\index{WylaczPodswietlenie@{WylaczPodswietlenie}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{WylaczPodswietlenie()}{WylaczPodswietlenie()}}
+{\footnotesize\ttfamily void Plytka\+::\+Wylacz\+Podswietlenie (\begin{DoxyParamCaption}\item[{bool}]{force = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja wylaczajaca podswietlenie (wraca do domyslnej tekstury) 
+
+
+
+Definition at line 134 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a26cee2e76f9077fdee06b048168e3445}\label{class_plytka_a26cee2e76f9077fdee06b048168e3445}} 
+\index{Plytka@{Plytka}!Zaznacz@{Zaznacz}}
+\index{Zaznacz@{Zaznacz}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{Zaznacz()}{Zaznacz()}}
+{\footnotesize\ttfamily void Plytka\+::\+Zaznacz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zaznaczajaca plytke (ustawia teksture zaznaczenia) 
+
+
+
+Definition at line 144 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a264ff4d9748fd49da12fcf7e39ef9a24}\label{class_plytka_a264ff4d9748fd49da12fcf7e39ef9a24}} 
+\index{Plytka@{Plytka}!ZmienDostepnosc@{ZmienDostepnosc}}
+\index{ZmienDostepnosc@{ZmienDostepnosc}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{ZmienDostepnosc()}{ZmienDostepnosc()}}
+{\footnotesize\ttfamily void Plytka\+::\+Zmien\+Dostepnosc (\begin{DoxyParamCaption}\item[{bool}]{jak }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zmieniajaca dostepnasc plytki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jak} & Typ logiczny wskazujacy na jaka wartosc ma byc zmieniona dostepnosc plytki \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 120 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a23eef63201979ef0247aa1bd12187e5d}\label{class_plytka_a23eef63201979ef0247aa1bd12187e5d}} 
+\index{Plytka@{Plytka}!zwrocDostepnosc@{zwrocDostepnosc}}
+\index{zwrocDostepnosc@{zwrocDostepnosc}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{zwrocDostepnosc()}{zwrocDostepnosc()}}
+{\footnotesize\ttfamily bool Plytka\+::zwroc\+Dostepnosc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca typ logiczny wskazujacy na dostepnasc plytki. 
+
+\begin{DoxyReturn}{Returns}
+true jezeli plytka jest dostepna 
+
+false jezeli plytka jest niedostêpna 
+\end{DoxyReturn}
+
+
+Definition at line 166 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_ae5d69e04a621b422b57104005d9c4671}\label{class_plytka_ae5d69e04a621b422b57104005d9c4671}} 
+\index{Plytka@{Plytka}!zwrocObiekt@{zwrocObiekt}}
+\index{zwrocObiekt@{zwrocObiekt}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{zwrocObiekt()}{zwrocObiekt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}}$\ast$ Plytka\+::zwroc\+Obiekt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca \mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} ktory znajduje sie na plytce, jesli nie znajduje sie zaden zwraca nullptr. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} zwraca obiekt znajdujacy sie w wybranym miejscu 
+\end{DoxyReturn}
+
+
+Definition at line 157 of file Plytka.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_plytka_a5a7c836c73eb0e314c627bc27ceba5ff}\label{class_plytka_a5a7c836c73eb0e314c627bc27ceba5ff}} 
+\index{Plytka@{Plytka}!dostepna@{dostepna}}
+\index{dostepna@{dostepna}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{dostepna}{dostepna}}
+{\footnotesize\ttfamily bool Plytka\+::dostepna = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zmienna sluzaca do sprawdzania czy mozna przejsc na plytke. 
+
+
+
+Definition at line 10 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_af4056f8d5a906a81b229f7d42e21e677}\label{class_plytka_af4056f8d5a906a81b229f7d42e21e677}} 
+\index{Plytka@{Plytka}!otoczenie@{otoczenie}}
+\index{otoczenie@{otoczenie}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{otoczenie}{otoczenie}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}}$\ast$ Plytka\+::otoczenie = nullptr}
+
+
+
+Wskaznik na obiekt otorzenia ktory moze znajdowac sie na plytce. 
+
+
+
+Definition at line 22 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a746fa8cf891878101938539a4cc23686}\label{class_plytka_a746fa8cf891878101938539a4cc23686}} 
+\index{Plytka@{Plytka}!podswietlenie@{podswietlenie}}
+\index{podswietlenie@{podswietlenie}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{podswietlenie}{podswietlenie}}
+{\footnotesize\ttfamily sf\+::\+Texture Plytka\+::podswietlenie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tekstura podswietlenia. 
+
+
+
+Definition at line 12 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_afc861c47e82885cca9b4cfde4d4dbf99}\label{class_plytka_afc861c47e82885cca9b4cfde4d4dbf99}} 
+\index{Plytka@{Plytka}!zaklecie@{zaklecie}}
+\index{zaklecie@{zaklecie}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{zaklecie}{zaklecie}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_zaklecie}{Zaklecie}}$\ast$ Plytka\+::zaklecie = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wskaznik na zaklecie ktore moze znajdowac sie na plytce. 
+
+
+
+Definition at line 18 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a17e639671bb6f56b457de652b1d5c72d}\label{class_plytka_a17e639671bb6f56b457de652b1d5c72d}} 
+\index{Plytka@{Plytka}!zaznaczenie@{zaznaczenie}}
+\index{zaznaczenie@{zaznaczenie}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{zaznaczenie}{zaznaczenie}}
+{\footnotesize\ttfamily sf\+::\+Texture Plytka\+::zaznaczenie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tekstura zaznaczenia. 
+
+
+
+Definition at line 14 of file Plytka.\+h.
+
+\mbox{\Hypertarget{class_plytka_a3f6a37128dafc37d7eb0e4e838239962}\label{class_plytka_a3f6a37128dafc37d7eb0e4e838239962}} 
+\index{Plytka@{Plytka}!zaznaczona@{zaznaczona}}
+\index{zaznaczona@{zaznaczona}!Plytka@{Plytka}}
+\doxysubsubsection{\texorpdfstring{zaznaczona}{zaznaczona}}
+{\footnotesize\ttfamily bool Plytka\+::zaznaczona = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Flaga sygnalizujaca czy \mbox{\hyperlink{class_plytka}{Plytka}} jest aktualnie zaznaczona. 
+
+
+
+Definition at line 16 of file Plytka.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_plytka_8h}{Plytka.\+h}}\end{DoxyCompactItemize}

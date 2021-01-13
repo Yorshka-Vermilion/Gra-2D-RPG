@@ -1,5 +1,29 @@
 var searchData=
 [
-  ['testyrun_315',['testyRun',['../class_engine.html#a920d6d8bedb16e1efcfb49d4757be122',1,'Engine']]],
-  ['testywczytaj_316',['testyWczytaj',['../class_engine.html#a86b6c4f50407d4782571589c3ace0c66',1,'Engine']]]
+  ['plytka_606',['Plytka',['../class_plytka.html#ab77cfc04c615e75878366841efc199ad',1,'Plytka']]],
+  ['pobierzpozycje_607',['pobierzPozycje',['../class_gracz.html#afc90c4f02ae0371a612d225cb03740f0',1,'Gracz::pobierzPozycje()'],['../class_obiekt.html#a96f98de411f33171aa65cb8b1ab9360b',1,'Obiekt::pobierzPozycje()']]],
+  ['pobierzrozmiar_608',['PobierzRozmiar',['../class_obiekt.html#a3bca4542d722dfc07bb905dfb021cfea',1,'Obiekt']]],
+  ['podswietl_609',['Podswietl',['../class_plytka.html#a4b84b251078982aa508a2445b55bfbac',1,'Plytka']]],
+  ['podswietldmg_610',['podswietlDmg',['../class_h_u_d.html#a0aacb79cd6c0eb87b16d286e3df26f08',1,'HUD']]],
+  ['podswietlinteligencja_611',['podswietlInteligencja',['../class_h_u_d.html#a00b8f995828734d28d1df1534b2edf33',1,'HUD']]],
+  ['podswietlkafelki_612',['podswietlKafelki',['../class_mapa.html#a36f8c06af2cc7758db9d6fc5640c368a',1,'Mapa']]],
+  ['podswietlokno_613',['podswietlOkno',['../class_h_u_d.html#afd2b29bc52befefbf69c653d36c1b815',1,'HUD']]],
+  ['podswietlsila_614',['podswietlSila',['../class_h_u_d.html#ab9c98e778708876eeb7d056fcd001ba9',1,'HUD']]],
+  ['point2d_615',['Point2D',['../class_point2_d.html#adf5e22f00fd325514bba2d2d3b9c57bc',1,'Point2D::Point2D(const sf::Vector2f &amp;xy, const sf::Color &amp;color)'],['../class_point2_d.html#a15b72818ebe63800166ee9196099701f',1,'Point2D::Point2D(const sf::Vector2f &amp;xy)'],['../class_point2_d.html#a2415006d697f1c222c17254bdd302098',1,'Point2D::Point2D()']]],
+  ['point2darray_616',['Point2DArray',['../class_point2_d_array.html#a3852568a5991f49f357ce5d341fda341',1,'Point2DArray::Point2DArray()'],['../class_point2_d_array.html#a7c1d7bf88142ec05a8e9d1ad81c74482',1,'Point2DArray::Point2DArray(sf::PrimitiveType pt, size_t v)'],['../class_point2_d_array.html#a7a64b83efcfa22f3fc14f48e5f09afc5',1,'Point2DArray::Point2DArray(std::vector&lt; sf::Vector2f &gt; v2f, sf::Color c)']]],
+  ['poruszanie_5fpo_5fmenu_617',['Poruszanie_po_menu',['../class_menu_glowne.html#ab9fcf47128801e2b4c9322be7c54f4b6',1,'MenuGlowne']]],
+  ['poruszaniewdol_618',['PoruszanieWDol',['../class_menu.html#a47ca5a6082bd5868555f97dfa4038724',1,'Menu']]],
+  ['poruszaniewgore_619',['PoruszanieWGore',['../class_menu.html#a3327b0b7a7d5ba3b8e2cb5cae959ee96',1,'Menu']]],
+  ['przeprowadzdialog_620',['przeprowadzDialog',['../class_drzewo_dialogow.html#a8e146456f1a0f0dd2e1a58670cfff3a4',1,'DrzewoDialogow']]],
+  ['przeskaluj_621',['przeskaluj',['../class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70',1,'Obiekt']]],
+  ['przestaw_622',['przestaw',['../class_obiekt.html#aa9202b4cf6a327c24ac63b1821f3fc0a',1,'Obiekt']]],
+  ['przesun_623',['Przesun',['../class_mapa.html#a502db975ae5e5d7e89b55455b2513ea4',1,'Mapa']]],
+  ['przyciemnij_624',['przyciemnij',['../class_obiekt.html#a0308862e97a4e26eedb6481ca9da7957',1,'Obiekt']]],
+  ['przyciemnijdmg_625',['przyciemnijDmg',['../class_h_u_d.html#ac171b765dc5174f9e1a4294646c26794',1,'HUD']]],
+  ['przyciemnijinteligencja_626',['przyciemnijInteligencja',['../class_h_u_d.html#a785eb65a623a2194922de1c4591cd370',1,'HUD']]],
+  ['przyciemnijokno_627',['przyciemnijOkno',['../class_h_u_d.html#a605fd5edd8dea211db39254fb9b6a861',1,'HUD']]],
+  ['przyciemnijsila_628',['przyciemnijSila',['../class_h_u_d.html#ac6382f356b4cc1da8a41d3c33612468a',1,'HUD']]],
+  ['przypiszbohatera_629',['PrzypiszBohatera',['../class_mapa.html#af319c3b3d7f02de0243085bb300cb0fb',1,'Mapa']]],
+  ['przypiszgracza_630',['PrzypiszGracza',['../class_plytka.html#abcbaf5f9110d9630f8487cc7d1f5704e',1,'Plytka']]],
+  ['przypiszobiekt_631',['PrzypiszObiekt',['../class_mapa.html#a1751e23b9afcd8ab510011914d4648a0',1,'Mapa::PrzypiszObiekt(std::string sciezka, int x, int y, int zycie, int exp, sf::Vector2f scale, int flag=0)'],['../class_mapa.html#a9d93b6654da7d3e67a404b7094f6fbb4',1,'Mapa::PrzypiszObiekt(ObiektOtoczenia *obiekt, int x, int y)'],['../class_plytka.html#a6c074d2d74be5486731934f4fdcdf747',1,'Plytka::PrzypiszObiekt()']]]
 ];

@@ -1,0 +1,26 @@
+var class_obiekt_otoczenia =
+[
+    [ "ObiektOtoczenia", "class_obiekt_otoczenia.html#a0d196817800b68ca2644bfa6a6c721a3", null ],
+    [ "ObiektOtoczenia", "class_obiekt_otoczenia.html#a890d83ac6951a65b87ec573d2efd20bd", null ],
+    [ "atak", "class_obiekt_otoczenia.html#ac46676a2aaef62e9e34d614b1d2611a5", null ],
+    [ "checkZycie", "class_obiekt_otoczenia.html#a2351015d1b95f42d727a4a5cf3b5ac8e", null ],
+    [ "clone", "class_obiekt_otoczenia.html#a2ae03e01633bb95a02761e764773eef6", null ],
+    [ "dealDmg", "class_obiekt_otoczenia.html#af4f60fb9154143f0bc1984e6846d81ec", null ],
+    [ "draw", "class_obiekt_otoczenia.html#a68c7a126782229d75387632001cec36e", null ],
+    [ "returnExp", "class_obiekt_otoczenia.html#ad770b85c9c1eee7d0f75edfa50a1f2dd", null ],
+    [ "setInterakcja", "class_obiekt_otoczenia.html#ac4b4f93185e3e2a8641c333f8299deb7", null ],
+    [ "setRange", "class_obiekt_otoczenia.html#a846ab4ab10d8bbfb8e966e890376d2c5", null ],
+    [ "setZycie", "class_obiekt_otoczenia.html#af418840e2d44fbec14cb233f58c17a10", null ],
+    [ "zwrocDmg", "class_obiekt_otoczenia.html#aeb7bf1ad6961513831c415c9515de791", null ],
+    [ "zwrocFlage", "class_obiekt_otoczenia.html#aa596d90c371cc1e2b8b55ea8743e9cc3", null ],
+    [ "zwrocInterakcja", "class_obiekt_otoczenia.html#a92b6a1c4e67ef964cf5f3b48bc046443", null ],
+    [ "zwrocRange", "class_obiekt_otoczenia.html#a1c20aef69ef5855e274e90dc7436b841", null ],
+    [ "zwrocZycie", "class_obiekt_otoczenia.html#a7c4208de4cb53ca1cb33de04f7051166", null ],
+    [ "dialog", "class_obiekt_otoczenia.html#adaa475d91adc5229a33c4c39611875d9", null ],
+    [ "dmg", "class_obiekt_otoczenia.html#a3e24c2d57c77559edf9302c18b0b6373", null ],
+    [ "exp", "class_obiekt_otoczenia.html#a534e70028fa45e28f2bba6e2f7745af3", null ],
+    [ "flag", "class_obiekt_otoczenia.html#ad70142de9f5428ec9d944120a5054707", null ],
+    [ "interakcja", "class_obiekt_otoczenia.html#a0f81b4fcaef6f7e146ee2df7db7588a3", null ],
+    [ "range", "class_obiekt_otoczenia.html#afd8c4f7541b48300a83312d7920f1f87", null ],
+    [ "zycie", "class_obiekt_otoczenia.html#a1c30cff2ac619bdfe0883adec8e99633", null ]
+];

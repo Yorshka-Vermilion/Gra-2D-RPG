@@ -1,0 +1,290 @@
+\hypertarget{class_zaklecie}{}\doxysection{Zaklecie Class Reference}
+\label{class_zaklecie}\index{Zaklecie@{Zaklecie}}
+
+
+{\ttfamily \#include $<$Zaklecie.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_zaklecie_a4b1c1d15aa73340ac01b3bf9dce5edba}{Zaklecie}} (std\+::vector$<$ int $>$ obraz, double \mbox{\hyperlink{class_zaklecie_a92a644cff5f436e0acf062d3bd110889}{dmg}}, double \mbox{\hyperlink{class_zaklecie_acf84e90554eacaa4b3987a6edc281558}{mana}}, std\+::string \mbox{\hyperlink{class_zaklecie_a77d3a9c8b0479d914e969014bc44519d}{nazwa}}, \mbox{\hyperlink{class_animacja}{Animacja}} $\ast$\mbox{\hyperlink{class_zaklecie_aedfe02e614910254c67c8c01de089843}{animacja}})
+\begin{DoxyCompactList}\small\item\em Konstruktor zaklecia. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_zaklecie_a2109f11b71831a6bc0daf3a968e39ffa}{update}} (sf\+::\+Render\+Target $\ast$cel, const float \&dtime)
+\begin{DoxyCompactList}\small\item\em Funkcja aktualizujaca animacje zaklecia. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_zaklecie_a09e1c28272dc7f231d4eb9aae2bbb364}{sprawdz}} (std\+::vector$<$ int $>$ co)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzajaca czy podany w argumencie vector obrazu zgadza sie z vectorem obraz\+\_\+wzorcowy. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_zaklecie_afba7d193809cb22d604a3f5f8d8fbde1}{get\+Nazwa}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca nazwe zaklecia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zaklecie_a1b2651a29050662603addad02873fd04}{zresetuj}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja resetujaca animacje zaklecia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zaklecie_a360e3e5ebef439f17379a6376d7a6cd1}{ustaw}} (sf\+::\+Vector2f gdzie)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca zaklecia na odpowiedniej pozycji. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_zaklecie_abe4529245aa6462e5c87a679e52f4b89}{get\+Dmg}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca obrazenia zaklecia. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_zaklecie_a412ad10508042fcf9343e7ff4569f73d}{get\+Mana\+Cost}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca mane potrzebna do rzucenia zaklecia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_zaklecie_a17dafef3d781aa6fd406557c262399a8}{obraz\+\_\+wzorcowy}}
+\begin{DoxyCompactList}\small\item\em Zapisuje w vectorze \textquotesingle{}obraz\textquotesingle{} (czyli kierunki i kolejnosc) lini ktore musza byc narysowane na ekranie aby uaktywnic dane zaklecie. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_zaklecie_a92a644cff5f436e0acf062d3bd110889}{dmg}}
+\begin{DoxyCompactList}\small\item\em Obrazenia zaklecia. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_zaklecie_acf84e90554eacaa4b3987a6edc281558}{mana}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_mana}{Mana}} potrzebna do uzycia. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_zaklecie_a77d3a9c8b0479d914e969014bc44519d}{nazwa}}
+\begin{DoxyCompactList}\small\item\em Nazwa zaklecia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_animacja}{Animacja}} $\ast$ \mbox{\hyperlink{class_zaklecie_aedfe02e614910254c67c8c01de089843}{animacja}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_animacja}{Animacja}} zaklecia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 4 of file Zaklecie.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_zaklecie_a4b1c1d15aa73340ac01b3bf9dce5edba}\label{class_zaklecie_a4b1c1d15aa73340ac01b3bf9dce5edba}} 
+\index{Zaklecie@{Zaklecie}!Zaklecie@{Zaklecie}}
+\index{Zaklecie@{Zaklecie}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{Zaklecie()}{Zaklecie()}}
+{\footnotesize\ttfamily Zaklecie\+::\+Zaklecie (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{obraz,  }\item[{double}]{dmg,  }\item[{double}]{mana,  }\item[{std\+::string}]{nazwa,  }\item[{\mbox{\hyperlink{class_animacja}{Animacja}} $\ast$}]{animacja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor zaklecia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obraz} & Obraz wzorcowy zaklecia \\
+\hline
+{\em dmg} & Obrazenia zaklecia \\
+\hline
+{\em mana} & \mbox{\hyperlink{class_mana}{Mana}} potrzebna do rzucenia zaklecia \\
+\hline
+{\em nazwa} & Nazwa zaklecia \\
+\hline
+{\em animacja} & Wskaznik na animacje zaklecia \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file Zaklecie.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_zaklecie_abe4529245aa6462e5c87a679e52f4b89}\label{class_zaklecie_abe4529245aa6462e5c87a679e52f4b89}} 
+\index{Zaklecie@{Zaklecie}!getDmg@{getDmg}}
+\index{getDmg@{getDmg}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{getDmg()}{getDmg()}}
+{\footnotesize\ttfamily double Zaklecie\+::get\+Dmg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca obrazenia zaklecia. 
+
+\begin{DoxyReturn}{Returns}
+double zwraca ilosc obrazen zaklecia 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file Zaklecie.\+h.
+
+\mbox{\Hypertarget{class_zaklecie_a412ad10508042fcf9343e7ff4569f73d}\label{class_zaklecie_a412ad10508042fcf9343e7ff4569f73d}} 
+\index{Zaklecie@{Zaklecie}!getManaCost@{getManaCost}}
+\index{getManaCost@{getManaCost}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{getManaCost()}{getManaCost()}}
+{\footnotesize\ttfamily double Zaklecie\+::get\+Mana\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca mane potrzebna do rzucenia zaklecia. 
+
+\begin{DoxyReturn}{Returns}
+double zwraca koszt many 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file Zaklecie.\+h.
+
+\mbox{\Hypertarget{class_zaklecie_afba7d193809cb22d604a3f5f8d8fbde1}\label{class_zaklecie_afba7d193809cb22d604a3f5f8d8fbde1}} 
+\index{Zaklecie@{Zaklecie}!getNazwa@{getNazwa}}
+\index{getNazwa@{getNazwa}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{getNazwa()}{getNazwa()}}
+{\footnotesize\ttfamily std\+::string Zaklecie\+::get\+Nazwa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwracajaca nazwe zaklecia. 
+
+\begin{DoxyReturn}{Returns}
+string zwraca nazwe zaklecia 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Zaklecie.\+h.
+
+\mbox{\Hypertarget{class_zaklecie_a09e1c28272dc7f231d4eb9aae2bbb364}\label{class_zaklecie_a09e1c28272dc7f231d4eb9aae2bbb364}} 
+\index{Zaklecie@{Zaklecie}!sprawdz@{sprawdz}}
+\index{sprawdz@{sprawdz}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{sprawdz()}{sprawdz()}}
+{\footnotesize\ttfamily bool Zaklecie\+::sprawdz (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{co }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja sprawdzajaca czy podany w argumencie vector obrazu zgadza sie z vectorem obraz\+\_\+wzorcowy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em co} & Vector obrazu do sprawdzenia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true gdy zaklecie zgadza sie z tym znajdujacym sie w zapisanym zbiorze 
+
+false gdy zaklecie nie znajduje sie w zapisanym zbiorze lub jest nie do rozpoznania 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file Zaklecie.\+h.
+
+\mbox{\Hypertarget{class_zaklecie_a2109f11b71831a6bc0daf3a968e39ffa}\label{class_zaklecie_a2109f11b71831a6bc0daf3a968e39ffa}} 
+\index{Zaklecie@{Zaklecie}!update@{update}}
+\index{update@{update}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool Zaklecie\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel,  }\item[{const float \&}]{dtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja aktualizujaca animacje zaklecia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & Wskaznik na cel rysowania \\
+\hline
+{\em dtime} & Delta czasu (timer) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true gdy animacja sie zakonczyla 
+
+false gdy animacja dalej trwa 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file Zaklecie.\+h.
+
+\mbox{\Hypertarget{class_zaklecie_a360e3e5ebef439f17379a6376d7a6cd1}\label{class_zaklecie_a360e3e5ebef439f17379a6376d7a6cd1}} 
+\index{Zaklecie@{Zaklecie}!ustaw@{ustaw}}
+\index{ustaw@{ustaw}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{ustaw()}{ustaw()}}
+{\footnotesize\ttfamily void Zaklecie\+::ustaw (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{gdzie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja ustawiajaca zaklecia na odpowiedniej pozycji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gdzie} & Vector2f z pozycja na ktorej ma sie znalezc zaklecie \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file Zaklecie.\+h.
+
+\mbox{\Hypertarget{class_zaklecie_a1b2651a29050662603addad02873fd04}\label{class_zaklecie_a1b2651a29050662603addad02873fd04}} 
+\index{Zaklecie@{Zaklecie}!zresetuj@{zresetuj}}
+\index{zresetuj@{zresetuj}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{zresetuj()}{zresetuj()}}
+{\footnotesize\ttfamily void Zaklecie\+::zresetuj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja resetujaca animacje zaklecia. 
+
+
+
+Definition at line 76 of file Zaklecie.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_zaklecie_aedfe02e614910254c67c8c01de089843}\label{class_zaklecie_aedfe02e614910254c67c8c01de089843}} 
+\index{Zaklecie@{Zaklecie}!animacja@{animacja}}
+\index{animacja@{animacja}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{animacja}{animacja}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_animacja}{Animacja}}$\ast$ Zaklecie\+::animacja\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_animacja}{Animacja}} zaklecia. 
+
+
+
+Definition at line 15 of file Zaklecie.\+h.
+
+\mbox{\Hypertarget{class_zaklecie_a92a644cff5f436e0acf062d3bd110889}\label{class_zaklecie_a92a644cff5f436e0acf062d3bd110889}} 
+\index{Zaklecie@{Zaklecie}!dmg@{dmg}}
+\index{dmg@{dmg}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{dmg}{dmg}}
+{\footnotesize\ttfamily double Zaklecie\+::dmg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Obrazenia zaklecia. 
+
+
+
+Definition at line 9 of file Zaklecie.\+h.
+
+\mbox{\Hypertarget{class_zaklecie_acf84e90554eacaa4b3987a6edc281558}\label{class_zaklecie_acf84e90554eacaa4b3987a6edc281558}} 
+\index{Zaklecie@{Zaklecie}!mana@{mana}}
+\index{mana@{mana}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{mana}{mana}}
+{\footnotesize\ttfamily double Zaklecie\+::mana\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_mana}{Mana}} potrzebna do uzycia. 
+
+
+
+Definition at line 11 of file Zaklecie.\+h.
+
+\mbox{\Hypertarget{class_zaklecie_a77d3a9c8b0479d914e969014bc44519d}\label{class_zaklecie_a77d3a9c8b0479d914e969014bc44519d}} 
+\index{Zaklecie@{Zaklecie}!nazwa@{nazwa}}
+\index{nazwa@{nazwa}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{nazwa}{nazwa}}
+{\footnotesize\ttfamily std\+::string Zaklecie\+::nazwa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nazwa zaklecia. 
+
+
+
+Definition at line 13 of file Zaklecie.\+h.
+
+\mbox{\Hypertarget{class_zaklecie_a17dafef3d781aa6fd406557c262399a8}\label{class_zaklecie_a17dafef3d781aa6fd406557c262399a8}} 
+\index{Zaklecie@{Zaklecie}!obraz\_wzorcowy@{obraz\_wzorcowy}}
+\index{obraz\_wzorcowy@{obraz\_wzorcowy}!Zaklecie@{Zaklecie}}
+\doxysubsubsection{\texorpdfstring{obraz\_wzorcowy}{obraz\_wzorcowy}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Zaklecie\+::obraz\+\_\+wzorcowy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Zapisuje w vectorze \textquotesingle{}obraz\textquotesingle{} (czyli kierunki i kolejnosc) lini ktore musza byc narysowane na ekranie aby uaktywnic dane zaklecie. 
+
+
+
+Definition at line 7 of file Zaklecie.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_zaklecie_8h}{Zaklecie.\+h}}\end{DoxyCompactItemize}

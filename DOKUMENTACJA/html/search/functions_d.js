@@ -1,17 +1,13 @@
 var searchData=
 [
-  ['seta_301',['setA',['../class_moveport.html#a2300c98d71dee5d96bb683d5207e75bd',1,'Moveport']]],
-  ['setb_302',['setB',['../class_moveport.html#a82e127fa705b237a94549093c30ccb3b',1,'Moveport']]],
-  ['setc_303',['setC',['../class_moveport.html#a5ff0a607e8f9530a56aead2175ac536f',1,'Moveport']]],
-  ['setd_304',['setD',['../class_moveport.html#a548d2d3bd5b7751c6f5d88d58f8900bd',1,'Moveport']]],
-  ['setend_305',['setEnd',['../class_line_segment.html#a776b80acb195d393a7bb7b248de0732f',1,'LineSegment::setEnd(sf::Vector2f end)'],['../class_line_segment.html#a41e1923256ec74e41bd61752e3c1cd54',1,'LineSegment::setEnd(float x, float y)']]],
-  ['setframeratecap_306',['setFrameRateCap',['../class_engine.html#aa65adad0c39c89089d76e03a7b75333b',1,'Engine']]],
-  ['setfullscreen_307',['setFullScreen',['../class_engine.html#a9b27125fb41b363d1007cb9e5bc69def',1,'Engine']]],
-  ['setresolution_308',['setResolution',['../class_engine.html#ab525cead6507be6321eed4f19104642b',1,'Engine']]],
-  ['sets_309',['setS',['../class_circle_primitive.html#a2ddbe234d934cdfff6fc76b7c0f79586',1,'CirclePrimitive::setS(Point2D S)'],['../class_circle_primitive.html#ab02bb59d90c125b6ddb26c224c30ccb9',1,'CirclePrimitive::setS(float x, float y)']]],
-  ['setstart_310',['setStart',['../class_line_segment.html#aec2dbe8bc2b5d72f75165a7577cc86bc',1,'LineSegment::setStart(sf::Vector2f start)'],['../class_line_segment.html#a0e8233724dca6be7455a6b276c24746d',1,'LineSegment::setStart(float x, float y)']]],
-  ['sprawdzmysz_311',['sprawdzMysz',['../class_stan.html#a667f2152e33cc36e504c4c4701e3a694',1,'Stan']]],
-  ['stan_312',['Stan',['../class_stan.html#ac2ff71cd72e26228c9d14b52a5460c8a',1,'Stan']]],
-  ['start_313',['start',['../class_engine.html#a4d8066dd213a03f5420d1bf60f150ca7',1,'Engine']]],
-  ['stworz_314',['stworz',['../class_bitmap_handler.html#aacda98b2346da317dc75f2901eea747d',1,'BitmapHandler']]]
+  ['obiekt_596',['Obiekt',['../class_obiekt.html#a03124928e33622a68b22f9bb7e1d8cf9',1,'Obiekt::Obiekt(std::string sciezka, sf::Vector2f pozycja)'],['../class_obiekt.html#ac8e27a872226e2b55c6f42c0677e5d00',1,'Obiekt::Obiekt()']]],
+  ['obiektotoczenia_597',['ObiektOtoczenia',['../class_obiekt_otoczenia.html#a0d196817800b68ca2644bfa6a6c721a3',1,'ObiektOtoczenia::ObiektOtoczenia(std::string sciezka, sf::Vector2f pozycja, int zycie, int exp, sf::Vector2f scale, int flag=0, double dmg=0, int range=0, bool interakcja=false)'],['../class_obiekt_otoczenia.html#a890d83ac6951a65b87ec573d2efd20bd',1,'ObiektOtoczenia::ObiektOtoczenia()']]],
+  ['oblicz_598',['oblicz',['../class_rzucanie_zaklec.html#a559e1c39624c9746dbb0be213582a762',1,'RzucanieZaklec']]],
+  ['obliczdmg_599',['obliczDmg',['../class_statystyki.html#a6e6a912db0d48268f9f032613b6edfd1',1,'Statystyki']]],
+  ['obliczinteligencja_600',['obliczInteligencja',['../class_statystyki.html#a3fd970a1a335fb46c2c398265de11598',1,'Statystyki']]],
+  ['obliczsila_601',['obliczSila',['../class_statystyki.html#ac727adc329785ca9e4d4d01b0545ea98',1,'Statystyki']]],
+  ['obslugaruchugracza_602',['ObslugaRuchuGracza',['../class_obsluga_ruchu_gracza.html#aa2f9b93df67aa8260486917b3216411c',1,'ObslugaRuchuGracza']]],
+  ['odejmijmane_603',['odejmijMane',['../class_gracz.html#a955089ea65682c5a258e5de7dacb1638',1,'Gracz']]],
+  ['oknodialog_604',['OknoDialog',['../class_okno_dialog.html#a08db43b9a17492657de79a0c779af76f',1,'OknoDialog']]],
+  ['opcje_605',['Opcje',['../struct_opcje.html#ad65562f490c47e7027a10676dfce1b57',1,'Opcje']]]
 ];

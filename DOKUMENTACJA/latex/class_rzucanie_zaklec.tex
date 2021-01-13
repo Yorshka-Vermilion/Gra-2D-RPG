@@ -1,0 +1,298 @@
+\hypertarget{class_rzucanie_zaklec}{}\doxysection{Rzucanie\+Zaklec Class Reference}
+\label{class_rzucanie_zaklec}\index{RzucanieZaklec@{RzucanieZaklec}}
+
+
+Klasa obslugujaca rzucanie zaklec.  
+
+
+
+
+{\ttfamily \#include $<$Rzucanie\+Zaklec.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rzucanie_zaklec_a819e6865bab77d3b364dac3d6d018e87}{Rzucanie\+Zaklec}} (\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$\mbox{\hyperlink{class_rzucanie_zaklec_ae001c7975c87082980bb7e3378df9181}{gracz}})
+\begin{DoxyCompactList}\small\item\em Konstruktor rzucania zaklec. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_rzucanie_zaklec_a559e1c39624c9746dbb0be213582a762}{oblicz}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja oblicza kierunei narysowanych lini oraz zwraca index zaklecia jesli kierunki lini pokryly sie z jakims zakleciem w vectorze zaklecia. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_rzucanie_zaklec_a361a544ce7ca2c9b58e509e3e9463f2b}{sprawdz}} (std\+::vector$<$ int $>$ kierunki)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza czy jakiekolwiek zaklecie i jego kierunki odpowiadaja vectorowi kierunkow podanemu w argumencie. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_rzucanie_zaklec_aa9115fe8882202e391b882224edf26f4}{rzucaj}} (\mbox{\hyperlink{class_plytka}{Plytka}} $\ast$plytka)
+\begin{DoxyCompactList}\small\item\em Funkcja obslugujaca rzucanie zaklec, zwraca odpowiedni komunikat w postaci string\textquotesingle{}a. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rzucanie_zaklec_a47eee2de78b1150d6712e2a9fd1dfd1c}{zadaj\+Obrazenia}} (\mbox{\hyperlink{class_plytka}{Plytka}} $\ast$plytka, int dmg)
+\begin{DoxyCompactList}\small\item\em Funkcja zadaje obrazenia obiektowi znajdujacemu sie na plytce. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rzucanie_zaklec_a7ef0ab31664dd8842df8625f393a46e8}{zapisz\+Poczatek}} (sf\+::\+Vector2f gdzie)
+\begin{DoxyCompactList}\small\item\em Funkcja zapisujaca poczatek lini rysowanej w celu rzucania zaklecia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rzucanie_zaklec_ac60d3ad3488b93dd326571e261cfdefe}{zapisz\+Koniec}} (sf\+::\+Vector2f gdzie)
+\begin{DoxyCompactList}\small\item\em Funkcja zapisujaca koniec lini rysowanej w celu rzucania zaklecia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rzucanie_zaklec_a7a6d545d5d2d333c222f77894cf41986}{draw}} (sf\+::\+Render\+Target $\ast$target, sf\+::\+Vector2f myszka)
+\begin{DoxyCompactList}\small\item\em Funkcja zapisujaca rysujaca linie rzucania zaklec. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rzucanie_zaklec_a43a08ca99e3e105ca3247345aac72eb9}{wyczysc\+Linie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja czyszczaca linie po rzuceniu czaru. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_zaklecie}{Zaklecie}} $\ast$ $>$ \mbox{\hyperlink{class_rzucanie_zaklec_a5dea4c27a8f749e37df94f166c8820ed}{zaklecia}}
+\begin{DoxyCompactList}\small\item\em Vector przechowujacy wszystkie dostepne w grze zaklecia. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} $>$ \mbox{\hyperlink{class_rzucanie_zaklec_a654a117b8d037c4a3bd73b798de3aed7}{linie}}
+\begin{DoxyCompactList}\small\item\em Vector przechowujacy linie rysujace sie na ekranie podczas rzucania czaru. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} \mbox{\hyperlink{class_rzucanie_zaklec_aa73bd2f1dadd67f09b456d6d66bafc73}{tmp}}
+\begin{DoxyCompactList}\small\item\em Tymczasowa klasa \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} ktora przechowuje pojedyncza linie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$ \mbox{\hyperlink{class_rzucanie_zaklec_ae001c7975c87082980bb7e3378df9181}{gracz}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na gracza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa obslugujaca rzucanie zaklec. 
+
+Definition at line 18 of file Rzucanie\+Zaklec.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rzucanie_zaklec_a819e6865bab77d3b364dac3d6d018e87}\label{class_rzucanie_zaklec_a819e6865bab77d3b364dac3d6d018e87}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!RzucanieZaklec@{RzucanieZaklec}}
+\index{RzucanieZaklec@{RzucanieZaklec}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{RzucanieZaklec()}{RzucanieZaklec()}}
+{\footnotesize\ttfamily Rzucanie\+Zaklec\+::\+Rzucanie\+Zaklec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$}]{gracz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor rzucania zaklec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gracz} & Wskaznik na gracza \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Rzucanie\+Zaklec.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rzucanie_zaklec_a7a6d545d5d2d333c222f77894cf41986}\label{class_rzucanie_zaklec_a7a6d545d5d2d333c222f77894cf41986}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!draw@{draw}}
+\index{draw@{draw}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Rzucanie\+Zaklec\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target,  }\item[{sf\+::\+Vector2f}]{myszka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zapisujaca rysujaca linie rzucania zaklec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Cel rysowania \\
+\hline
+{\em myszka} & Aktualna pozycja myszy w celu rysowania z punktu poczatkowego do myszy \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 142 of file Rzucanie\+Zaklec.\+h.
+
+\mbox{\Hypertarget{class_rzucanie_zaklec_a559e1c39624c9746dbb0be213582a762}\label{class_rzucanie_zaklec_a559e1c39624c9746dbb0be213582a762}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!oblicz@{oblicz}}
+\index{oblicz@{oblicz}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{oblicz()}{oblicz()}}
+{\footnotesize\ttfamily int Rzucanie\+Zaklec\+::oblicz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja oblicza kierunei narysowanych lini oraz zwraca index zaklecia jesli kierunki lini pokryly sie z jakims zakleciem w vectorze zaklecia. 
+
+\begin{DoxyReturn}{Returns}
+int numer zaklecia ktore zgadza sie ze wskazanymi znakami 
+
+-\/1 gdy narysowane linie nie odpowiadaja zadnemu z czarow 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file Rzucanie\+Zaklec.\+h.
+
+\mbox{\Hypertarget{class_rzucanie_zaklec_aa9115fe8882202e391b882224edf26f4}\label{class_rzucanie_zaklec_aa9115fe8882202e391b882224edf26f4}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!rzucaj@{rzucaj}}
+\index{rzucaj@{rzucaj}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{rzucaj()}{rzucaj()}}
+{\footnotesize\ttfamily std\+::string Rzucanie\+Zaklec\+::rzucaj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_plytka}{Plytka}} $\ast$}]{plytka }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja obslugujaca rzucanie zaklec, zwraca odpowiedni komunikat w postaci string\textquotesingle{}a. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plytka} & Wskaznik na plytke na ktorej ma byc rzucony czar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string zwraca komunikat zaleznie od efektu rzuconego czaru 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file Rzucanie\+Zaklec.\+h.
+
+\mbox{\Hypertarget{class_rzucanie_zaklec_a361a544ce7ca2c9b58e509e3e9463f2b}\label{class_rzucanie_zaklec_a361a544ce7ca2c9b58e509e3e9463f2b}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!sprawdz@{sprawdz}}
+\index{sprawdz@{sprawdz}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{sprawdz()}{sprawdz()}}
+{\footnotesize\ttfamily size\+\_\+t Rzucanie\+Zaklec\+::sprawdz (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{kierunki }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja sprawdza czy jakiekolwiek zaklecie i jego kierunki odpowiadaja vectorowi kierunkow podanemu w argumencie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kierunki} & Vector kierunkow ktore odpowiadaja narysowanym linia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+i zwraca numer wskazanego zaklecia ze zbioru 
+
+-\/1 gdy odpowiadajace zaklecie nie znajduje wie w zbiorze 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file Rzucanie\+Zaklec.\+h.
+
+\mbox{\Hypertarget{class_rzucanie_zaklec_a43a08ca99e3e105ca3247345aac72eb9}\label{class_rzucanie_zaklec_a43a08ca99e3e105ca3247345aac72eb9}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!wyczyscLinie@{wyczyscLinie}}
+\index{wyczyscLinie@{wyczyscLinie}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{wyczyscLinie()}{wyczyscLinie()}}
+{\footnotesize\ttfamily void Rzucanie\+Zaklec\+::wyczysc\+Linie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja czyszczaca linie po rzuceniu czaru. 
+
+
+
+Definition at line 158 of file Rzucanie\+Zaklec.\+h.
+
+\mbox{\Hypertarget{class_rzucanie_zaklec_a47eee2de78b1150d6712e2a9fd1dfd1c}\label{class_rzucanie_zaklec_a47eee2de78b1150d6712e2a9fd1dfd1c}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!zadajObrazenia@{zadajObrazenia}}
+\index{zadajObrazenia@{zadajObrazenia}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{zadajObrazenia()}{zadajObrazenia()}}
+{\footnotesize\ttfamily void Rzucanie\+Zaklec\+::zadaj\+Obrazenia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_plytka}{Plytka}} $\ast$}]{plytka,  }\item[{int}]{dmg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zadaje obrazenia obiektowi znajdujacemu sie na plytce. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plytka} & Wskaznik na plytke na ktorej stoi obiekt \\
+\hline
+{\em dmg} & Ilosc obrazen do zadania \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 114 of file Rzucanie\+Zaklec.\+h.
+
+\mbox{\Hypertarget{class_rzucanie_zaklec_ac60d3ad3488b93dd326571e261cfdefe}\label{class_rzucanie_zaklec_ac60d3ad3488b93dd326571e261cfdefe}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!zapiszKoniec@{zapiszKoniec}}
+\index{zapiszKoniec@{zapiszKoniec}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{zapiszKoniec()}{zapiszKoniec()}}
+{\footnotesize\ttfamily void Rzucanie\+Zaklec\+::zapisz\+Koniec (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{gdzie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zapisujaca koniec lini rysowanej w celu rzucania zaklecia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gdzie} & Pozycja piksela na ktorym skonczono rysowanie lini \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 131 of file Rzucanie\+Zaklec.\+h.
+
+\mbox{\Hypertarget{class_rzucanie_zaklec_a7ef0ab31664dd8842df8625f393a46e8}\label{class_rzucanie_zaklec_a7ef0ab31664dd8842df8625f393a46e8}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!zapiszPoczatek@{zapiszPoczatek}}
+\index{zapiszPoczatek@{zapiszPoczatek}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{zapiszPoczatek()}{zapiszPoczatek()}}
+{\footnotesize\ttfamily void Rzucanie\+Zaklec\+::zapisz\+Poczatek (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{gdzie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zapisujaca poczatek lini rysowanej w celu rzucania zaklecia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gdzie} & Pozycja piksela na ktorym zaczeto rysowanie lini \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Rzucanie\+Zaklec.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_rzucanie_zaklec_ae001c7975c87082980bb7e3378df9181}\label{class_rzucanie_zaklec_ae001c7975c87082980bb7e3378df9181}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!gracz@{gracz}}
+\index{gracz@{gracz}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{gracz}{gracz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gracz}{Gracz}}$\ast$ Rzucanie\+Zaklec\+::gracz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wskaznik na gracza. 
+
+
+
+Definition at line 27 of file Rzucanie\+Zaklec.\+h.
+
+\mbox{\Hypertarget{class_rzucanie_zaklec_a654a117b8d037c4a3bd73b798de3aed7}\label{class_rzucanie_zaklec_a654a117b8d037c4a3bd73b798de3aed7}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!linie@{linie}}
+\index{linie@{linie}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{linie}{linie}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}$>$ Rzucanie\+Zaklec\+::linie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector przechowujacy linie rysujace sie na ekranie podczas rzucania czaru. 
+
+
+
+Definition at line 23 of file Rzucanie\+Zaklec.\+h.
+
+\mbox{\Hypertarget{class_rzucanie_zaklec_aa73bd2f1dadd67f09b456d6d66bafc73}\label{class_rzucanie_zaklec_aa73bd2f1dadd67f09b456d6d66bafc73}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!tmp@{tmp}}
+\index{tmp@{tmp}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{tmp}{tmp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} Rzucanie\+Zaklec\+::tmp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tymczasowa klasa \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} ktora przechowuje pojedyncza linie. 
+
+
+
+Definition at line 25 of file Rzucanie\+Zaklec.\+h.
+
+\mbox{\Hypertarget{class_rzucanie_zaklec_a5dea4c27a8f749e37df94f166c8820ed}\label{class_rzucanie_zaklec_a5dea4c27a8f749e37df94f166c8820ed}} 
+\index{RzucanieZaklec@{RzucanieZaklec}!zaklecia@{zaklecia}}
+\index{zaklecia@{zaklecia}!RzucanieZaklec@{RzucanieZaklec}}
+\doxysubsubsection{\texorpdfstring{zaklecia}{zaklecia}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_zaklecie}{Zaklecie}}$\ast$$>$ Rzucanie\+Zaklec\+::zaklecia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector przechowujacy wszystkie dostepne w grze zaklecia. 
+
+
+
+Definition at line 21 of file Rzucanie\+Zaklec.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_rzucanie_zaklec_8h}{Rzucanie\+Zaklec.\+h}}\end{DoxyCompactItemize}

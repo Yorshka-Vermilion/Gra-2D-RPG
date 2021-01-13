@@ -14,8 +14,6 @@
  */
 class MenuGlowne : public Stan
 {
-	///Obiekt Demo
-
 public:
 	Menu* menu;
 	/**

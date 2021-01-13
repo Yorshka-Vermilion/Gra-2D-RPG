@@ -4,6 +4,7 @@
 #include "Dialog.h"
 
 class DrzewoDialogow {
+
 	std::vector<Dialog*> dialogi;
 public:
 	DrzewoDialogow(bool czyStworzyc = false) {

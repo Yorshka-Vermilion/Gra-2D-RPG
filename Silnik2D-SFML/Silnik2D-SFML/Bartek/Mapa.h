@@ -5,11 +5,6 @@
 #include "Plytka.h"
 #include "Gracz.h"
 
-
-/**
-* @brief Klasa obsluguje mape
-*
-*/
 class Mapa
 {
 	/// Szerokosc kafelka
@@ -31,18 +26,17 @@ class Mapa
 	/// Tablica sciezek do plikow z teksturami mapy
 	std::string plyty[4] = { "Grass1.png","Grass2.png" ,"Grass3.png" ,"podswietlenie.png" };
 	/// Tablica wskaznikow na gotowe obiekty otoczenia
-	ObiektOtoczenia* otoczenie[4] = {
+	ObiektOtoczenia* otoczenie[5] = {
 		 new ObiektOtoczenia("beczka.png", sf::Vector2f(0, 0), 1 + rand() % 100, 1 + rand() % 100, sf::Vector2f(0.15, 0.15), 2),
 		 new ObiektOtoczenia("ghost.png", sf::Vector2f(0, 0), 1 + rand() % 100, 1 + rand() % 100, sf::Vector2f(2, 2),0, 1 + rand() % 25, 3),
 		 new ObiektOtoczenia("rock.png", sf::Vector2f(0, 0), 1 + rand() % 100, 1 + rand() % 100, sf::Vector2f(3, 3), 1),
-		 new ObiektOtoczenia("skeleton.png", sf::Vector2f(0, 0), 1 + rand() % 100, 1 + rand() % 100, sf::Vector2f(2, 2), 1, 1 + rand() % 25, 1)
+		 new ObiektOtoczenia("skeleton.png", sf::Vector2f(0, 0), 1 + rand() % 100, 1 + rand() % 100, sf::Vector2f(2, 2), 1, 1 + rand() % 25, 1),
+		 new ObiektOtoczenia("H12.png", sf::Vector2f(0, 0),1000,1000, sf::Vector2f(2, 2), 1, 100, 0,true)
 	};
 
 public:
 	/// Vector z vectorami z wskaznikami na plytki, przechowuje cala mape
 	std::vector<std::vector<Plytka*>> plytki;
-
-
 	/**
 	 * @brief Konstruktor mapy
 	 *
@@ -79,6 +73,7 @@ public:
 		UstawPlytki();
 
 		//Test
+		PrzypiszObiekt(otoczenie[4], 4, 4);
 		for (size_t i = 0; i < dystans_tworzenia; i++) {
 			for (size_t j = 0; j < dystans_tworzenia; j++) {
 				if ((1 + rand()%100)%50 == 0) {
@@ -90,7 +85,6 @@ public:
 		}
 
 	}
-
 	/**
 	 * @brief Funkcja sprawdzajaca jaki rozmiar maja wgrane plytki
 	 *
@@ -101,7 +95,6 @@ public:
 			this->wysokosc = this->plytki[0][0]->PobierzRozmiar().y;
 		}
 	}
-
 	/**
 	 * @brief Funkcja ustawiajaca plytki w odpowiednich miejscach na ekranie
 	 *
@@ -121,7 +114,6 @@ public:
 		}
 		PrzypiszBohatera();
 	}
-
 	/**
 	 * @brief Funkcja przypisuje obiekt otoczenia do dane plytki
 	 *
@@ -135,7 +127,6 @@ public:
 	void PrzypiszObiekt(std::string sciezka, int x, int y, int zycie, int exp, sf::Vector2f scale, int flag = 0) {
 		this->plytki[x][y]->PrzypiszObiekt(new ObiektOtoczenia(sciezka, sf::Vector2f(0, 0), zycie, exp, scale, flag));
 	}
-
 	/**
 	 * @brief Funkcja przypisujaca obiekt otoczenia do danej plytki
 	 *
@@ -146,28 +137,13 @@ public:
 	void PrzypiszObiekt(ObiektOtoczenia* obiekt, int x, int y) {
 		this->plytki[x][y]->PrzypiszObiekt(obiekt);
 	}
-
-
 	/**
 	 * @brief Przypisuje bohatera do plytki
 	 *
 	 */
-	void PrzypiszBohatera() {
+	void PrzypiszBohatera() { // Przypisuje bohatera do plytki
 		this->plytki[this->plytki.size() / 2][this->plytki[this->plytki.size() / 2].size() / 2]->PrzypiszGracza(this->gracz);
 	}
-
-	/*
-	void RotujPlytki() {
-		size_t i = 0;
-		while (i < plytki.size()) {
-			size_t j = 0;
-			while (j < plytki[i].size()) {
-				this->plytki[i][j]->rotuj(45);
-				j++;
-			}
-			i++;
-		}
-	}*/
 
 	/**
 	 * @brief Rysowanie wszystkich elementow mapy
@@ -185,19 +161,19 @@ public:
 			i++;
 		}
 	}
-
+	
 	/**
 	 * @brief Funkcja obsluguje animacje obiektow znajdujacych sie na plytkach
 	 *
 	 * @param cel Obiekt typu RenderTarget wskazujacy na cel rysowania
 	 * @param dtime Delta czasu (timer)
 	 */
-	void animuj(sf::RenderTarget* cel, const float& dtime) {
+	void animuj(sf::RenderTarget* okno, const float& dtime) {
 		size_t i = 0;
 		while (i < plytki.size()) {
 			size_t j = 0;
 			while (j < plytki[i].size()) {
-				this->plytki[i][j]->animuj(cel, dtime);
+				this->plytki[i][j]->animuj(okno, dtime);
 				j++;
 			}
 			i++;
@@ -277,7 +253,8 @@ public:
 
 	/**
 	 * @brief Funkcja sprawdza czy gracz moze ruszyc sie na dany kafelek (tylko sasiadujace) a przesowa gracza na ten kafelek oraz przeprowadza spotaknie z obiektem (jesli takowy istnieje)
-	 *
+	 * @return true jezeli ruch zostal wykonany
+	 * 
 	 */
 	bool Rusz() {
 		if (this->aktualnie_zaznaczona_plytka.x >= 0)this->plytki[aktualnie_zaznaczona_plytka.x][aktualnie_zaznaczona_plytka.y]->WylaczPodswietlenie(true);
@@ -337,7 +314,7 @@ public:
 	 *
 	 * @param kierunek Okresla kierunek w ktorym ma przesunac sie mapa, 0 lewo, 1 prawo, 2 gora, 3 dol
 	 */
-	void Przesun(int kierunek) { 
+	void Przesun(int kierunek) { // 0 lewo, 1 prawo, 2 gora, 3 dol
 		if (!this->plytki.empty()) {
 			size_t v1s = dystans_tworzenia;
 			size_t v2s = dystans_tworzenia;
@@ -388,18 +365,16 @@ public:
 		}
 		
 	}
-	
 	/**
 	 * @brief Funkcja zwraca wskaznik na aktualnie zaznaczona plytke
-	 *
+	 * @return Plytka zwraca wskaznik na aktualnie oznaczona plytke
 	 */
 	Plytka* zwrocAktualnieZaznaczona() {
 		return this->plytki[this->aktualnie_zaznaczona_plytka.x][this->aktualnie_zaznaczona_plytka.y];
 	}
-
 	/**
 	 * @brief Funkcja zwraca dystans_tworzenia
-	 *
+	 * @return zwraca wielkosc mapy
 	 */
 	int zwrocDystansTworzenia() {
 		return this->dystans_tworzenia;

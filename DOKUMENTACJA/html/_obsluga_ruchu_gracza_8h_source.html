@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Bartek/ObslugaRuchuGracza.h Source File</title>
+<title>Grafika - Projekt: Bartek/ObslugaRuchuGracza.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Grafika - Projekt
    </div>
   </td>
  </tr>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_obsluga_ruchu_gracza_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_4062bfa0d915d9dbe0113bf958d4ef7b.html">Bartek</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">ObslugaRuchuGracza.h</div>  </div>
@@ -71,49 +87,88 @@ $(function() {
 <div class="contents">
 <a href="_obsluga_ruchu_gracza_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_gracz_8h.html">Gracz.h</a>&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_obsluga_ruchu_gracza.html">ObslugaRuchuGracza</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">   11</a></span>&#160;    <a class="code" href="class_gracz.html">Gracz</a> *<a class="code" href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">gracz</a>; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">   13</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">szybkosc</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html#a381756630c4270fddb3e69e045743199">   21</a></span>&#160;    <a class="code" href="class_obsluga_ruchu_gracza.html#a381756630c4270fddb3e69e045743199">ObslugaRuchuGracza</a>(<a class="code" href="class_gracz.html">Gracz</a>* <a class="code" href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">gracz</a>, <span class="keywordtype">float</span> <a class="code" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">szybkosc</a>) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        this-&gt;gracz = <a class="code" href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">gracz</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        this-&gt;szybkosc = <a class="code" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">szybkosc</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html#a9ac7b4ca6a4bb42efedc984b32b84b84">   31</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obsluga_ruchu_gracza.html#a9ac7b4ca6a4bb42efedc984b32b84b84">update</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; Zegar) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">float</span> x = this-&gt;gracz-&gt;<a class="code" href="class_gracz.html#afc90c4f02ae0371a612d225cb03740f0">pobierzPozycje</a>().x;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">float</span> y = this-&gt;gracz-&gt;<a class="code" href="class_gracz.html#afc90c4f02ae0371a612d225cb03740f0">pobierzPozycje</a>().y;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            this-&gt;gracz-&gt;<a class="code" href="class_gracz.html#a08ecaeec6eedec2125ae21fc88b978a9">rusz</a>(sf::Vector2f(x, y - (<a class="code" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">szybkosc</a>*Zegar)));</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            this-&gt;gracz-&gt;<a class="code" href="class_gracz.html#a08ecaeec6eedec2125ae21fc88b978a9">rusz</a>(sf::Vector2f(x, y + (<a class="code" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">szybkosc</a> * Zegar)));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">if</span> (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            this-&gt;gracz-&gt;<a class="code" href="class_gracz.html#a08ecaeec6eedec2125ae21fc88b978a9">rusz</a>(sf::Vector2f(x + (<a class="code" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">szybkosc</a> * Zegar), y));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            this-&gt;gracz-&gt;<a class="code" href="class_gracz.html#a08ecaeec6eedec2125ae21fc88b978a9">rusz</a>(sf::Vector2f(x - (<a class="code" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">szybkosc</a> * Zegar), y));</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../Sebix/DrzewoDialogow.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_obsluga_ruchu_gracza.html">ObslugaRuchuGracza</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">   12</a></span>&#160;    <a class="code" href="class_gracz.html">Gracz</a>* <a class="code" href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">gracz</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">   14</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">szybkosc</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html#af52b4add2996cc78610cad55ab01fafd">   16</a></span>&#160;    <a class="code" href="class_drzewo_dialogow.html">DrzewoDialogow</a>* <a class="code" href="class_obsluga_ruchu_gracza.html#af52b4add2996cc78610cad55ab01fafd">drzewo</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html#aa2f9b93df67aa8260486917b3216411c">   25</a></span>&#160;    <a class="code" href="class_obsluga_ruchu_gracza.html#aa2f9b93df67aa8260486917b3216411c">ObslugaRuchuGracza</a>(<a class="code" href="class_gracz.html">Gracz</a>* <a class="code" href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">gracz</a>, <span class="keywordtype">float</span> <a class="code" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">szybkosc</a>, <a class="code" href="class_drzewo_dialogow.html">DrzewoDialogow</a> *<a class="code" href="class_obsluga_ruchu_gracza.html#af52b4add2996cc78610cad55ab01fafd">drzewo</a>) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        this-&gt;gracz = <a class="code" href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">gracz</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        this-&gt;szybkosc = <a class="code" href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">szybkosc</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        this-&gt;drzewo = <a class="code" href="class_obsluga_ruchu_gracza.html#af52b4add2996cc78610cad55ab01fafd">drzewo</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html#a3a2eff65f3a4b6d12825bfa03a27dbee">   33</a></span>&#160;    <a class="code" href="class_obsluga_ruchu_gracza.html#a3a2eff65f3a4b6d12825bfa03a27dbee">~ObslugaRuchuGracza</a>() {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">delete</span>(this-&gt;<a class="code" href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">gracz</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_obsluga_ruchu_gracza.html#a9ac7b4ca6a4bb42efedc984b32b84b84">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obsluga_ruchu_gracza.html#a9ac7b4ca6a4bb42efedc984b32b84b84">update</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; Zegar) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">/*  if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">                this-&gt;gracz-&gt;rusz(sf::Vector2f(this-&gt;gracz-&gt;pobierzPozycje().x, this-&gt;gracz-&gt;pobierzPozycje().y - (szybkosc * Zegar)));</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">                //std::cout &lt;&lt; &quot;gora&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down)) {</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">                this-&gt;gracz-&gt;rusz(sf::Vector2f(this-&gt;gracz-&gt;pobierzPozycje().x, this-&gt;gracz-&gt;pobierzPozycje().y + (szybkosc * Zegar)));</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">                //std::cout &lt;&lt; &quot;dol&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) {</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">                this-&gt;gracz-&gt;rusz(sf::Vector2f(this-&gt;gracz-&gt;pobierzPozycje().x + (szybkosc * Zegar), this-&gt;gracz-&gt;pobierzPozycje().y));</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">                //std::cout &lt;&lt; &quot;prawo&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) {</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">                this-&gt;gracz-&gt;rusz(sf::Vector2f(this-&gt;gracz-&gt;pobierzPozycje().x - (szybkosc * Zegar), this-&gt;gracz-&gt;pobierzPozycje().y));</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">                //std::cout &lt;&lt; &quot;lewo&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D)) {</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">                this-&gt;gracz-&gt;zadajObrazenia();</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::H)) {</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">                this-&gt;gracz-&gt;uleczObrazenia();</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::M)) {</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">                this-&gt;gracz-&gt;odejmijMane();</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::N)) {</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">                this-&gt;gracz-&gt;ladujMane();</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)) {</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">                this-&gt;gracz-&gt;dodajExp(10);</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::I)) {</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">                this-&gt;drzewo-&gt;stworzDialog();</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::P)) {</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">                this-&gt;drzewo-&gt;przeprowadzDialog();</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">            }</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::O)) {</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">                this-&gt;drzewo-&gt;dodajDialog();</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">            }*/</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_obsluga_ruchu_gracza_html_a381756630c4270fddb3e69e045743199"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html#a381756630c4270fddb3e69e045743199">ObslugaRuchuGracza::ObslugaRuchuGracza</a></div><div class="ttdeci">ObslugaRuchuGracza(Gracz *gracz, float szybkosc)</div><div class="ttdoc">Tworzy nowy obiekt obslugi ruchu gracza.</div><div class="ttdef"><b>Definition:</b> ObslugaRuchuGracza.h:21</div></div>
-<div class="ttc" id="aclass_obsluga_ruchu_gracza_html_a6e0c9ede11df7999f957bf6c04d29408"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">ObslugaRuchuGracza::gracz</a></div><div class="ttdeci">Gracz * gracz</div><div class="ttdoc">Wskaznik na obiekt gracza.</div><div class="ttdef"><b>Definition:</b> ObslugaRuchuGracza.h:11</div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_obsluga_ruchu_gracza_html_a6e0c9ede11df7999f957bf6c04d29408"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html#a6e0c9ede11df7999f957bf6c04d29408">ObslugaRuchuGracza::gracz</a></div><div class="ttdeci">Gracz * gracz</div><div class="ttdoc">Wskaznik na obiekt gracza.</div><div class="ttdef"><b>Definition:</b> <a href="_obsluga_ruchu_gracza_8h_source.html#l00012">ObslugaRuchuGracza.h:12</a></div></div>
 <div class="ttc" id="a_gracz_8h_html"><div class="ttname"><a href="_gracz_8h.html">Gracz.h</a></div></div>
-<div class="ttc" id="aclass_gracz_html"><div class="ttname"><a href="class_gracz.html">Gracz</a></div><div class="ttdoc">Klasa opisujaca gracza.</div><div class="ttdef"><b>Definition:</b> Gracz.h:10</div></div>
-<div class="ttc" id="aclass_gracz_html_afc90c4f02ae0371a612d225cb03740f0"><div class="ttname"><a href="class_gracz.html#afc90c4f02ae0371a612d225cb03740f0">Gracz::pobierzPozycje</a></div><div class="ttdeci">sf::Vector2f pobierzPozycje()</div><div class="ttdoc">Zwraca aktualna pozycje obiektu (gracza)</div><div class="ttdef"><b>Definition:</b> Gracz.h:63</div></div>
-<div class="ttc" id="aclass_obsluga_ruchu_gracza_html_a71b18dfd0ca490bce975f916024f7a57"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">ObslugaRuchuGracza::szybkosc</a></div><div class="ttdeci">float szybkosc</div><div class="ttdoc">Predkosc ruchu.</div><div class="ttdef"><b>Definition:</b> ObslugaRuchuGracza.h:13</div></div>
-<div class="ttc" id="aclass_obsluga_ruchu_gracza_html"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html">ObslugaRuchuGracza</a></div><div class="ttdoc">Klasa sluzaca do obslugi ruchu gracza.</div><div class="ttdef"><b>Definition:</b> ObslugaRuchuGracza.h:9</div></div>
-<div class="ttc" id="aclass_gracz_html_a08ecaeec6eedec2125ae21fc88b978a9"><div class="ttname"><a href="class_gracz.html#a08ecaeec6eedec2125ae21fc88b978a9">Gracz::rusz</a></div><div class="ttdeci">void rusz(sf::Vector2f gdzie)</div><div class="ttdoc">Przeniesienie obiektu (gracza) na pozycje podana w argumencia.</div><div class="ttdef"><b>Definition:</b> Gracz.h:44</div></div>
-<div class="ttc" id="aclass_obsluga_ruchu_gracza_html_a9ac7b4ca6a4bb42efedc984b32b84b84"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html#a9ac7b4ca6a4bb42efedc984b32b84b84">ObslugaRuchuGracza::update</a></div><div class="ttdeci">void update(const float &amp;Zegar)</div><div class="ttdoc">Odswieza stan obiektu ObslugaRuchuGracza.</div><div class="ttdef"><b>Definition:</b> ObslugaRuchuGracza.h:31</div></div>
+<div class="ttc" id="aclass_gracz_html"><div class="ttname"><a href="class_gracz.html">Gracz</a></div><div class="ttdoc">Klasa opisujaca gracza.</div><div class="ttdef"><b>Definition:</b> <a href="_gracz_8h_source.html#l00009">Gracz.h:11</a></div></div>
+<div class="ttc" id="aclass_obsluga_ruchu_gracza_html_af52b4add2996cc78610cad55ab01fafd"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html#af52b4add2996cc78610cad55ab01fafd">ObslugaRuchuGracza::drzewo</a></div><div class="ttdeci">DrzewoDialogow * drzewo</div><div class="ttdoc">Wskaznik na drzewo dialogow.</div><div class="ttdef"><b>Definition:</b> <a href="_obsluga_ruchu_gracza_8h_source.html#l00016">ObslugaRuchuGracza.h:16</a></div></div>
+<div class="ttc" id="aclass_obsluga_ruchu_gracza_html_a71b18dfd0ca490bce975f916024f7a57"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57">ObslugaRuchuGracza::szybkosc</a></div><div class="ttdeci">float szybkosc</div><div class="ttdoc">Predkosc ruchu.</div><div class="ttdef"><b>Definition:</b> <a href="_obsluga_ruchu_gracza_8h_source.html#l00014">ObslugaRuchuGracza.h:14</a></div></div>
+<div class="ttc" id="aclass_obsluga_ruchu_gracza_html"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html">ObslugaRuchuGracza</a></div><div class="ttdoc">Klasa sluzaca do obslugi debugu gracza.</div><div class="ttdef"><b>Definition:</b> <a href="_obsluga_ruchu_gracza_8h_source.html#l00009">ObslugaRuchuGracza.h:10</a></div></div>
+<div class="ttc" id="aclass_obsluga_ruchu_gracza_html_aa2f9b93df67aa8260486917b3216411c"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html#aa2f9b93df67aa8260486917b3216411c">ObslugaRuchuGracza::ObslugaRuchuGracza</a></div><div class="ttdeci">ObslugaRuchuGracza(Gracz *gracz, float szybkosc, DrzewoDialogow *drzewo)</div><div class="ttdoc">Tworzy nowy obiekt obslugi ruchu gracza.</div><div class="ttdef"><b>Definition:</b> <a href="_obsluga_ruchu_gracza_8h_source.html#l00025">ObslugaRuchuGracza.h:25</a></div></div>
+<div class="ttc" id="aclass_obsluga_ruchu_gracza_html_a3a2eff65f3a4b6d12825bfa03a27dbee"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html#a3a2eff65f3a4b6d12825bfa03a27dbee">ObslugaRuchuGracza::~ObslugaRuchuGracza</a></div><div class="ttdeci">~ObslugaRuchuGracza()</div><div class="ttdoc">Dekonstruktor obslugi ruchu gracza.</div><div class="ttdef"><b>Definition:</b> <a href="_obsluga_ruchu_gracza_8h_source.html#l00033">ObslugaRuchuGracza.h:33</a></div></div>
+<div class="ttc" id="aclass_obsluga_ruchu_gracza_html_a9ac7b4ca6a4bb42efedc984b32b84b84"><div class="ttname"><a href="class_obsluga_ruchu_gracza.html#a9ac7b4ca6a4bb42efedc984b32b84b84">ObslugaRuchuGracza::update</a></div><div class="ttdeci">void update(const float &amp;Zegar)</div><div class="ttdoc">Odswieza stan obiektu ObslugaRuchuGracza.</div><div class="ttdef"><b>Definition:</b> <a href="_obsluga_ruchu_gracza_8h_source.html#l00042">ObslugaRuchuGracza.h:42</a></div></div>
+<div class="ttc" id="aclass_drzewo_dialogow_html"><div class="ttname"><a href="class_drzewo_dialogow.html">DrzewoDialogow</a></div><div class="ttdef"><b>Definition:</b> <a href="_drzewo_dialogow_8h_source.html#l00006">DrzewoDialogow.h:6</a></div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4062bfa0d915d9dbe0113bf958d4ef7b.html">Bartek</a></li><li class="navelem"><a class="el" href="_obsluga_ruchu_gracza_8h.html">ObslugaRuchuGracza.h</a></li>
+    <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
 </body>
 </html>

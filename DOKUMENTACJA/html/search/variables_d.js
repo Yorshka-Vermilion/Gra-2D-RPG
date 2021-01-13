@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['s_374',['S',['../class_circle_primitive.html#a5ce118b0e6ae6b0416858e9e8f625125',1,'CirclePrimitive']]],
-  ['sprajt_375',['sprajt',['../class_demo.html#aa357786c87d926ecf71ffc42dd41b08f',1,'Demo::sprajt()'],['../class_obiekt.html#a5a1182776f2ef794f4f1be89b2316733',1,'Obiekt::sprajt()']]],
-  ['sprite_376',['sprite',['../class_demo.html#ab18cf5bfbc9d1a48cb4d9f0cf54f336e',1,'Demo']]],
-  ['start_377',['start',['../class_line_segment.html#aa9c45270cadd4d67f7427efcc552389b',1,'LineSegment']]],
-  ['stos_378',['stos',['../class_engine.html#a77cacbb21b64142af4a076cd48b04048',1,'Engine::stos()'],['../class_stan.html#acd6f1d71e7f622492660fad6e7e2f616',1,'Stan::stos()']]],
-  ['szerokosc_379',['szerokosc',['../class_animacja.html#a032caf41600a729e94dc25942eb6e1fb',1,'Animacja']]],
-  ['szerokoscmax_380',['szerokoscMAX',['../class_animacja.html#a54aa86ac01fed5c7f5b58773b95eee63',1,'Animacja']]],
-  ['szybkosc_381',['szybkosc',['../class_obsluga_ruchu_gracza.html#a71b18dfd0ca490bce975f916024f7a57',1,'ObslugaRuchuGracza']]]
+  ['nazwa_835',['nazwa',['../class_gracz.html#a54aa4df1eabf66f24ad82de91056c0d3',1,'Gracz::nazwa()'],['../class_zaklecie.html#a77d3a9c8b0479d914e969014bc44519d',1,'Zaklecie::nazwa()'],['../class_creator.html#a85c9c3f661612f5836f7fe02f42a34ec',1,'Creator::nazwa()']]],
+  ['nazwastd_836',['nazwaStd',['../class_creator.html#a92356995e10b2ae742f1c87d828c6e0d',1,'Creator']]]
 ];

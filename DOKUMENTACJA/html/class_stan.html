@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Stan Class Reference</title>
+<title>Grafika - Projekt: Stan Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Grafika - Projekt
    </div>
   </td>
  </tr>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_stan.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -80,7 +100,7 @@ Inheritance diagram for Stan:</div>
  <div class="center">
   <img src="class_stan.png" usemap="#Stan_map" alt=""/>
   <map id="Stan_map" name="Stan_map">
-<area href="class_demo.html" alt="Demo" shape="rect" coords="0,56,86,80"/>
+<area href="class_creator.html" title="Klasa reprezentujaca stan gry odpowiedzialny za tworzenie postaci." alt="Creator" shape="rect" coords="0,56,86,80"/>
 <area href="class_gra.html" title="Klasa w ktorej bedzie znajdowal sie kod gry." alt="Gra" shape="rect" coords="96,56,182,80"/>
 <area href="class_menu_glowne.html" title="Klasa opisujaca MenuGlowne." alt="MenuGlowne" shape="rect" coords="192,56,278,80"/>
   </map>
@@ -130,6 +150,8 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_stan.html" title="Stan to klasa bazowa poszczególnych instancji w grze, takich jak MenuGlowne, Gra.">Stan</a> to klasa bazowa poszczególnych instancji w grze, takich jak <a class="el" href="class_menu_glowne.html" title="Klasa opisujaca MenuGlowne.">MenuGlowne</a>, <a class="el" href="class_gra.html" title="Klasa w ktorej bedzie znajdowal sie kod gry.">Gra</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00006">6</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac2ff71cd72e26228c9d14b52a5460c8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2ff71cd72e26228c9d14b52a5460c8a">&#9670;&nbsp;</a></span>Stan()</h2>
@@ -181,6 +203,8 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00035">35</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -216,7 +240,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_menu_glowne.html#a96ea1632cd82be427d7cc68cf0c6f051">MenuGlowne</a>, and <a class="el" href="class_demo.html#a50d684b5b7e7f9da8e9fb49325ea8655">Demo</a>.</p>
+<p>Implemented in <a class="el" href="class_creator.html#a2c8be9474f50349af9c088e99fe4bba9">Creator</a>, <a class="el" href="class_menu_glowne.html#a96ea1632cd82be427d7cc68cf0c6f051">MenuGlowne</a>, and <a class="el" href="class_gra.html#a285e3f52d7c777e4122e9d168d61083f">Gra</a>.</p>
 
 </div>
 </div>
@@ -244,6 +268,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sprawdza pozycje myszy oraz zapewnia, ze nacisniecie (przytrzymanie) klawisza myszy spowoduje jedna akcje zamiast, wielu. </p>
+
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00059">59</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
 
 </div>
 </div>
@@ -279,7 +305,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_menu_glowne.html#a15cdd836dbed8619fbd08e7e63f69b1e">MenuGlowne</a>, and <a class="el" href="class_demo.html#a1bd3d4c8bc829e4976620900443f113c">Demo</a>.</p>
+<p>Implemented in <a class="el" href="class_creator.html#a6259e2df6f9f9d6157e1aba3251528a9">Creator</a>, <a class="el" href="class_menu_glowne.html#a15cdd836dbed8619fbd08e7e63f69b1e">MenuGlowne</a>, and <a class="el" href="class_gra.html#af3540ecc70f43aafd2d4ae0876e3ecb6">Gra</a>.</p>
 
 </div>
 </div>
@@ -306,6 +332,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Zmiana czasu. </p>
 
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00012">12</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
+
 </div>
 </div>
 <a id="a5ca5d63c7154592312f25d4a14e8c9da"></a>
@@ -329,6 +357,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Wskaznik na eventy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00016">16</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
 
 </div>
 </div>
@@ -354,6 +384,8 @@ Protected Attributes</h2></td></tr>
 
 <p><a class="el" href="class_stan.html" title="Stan to klasa bazowa poszczególnych instancji w grze, takich jak MenuGlowne, Gra.">Stan</a> lewego przycisku myszy. </p>
 
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00022">22</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
+
 </div>
 </div>
 <a id="a5ee4b57f06a2e6f40cd0352a389e8554"></a>
@@ -377,6 +409,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pozycja kursora w grze. </p>
+
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00020">20</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
 
 </div>
 </div>
@@ -402,6 +436,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Pozycja kursora w oknie. </p>
 
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00018">18</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
+
 </div>
 </div>
 <a id="a40115d79445c785ac775708aa37dd3cb"></a>
@@ -425,6 +461,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_stan.html" title="Stan to klasa bazowa poszczególnych instancji w grze, takich jak MenuGlowne, Gra.">Stan</a> prawego przycisku myszy. </p>
+
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00024">24</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
 
 </div>
 </div>
@@ -450,6 +488,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Stos ze stanami. </p>
 
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00010">10</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
+
 </div>
 </div>
 <a id="a7f3ebc645765aec4b5389cd9cd7d8639"></a>
@@ -474,15 +514,21 @@ Protected Attributes</h2></td></tr>
 
 <p>Okno. </p>
 
+<p class="definition">Definition at line <a class="el" href="_stan_8h_source.html#l00014">14</a> of file <a class="el" href="_stan_8h_source.html">Stan.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Bartek/<a class="el" href="_stan_8h_source.html">Stan.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_stan.html">Stan</a></li>
+    <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
 </body>
 </html>

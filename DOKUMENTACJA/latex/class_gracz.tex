@@ -18,16 +18,71 @@ Inheritance diagram for Gracz\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_gracz_a0d00d322b41ecce30c064c286b2ec875}{Gracz}} (std\+::string sciezka, sf\+::\+Vector2f pozycja, sf\+::\+Rectangle\+Shape \mbox{\hyperlink{class_gracz_af6a380c64bcdae717d65dc9a6f0d11f0}{ksztalt}})
+\mbox{\hyperlink{class_gracz_a827962206c5e5084dc3c109d543789c9}{Gracz}} (std\+::string sciezka, sf\+::\+Vector2f pozycja, double \mbox{\hyperlink{class_gracz_aeed5d9c00d66e35d02fda1c61f18e065}{max\+Zycie}}, double \mbox{\hyperlink{class_gracz_af5ff4016882cb510148eadf2ac68f44e}{max\+Mana}}, double \mbox{\hyperlink{class_gracz_a8e78d52a26daa6588ef1f1071ac1f2e3}{max\+Exp}})
 \begin{DoxyCompactList}\small\item\em Konsturktor obiektu \mbox{\hyperlink{class_gracz}{Gracz}}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_gracz_ab6cce8a5a45fc545add7bffe8fcfecea}{debuguj}} ()
-\begin{DoxyCompactList}\small\item\em Funkcja wlaczajaca tryb debugowania. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gracz_abdad0e2d01ae6c1acaa0cd43d0787fc0}{$\sim$\+Gracz}} ()
+\begin{DoxyCompactList}\small\item\em Dekonstruktor gracza. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_gracz_a08ecaeec6eedec2125ae21fc88b978a9}{rusz}} (sf\+::\+Vector2f gdzie)
 \begin{DoxyCompactList}\small\item\em Przeniesienie obiektu (gracza) na pozycje podana w argumencia. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_gracz_adb0599d22c44bc1153d6cfd24a253d8b}{draw}} (sf\+::\+Render\+Target $\ast$cel)
 \begin{DoxyCompactList}\small\item\em Rysowanie obiektu (gracza) \end{DoxyCompactList}\item 
 sf\+::\+Vector2f \mbox{\hyperlink{class_gracz_afc90c4f02ae0371a612d225cb03740f0}{pobierz\+Pozycje}} ()
-\begin{DoxyCompactList}\small\item\em Zwraca aktualna pozycje obiektu (gracza) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Zwraca aktualna pozycje obiektu (gracza) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gracz_a1cadf49edd872141e2b2f895e7535c12}{zwroc\+Obecny\+Stan\+Zdrowia}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca obecny stan zdrowia gracza. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gracz_ab8dd37a019a60619a6e7033c3cc295a0}{zwroc\+Obecny\+Stan\+Many}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca obecny stan many gracza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_a07cd133530b9e2ed7dee7aeb874131d1}{zadaj\+Obrazenia}} (double ile=1)
+\begin{DoxyCompactList}\small\item\em Funkcja zadaje obrazanie graczowi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_a130171d28b911cb9ae43eb9b65737e62}{ulecz\+Obrazenia}} (double ile=1)
+\begin{DoxyCompactList}\small\item\em Funkcja leczy gracza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_a955089ea65682c5a258e5de7dacb1638}{odejmij\+Mane}} (double ile=1)
+\begin{DoxyCompactList}\small\item\em Funkcja zabiera mane gracza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_a823762befd97d92fe3c5fa4e5f42d665}{laduj\+Mane}} (double ile=1)
+\begin{DoxyCompactList}\small\item\em Funkcja dodaje mane graczowi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_a8fd5909bc95d18f691fce23eaac10b16}{dodaj\+Exp}} (double ilosc)
+\begin{DoxyCompactList}\small\item\em Funkcja dodaje doswiadczenie graczowi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_add30b9b56414594935ab3c865980ecc3}{sprawdz\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza czy gracz wszedl na nowy poziom doswiadczenia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gracz_aa080bc5626ac00482f289af2dcb01744}{zwroc\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca poziom gracza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_af9c5975a68adfbcd86a00f13e64145fc}{zmien\+Stan\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zmienia flage level\+Up na przeciwny stan. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gracz_a41043d90737bd0586a71cd4d9ea4a575}{zwroc\+Obecny\+Stan\+Exp}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca opecna ilosc doswiadczenia gracza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_adb7d47b5f79cab567d015c7b5d7c3861}{set\+Nazwa}} (std\+::string \mbox{\hyperlink{class_gracz_a54aa4df1eabf66f24ad82de91056c0d3}{nazwa}})
+\begin{DoxyCompactList}\small\item\em Funkcja ustawia nazwe gracza. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gracz_a2440fe6a8464872488fb16b2b8b437a0}{zwroc\+Nazwa}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca nazwe gracza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_a9e5a2db3ad699bd64f268f2e301c35ba}{set\+Full\+Zycie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja ustawia zycie gracza na max\+Zycie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gracz_a0ed8d4d528be73fd5954abe5f5330a8f}{set\+Full\+Mana}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja ustawia mane gracza na max\+Mana. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gracz_ada2370df573fd05ba5ac18c307f3ac9d}{is\+Dead}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza czy gracz nie zyje, jesli umarl (jeko zycie spadlo do zera) zwraca true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_gracz_ad577a31620d58ab10d61f3e556ceffe3}{zycie}} = 0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_zycie}{Zycie}} gracza. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gracz_a3384a684397e713f00be1b7de3d8589a}{mana}} = 0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_mana}{Mana}} gracza. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gracz_ae9c43563d7c05d67851772586aae6839}{exp}} = 0
+\begin{DoxyCompactList}\small\item\em Doswiadczenie gracza. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_gracz_a54aa4df1eabf66f24ad82de91056c0d3}{nazwa}}
+\begin{DoxyCompactList}\small\item\em Nazwa gracza. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gracz_aeed5d9c00d66e35d02fda1c61f18e065}{max\+Zycie}}
+\begin{DoxyCompactList}\small\item\em Maksymalne zycie gracza. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gracz_af5ff4016882cb510148eadf2ac68f44e}{max\+Mana}}
+\begin{DoxyCompactList}\small\item\em Maksymalna mana gracza. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gracz_a8e78d52a26daa6588ef1f1071ac1f2e3}{max\+Exp}}
+\begin{DoxyCompactList}\small\item\em Doswiadcznenie potrzebne do awansu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gracz_a45ba018dbf1ee7cde9ec45bded07deaf}{level}} = 1
+\begin{DoxyCompactList}\small\item\em Poziom gracza. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gracz_a20b380245fc77a771e7321fd2a1b73ed}{level\+Up}} = false
+\begin{DoxyCompactList}\small\item\em Flaga oznaczajaca czy gracz wszedl na nowy poziom doswiadczenia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_statystyki}{Statystyki}} $\ast$ \mbox{\hyperlink{class_gracz_ad2bd300a00c1f0e38576e3a7be4d5ca6}{statystyki}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na statystyki. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -41,12 +96,16 @@ bool \mbox{\hyperlink{class_gracz_ae650363a319d9bf171d28b7bbd85e095}{debug}} = f
 \doxysubsection{Detailed Description}
 Klasa opisujaca gracza. 
 
+Definition at line 9 of file Gracz.\+h.
+
+
+
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_gracz_a0d00d322b41ecce30c064c286b2ec875}\label{class_gracz_a0d00d322b41ecce30c064c286b2ec875}} 
+\mbox{\Hypertarget{class_gracz_a827962206c5e5084dc3c109d543789c9}\label{class_gracz_a827962206c5e5084dc3c109d543789c9}} 
 \index{Gracz@{Gracz}!Gracz@{Gracz}}
 \index{Gracz@{Gracz}!Gracz@{Gracz}}
 \doxysubsubsection{\texorpdfstring{Gracz()}{Gracz()}}
-{\footnotesize\ttfamily Gracz\+::\+Gracz (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja,  }\item[{sf\+::\+Rectangle\+Shape}]{ksztalt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Gracz\+::\+Gracz (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja,  }\item[{double}]{max\+Zycie,  }\item[{double}]{max\+Mana,  }\item[{double}]{max\+Exp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -58,21 +117,52 @@ Konsturktor obiektu \mbox{\hyperlink{class_gracz}{Gracz}}.
 \hline
 {\em pozycja} & Pozycja poczatkowa gracza \\
 \hline
-{\em ksztalt} & \mbox{\hyperlink{class_obiekt}{Obiekt}} Rectangle\+Shape zawierajacy ksztalt gracza \\
+{\em max\+Zycie} & Maksymalne zycie gracza \\
+\hline
+{\em max\+Mana} & Maksymalna mana gracza \\
+\hline
+{\em max\+Exp} & Doswiadcznenie potrzebne do awansu \\
 \hline
 \end{DoxyParams}
 
 
+Definition at line 48 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_abdad0e2d01ae6c1acaa0cd43d0787fc0}\label{class_gracz_abdad0e2d01ae6c1acaa0cd43d0787fc0}} 
+\index{Gracz@{Gracz}!````~Gracz@{$\sim$Gracz}}
+\index{````~Gracz@{$\sim$Gracz}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{$\sim$Gracz()}{~Gracz()}}
+{\footnotesize\ttfamily Gracz\+::$\sim$\+Gracz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dekonstruktor gracza. 
+
+
+
+Definition at line 67 of file Gracz.\+h.
+
+
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_gracz_ab6cce8a5a45fc545add7bffe8fcfecea}\label{class_gracz_ab6cce8a5a45fc545add7bffe8fcfecea}} 
-\index{Gracz@{Gracz}!debuguj@{debuguj}}
-\index{debuguj@{debuguj}!Gracz@{Gracz}}
-\doxysubsubsection{\texorpdfstring{debuguj()}{debuguj()}}
-{\footnotesize\ttfamily void Gracz\+::debuguj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_gracz_a8fd5909bc95d18f691fce23eaac10b16}\label{class_gracz_a8fd5909bc95d18f691fce23eaac10b16}} 
+\index{Gracz@{Gracz}!dodajExp@{dodajExp}}
+\index{dodajExp@{dodajExp}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{dodajExp()}{dodajExp()}}
+{\footnotesize\ttfamily void Gracz\+::dodaj\+Exp (\begin{DoxyParamCaption}\item[{double}]{ilosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Funkcja wlaczajaca tryb debugowania. 
+Funkcja dodaje doswiadczenie graczowi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ilosc} & Ile doswiadczenia nalezy dodac \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 167 of file Gracz.\+h.
 
 \mbox{\Hypertarget{class_gracz_adb0599d22c44bc1153d6cfd24a253d8b}\label{class_gracz_adb0599d22c44bc1153d6cfd24a253d8b}} 
 \index{Gracz@{Gracz}!draw@{draw}}
@@ -89,6 +179,65 @@ Rysowanie obiektu (gracza)
 {\em cel} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target wskazujacy na cel w ktorym bedzie renderowany sprite \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 86 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_ada2370df573fd05ba5ac18c307f3ac9d}\label{class_gracz_ada2370df573fd05ba5ac18c307f3ac9d}} 
+\index{Gracz@{Gracz}!isDead@{isDead}}
+\index{isDead@{isDead}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Gracz\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja sprawdza czy gracz nie zyje, jesli umarl (jeko zycie spadlo do zera) zwraca true. 
+
+\begin{DoxyReturn}{Returns}
+true zwraca prawde jezeli zdrowie gracza spadlo na poziom smiertelny 
+\end{DoxyReturn}
+
+
+Definition at line 253 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a823762befd97d92fe3c5fa4e5f42d665}\label{class_gracz_a823762befd97d92fe3c5fa4e5f42d665}} 
+\index{Gracz@{Gracz}!ladujMane@{ladujMane}}
+\index{ladujMane@{ladujMane}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{ladujMane()}{ladujMane()}}
+{\footnotesize\ttfamily void Gracz\+::laduj\+Mane (\begin{DoxyParamCaption}\item[{double}]{ile = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja dodaje mane graczowi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ile} & Ile many nalezy dodac do puli many \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 156 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a955089ea65682c5a258e5de7dacb1638}\label{class_gracz_a955089ea65682c5a258e5de7dacb1638}} 
+\index{Gracz@{Gracz}!odejmijMane@{odejmijMane}}
+\index{odejmijMane@{odejmijMane}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{odejmijMane()}{odejmijMane()}}
+{\footnotesize\ttfamily void Gracz\+::odejmij\+Mane (\begin{DoxyParamCaption}\item[{double}]{ile = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zabiera mane gracza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ile} & Ile many nalezy odjac z puli many \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 145 of file Gracz.\+h.
+
 \mbox{\Hypertarget{class_gracz_afc90c4f02ae0371a612d225cb03740f0}\label{class_gracz_afc90c4f02ae0371a612d225cb03740f0}} 
 \index{Gracz@{Gracz}!pobierzPozycje@{pobierzPozycje}}
 \index{pobierzPozycje@{pobierzPozycje}!Gracz@{Gracz}}
@@ -102,6 +251,10 @@ Zwraca aktualna pozycje obiektu (gracza)
 \begin{DoxyReturn}{Returns}
 sf\+::\+Vector2f Aktualna pozycja gracza 
 \end{DoxyReturn}
+
+
+Definition at line 98 of file Gracz.\+h.
+
 \mbox{\Hypertarget{class_gracz_a08ecaeec6eedec2125ae21fc88b978a9}\label{class_gracz_a08ecaeec6eedec2125ae21fc88b978a9}} 
 \index{Gracz@{Gracz}!rusz@{rusz}}
 \index{rusz@{rusz}!Gracz@{Gracz}}
@@ -119,6 +272,203 @@ Przeniesienie obiektu (gracza) na pozycje podana w argumencia.
 \end{DoxyParams}
 
 
+Definition at line 76 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a0ed8d4d528be73fd5954abe5f5330a8f}\label{class_gracz_a0ed8d4d528be73fd5954abe5f5330a8f}} 
+\index{Gracz@{Gracz}!setFullMana@{setFullMana}}
+\index{setFullMana@{setFullMana}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{setFullMana()}{setFullMana()}}
+{\footnotesize\ttfamily void Gracz\+::set\+Full\+Mana (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja ustawia mane gracza na max\+Mana. 
+
+
+
+Definition at line 245 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a9e5a2db3ad699bd64f268f2e301c35ba}\label{class_gracz_a9e5a2db3ad699bd64f268f2e301c35ba}} 
+\index{Gracz@{Gracz}!setFullZycie@{setFullZycie}}
+\index{setFullZycie@{setFullZycie}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{setFullZycie()}{setFullZycie()}}
+{\footnotesize\ttfamily void Gracz\+::set\+Full\+Zycie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja ustawia zycie gracza na max\+Zycie. 
+
+
+
+Definition at line 237 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_adb7d47b5f79cab567d015c7b5d7c3861}\label{class_gracz_adb7d47b5f79cab567d015c7b5d7c3861}} 
+\index{Gracz@{Gracz}!setNazwa@{setNazwa}}
+\index{setNazwa@{setNazwa}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{setNazwa()}{setNazwa()}}
+{\footnotesize\ttfamily void Gracz\+::set\+Nazwa (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja ustawia nazwe gracza. 
+
+
+
+Definition at line 221 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_add30b9b56414594935ab3c865980ecc3}\label{class_gracz_add30b9b56414594935ab3c865980ecc3}} 
+\index{Gracz@{Gracz}!sprawdzLevel@{sprawdzLevel}}
+\index{sprawdzLevel@{sprawdzLevel}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{sprawdzLevel()}{sprawdzLevel()}}
+{\footnotesize\ttfamily void Gracz\+::sprawdz\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja sprawdza czy gracz wszedl na nowy poziom doswiadczenia. 
+
+
+
+Definition at line 179 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a130171d28b911cb9ae43eb9b65737e62}\label{class_gracz_a130171d28b911cb9ae43eb9b65737e62}} 
+\index{Gracz@{Gracz}!uleczObrazenia@{uleczObrazenia}}
+\index{uleczObrazenia@{uleczObrazenia}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{uleczObrazenia()}{uleczObrazenia()}}
+{\footnotesize\ttfamily void Gracz\+::ulecz\+Obrazenia (\begin{DoxyParamCaption}\item[{double}]{ile = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja leczy gracza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ile} & Ile punktow zycia nalezy dodac do puli zdrowia gracza \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 134 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a07cd133530b9e2ed7dee7aeb874131d1}\label{class_gracz_a07cd133530b9e2ed7dee7aeb874131d1}} 
+\index{Gracz@{Gracz}!zadajObrazenia@{zadajObrazenia}}
+\index{zadajObrazenia@{zadajObrazenia}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{zadajObrazenia()}{zadajObrazenia()}}
+{\footnotesize\ttfamily void Gracz\+::zadaj\+Obrazenia (\begin{DoxyParamCaption}\item[{double}]{ile = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zadaje obrazanie graczowi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ile} & Ile obrazen nalezy odjac od puli zdrowia gracza \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 124 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_af9c5975a68adfbcd86a00f13e64145fc}\label{class_gracz_af9c5975a68adfbcd86a00f13e64145fc}} 
+\index{Gracz@{Gracz}!zmienStanLevel@{zmienStanLevel}}
+\index{zmienStanLevel@{zmienStanLevel}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{zmienStanLevel()}{zmienStanLevel()}}
+{\footnotesize\ttfamily void Gracz\+::zmien\+Stan\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zmienia flage level\+Up na przeciwny stan. 
+
+
+
+Definition at line 204 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_aa080bc5626ac00482f289af2dcb01744}\label{class_gracz_aa080bc5626ac00482f289af2dcb01744}} 
+\index{Gracz@{Gracz}!zwrocLevel@{zwrocLevel}}
+\index{zwrocLevel@{zwrocLevel}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{zwrocLevel()}{zwrocLevel()}}
+{\footnotesize\ttfamily int Gracz\+::zwroc\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca poziom gracza. 
+
+\begin{DoxyReturn}{Returns}
+int zwraca wysokosc poziomu gracza 
+\end{DoxyReturn}
+
+
+Definition at line 196 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a2440fe6a8464872488fb16b2b8b437a0}\label{class_gracz_a2440fe6a8464872488fb16b2b8b437a0}} 
+\index{Gracz@{Gracz}!zwrocNazwa@{zwrocNazwa}}
+\index{zwrocNazwa@{zwrocNazwa}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{zwrocNazwa()}{zwrocNazwa()}}
+{\footnotesize\ttfamily std\+::string Gracz\+::zwroc\+Nazwa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca nazwe gracza. 
+
+\begin{DoxyReturn}{Returns}
+string zwraca obecna nazwe gracza 
+\end{DoxyReturn}
+
+
+Definition at line 229 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a41043d90737bd0586a71cd4d9ea4a575}\label{class_gracz_a41043d90737bd0586a71cd4d9ea4a575}} 
+\index{Gracz@{Gracz}!zwrocObecnyStanExp@{zwrocObecnyStanExp}}
+\index{zwrocObecnyStanExp@{zwrocObecnyStanExp}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{zwrocObecnyStanExp()}{zwrocObecnyStanExp()}}
+{\footnotesize\ttfamily double Gracz\+::zwroc\+Obecny\+Stan\+Exp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca opecna ilosc doswiadczenia gracza. 
+
+\begin{DoxyReturn}{Returns}
+double zwraca obecna ilosc punktow doswiadczenia 
+\end{DoxyReturn}
+
+
+Definition at line 213 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_ab8dd37a019a60619a6e7033c3cc295a0}\label{class_gracz_ab8dd37a019a60619a6e7033c3cc295a0}} 
+\index{Gracz@{Gracz}!zwrocObecnyStanMany@{zwrocObecnyStanMany}}
+\index{zwrocObecnyStanMany@{zwrocObecnyStanMany}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{zwrocObecnyStanMany()}{zwrocObecnyStanMany()}}
+{\footnotesize\ttfamily double Gracz\+::zwroc\+Obecny\+Stan\+Many (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca obecny stan many gracza. 
+
+\begin{DoxyReturn}{Returns}
+double zwraca obecna ilosc many 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a1cadf49edd872141e2b2f895e7535c12}\label{class_gracz_a1cadf49edd872141e2b2f895e7535c12}} 
+\index{Gracz@{Gracz}!zwrocObecnyStanZdrowia@{zwrocObecnyStanZdrowia}}
+\index{zwrocObecnyStanZdrowia@{zwrocObecnyStanZdrowia}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{zwrocObecnyStanZdrowia()}{zwrocObecnyStanZdrowia()}}
+{\footnotesize\ttfamily double Gracz\+::zwroc\+Obecny\+Stan\+Zdrowia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca obecny stan zdrowia gracza. 
+
+\begin{DoxyReturn}{Returns}
+double zwraca obecna ilosc zdrowia 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file Gracz.\+h.
+
+
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{class_gracz_ae650363a319d9bf171d28b7bbd85e095}\label{class_gracz_ae650363a319d9bf171d28b7bbd85e095}} 
 \index{Gracz@{Gracz}!debug@{debug}}
@@ -130,6 +480,24 @@ Przeniesienie obiektu (gracza) na pozycje podana w argumencia.
 
 Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplementowane) 
 
+
+
+Definition at line 17 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_ae9c43563d7c05d67851772586aae6839}\label{class_gracz_ae9c43563d7c05d67851772586aae6839}} 
+\index{Gracz@{Gracz}!exp@{exp}}
+\index{exp@{exp}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{exp}{exp}}
+{\footnotesize\ttfamily double Gracz\+::exp = 0}
+
+
+
+Doswiadczenie gracza. 
+
+
+
+Definition at line 24 of file Gracz.\+h.
+
 \mbox{\Hypertarget{class_gracz_af6a380c64bcdae717d65dc9a6f0d11f0}\label{class_gracz_af6a380c64bcdae717d65dc9a6f0d11f0}} 
 \index{Gracz@{Gracz}!ksztalt@{ksztalt}}
 \index{ksztalt@{ksztalt}!Gracz@{Gracz}}
@@ -139,6 +507,136 @@ Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplemen
 
 
 Prostokatny ksztalt gracza (jego wymiary, ramka) 
+
+
+
+Definition at line 14 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a45ba018dbf1ee7cde9ec45bded07deaf}\label{class_gracz_a45ba018dbf1ee7cde9ec45bded07deaf}} 
+\index{Gracz@{Gracz}!level@{level}}
+\index{level@{level}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int Gracz\+::level = 1}
+
+
+
+Poziom gracza. 
+
+
+
+Definition at line 34 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a20b380245fc77a771e7321fd2a1b73ed}\label{class_gracz_a20b380245fc77a771e7321fd2a1b73ed}} 
+\index{Gracz@{Gracz}!levelUp@{levelUp}}
+\index{levelUp@{levelUp}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{levelUp}{levelUp}}
+{\footnotesize\ttfamily bool Gracz\+::level\+Up = false}
+
+
+
+Flaga oznaczajaca czy gracz wszedl na nowy poziom doswiadczenia. 
+
+
+
+Definition at line 36 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a3384a684397e713f00be1b7de3d8589a}\label{class_gracz_a3384a684397e713f00be1b7de3d8589a}} 
+\index{Gracz@{Gracz}!mana@{mana}}
+\index{mana@{mana}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{mana}{mana}}
+{\footnotesize\ttfamily double Gracz\+::mana = 0}
+
+
+
+\mbox{\hyperlink{class_mana}{Mana}} gracza. 
+
+
+
+Definition at line 22 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a8e78d52a26daa6588ef1f1071ac1f2e3}\label{class_gracz_a8e78d52a26daa6588ef1f1071ac1f2e3}} 
+\index{Gracz@{Gracz}!maxExp@{maxExp}}
+\index{maxExp@{maxExp}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{maxExp}{maxExp}}
+{\footnotesize\ttfamily double Gracz\+::max\+Exp}
+
+
+
+Doswiadcznenie potrzebne do awansu. 
+
+
+
+Definition at line 32 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_af5ff4016882cb510148eadf2ac68f44e}\label{class_gracz_af5ff4016882cb510148eadf2ac68f44e}} 
+\index{Gracz@{Gracz}!maxMana@{maxMana}}
+\index{maxMana@{maxMana}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{maxMana}{maxMana}}
+{\footnotesize\ttfamily double Gracz\+::max\+Mana}
+
+
+
+Maksymalna mana gracza. 
+
+
+
+Definition at line 30 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_aeed5d9c00d66e35d02fda1c61f18e065}\label{class_gracz_aeed5d9c00d66e35d02fda1c61f18e065}} 
+\index{Gracz@{Gracz}!maxZycie@{maxZycie}}
+\index{maxZycie@{maxZycie}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{maxZycie}{maxZycie}}
+{\footnotesize\ttfamily double Gracz\+::max\+Zycie}
+
+
+
+Maksymalne zycie gracza. 
+
+
+
+Definition at line 28 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_a54aa4df1eabf66f24ad82de91056c0d3}\label{class_gracz_a54aa4df1eabf66f24ad82de91056c0d3}} 
+\index{Gracz@{Gracz}!nazwa@{nazwa}}
+\index{nazwa@{nazwa}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{nazwa}{nazwa}}
+{\footnotesize\ttfamily std\+::string Gracz\+::nazwa}
+
+
+
+Nazwa gracza. 
+
+
+
+Definition at line 26 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_ad2bd300a00c1f0e38576e3a7be4d5ca6}\label{class_gracz_ad2bd300a00c1f0e38576e3a7be4d5ca6}} 
+\index{Gracz@{Gracz}!statystyki@{statystyki}}
+\index{statystyki@{statystyki}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{statystyki}{statystyki}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_statystyki}{Statystyki}}$\ast$ Gracz\+::statystyki}
+
+
+
+Wskaznik na statystyki. 
+
+
+
+Definition at line 38 of file Gracz.\+h.
+
+\mbox{\Hypertarget{class_gracz_ad577a31620d58ab10d61f3e556ceffe3}\label{class_gracz_ad577a31620d58ab10d61f3e556ceffe3}} 
+\index{Gracz@{Gracz}!zycie@{zycie}}
+\index{zycie@{zycie}!Gracz@{Gracz}}
+\doxysubsubsection{\texorpdfstring{zycie}{zycie}}
+{\footnotesize\ttfamily double Gracz\+::zycie = 0}
+
+
+
+\mbox{\hyperlink{class_zycie}{Zycie}} gracza. 
+
+
+
+Definition at line 20 of file Gracz.\+h.
 
 
 

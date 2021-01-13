@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Gracz Class Reference</title>
+<title>Grafika - Projekt: Gracz Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Grafika - Projekt
    </div>
   </td>
  </tr>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_gracz.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,10 +80,10 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_gracz-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -86,12 +107,12 @@ Inheritance diagram for Gracz:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0d00d322b41ecce30c064c286b2ec875"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a0d00d322b41ecce30c064c286b2ec875">Gracz</a> (std::string sciezka, sf::Vector2f pozycja, sf::RectangleShape <a class="el" href="class_gracz.html#af6a380c64bcdae717d65dc9a6f0d11f0">ksztalt</a>)</td></tr>
-<tr class="memdesc:a0d00d322b41ecce30c064c286b2ec875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konsturktor obiektu <a class="el" href="class_gracz.html" title="Klasa opisujaca gracza.">Gracz</a>.  <a href="class_gracz.html#a0d00d322b41ecce30c064c286b2ec875">More...</a><br /></td></tr>
-<tr class="separator:a0d00d322b41ecce30c064c286b2ec875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6cce8a5a45fc545add7bffe8fcfecea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#ab6cce8a5a45fc545add7bffe8fcfecea">debuguj</a> ()</td></tr>
-<tr class="memdesc:ab6cce8a5a45fc545add7bffe8fcfecea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wlaczajaca tryb debugowania.  <a href="class_gracz.html#ab6cce8a5a45fc545add7bffe8fcfecea">More...</a><br /></td></tr>
-<tr class="separator:ab6cce8a5a45fc545add7bffe8fcfecea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827962206c5e5084dc3c109d543789c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a827962206c5e5084dc3c109d543789c9">Gracz</a> (std::string sciezka, sf::Vector2f pozycja, double <a class="el" href="class_gracz.html#aeed5d9c00d66e35d02fda1c61f18e065">maxZycie</a>, double <a class="el" href="class_gracz.html#af5ff4016882cb510148eadf2ac68f44e">maxMana</a>, double <a class="el" href="class_gracz.html#a8e78d52a26daa6588ef1f1071ac1f2e3">maxExp</a>)</td></tr>
+<tr class="memdesc:a827962206c5e5084dc3c109d543789c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konsturktor obiektu <a class="el" href="class_gracz.html" title="Klasa opisujaca gracza.">Gracz</a>.  <a href="class_gracz.html#a827962206c5e5084dc3c109d543789c9">More...</a><br /></td></tr>
+<tr class="separator:a827962206c5e5084dc3c109d543789c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdad0e2d01ae6c1acaa0cd43d0787fc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#abdad0e2d01ae6c1acaa0cd43d0787fc0">~Gracz</a> ()</td></tr>
+<tr class="memdesc:abdad0e2d01ae6c1acaa0cd43d0787fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dekonstruktor gracza.  <a href="class_gracz.html#abdad0e2d01ae6c1acaa0cd43d0787fc0">More...</a><br /></td></tr>
+<tr class="separator:abdad0e2d01ae6c1acaa0cd43d0787fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ecaeec6eedec2125ae21fc88b978a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a08ecaeec6eedec2125ae21fc88b978a9">rusz</a> (sf::Vector2f gdzie)</td></tr>
 <tr class="memdesc:a08ecaeec6eedec2125ae21fc88b978a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przeniesienie obiektu (gracza) na pozycje podana w argumencia.  <a href="class_gracz.html#a08ecaeec6eedec2125ae21fc88b978a9">More...</a><br /></td></tr>
 <tr class="separator:a08ecaeec6eedec2125ae21fc88b978a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,10 +122,64 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc90c4f02ae0371a612d225cb03740f0"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#afc90c4f02ae0371a612d225cb03740f0">pobierzPozycje</a> ()</td></tr>
 <tr class="memdesc:afc90c4f02ae0371a612d225cb03740f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca aktualna pozycje obiektu (gracza)  <a href="class_gracz.html#afc90c4f02ae0371a612d225cb03740f0">More...</a><br /></td></tr>
 <tr class="separator:afc90c4f02ae0371a612d225cb03740f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cadf49edd872141e2b2f895e7535c12"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a1cadf49edd872141e2b2f895e7535c12">zwrocObecnyStanZdrowia</a> ()</td></tr>
+<tr class="memdesc:a1cadf49edd872141e2b2f895e7535c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwraca obecny stan zdrowia gracza.  <a href="class_gracz.html#a1cadf49edd872141e2b2f895e7535c12">More...</a><br /></td></tr>
+<tr class="separator:a1cadf49edd872141e2b2f895e7535c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8dd37a019a60619a6e7033c3cc295a0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#ab8dd37a019a60619a6e7033c3cc295a0">zwrocObecnyStanMany</a> ()</td></tr>
+<tr class="memdesc:ab8dd37a019a60619a6e7033c3cc295a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwraca obecny stan many gracza.  <a href="class_gracz.html#ab8dd37a019a60619a6e7033c3cc295a0">More...</a><br /></td></tr>
+<tr class="separator:ab8dd37a019a60619a6e7033c3cc295a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07cd133530b9e2ed7dee7aeb874131d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a07cd133530b9e2ed7dee7aeb874131d1">zadajObrazenia</a> (double ile=1)</td></tr>
+<tr class="memdesc:a07cd133530b9e2ed7dee7aeb874131d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zadaje obrazanie graczowi.  <a href="class_gracz.html#a07cd133530b9e2ed7dee7aeb874131d1">More...</a><br /></td></tr>
+<tr class="separator:a07cd133530b9e2ed7dee7aeb874131d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130171d28b911cb9ae43eb9b65737e62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a130171d28b911cb9ae43eb9b65737e62">uleczObrazenia</a> (double ile=1)</td></tr>
+<tr class="memdesc:a130171d28b911cb9ae43eb9b65737e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja leczy gracza.  <a href="class_gracz.html#a130171d28b911cb9ae43eb9b65737e62">More...</a><br /></td></tr>
+<tr class="separator:a130171d28b911cb9ae43eb9b65737e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955089ea65682c5a258e5de7dacb1638"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a955089ea65682c5a258e5de7dacb1638">odejmijMane</a> (double ile=1)</td></tr>
+<tr class="memdesc:a955089ea65682c5a258e5de7dacb1638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zabiera mane gracza.  <a href="class_gracz.html#a955089ea65682c5a258e5de7dacb1638">More...</a><br /></td></tr>
+<tr class="separator:a955089ea65682c5a258e5de7dacb1638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823762befd97d92fe3c5fa4e5f42d665"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a823762befd97d92fe3c5fa4e5f42d665">ladujMane</a> (double ile=1)</td></tr>
+<tr class="memdesc:a823762befd97d92fe3c5fa4e5f42d665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodaje mane graczowi.  <a href="class_gracz.html#a823762befd97d92fe3c5fa4e5f42d665">More...</a><br /></td></tr>
+<tr class="separator:a823762befd97d92fe3c5fa4e5f42d665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd5909bc95d18f691fce23eaac10b16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a8fd5909bc95d18f691fce23eaac10b16">dodajExp</a> (double ilosc)</td></tr>
+<tr class="memdesc:a8fd5909bc95d18f691fce23eaac10b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodaje doswiadczenie graczowi.  <a href="class_gracz.html#a8fd5909bc95d18f691fce23eaac10b16">More...</a><br /></td></tr>
+<tr class="separator:a8fd5909bc95d18f691fce23eaac10b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add30b9b56414594935ab3c865980ecc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#add30b9b56414594935ab3c865980ecc3">sprawdzLevel</a> ()</td></tr>
+<tr class="memdesc:add30b9b56414594935ab3c865980ecc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdza czy gracz wszedl na nowy poziom doswiadczenia.  <a href="class_gracz.html#add30b9b56414594935ab3c865980ecc3">More...</a><br /></td></tr>
+<tr class="separator:add30b9b56414594935ab3c865980ecc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa080bc5626ac00482f289af2dcb01744"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#aa080bc5626ac00482f289af2dcb01744">zwrocLevel</a> ()</td></tr>
+<tr class="memdesc:aa080bc5626ac00482f289af2dcb01744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwraca poziom gracza.  <a href="class_gracz.html#aa080bc5626ac00482f289af2dcb01744">More...</a><br /></td></tr>
+<tr class="separator:aa080bc5626ac00482f289af2dcb01744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c5975a68adfbcd86a00f13e64145fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#af9c5975a68adfbcd86a00f13e64145fc">zmienStanLevel</a> ()</td></tr>
+<tr class="memdesc:af9c5975a68adfbcd86a00f13e64145fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zmienia flage levelUp na przeciwny stan.  <a href="class_gracz.html#af9c5975a68adfbcd86a00f13e64145fc">More...</a><br /></td></tr>
+<tr class="separator:af9c5975a68adfbcd86a00f13e64145fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41043d90737bd0586a71cd4d9ea4a575"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a41043d90737bd0586a71cd4d9ea4a575">zwrocObecnyStanExp</a> ()</td></tr>
+<tr class="memdesc:a41043d90737bd0586a71cd4d9ea4a575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwraca opecna ilosc doswiadczenia gracza.  <a href="class_gracz.html#a41043d90737bd0586a71cd4d9ea4a575">More...</a><br /></td></tr>
+<tr class="separator:a41043d90737bd0586a71cd4d9ea4a575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7d47b5f79cab567d015c7b5d7c3861"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#adb7d47b5f79cab567d015c7b5d7c3861">setNazwa</a> (std::string <a class="el" href="class_gracz.html#a54aa4df1eabf66f24ad82de91056c0d3">nazwa</a>)</td></tr>
+<tr class="memdesc:adb7d47b5f79cab567d015c7b5d7c3861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja ustawia nazwe gracza.  <a href="class_gracz.html#adb7d47b5f79cab567d015c7b5d7c3861">More...</a><br /></td></tr>
+<tr class="separator:adb7d47b5f79cab567d015c7b5d7c3861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2440fe6a8464872488fb16b2b8b437a0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a2440fe6a8464872488fb16b2b8b437a0">zwrocNazwa</a> ()</td></tr>
+<tr class="memdesc:a2440fe6a8464872488fb16b2b8b437a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwraca nazwe gracza.  <a href="class_gracz.html#a2440fe6a8464872488fb16b2b8b437a0">More...</a><br /></td></tr>
+<tr class="separator:a2440fe6a8464872488fb16b2b8b437a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5a2db3ad699bd64f268f2e301c35ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a9e5a2db3ad699bd64f268f2e301c35ba">setFullZycie</a> ()</td></tr>
+<tr class="memdesc:a9e5a2db3ad699bd64f268f2e301c35ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja ustawia zycie gracza na maxZycie.  <a href="class_gracz.html#a9e5a2db3ad699bd64f268f2e301c35ba">More...</a><br /></td></tr>
+<tr class="separator:a9e5a2db3ad699bd64f268f2e301c35ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed8d4d528be73fd5954abe5f5330a8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a0ed8d4d528be73fd5954abe5f5330a8f">setFullMana</a> ()</td></tr>
+<tr class="memdesc:a0ed8d4d528be73fd5954abe5f5330a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja ustawia mane gracza na maxMana.  <a href="class_gracz.html#a0ed8d4d528be73fd5954abe5f5330a8f">More...</a><br /></td></tr>
+<tr class="separator:a0ed8d4d528be73fd5954abe5f5330a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2370df573fd05ba5ac18c307f3ac9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#ada2370df573fd05ba5ac18c307f3ac9d">isDead</a> ()</td></tr>
+<tr class="memdesc:ada2370df573fd05ba5ac18c307f3ac9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdza czy gracz nie zyje, jesli umarl (jeko zycie spadlo do zera) zwraca true.  <a href="class_gracz.html#ada2370df573fd05ba5ac18c307f3ac9d">More...</a><br /></td></tr>
+<tr class="separator:ada2370df573fd05ba5ac18c307f3ac9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_obiekt"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_obiekt')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_obiekt.html">Obiekt</a></td></tr>
 <tr class="memitem:a03124928e33622a68b22f9bb7e1d8cf9 inherit pub_methods_class_obiekt"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a03124928e33622a68b22f9bb7e1d8cf9">Obiekt</a> (std::string sciezka, sf::Vector2f pozycja)</td></tr>
 <tr class="memdesc:a03124928e33622a68b22f9bb7e1d8cf9 inherit pub_methods_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy nowy <a class="el" href="class_obiekt.html" title="Klasa opisujaca kazdy obiekt w grze.">Obiekt</a>.  <a href="class_obiekt.html#a03124928e33622a68b22f9bb7e1d8cf9">More...</a><br /></td></tr>
 <tr class="separator:a03124928e33622a68b22f9bb7e1d8cf9 inherit pub_methods_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e27a872226e2b55c6f42c0677e5d00 inherit pub_methods_class_obiekt"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#ac8e27a872226e2b55c6f42c0677e5d00">Obiekt</a> ()</td></tr>
+<tr class="memdesc:ac8e27a872226e2b55c6f42c0677e5d00 inherit pub_methods_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy nowy pusty <a class="el" href="class_obiekt.html" title="Klasa opisujaca kazdy obiekt w grze.">Obiekt</a>.  <a href="class_obiekt.html#ac8e27a872226e2b55c6f42c0677e5d00">More...</a><br /></td></tr>
+<tr class="separator:ac8e27a872226e2b55c6f42c0677e5d00 inherit pub_methods_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f9100c2391cc63b30bee84758af76b inherit pub_methods_class_obiekt"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a18f9100c2391cc63b30bee84758af76b">draw</a> (sf::RenderTarget *cel)</td></tr>
+<tr class="memdesc:a18f9100c2391cc63b30bee84758af76b inherit pub_methods_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja rysuje obiekt.  <a href="class_obiekt.html#a18f9100c2391cc63b30bee84758af76b">More...</a><br /></td></tr>
+<tr class="separator:a18f9100c2391cc63b30bee84758af76b inherit pub_methods_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a20b741117cafcc4a538d3a2d43aad6 inherit pub_methods_class_obiekt"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">zmienTeksture</a> (std::string sciezka)</td></tr>
 <tr class="memdesc:a6a20b741117cafcc4a538d3a2d43aad6 inherit pub_methods_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Podmienia teksture na podana w argumencie.  <a href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">More...</a><br /></td></tr>
 <tr class="separator:a6a20b741117cafcc4a538d3a2d43aad6 inherit pub_methods_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,6 +192,58 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c6a32b37cffaf8755269f9260714c70 inherit pub_methods_class_obiekt"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">przeskaluj</a> (sf::Vector2f jak)</td></tr>
 <tr class="memdesc:a7c6a32b37cffaf8755269f9260714c70 inherit pub_methods_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skaluje obiekt.  <a href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">More...</a><br /></td></tr>
 <tr class="separator:a7c6a32b37cffaf8755269f9260714c70 inherit pub_methods_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeffd4b81169593dc52b4c41943cf6613 inherit pub_methods_class_obiekt"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#aeffd4b81169593dc52b4c41943cf6613">setOriginOnMiddle</a> ()</td></tr>
+<tr class="memdesc:aeffd4b81169593dc52b4c41943cf6613 inherit pub_methods_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja ustawia 'origin' na srodku sprite'a.  <a href="class_obiekt.html#aeffd4b81169593dc52b4c41943cf6613">More...</a><br /></td></tr>
+<tr class="separator:aeffd4b81169593dc52b4c41943cf6613 inherit pub_methods_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bca4542d722dfc07bb905dfb021cfea inherit pub_methods_class_obiekt"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a3bca4542d722dfc07bb905dfb021cfea">PobierzRozmiar</a> ()</td></tr>
+<tr class="memdesc:a3bca4542d722dfc07bb905dfb021cfea inherit pub_methods_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwraca rozmiar sprite'a.  <a href="class_obiekt.html#a3bca4542d722dfc07bb905dfb021cfea">More...</a><br /></td></tr>
+<tr class="separator:a3bca4542d722dfc07bb905dfb021cfea inherit pub_methods_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f98de411f33171aa65cb8b1ab9360b inherit pub_methods_class_obiekt"><td class="memItemLeft" align="right" valign="top">sf::FloatRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a96f98de411f33171aa65cb8b1ab9360b">pobierzPozycje</a> ()</td></tr>
+<tr class="memdesc:a96f98de411f33171aa65cb8b1ab9360b inherit pub_methods_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwraca rozmiar sprite'a.  <a href="class_obiekt.html#a96f98de411f33171aa65cb8b1ab9360b">More...</a><br /></td></tr>
+<tr class="separator:a96f98de411f33171aa65cb8b1ab9360b inherit pub_methods_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe13261fdb4a04f8fb89178e12047f2 inherit pub_methods_class_obiekt"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a9fe13261fdb4a04f8fb89178e12047f2">rozjasnij</a> (float ile, int max=0)</td></tr>
+<tr class="memdesc:a9fe13261fdb4a04f8fb89178e12047f2 inherit pub_methods_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja rozjasnia obiekt.  <a href="class_obiekt.html#a9fe13261fdb4a04f8fb89178e12047f2">More...</a><br /></td></tr>
+<tr class="separator:a9fe13261fdb4a04f8fb89178e12047f2 inherit pub_methods_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0308862e97a4e26eedb6481ca9da7957 inherit pub_methods_class_obiekt"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a0308862e97a4e26eedb6481ca9da7957">przyciemnij</a> (float ile, int max=500)</td></tr>
+<tr class="memdesc:a0308862e97a4e26eedb6481ca9da7957 inherit pub_methods_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja przyciemnia obiekt.  <a href="class_obiekt.html#a0308862e97a4e26eedb6481ca9da7957">More...</a><br /></td></tr>
+<tr class="separator:a0308862e97a4e26eedb6481ca9da7957 inherit pub_methods_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad577a31620d58ab10d61f3e556ceffe3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#ad577a31620d58ab10d61f3e556ceffe3">zycie</a> = 0</td></tr>
+<tr class="memdesc:ad577a31620d58ab10d61f3e556ceffe3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_zycie.html" title="Klasa odpowiada za reprezentacje graficzna zdrowia bohatera.">Zycie</a> gracza.  <a href="class_gracz.html#ad577a31620d58ab10d61f3e556ceffe3">More...</a><br /></td></tr>
+<tr class="separator:ad577a31620d58ab10d61f3e556ceffe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3384a684397e713f00be1b7de3d8589a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a3384a684397e713f00be1b7de3d8589a">mana</a> = 0</td></tr>
+<tr class="memdesc:a3384a684397e713f00be1b7de3d8589a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_mana.html" title="Klasa odpowiada za reprezentacje graficzna many bohatera.">Mana</a> gracza.  <a href="class_gracz.html#a3384a684397e713f00be1b7de3d8589a">More...</a><br /></td></tr>
+<tr class="separator:a3384a684397e713f00be1b7de3d8589a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c43563d7c05d67851772586aae6839"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#ae9c43563d7c05d67851772586aae6839">exp</a> = 0</td></tr>
+<tr class="memdesc:ae9c43563d7c05d67851772586aae6839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Doswiadczenie gracza.  <a href="class_gracz.html#ae9c43563d7c05d67851772586aae6839">More...</a><br /></td></tr>
+<tr class="separator:ae9c43563d7c05d67851772586aae6839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54aa4df1eabf66f24ad82de91056c0d3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a54aa4df1eabf66f24ad82de91056c0d3">nazwa</a></td></tr>
+<tr class="memdesc:a54aa4df1eabf66f24ad82de91056c0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nazwa gracza.  <a href="class_gracz.html#a54aa4df1eabf66f24ad82de91056c0d3">More...</a><br /></td></tr>
+<tr class="separator:a54aa4df1eabf66f24ad82de91056c0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed5d9c00d66e35d02fda1c61f18e065"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#aeed5d9c00d66e35d02fda1c61f18e065">maxZycie</a></td></tr>
+<tr class="memdesc:aeed5d9c00d66e35d02fda1c61f18e065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maksymalne zycie gracza.  <a href="class_gracz.html#aeed5d9c00d66e35d02fda1c61f18e065">More...</a><br /></td></tr>
+<tr class="separator:aeed5d9c00d66e35d02fda1c61f18e065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ff4016882cb510148eadf2ac68f44e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#af5ff4016882cb510148eadf2ac68f44e">maxMana</a></td></tr>
+<tr class="memdesc:af5ff4016882cb510148eadf2ac68f44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maksymalna mana gracza.  <a href="class_gracz.html#af5ff4016882cb510148eadf2ac68f44e">More...</a><br /></td></tr>
+<tr class="separator:af5ff4016882cb510148eadf2ac68f44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e78d52a26daa6588ef1f1071ac1f2e3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a8e78d52a26daa6588ef1f1071ac1f2e3">maxExp</a></td></tr>
+<tr class="memdesc:a8e78d52a26daa6588ef1f1071ac1f2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Doswiadcznenie potrzebne do awansu.  <a href="class_gracz.html#a8e78d52a26daa6588ef1f1071ac1f2e3">More...</a><br /></td></tr>
+<tr class="separator:a8e78d52a26daa6588ef1f1071ac1f2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ba018dbf1ee7cde9ec45bded07deaf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a45ba018dbf1ee7cde9ec45bded07deaf">level</a> = 1</td></tr>
+<tr class="memdesc:a45ba018dbf1ee7cde9ec45bded07deaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poziom gracza.  <a href="class_gracz.html#a45ba018dbf1ee7cde9ec45bded07deaf">More...</a><br /></td></tr>
+<tr class="separator:a45ba018dbf1ee7cde9ec45bded07deaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b380245fc77a771e7321fd2a1b73ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#a20b380245fc77a771e7321fd2a1b73ed">levelUp</a> = false</td></tr>
+<tr class="memdesc:a20b380245fc77a771e7321fd2a1b73ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flaga oznaczajaca czy gracz wszedl na nowy poziom doswiadczenia.  <a href="class_gracz.html#a20b380245fc77a771e7321fd2a1b73ed">More...</a><br /></td></tr>
+<tr class="separator:a20b380245fc77a771e7321fd2a1b73ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2bd300a00c1f0e38576e3a7be4d5ca6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_statystyki.html">Statystyki</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gracz.html#ad2bd300a00c1f0e38576e3a7be4d5ca6">statystyki</a></td></tr>
+<tr class="memdesc:ad2bd300a00c1f0e38576e3a7be4d5ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaznik na statystyki.  <a href="class_gracz.html#ad2bd300a00c1f0e38576e3a7be4d5ca6">More...</a><br /></td></tr>
+<tr class="separator:ad2bd300a00c1f0e38576e3a7be4d5ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_obiekt"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_obiekt')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_obiekt.html">Obiekt</a></td></tr>
+<tr class="memitem:a5a1182776f2ef794f4f1be89b2316733 inherit pub_attribs_class_obiekt"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a5a1182776f2ef794f4f1be89b2316733">sprajt</a></td></tr>
+<tr class="memdesc:a5a1182776f2ef794f4f1be89b2316733 inherit pub_attribs_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna przechowujaca sprite.  <a href="class_obiekt.html#a5a1182776f2ef794f4f1be89b2316733">More...</a><br /></td></tr>
+<tr class="separator:a5a1182776f2ef794f4f1be89b2316733 inherit pub_attribs_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -129,10 +256,6 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_class_obiekt"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_obiekt')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_obiekt.html">Obiekt</a></td></tr>
-<tr class="memitem:a5a1182776f2ef794f4f1be89b2316733 inherit pub_attribs_class_obiekt"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a5a1182776f2ef794f4f1be89b2316733">sprajt</a></td></tr>
-<tr class="memdesc:a5a1182776f2ef794f4f1be89b2316733 inherit pub_attribs_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna przechowujaca sprite.  <a href="class_obiekt.html#a5a1182776f2ef794f4f1be89b2316733">More...</a><br /></td></tr>
-<tr class="separator:a5a1182776f2ef794f4f1be89b2316733 inherit pub_attribs_class_obiekt"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_obiekt"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_obiekt')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_obiekt.html">Obiekt</a></td></tr>
 <tr class="memitem:a22cbc86ca1d6cac0619039f146fc6684 inherit pro_attribs_class_obiekt"><td class="memItemLeft" align="right" valign="top">sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a22cbc86ca1d6cac0619039f146fc6684">tekstura</a></td></tr>
 <tr class="memdesc:a22cbc86ca1d6cac0619039f146fc6684 inherit pro_attribs_class_obiekt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna przechowujaca teksture.  <a href="class_obiekt.html#a22cbc86ca1d6cac0619039f146fc6684">More...</a><br /></td></tr>
@@ -140,9 +263,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Klasa opisujaca gracza. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00009">9</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0d00d322b41ecce30c064c286b2ec875"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d00d322b41ecce30c064c286b2ec875">&#9670;&nbsp;</a></span>Gracz()</h2>
+<a id="a827962206c5e5084dc3c109d543789c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a827962206c5e5084dc3c109d543789c9">&#9670;&nbsp;</a></span>Gracz()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,8 +290,20 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sf::RectangleShape&#160;</td>
-          <td class="paramname"><em>ksztalt</em>&#160;</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxZycie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxMana</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxExp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -186,16 +323,19 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">sciezka</td><td>Sciezka do pliku z obrazem gracza </td></tr>
     <tr><td class="paramname">pozycja</td><td>Pozycja poczatkowa gracza </td></tr>
-    <tr><td class="paramname">ksztalt</td><td><a class="el" href="class_obiekt.html" title="Klasa opisujaca kazdy obiekt w grze.">Obiekt</a> RectangleShape zawierajacy ksztalt gracza </td></tr>
+    <tr><td class="paramname">maxZycie</td><td>Maksymalne zycie gracza </td></tr>
+    <tr><td class="paramname">maxMana</td><td>Maksymalna mana gracza </td></tr>
+    <tr><td class="paramname">maxExp</td><td>Doswiadcznenie potrzebne do awansu </td></tr>
   </table>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00048">48</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab6cce8a5a45fc545add7bffe8fcfecea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6cce8a5a45fc545add7bffe8fcfecea">&#9670;&nbsp;</a></span>debuguj()</h2>
+<a id="abdad0e2d01ae6c1acaa0cd43d0787fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdad0e2d01ae6c1acaa0cd43d0787fc0">&#9670;&nbsp;</a></span>~Gracz()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +344,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Gracz::debuguj </td>
+          <td class="memname">Gracz::~Gracz </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -217,7 +357,46 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Funkcja wlaczajaca tryb debugowania. </p>
+<p>Dekonstruktor gracza. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00067">67</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8fd5909bc95d18f691fce23eaac10b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd5909bc95d18f691fce23eaac10b16">&#9670;&nbsp;</a></span>dodajExp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gracz::dodajExp </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ilosc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja dodaje doswiadczenie graczowi. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ilosc</td><td>Ile doswiadczenia nalezy dodac </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00167">167</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
 
 </div>
 </div>
@@ -253,6 +432,110 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00086">86</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="ada2370df573fd05ba5ac18c307f3ac9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada2370df573fd05ba5ac18c307f3ac9d">&#9670;&nbsp;</a></span>isDead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Gracz::isDead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja sprawdza czy gracz nie zyje, jesli umarl (jeko zycie spadlo do zera) zwraca true. </p>
+<dl class="section return"><dt>Returns</dt><dd>true zwraca prawde jezeli zdrowie gracza spadlo na poziom smiertelny </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00253">253</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a823762befd97d92fe3c5fa4e5f42d665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a823762befd97d92fe3c5fa4e5f42d665">&#9670;&nbsp;</a></span>ladujMane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gracz::ladujMane </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ile</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja dodaje mane graczowi. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ile</td><td>Ile many nalezy dodac do puli many </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00156">156</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a955089ea65682c5a258e5de7dacb1638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955089ea65682c5a258e5de7dacb1638">&#9670;&nbsp;</a></span>odejmijMane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gracz::odejmijMane </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ile</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja zabiera mane gracza. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ile</td><td>Ile many nalezy odjac z puli many </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00145">145</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
 </div>
 </div>
 <a id="afc90c4f02ae0371a612d225cb03740f0"></a>
@@ -280,6 +563,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Zwraca aktualna pozycje obiektu (gracza) </p>
 <dl class="section return"><dt>Returns</dt><dd>sf::Vector2f Aktualna pozycja gracza </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00098">98</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
 
 </div>
 </div>
@@ -315,6 +600,376 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00076">76</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a0ed8d4d528be73fd5954abe5f5330a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed8d4d528be73fd5954abe5f5330a8f">&#9670;&nbsp;</a></span>setFullMana()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gracz::setFullMana </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja ustawia mane gracza na maxMana. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00245">245</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a9e5a2db3ad699bd64f268f2e301c35ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e5a2db3ad699bd64f268f2e301c35ba">&#9670;&nbsp;</a></span>setFullZycie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gracz::setFullZycie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja ustawia zycie gracza na maxZycie. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00237">237</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="adb7d47b5f79cab567d015c7b5d7c3861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7d47b5f79cab567d015c7b5d7c3861">&#9670;&nbsp;</a></span>setNazwa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gracz::setNazwa </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>nazwa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja ustawia nazwe gracza. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00221">221</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="add30b9b56414594935ab3c865980ecc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add30b9b56414594935ab3c865980ecc3">&#9670;&nbsp;</a></span>sprawdzLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gracz::sprawdzLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja sprawdza czy gracz wszedl na nowy poziom doswiadczenia. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00179">179</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a130171d28b911cb9ae43eb9b65737e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130171d28b911cb9ae43eb9b65737e62">&#9670;&nbsp;</a></span>uleczObrazenia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gracz::uleczObrazenia </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ile</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja leczy gracza. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ile</td><td>Ile punktow zycia nalezy dodac do puli zdrowia gracza </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00134">134</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a07cd133530b9e2ed7dee7aeb874131d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07cd133530b9e2ed7dee7aeb874131d1">&#9670;&nbsp;</a></span>zadajObrazenia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gracz::zadajObrazenia </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ile</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja zadaje obrazanie graczowi. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ile</td><td>Ile obrazen nalezy odjac od puli zdrowia gracza </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00124">124</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="af9c5975a68adfbcd86a00f13e64145fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c5975a68adfbcd86a00f13e64145fc">&#9670;&nbsp;</a></span>zmienStanLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gracz::zmienStanLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja zmienia flage levelUp na przeciwny stan. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00204">204</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="aa080bc5626ac00482f289af2dcb01744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa080bc5626ac00482f289af2dcb01744">&#9670;&nbsp;</a></span>zwrocLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Gracz::zwrocLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja zwraca poziom gracza. </p>
+<dl class="section return"><dt>Returns</dt><dd>int zwraca wysokosc poziomu gracza </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00196">196</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a2440fe6a8464872488fb16b2b8b437a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2440fe6a8464872488fb16b2b8b437a0">&#9670;&nbsp;</a></span>zwrocNazwa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Gracz::zwrocNazwa </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja zwraca nazwe gracza. </p>
+<dl class="section return"><dt>Returns</dt><dd>string zwraca obecna nazwe gracza </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00229">229</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a41043d90737bd0586a71cd4d9ea4a575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41043d90737bd0586a71cd4d9ea4a575">&#9670;&nbsp;</a></span>zwrocObecnyStanExp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Gracz::zwrocObecnyStanExp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja zwraca opecna ilosc doswiadczenia gracza. </p>
+<dl class="section return"><dt>Returns</dt><dd>double zwraca obecna ilosc punktow doswiadczenia </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00213">213</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="ab8dd37a019a60619a6e7033c3cc295a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8dd37a019a60619a6e7033c3cc295a0">&#9670;&nbsp;</a></span>zwrocObecnyStanMany()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Gracz::zwrocObecnyStanMany </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja zwraca obecny stan many gracza. </p>
+<dl class="section return"><dt>Returns</dt><dd>double zwraca obecna ilosc many </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00115">115</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a1cadf49edd872141e2b2f895e7535c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cadf49edd872141e2b2f895e7535c12">&#9670;&nbsp;</a></span>zwrocObecnyStanZdrowia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Gracz::zwrocObecnyStanZdrowia </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja zwraca obecny stan zdrowia gracza. </p>
+<dl class="section return"><dt>Returns</dt><dd>double zwraca obecna ilosc zdrowia </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00106">106</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -340,6 +995,26 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Typ logiczny odpowiadajacy za wlaczenie i wylaczenie opcji debugu (niezaimplementowane) </p>
 
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00017">17</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="ae9c43563d7c05d67851772586aae6839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9c43563d7c05d67851772586aae6839">&#9670;&nbsp;</a></span>exp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Gracz::exp = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Doswiadczenie gracza. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00024">24</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
 </div>
 </div>
 <a id="af6a380c64bcdae717d65dc9a6f0d11f0"></a>
@@ -364,15 +1039,183 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Prostokatny ksztalt gracza (jego wymiary, ramka) </p>
 
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00014">14</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a45ba018dbf1ee7cde9ec45bded07deaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ba018dbf1ee7cde9ec45bded07deaf">&#9670;&nbsp;</a></span>level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Gracz::level = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Poziom gracza. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00034">34</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a20b380245fc77a771e7321fd2a1b73ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b380245fc77a771e7321fd2a1b73ed">&#9670;&nbsp;</a></span>levelUp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Gracz::levelUp = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flaga oznaczajaca czy gracz wszedl na nowy poziom doswiadczenia. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00036">36</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a3384a684397e713f00be1b7de3d8589a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3384a684397e713f00be1b7de3d8589a">&#9670;&nbsp;</a></span>mana</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Gracz::mana = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_mana.html" title="Klasa odpowiada za reprezentacje graficzna many bohatera.">Mana</a> gracza. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00022">22</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a8e78d52a26daa6588ef1f1071ac1f2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e78d52a26daa6588ef1f1071ac1f2e3">&#9670;&nbsp;</a></span>maxExp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Gracz::maxExp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Doswiadcznenie potrzebne do awansu. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00032">32</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="af5ff4016882cb510148eadf2ac68f44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ff4016882cb510148eadf2ac68f44e">&#9670;&nbsp;</a></span>maxMana</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Gracz::maxMana</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maksymalna mana gracza. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00030">30</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="aeed5d9c00d66e35d02fda1c61f18e065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeed5d9c00d66e35d02fda1c61f18e065">&#9670;&nbsp;</a></span>maxZycie</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Gracz::maxZycie</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maksymalne zycie gracza. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00028">28</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="a54aa4df1eabf66f24ad82de91056c0d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54aa4df1eabf66f24ad82de91056c0d3">&#9670;&nbsp;</a></span>nazwa</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Gracz::nazwa</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nazwa gracza. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00026">26</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="ad2bd300a00c1f0e38576e3a7be4d5ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2bd300a00c1f0e38576e3a7be4d5ca6">&#9670;&nbsp;</a></span>statystyki</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_statystyki.html">Statystyki</a>* Gracz::statystyki</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wskaznik na statystyki. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00038">38</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
+</div>
+</div>
+<a id="ad577a31620d58ab10d61f3e556ceffe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad577a31620d58ab10d61f3e556ceffe3">&#9670;&nbsp;</a></span>zycie</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Gracz::zycie = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_zycie.html" title="Klasa odpowiada za reprezentacje graficzna zdrowia bohatera.">Zycie</a> gracza. </p>
+
+<p class="definition">Definition at line <a class="el" href="_gracz_8h_source.html#l00020">20</a> of file <a class="el" href="_gracz_8h_source.html">Gracz.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Bartek/<a class="el" href="_gracz_8h_source.html">Gracz.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_gracz.html">Gracz</a></li>
+    <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
 </body>
 </html>

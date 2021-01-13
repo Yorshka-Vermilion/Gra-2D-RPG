@@ -16,6 +16,7 @@
 #include "Sebix/Statystyki.h"
 #include "Sebix/StatInGame.h"
 #include "Sebix/ObiektOtoczenia.h"
+#include "Sebix/OknoDialog.h"
 
 class Sebix {};
 

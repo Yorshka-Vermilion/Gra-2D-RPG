@@ -1,0 +1,213 @@
+\hypertarget{class_menu}{}\doxysection{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+klasa \mbox{\hyperlink{class_menu}{Menu}}  
+
+
+
+
+{\ttfamily \#include $<$menu.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_ac8d4a68d0cac8315ce69aa8753fda392}{Menu}} (int \mbox{\hyperlink{class_menu_aab5109b2f765ada48c5b8f8858c3c7cf}{wysokosc}}, int \mbox{\hyperlink{class_menu_a316942d14777d6b220c77081c6d06e43}{szerokosc}})
+\begin{DoxyCompactList}\small\item\em Konstruktor menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_abc6c7b270a1d71bc7d65b417240c1a4a}{draw}} (sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajca za rysowanie menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a3327b0b7a7d5ba3b8e2cb5cae959ee96}{Poruszanie\+W\+Gore}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajca za poruszanie sie po menu w gore. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a47ca5a6082bd5868555f97dfa4038724}{Poruszanie\+W\+Dol}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajca za poruszanie sie po menu w dol. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_menu_a40888a9077c520f093586da913c619e8}{Nacisnieta\+\_\+opcja}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza czy uzytkownik wybral ktoras z opcji. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_menu_a94a5ed91fc0cf02e1600be757a0d4908}{Wybrana\+Opcja}}
+\begin{DoxyCompactList}\small\item\em Numer obecnie wybranej opcji \end{DoxyCompactList}\item 
+sf\+::\+Font \mbox{\hyperlink{class_menu_a9446727ebf60c6063218b5d4bcae170a}{font}}
+\begin{DoxyCompactList}\small\item\em Czcionka reprezentacji graficznej \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_menu_adda9167a367ce9007034e4f982b23a78}{menu}} \mbox{[}\mbox{\hyperlink{menu_8h_a73f0f3ef9ea076c442c1b5e59bb9b53c}{R\+O\+Z\+M\+I\+A\+R\+\_\+\+O\+P\+C\+JI}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica opcji reprezentacji graficznych menu \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_menu_aab5109b2f765ada48c5b8f8858c3c7cf}{wysokosc}}
+\begin{DoxyCompactList}\small\item\em Wysokosc menu \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_menu_a316942d14777d6b220c77081c6d06e43}{szerokosc}}
+\begin{DoxyCompactList}\small\item\em Szerokosc menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa \mbox{\hyperlink{class_menu}{Menu}} 
+
+Definition at line 11 of file menu.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_menu_ac8d4a68d0cac8315ce69aa8753fda392}\label{class_menu_ac8d4a68d0cac8315ce69aa8753fda392}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}\item[{int}]{wysokosc,  }\item[{int}]{szerokosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wysokosc} & wysokosc menu \\
+\hline
+{\em szerokosc} & szerokosc menu \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file menu.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_abc6c7b270a1d71bc7d65b417240c1a4a}\label{class_menu_abc6c7b270a1d71bc7d65b417240c1a4a}} 
+\index{Menu@{Menu}!draw@{draw}}
+\index{draw@{draw}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Menu\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajca za rysowanie menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & odpowiada za okno w którym ma zostac narysowany obiekt \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_a40888a9077c520f093586da913c619e8}\label{class_menu_a40888a9077c520f093586da913c619e8}} 
+\index{Menu@{Menu}!Nacisnieta\_opcja@{Nacisnieta\_opcja}}
+\index{Nacisnieta\_opcja@{Nacisnieta\_opcja}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Nacisnieta\_opcja()}{Nacisnieta\_opcja()}}
+{\footnotesize\ttfamily int Menu\+::\+Nacisnieta\+\_\+opcja (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja sprawdza czy uzytkownik wybral ktoras z opcji. 
+
+\begin{DoxyReturn}{Returns}
+int zwraca wybrana przez uzytkownika opcje 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_a47ca5a6082bd5868555f97dfa4038724}\label{class_menu_a47ca5a6082bd5868555f97dfa4038724}} 
+\index{Menu@{Menu}!PoruszanieWDol@{PoruszanieWDol}}
+\index{PoruszanieWDol@{PoruszanieWDol}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{PoruszanieWDol()}{PoruszanieWDol()}}
+{\footnotesize\ttfamily void Menu\+::\+Poruszanie\+W\+Dol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajca za poruszanie sie po menu w dol. 
+
+
+
+Definition at line 97 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_a3327b0b7a7d5ba3b8e2cb5cae959ee96}\label{class_menu_a3327b0b7a7d5ba3b8e2cb5cae959ee96}} 
+\index{Menu@{Menu}!PoruszanieWGore@{PoruszanieWGore}}
+\index{PoruszanieWGore@{PoruszanieWGore}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{PoruszanieWGore()}{PoruszanieWGore()}}
+{\footnotesize\ttfamily void Menu\+::\+Poruszanie\+W\+Gore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajca za poruszanie sie po menu w gore. 
+
+
+
+Definition at line 86 of file menu.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_menu_a9446727ebf60c6063218b5d4bcae170a}\label{class_menu_a9446727ebf60c6063218b5d4bcae170a}} 
+\index{Menu@{Menu}!font@{font}}
+\index{font@{font}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily sf\+::\+Font Menu\+::font\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Czcionka reprezentacji graficznej 
+
+
+
+Definition at line 19 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_adda9167a367ce9007034e4f982b23a78}\label{class_menu_adda9167a367ce9007034e4f982b23a78}} 
+\index{Menu@{Menu}!menu@{menu}}
+\index{menu@{menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily sf\+::\+Text Menu\+::menu\mbox{[}\mbox{\hyperlink{menu_8h_a73f0f3ef9ea076c442c1b5e59bb9b53c}{R\+O\+Z\+M\+I\+A\+R\+\_\+\+O\+P\+C\+JI}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tablica opcji reprezentacji graficznych menu 
+
+
+
+Definition at line 23 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_a316942d14777d6b220c77081c6d06e43}\label{class_menu_a316942d14777d6b220c77081c6d06e43}} 
+\index{Menu@{Menu}!szerokosc@{szerokosc}}
+\index{szerokosc@{szerokosc}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{szerokosc}{szerokosc}}
+{\footnotesize\ttfamily int Menu\+::szerokosc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Szerokosc menu 
+
+
+
+Definition at line 31 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_a94a5ed91fc0cf02e1600be757a0d4908}\label{class_menu_a94a5ed91fc0cf02e1600be757a0d4908}} 
+\index{Menu@{Menu}!WybranaOpcja@{WybranaOpcja}}
+\index{WybranaOpcja@{WybranaOpcja}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{WybranaOpcja}{WybranaOpcja}}
+{\footnotesize\ttfamily int Menu\+::\+Wybrana\+Opcja\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Numer obecnie wybranej opcji 
+
+
+
+Definition at line 15 of file menu.\+h.
+
+\mbox{\Hypertarget{class_menu_aab5109b2f765ada48c5b8f8858c3c7cf}\label{class_menu_aab5109b2f765ada48c5b8f8858c3c7cf}} 
+\index{Menu@{Menu}!wysokosc@{wysokosc}}
+\index{wysokosc@{wysokosc}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{wysokosc}{wysokosc}}
+{\footnotesize\ttfamily int Menu\+::wysokosc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wysokosc menu 
+
+
+
+Definition at line 27 of file menu.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Przemek/\mbox{\hyperlink{menu_8h}{menu.\+h}}\end{DoxyCompactItemize}

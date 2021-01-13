@@ -36,12 +36,19 @@ public:
 	RzucanieZaklec* rzucanie_zaklec;
 	/// Wskaznik na klase obslugujaca dzwieki
 	Dzwieki* dzwieki;
+	/// <summary>
+	/// Wskaznik na klase obslugujaca okna dialogow
+	/// </summary>
+	OknoDialog* okno;
 
+	/// <summary>
+	/// Flaga sygnalizujaca stan interakcji z obiektem/postacia
+	/// </summary>
+	bool interakcja = false;
 	/// Flaga sygnalizujaca stan przycisku lewy CTRL
 	bool LCTRL;
 	/// Flaga sygnalizujaca stan przycisku lewy ALT
 	bool LALT = false;
-
 
 	/**
 	 * @brief Konstruktor gry
@@ -60,6 +67,7 @@ public:
 		this->map = new Mapa(25, window->getSize(),this->gracz);
 		this->cameraPlayer = new Camera(sf::Vector2f(window->getSize().x, window->getSize().y),0.75);
 		this->hud = new HUD(sf::Vector2f(window->getSize()), this->gracz);
+		this->okno = new OknoDialog("ramka.png", (sf::Vector2f)this->window->getSize());
 
 		//Maska
 		this->maska = new Obiekt("maska.png", sf::Vector2f(0, 0));
@@ -73,7 +81,6 @@ public:
 		//this->animacje.push_back(new Animacja("animacja.png", 80, 350, 32, 32, 12, 0.75, true, false));
 		this->dzwieki = new Dzwieki();
 	}
-
 	/**
 	 * @brief Dekonstruktor gry
 	 */
@@ -86,30 +93,18 @@ public:
 		delete(this->hud);
 		delete(this->dzwieki);
 		delete(this->rzucanie_zaklec);
+		delete(this->okno);
 		delete(this->event);
 		delete(this->stos);
 		delete(this->window);
 	}
-
-	/*
-	void obslugaAnimacji(sf::RenderTarget* target) {
-		size_t zasieg = this->animacje.size();
-		for (size_t i = 0; i < zasieg; i++) {
-			this->animacje.at(i)->animuj(target, this->dtime);
-			if (this->animacje.at(i)->koniec()) {
-				this->animacje.erase(this->animacje.begin() + i);
-				i--;
-				zasieg--;
-			}
-		}
-	}*/
 
 	/**
 	 * @brief Rysowanie obiektow na ekranie
 	 *
 	 * @param target Wskaznik na cel rysowania
 	 */
-	void draw(sf::RenderTarget* target) {
+	void draw(sf::RenderTarget* target) { /// Rysowanie obiektow na ekranie
 		if (!target) target = this->window;
 		target->setView(this->cameraPlayer->returnView());
 		this->map->draw(target);
@@ -119,6 +114,7 @@ public:
 		target->setView(target->getDefaultView());
 		this->maska->draw(target);
 		if(this->LALT == true) this->hud->zwrocStatystyki()->drawStat(target);
+		if(this->interakcja == true) this->okno->draw(target);
 		this->hud->draw(target);
 		
 
@@ -126,14 +122,12 @@ public:
 		//this->animacje.at(0)->animuj(target,this->dtime);
 		//obslugaAnimacji(target);
 	};
-
-
 	/**
 	 * @brief Odswiezenie stanu gry
 	 *
 	 * @param dtime Delta czasu (timer)
 	 */
-	void update(const float& dtime) {
+	void update(const float& dtime) { /// Odswiezenie stanu aktualnego "stanu"
 		this->dtime = dtime;
 		//std::cout << pozycja_kursora_w_grze.x << " " << pozycja_kursora_w_grze.y << std::endl;
 		this->pozycja_kursora_w_grze = sf::Vector2f(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y);
@@ -174,7 +168,18 @@ public:
 			
 			while (this->window->pollEvent(*this->event)) {
 				if (this->event->type == sf::Event::KeyPressed) { // Wejscie w rzucanie czarow
-					if (this->event->key.code == sf::Keyboard::LControl) {
+					if (this->event->key.code == sf::Keyboard::Num1 && this->interakcja == true) {
+						this->okno->rozegrajInterakcje(1);
+						this->interakcja = false;
+						this->map->zwrocAktualnieZaznaczona()->zwrocObiekt()->setInterakcja(false);
+					}
+					else if (this->event->key.code == sf::Keyboard::Num2 && this->interakcja == true) {
+						this->okno->rozegrajInterakcje(2);
+						this->map->zwrocAktualnieZaznaczona()->otoczenie->setRange(3);
+						this->interakcja = false;
+						this->map->zwrocAktualnieZaznaczona()->zwrocObiekt()->setInterakcja(false);
+					}
+					else if (this->event->key.code == sf::Keyboard::LControl) {
 						this->LCTRL = true;
 						this->dzwieki->graj(0);
 					}
@@ -190,7 +195,7 @@ public:
 						this->LCTRL = false;
 
 						std::cout << this->rzucanie_zaklec->rzucaj(this->map->zwrocAktualnieZaznaczona()) << std::endl;//Komunikat o blednej kombinacji zaklecja/za malej ilosci many itd.
-						//Tylko zrobione po ludzku nie w konsoli
+						
 
 						this->rzucanie_zaklec->wyczyscLinie();
 						this->dzwieki->stop(0);
@@ -221,14 +226,19 @@ public:
 						if (this->event->mouseButton.button == sf::Mouse::Right)
 						{
 							this->map->zaznaczKafelek();
+							if (this->map->zwrocAktualnieZaznaczona()->otoczenie->zwrocInterakcja() == true) {
+								this->interakcja = true;
+								this->okno->ustawInterakcje("Witaj magu! Czego chcesz?", "Zupelnie niczego", "Twojej glowy","Odejdz wiec, tylko uwazaj na siebie","Walczmy zatem!");
+							}
 						}
 						else if (this->event->mouseButton.button == sf::Mouse::Left)
 						{
 							if(this->map->Rusz() == true){
 								this->gracz->ladujMane(this->gracz->maxMana * 0.1);
+								if (this->interakcja == true) this->interakcja = false;
 								for (int i = 0; i < this->map->zwrocDystansTworzenia(); i++) {
 									for (int j = 0; j < this->map->zwrocDystansTworzenia(); j++) {
-										if (this->map->plytki[i][j]->otoczenie != nullptr)
+										if(this->map->plytki[i][j]->otoczenie != nullptr)
 											this->map->plytki[i][j]->zwrocObiekt()->atak(this->gracz,i,j);
 									}
 								}

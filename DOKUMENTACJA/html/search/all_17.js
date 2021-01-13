@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['_7ebitmaphandler_189',['~BitmapHandler',['../class_bitmap_handler.html#a1f3e49ed094cc684909c97d3b56fa2e9',1,'BitmapHandler']]],
-  ['_7edemo_190',['~Demo',['../class_demo.html#a82bcc87814f02257d04a49400cc8052d',1,'Demo']]],
-  ['_7eengine_191',['~Engine',['../class_engine.html#a8ef7030a089ecb30bbfcb9e43094717a',1,'Engine']]],
-  ['_7emenuglowne_192',['~MenuGlowne',['../class_menu_glowne.html#a16f61dd18ba95be4efe0591a267f5a20',1,'MenuGlowne']]]
+  ['y_365',['y',['../class_animacja.html#af098f53c2a5ef6fbff8d53d2c6d13d7a',1,'Animacja']]],
+  ['yk_366',['yk',['../class_moveport.html#aec2c6dae2775537d8c0fb4c9349ce8c1',1,'Moveport']]],
+  ['yp_367',['yp',['../class_moveport.html#abb6da213301559e88850246b0337cfac',1,'Moveport']]]
 ];

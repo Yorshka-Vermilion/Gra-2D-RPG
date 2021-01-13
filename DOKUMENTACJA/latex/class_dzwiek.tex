@@ -1,0 +1,189 @@
+\hypertarget{class_dzwiek}{}\doxysection{Dzwiek Class Reference}
+\label{class_dzwiek}\index{Dzwiek@{Dzwiek}}
+
+
+Klasa reprezentujaca dzwiek.  
+
+
+
+
+{\ttfamily \#include $<$Dzwiek.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dzwiek_a7db1df10f671b43254140b972585c41a}{Dzwiek}} (std\+::string sciezka, int \mbox{\hyperlink{class_dzwiek_ac6cabb44d0a1f022111d508dadbdd26f}{volume}}=10)
+\begin{DoxyCompactList}\small\item\em Konstruktor dzwieku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dzwiek_a55bd424fa362dbbddcd7ba00488e4940}{graj}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja stratujaca dzwiek. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dzwiek_ad22e00c29f7c574970795918fd2281c6}{stop}} (bool force=false)
+\begin{DoxyCompactList}\small\item\em Funkcja stopujaca dzwiek. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dzwiek_ad0b255883c814b81ce4ffd27b04778a8}{update}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja uaktualniajaca stan dzwieku, np scisza go lub przyglasza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{class_dzwiek_a71515bd99296daea751cddb28fa908a4}{buffer}}
+\begin{DoxyCompactList}\small\item\em buffor dzwieku \end{DoxyCompactList}\item 
+sf\+::\+Sound \mbox{\hyperlink{class_dzwiek_a75e149671767ae4615ebbc48f14fc256}{sound}}
+\begin{DoxyCompactList}\small\item\em Probka dzwieku. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_dzwiek_ac6cabb44d0a1f022111d508dadbdd26f}{volume}}
+\begin{DoxyCompactList}\small\item\em Glosnosc. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dzwiek_a30e53f19019ae9eb1c92d0bd94cb7964}{sciszany}} = false
+\begin{DoxyCompactList}\small\item\em Flaga sygnalizuje czy dzwiek jest aktualnie sciszany. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dzwiek_a83a100e0cb69939e785607e9d3ff6532}{przyglaszany}} = false
+\begin{DoxyCompactList}\small\item\em Flaga sygnalizuje czy dzwiek jest aktualnie przyglaszany. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujaca dzwiek. 
+
+Definition at line 10 of file Dzwiek.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dzwiek_a7db1df10f671b43254140b972585c41a}\label{class_dzwiek_a7db1df10f671b43254140b972585c41a}} 
+\index{Dzwiek@{Dzwiek}!Dzwiek@{Dzwiek}}
+\index{Dzwiek@{Dzwiek}!Dzwiek@{Dzwiek}}
+\doxysubsubsection{\texorpdfstring{Dzwiek()}{Dzwiek()}}
+{\footnotesize\ttfamily Dzwiek\+::\+Dzwiek (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{int}]{volume = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor dzwieku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & Sciezka do dzwieku \\
+\hline
+{\em volume} & Glosnosc dziweku \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Dzwiek.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dzwiek_a55bd424fa362dbbddcd7ba00488e4940}\label{class_dzwiek_a55bd424fa362dbbddcd7ba00488e4940}} 
+\index{Dzwiek@{Dzwiek}!graj@{graj}}
+\index{graj@{graj}!Dzwiek@{Dzwiek}}
+\doxysubsubsection{\texorpdfstring{graj()}{graj()}}
+{\footnotesize\ttfamily void Dzwiek\+::graj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja stratujaca dzwiek. 
+
+
+
+Definition at line 45 of file Dzwiek.\+h.
+
+\mbox{\Hypertarget{class_dzwiek_ad22e00c29f7c574970795918fd2281c6}\label{class_dzwiek_ad22e00c29f7c574970795918fd2281c6}} 
+\index{Dzwiek@{Dzwiek}!stop@{stop}}
+\index{stop@{stop}!Dzwiek@{Dzwiek}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Dzwiek\+::stop (\begin{DoxyParamCaption}\item[{bool}]{force = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja stopujaca dzwiek. 
+
+
+
+Definition at line 53 of file Dzwiek.\+h.
+
+\mbox{\Hypertarget{class_dzwiek_ad0b255883c814b81ce4ffd27b04778a8}\label{class_dzwiek_ad0b255883c814b81ce4ffd27b04778a8}} 
+\index{Dzwiek@{Dzwiek}!update@{update}}
+\index{update@{update}!Dzwiek@{Dzwiek}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Dzwiek\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja uaktualniajaca stan dzwieku, np scisza go lub przyglasza. 
+
+
+
+Definition at line 61 of file Dzwiek.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dzwiek_a71515bd99296daea751cddb28fa908a4}\label{class_dzwiek_a71515bd99296daea751cddb28fa908a4}} 
+\index{Dzwiek@{Dzwiek}!buffer@{buffer}}
+\index{buffer@{buffer}!Dzwiek@{Dzwiek}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer Dzwiek\+::buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+buffor dzwieku 
+
+
+
+Definition at line 13 of file Dzwiek.\+h.
+
+\mbox{\Hypertarget{class_dzwiek_a83a100e0cb69939e785607e9d3ff6532}\label{class_dzwiek_a83a100e0cb69939e785607e9d3ff6532}} 
+\index{Dzwiek@{Dzwiek}!przyglaszany@{przyglaszany}}
+\index{przyglaszany@{przyglaszany}!Dzwiek@{Dzwiek}}
+\doxysubsubsection{\texorpdfstring{przyglaszany}{przyglaszany}}
+{\footnotesize\ttfamily bool Dzwiek\+::przyglaszany = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Flaga sygnalizuje czy dzwiek jest aktualnie przyglaszany. 
+
+
+
+Definition at line 21 of file Dzwiek.\+h.
+
+\mbox{\Hypertarget{class_dzwiek_a30e53f19019ae9eb1c92d0bd94cb7964}\label{class_dzwiek_a30e53f19019ae9eb1c92d0bd94cb7964}} 
+\index{Dzwiek@{Dzwiek}!sciszany@{sciszany}}
+\index{sciszany@{sciszany}!Dzwiek@{Dzwiek}}
+\doxysubsubsection{\texorpdfstring{sciszany}{sciszany}}
+{\footnotesize\ttfamily bool Dzwiek\+::sciszany = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Flaga sygnalizuje czy dzwiek jest aktualnie sciszany. 
+
+
+
+Definition at line 19 of file Dzwiek.\+h.
+
+\mbox{\Hypertarget{class_dzwiek_a75e149671767ae4615ebbc48f14fc256}\label{class_dzwiek_a75e149671767ae4615ebbc48f14fc256}} 
+\index{Dzwiek@{Dzwiek}!sound@{sound}}
+\index{sound@{sound}!Dzwiek@{Dzwiek}}
+\doxysubsubsection{\texorpdfstring{sound}{sound}}
+{\footnotesize\ttfamily sf\+::\+Sound Dzwiek\+::sound\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Probka dzwieku. 
+
+
+
+Definition at line 15 of file Dzwiek.\+h.
+
+\mbox{\Hypertarget{class_dzwiek_ac6cabb44d0a1f022111d508dadbdd26f}\label{class_dzwiek_ac6cabb44d0a1f022111d508dadbdd26f}} 
+\index{Dzwiek@{Dzwiek}!volume@{volume}}
+\index{volume@{volume}!Dzwiek@{Dzwiek}}
+\doxysubsubsection{\texorpdfstring{volume}{volume}}
+{\footnotesize\ttfamily int Dzwiek\+::volume\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Glosnosc. 
+
+
+
+Definition at line 17 of file Dzwiek.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_dzwiek_8h}{Dzwiek.\+h}}\end{DoxyCompactItemize}

@@ -118,6 +118,8 @@ public:
 
 	/**
 	* @brief Zwraca stan animacji
+	* @return true gdy animacja juz sie skonczyla
+	* @return false gdy animacja dalej trwa
 	*/
 	bool koniec() {
 		if (this->skonczona == true) {

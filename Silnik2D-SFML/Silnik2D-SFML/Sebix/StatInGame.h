@@ -2,18 +2,60 @@
 #include "../Bartek/Obiekt.h";
 #include "../Bartek/Gracz.h"
 
+/**
+	 * @brief Klasa odpowiedzialna za reprezentacje statystyk w trakcie rozgrywki
+	 */
 class StatInGame{
+	/// <summary>
+	/// Przycisk reprezentujacy tlo menu rozdawania statystyk+
+	/// </summary>
 	Obiekt* back;
+	/// <summary>
+	/// Przycisk reprezentujacy opcje dodania punktow w sile
+	/// </summary>
 	Obiekt* buttonSila;
+	/// <summary>
+	/// Przycisk reprezentujacy opcje dodania punktow w dmg
+	/// </summary>
 	Obiekt* buttonDmg;
+	/// <summary>
+	/// Przycisk reprezentujacy opcje dodania punktow w inteligencje
+	/// </summary>
 	Obiekt* buttonInteligencja;
+	/// <summary>
+	/// Czcionka wyswietlajaca sie w menu statystyk
+	/// </summary>
 	sf::Font czcionka;
 public:
-	sf::Text sila, dmg, inteligencja;
+	/// <summary>
+	/// Reprezentacja tekstowana w oknie punktow sily
+	/// </summary>
+	sf::Text sila;
+	/// <summary>
+	/// Reprezentacja tekstowana w oknie punktow dmg
+	/// </summary>
+	sf::Text dmg;
+	/// <summary>
+	/// Reprezentacja tekstowana w oknie punktow inteligencji
+	/// </summary>
+	sf::Text inteligencja;
+	/**
+	 * @brief Konstruktor budujacy statystyki w trakcie rozgrywki
+	 *
+	 * @param sila ilosc punktow ktore posiada bohater w sile
+	 * @param dmg ilosc punktow ktore posiada bohater w dmg
+	 * @param inteligencja ilosc punktow ktore posiada bohater w inteligencji
+	 */
 	StatInGame(int sila, int dmg, int inteligencja){
 		this->makeInGameStat(sila,dmg,inteligencja);
 	}
-	
+		/**
+	 * @brief Funkcja odpowiedzialna za zbudowanie menu statystyk
+	 *
+	 * @param sila ilosc punktow ktore posiada bohater w sile
+	 * @param dmg ilosc punktow ktore posiada bohater w dmg
+	 * @param inteligencja ilosc punktow ktore posiada bohater w inteligencji
+	 */
 	void makeInGameStat(int sila, int dmg, int inteligencja) {
 		this->back = new Obiekt("statbackborad.png", sf::Vector2f(50, 50));
 		this->back->przeskaluj(sf::Vector2f(3, 3));
@@ -41,6 +83,15 @@ public:
 
 	}
 
+	/**
+ * @brief Funkcja tworzaca reprezentacje graficzna w formie tekstu
+ *
+ * @param sciezka odpowiada za znajdowanie pliku reprezentujacego statystyki
+ * @param pozycja odpowaida za pozycje w ktorej maja sie znajdowac statystyki
+ * @param tresc nazwa wybranej statystyki
+ * @param wartosc wartosc wybranej statystyki\
+ * @return Text zwraca gotowy obraz reprezentujacy statystyke
+ */
 	sf::Text zrobTekst(std::string sciezka, sf::Vector2f pozycja, std::string tresc, int wartosc) {
 		if (!this->czcionka.loadFromFile(sciezka)) {
 			std::cout << "Nie udalo sie zaladowac czcionki" << std::endl;
@@ -58,23 +109,43 @@ public:
 		text.setPosition(pozycja);
 		return text;
 	}
-
+/**
+* @brief Funkcja odpowiedzialna za zwrocenie wskaznika na tylnia czesc menu
+*
+* @return Obiekt zwraca wskaznik na tlo statystyk
+*/
 	Obiekt* zwrocOkno() {
 		return this->back;
 	}
-
+	/**
+	* @brief Funkcja odpowiedzialna za zwrocenie wskaznika na przycisk sily z menu
+	*
+	* @return Obiekt zwraca wskaznik na przycisk sily
+	*/
 	Obiekt* zwrocPrzyciskSila() {
 		return this->buttonSila;
 	}
-
+	/**
+	* @brief Funkcja odpowiedzialna za zwrocenie wskaznika na przycisk dmg  z menu
+	*
+	* @return Obiekt zwraca wskaznik na przycisk dmg
+	*/
 	Obiekt* zwrocPrzyciskDmg() {
 		return this->buttonDmg;
 	}
-
+	/**
+	* @brief Funkcja odpowiedzialna za zwrocenie wskaznika na przycisk inteligencji z menu
+	*
+	* @return Obiekt zwraca wskaznik na przycisk inteligencji
+	*/
 	Obiekt* zwrocPrzyciskInteligencja() {
 		return this->buttonInteligencja;
 	}
-
+	/**
+* @brief Funkcja odpowiedzialna za rysowanie menu na ekranie w trakcie gry
+*
+* @param target okno w ktorym ma byc przedstawiane menu
+*/
 	void draw(sf::RenderTarget* target) {
 		this->back->draw(target);
 		this->buttonSila->draw(target);
@@ -84,21 +155,41 @@ public:
 		target->draw(this->dmg);
 		target->draw(this->inteligencja);
 	}
-
+/**
+* @brief Funkcja odpowiedzialna za wyswietlanie podgladu statystyk
+*
+* @param target okno w ktorym ma byc przedstawiane menu
+*/
 	void drawStat(sf::RenderTarget* target) {
 		target->draw(this->sila);
 		target->draw(this->dmg);
 		target->draw(this->inteligencja);
 	}
-
+	/**
+* @brief Funkcja odpowiedzialna za aktualizacje wartosci sily w menu statystyk
+*
+*
+* @param tresc tresc statystyki
+* @param wartosc wartosc punktow jaka ma sie wyswietlac
+*/
 	void aktualizujSila(std::string tresc, int wartosc) {
 		this->sila.setString(std::string(tresc).append(std::to_string(wartosc)));
 	}
-
+	/**
+* @brief Funkcja odpowiedzialna za aktualizacje wartosci dmg w menu statystyk
+*
+* @param tresc tresc statystyki
+* @param wartosc wartosc punktow jaka ma sie wyswietlac
+*/
 	void aktualizujDmg(std::string tresc, int wartosc) {
 		this->dmg.setString(std::string(tresc).append(std::to_string(wartosc)));
 	}
-
+	/**
+* @brief Funkcja odpowiedzialna za aktualizacje wartosci inteligencji w menu statystyk
+*
+* @param tresc tresc statystyki
+* @param wartosc wartosc punktow jaka ma sie wyswietlac
+*/
 	void aktualizujInteligencja(std::string tresc, int wartosc) {
 		this->inteligencja.setString(std::string(tresc).append(std::to_string(wartosc)));
 	}

@@ -20,7 +20,16 @@ class Plytka : public Obiekt
 public:
 	/// Wskaznik na obiekt otorzenia ktory moze znajdowac sie na plytce
 	ObiektOtoczenia* otoczenie = nullptr;
-
+	/**
+	* @brief Funkcja dodajaca zaklecie na plytke (w celu animacji)
+	*
+	* @param zaklecie Wskaznik na zaklecie ktore ma byc zanimowane na tej plytce
+	*/
+	void DodajZaklecie(Zaklecie* zaklecie) {
+		this->zaklecie = zaklecie;
+		this->zaklecie->zresetuj();
+		this->zaklecie->ustaw(sf::Vector2f(this->sprajt.getPosition().x,this->sprajt.getPosition().y));
+	}
 	/**
 	 * @brief Konstruktor plytki
 	 *
@@ -38,14 +47,12 @@ public:
 		}
 
 	}
-
 	/**
 	 * @brief Dekonstruktor plytki
 	 */
 	~Plytka() {
 		delete(this->otoczenie);
 	}
-
 	/**
 	 * @brief Funkcja rysujaca plytke na ekranie
 	 *
@@ -56,7 +63,6 @@ public:
 		if(this->otoczenie != nullptr)
 			this->otoczenie->draw(cel);
 	}
-
 	/**
 	 * @brief Funkcja animujaca zaklecie znajdujace sie na plytce
 	 *
@@ -70,9 +76,9 @@ public:
 			};
 		}
 	}
-
 	/**
 	 * @brief Funkcja aktualizujaca stan plytki
+	 * @return double zwraca wartosc punktow doswiadczenia ktore ma uzyskac gracz
 	 */
 	double update() {
 		if (this->otoczenie != nullptr) {
@@ -87,18 +93,6 @@ public:
 		
 		return 0;
 	}
-
-	/**
-	* @brief Funkcja dodajaca zaklecie na plytke (w celu animacji)
-	*
-	* @param zaklecie Wskaznik na zaklecie ktore ma byc zanimowane na tej plytce
-	*/
-	void DodajZaklecie(Zaklecie* zaklecie) {
-		this->zaklecie = zaklecie;
-		this->zaklecie->zresetuj();
-		this->zaklecie->ustaw(sf::Vector2f(this->sprajt.getPosition().x, this->sprajt.getPosition().y));
-	}
-
 	/**
 	 * @brief Funkcja przypisujaca gracza do plytki
 	 *
@@ -107,7 +101,6 @@ public:
 	void PrzypiszGracza(Gracz* gracz) {
 		gracz->rusz(sf::Vector2f(this->sprajt.getPosition().x, this->sprajt.getPosition().y - this->tekstura.getSize().y / 4));
 	}
-
 	/**
 	 * @brief Funkcja przypisujaca obiekt do plytki
 	 *
@@ -127,7 +120,6 @@ public:
 	void ZmienDostepnosc(bool jak) {
 		this->dostepna = jak;
 	}
-
 	/**
 	 * @brief Funkcja podswietlajaca plytke (ustawia teksture podswietlenia)
 	 *
@@ -135,7 +127,6 @@ public:
 	void Podswietl() {
 		if (!this->zaznaczona)this->sprajt.setTexture(this->podswietlenie);
 	}
-
 	/**
 	 * @brief Funkcja wylaczajaca podswietlenie (wraca do domyslnej tekstury)
 	 *
@@ -146,7 +137,6 @@ public:
 			this->zaznaczona = false;
 		}
 	}
-
 	/**
 	 * @brief Funkcja zaznaczajaca plytke (ustawia teksture zaznaczenia)
 	 *
@@ -159,24 +149,23 @@ public:
 		else WylaczPodswietlenie(true);
 
 	}
-
 	/**
 	 * @brief Funkcja zwraca ObiektOtoczenia ktory znajduje sie na plytce, jesli nie znajduje sie zaden zwraca nullptr
-	 *
+	 * @return ObiektOtoczenia zwraca obiekt znajdujacy sie w wybranym miejscu
+	 * 
 	 */
 	ObiektOtoczenia* zwrocObiekt() {
 		if(this->otoczenie != nullptr)
 			return this->otoczenie;
 	}
-
 	/**
 	 * @brief Funkcja zwraca typ logiczny wskazujacy na dostepnasc plytki
-	 *
+	 * @return true jezeli plytka jest dostepna
+	 * @return false jezeli plytka jest niedostêpna 
 	 */
 	bool zwrocDostepnosc() {
 		return this->dostepna;
 	}
-
 	/**
 	 * @brief Funkcja aktualizuje pozycje obiektu znajdujacego sie na plytce (przy przesuwaniu, razem z plytka przesuwa sie obiekt)
 	 *

@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Bartek/Obiekt.h Source File</title>
+<title>Grafika - Projekt: Bartek/Obiekt.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Grafika - Projekt
    </div>
   </td>
  </tr>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_obiekt_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_4062bfa0d915d9dbe0113bf958d4ef7b.html">Bartek</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Obiekt.h</div>  </div>
@@ -88,43 +104,74 @@ $(function() {
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        this-&gt;sprajt.setTexture(this-&gt;tekstura);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        this-&gt;sprajt.setPosition(pozycja);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">zmienTeksture</a>(std::string sciezka) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="class_obiekt.html#a22cbc86ca1d6cac0619039f146fc6684">tekstura</a>.loadFromFile(sciezka)) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Problem z zaladowaniem tekstury : &quot;</span> &lt;&lt; sciezka &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        this-&gt;sprajt.setTexture(this-&gt;tekstura);</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_obiekt.html#ac8e27a872226e2b55c6f42c0677e5d00">   35</a></span>&#160;    <a class="code" href="class_obiekt.html#ac8e27a872226e2b55c6f42c0677e5d00">Obiekt</a>(){}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_obiekt.html#a18f9100c2391cc63b30bee84758af76b">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#a18f9100c2391cc63b30bee84758af76b">draw</a>(sf::RenderTarget* cel) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        cel-&gt;draw(this-&gt;sprajt);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_obiekt.html#aa9202b4cf6a327c24ac63b1821f3fc0a">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#aa9202b4cf6a327c24ac63b1821f3fc0a">przestaw</a>(sf::Vector2f gdzie) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        this-&gt;sprajt.setPosition(gdzie);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_obiekt.html#aaea31a8611efee40f4254f206e597ccb">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#aaea31a8611efee40f4254f206e597ccb">rotuj</a>(<span class="keywordtype">float</span> kat) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        this-&gt;sprajt.setRotation(kat);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">   69</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">przeskaluj</a>(sf::Vector2f jak) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        this-&gt;sprajt.setScale(jak);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">   50</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">zmienTeksture</a>(std::string sciezka) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="class_obiekt.html#a22cbc86ca1d6cac0619039f146fc6684">tekstura</a>.loadFromFile(sciezka)) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Problem z zaladowaniem tekstury : &quot;</span> &lt;&lt; sciezka &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        this-&gt;sprajt.setTexture(this-&gt;tekstura);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_obiekt.html#aa9202b4cf6a327c24ac63b1821f3fc0a">   63</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#aa9202b4cf6a327c24ac63b1821f3fc0a">przestaw</a>(sf::Vector2f gdzie) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        this-&gt;sprajt.setPosition(gdzie);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_obiekt.html#aaea31a8611efee40f4254f206e597ccb">   72</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#aaea31a8611efee40f4254f206e597ccb">rotuj</a>(<span class="keywordtype">float</span> kat) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        this-&gt;sprajt.setRotation(kat);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">   81</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">przeskaluj</a>(sf::Vector2f jak) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        this-&gt;sprajt.setScale(jak);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_obiekt.html#aeffd4b81169593dc52b4c41943cf6613">   87</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#aeffd4b81169593dc52b4c41943cf6613">setOriginOnMiddle</a>() {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        this-&gt;sprajt.setOrigin(sf::Vector2f(this-&gt;tekstura.getSize().x / 2, this-&gt;tekstura.getSize().y / 2));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_obiekt.html#a3bca4542d722dfc07bb905dfb021cfea">   93</a></span>&#160;    sf::Vector2f <a class="code" href="class_obiekt.html#a3bca4542d722dfc07bb905dfb021cfea">PobierzRozmiar</a>() {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> sf::Vector2f(this-&gt;sprajt.getGlobalBounds().width, this-&gt;sprajt.getGlobalBounds().height);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_obiekt.html#a96f98de411f33171aa65cb8b1ab9360b">   99</a></span>&#160;    sf::FloatRect <a class="code" href="class_obiekt.html#a96f98de411f33171aa65cb8b1ab9360b">pobierzPozycje</a>() {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> this-&gt;sprajt.getGlobalBounds();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_obiekt.html#a9fe13261fdb4a04f8fb89178e12047f2">  108</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#a9fe13261fdb4a04f8fb89178e12047f2">rozjasnij</a>(<span class="keywordtype">float</span> ile, <span class="keywordtype">int</span> max = 0) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span> (max &lt; 0) max = 0;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (this-&gt;sprajt.getColor().a &lt;= max) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        this-&gt;sprajt.setColor(sf::Color(0, 0, 0, this-&gt;sprajt.getColor().a - ile));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_obiekt.html#a0308862e97a4e26eedb6481ca9da7957">  119</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_obiekt.html#a0308862e97a4e26eedb6481ca9da7957">przyciemnij</a>(<span class="keywordtype">float</span> ile, <span class="keywordtype">int</span> max = 500) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (max &gt; 255) max = 255;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">if</span> (this-&gt;sprajt.getColor().a &gt;= max) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        this-&gt;sprajt.setColor(sf::Color(0, 0, 0, this-&gt;sprajt.getColor().a + ile));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_obiekt_html_a22cbc86ca1d6cac0619039f146fc6684"><div class="ttname"><a href="class_obiekt.html#a22cbc86ca1d6cac0619039f146fc6684">Obiekt::tekstura</a></div><div class="ttdeci">sf::Texture tekstura</div><div class="ttdoc">Zmienna przechowujaca teksture.</div><div class="ttdef"><b>Definition:</b> Obiekt.h:14</div></div>
-<div class="ttc" id="aclass_obiekt_html_a7c6a32b37cffaf8755269f9260714c70"><div class="ttname"><a href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">Obiekt::przeskaluj</a></div><div class="ttdeci">void przeskaluj(sf::Vector2f jak)</div><div class="ttdoc">Skaluje obiekt.</div><div class="ttdef"><b>Definition:</b> Obiekt.h:69</div></div>
-<div class="ttc" id="aclass_obiekt_html_aaea31a8611efee40f4254f206e597ccb"><div class="ttname"><a href="class_obiekt.html#aaea31a8611efee40f4254f206e597ccb">Obiekt::rotuj</a></div><div class="ttdeci">void rotuj(float kat)</div><div class="ttdoc">Funkcja obraca obiekt.</div><div class="ttdef"><b>Definition:</b> Obiekt.h:60</div></div>
-<div class="ttc" id="aclass_obiekt_html"><div class="ttname"><a href="class_obiekt.html">Obiekt</a></div><div class="ttdoc">Klasa opisujaca kazdy obiekt w grze.</div><div class="ttdef"><b>Definition:</b> Obiekt.h:11</div></div>
-<div class="ttc" id="aclass_obiekt_html_a5a1182776f2ef794f4f1be89b2316733"><div class="ttname"><a href="class_obiekt.html#a5a1182776f2ef794f4f1be89b2316733">Obiekt::sprajt</a></div><div class="ttdeci">sf::Sprite sprajt</div><div class="ttdoc">Zmienna przechowujaca sprite.</div><div class="ttdef"><b>Definition:</b> Obiekt.h:17</div></div>
-<div class="ttc" id="aclass_obiekt_html_aa9202b4cf6a327c24ac63b1821f3fc0a"><div class="ttname"><a href="class_obiekt.html#aa9202b4cf6a327c24ac63b1821f3fc0a">Obiekt::przestaw</a></div><div class="ttdeci">void przestaw(sf::Vector2f gdzie)</div><div class="ttdoc">Przestawia obiekt w inne miejsce.</div><div class="ttdef"><b>Definition:</b> Obiekt.h:51</div></div>
-<div class="ttc" id="aclass_obiekt_html_a6a20b741117cafcc4a538d3a2d43aad6"><div class="ttname"><a href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">Obiekt::zmienTeksture</a></div><div class="ttdeci">void zmienTeksture(std::string sciezka)</div><div class="ttdoc">Podmienia teksture na podana w argumencie.</div><div class="ttdef"><b>Definition:</b> Obiekt.h:38</div></div>
-<div class="ttc" id="aclass_obiekt_html_a03124928e33622a68b22f9bb7e1d8cf9"><div class="ttname"><a href="class_obiekt.html#a03124928e33622a68b22f9bb7e1d8cf9">Obiekt::Obiekt</a></div><div class="ttdeci">Obiekt(std::string sciezka, sf::Vector2f pozycja)</div><div class="ttdoc">Tworzy nowy Obiekt.</div><div class="ttdef"><b>Definition:</b> Obiekt.h:25</div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_obiekt_html_a22cbc86ca1d6cac0619039f146fc6684"><div class="ttname"><a href="class_obiekt.html#a22cbc86ca1d6cac0619039f146fc6684">Obiekt::tekstura</a></div><div class="ttdeci">sf::Texture tekstura</div><div class="ttdoc">Zmienna przechowujaca teksture.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00014">Obiekt.h:14</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_aeffd4b81169593dc52b4c41943cf6613"><div class="ttname"><a href="class_obiekt.html#aeffd4b81169593dc52b4c41943cf6613">Obiekt::setOriginOnMiddle</a></div><div class="ttdeci">void setOriginOnMiddle()</div><div class="ttdoc">Funkcja ustawia 'origin' na srodku sprite'a.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00087">Obiekt.h:87</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_a9fe13261fdb4a04f8fb89178e12047f2"><div class="ttname"><a href="class_obiekt.html#a9fe13261fdb4a04f8fb89178e12047f2">Obiekt::rozjasnij</a></div><div class="ttdeci">void rozjasnij(float ile, int max=0)</div><div class="ttdoc">Funkcja rozjasnia obiekt.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00108">Obiekt.h:108</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_a3bca4542d722dfc07bb905dfb021cfea"><div class="ttname"><a href="class_obiekt.html#a3bca4542d722dfc07bb905dfb021cfea">Obiekt::PobierzRozmiar</a></div><div class="ttdeci">sf::Vector2f PobierzRozmiar()</div><div class="ttdoc">Funkcja zwraca rozmiar sprite'a.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00093">Obiekt.h:93</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_a0308862e97a4e26eedb6481ca9da7957"><div class="ttname"><a href="class_obiekt.html#a0308862e97a4e26eedb6481ca9da7957">Obiekt::przyciemnij</a></div><div class="ttdeci">void przyciemnij(float ile, int max=500)</div><div class="ttdoc">Funkcja przyciemnia obiekt.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00119">Obiekt.h:119</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_a7c6a32b37cffaf8755269f9260714c70"><div class="ttname"><a href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">Obiekt::przeskaluj</a></div><div class="ttdeci">void przeskaluj(sf::Vector2f jak)</div><div class="ttdoc">Skaluje obiekt.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00081">Obiekt.h:81</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_a96f98de411f33171aa65cb8b1ab9360b"><div class="ttname"><a href="class_obiekt.html#a96f98de411f33171aa65cb8b1ab9360b">Obiekt::pobierzPozycje</a></div><div class="ttdeci">sf::FloatRect pobierzPozycje()</div><div class="ttdoc">Funkcja zwraca rozmiar sprite'a.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00099">Obiekt.h:99</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_aaea31a8611efee40f4254f206e597ccb"><div class="ttname"><a href="class_obiekt.html#aaea31a8611efee40f4254f206e597ccb">Obiekt::rotuj</a></div><div class="ttdeci">void rotuj(float kat)</div><div class="ttdoc">Funkcja obraca obiekt.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00072">Obiekt.h:72</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_ac8e27a872226e2b55c6f42c0677e5d00"><div class="ttname"><a href="class_obiekt.html#ac8e27a872226e2b55c6f42c0677e5d00">Obiekt::Obiekt</a></div><div class="ttdeci">Obiekt()</div><div class="ttdoc">Tworzy nowy pusty Obiekt.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00035">Obiekt.h:35</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_a18f9100c2391cc63b30bee84758af76b"><div class="ttname"><a href="class_obiekt.html#a18f9100c2391cc63b30bee84758af76b">Obiekt::draw</a></div><div class="ttdeci">void draw(sf::RenderTarget *cel)</div><div class="ttdoc">Funkcja rysuje obiekt.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00041">Obiekt.h:41</a></div></div>
+<div class="ttc" id="aclass_obiekt_html"><div class="ttname"><a href="class_obiekt.html">Obiekt</a></div><div class="ttdoc">Klasa opisujaca kazdy obiekt w grze.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00010">Obiekt.h:11</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_a5a1182776f2ef794f4f1be89b2316733"><div class="ttname"><a href="class_obiekt.html#a5a1182776f2ef794f4f1be89b2316733">Obiekt::sprajt</a></div><div class="ttdeci">sf::Sprite sprajt</div><div class="ttdoc">Zmienna przechowujaca sprite.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00017">Obiekt.h:17</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_aa9202b4cf6a327c24ac63b1821f3fc0a"><div class="ttname"><a href="class_obiekt.html#aa9202b4cf6a327c24ac63b1821f3fc0a">Obiekt::przestaw</a></div><div class="ttdeci">void przestaw(sf::Vector2f gdzie)</div><div class="ttdoc">Przestawia obiekt w inne miejsce.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00063">Obiekt.h:63</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_a6a20b741117cafcc4a538d3a2d43aad6"><div class="ttname"><a href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">Obiekt::zmienTeksture</a></div><div class="ttdeci">void zmienTeksture(std::string sciezka)</div><div class="ttdoc">Podmienia teksture na podana w argumencie.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00050">Obiekt.h:50</a></div></div>
+<div class="ttc" id="aclass_obiekt_html_a03124928e33622a68b22f9bb7e1d8cf9"><div class="ttname"><a href="class_obiekt.html#a03124928e33622a68b22f9bb7e1d8cf9">Obiekt::Obiekt</a></div><div class="ttdeci">Obiekt(std::string sciezka, sf::Vector2f pozycja)</div><div class="ttdoc">Tworzy nowy Obiekt.</div><div class="ttdef"><b>Definition:</b> <a href="_obiekt_8h_source.html#l00025">Obiekt.h:25</a></div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4062bfa0d915d9dbe0113bf958d4ef7b.html">Bartek</a></li><li class="navelem"><a class="el" href="_obiekt_8h.html">Obiekt.h</a></li>
+    <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
 </body>
 </html>

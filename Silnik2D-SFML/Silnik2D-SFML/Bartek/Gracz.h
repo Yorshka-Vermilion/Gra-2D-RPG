@@ -36,10 +36,9 @@ public:
 	bool levelUp = false;
 	/// Wskaznik na statystyki 
 	Statystyki* statystyki;
-
 	/**
 	 * @brief Konsturktor obiektu Gracz
-	 * 
+	 *
 	 * @param sciezka Sciezka do pliku z obrazem gracza
 	 * @param pozycja Pozycja poczatkowa gracza
 	 * @param maxZycie Maksymalne zycie gracza
@@ -67,14 +66,6 @@ public:
 	 */
 	~Gracz() {
 		delete(this->statystyki);
-	}
-
-	/**
-	 * @brief Funkcja wlaczajaca tryb debugowania
-	 * 
-	 */
-	void debuguj() {
-		this->debug = true;
 	}
 
 	/**
@@ -107,10 +98,10 @@ public:
 	sf::Vector2f pobierzPozycje() {
 		return this->ksztalt.getPosition();
 	}
-
 	/**
 	 * @brief Funkcja zwraca obecny stan zdrowia gracza
 	 *
+	 * @return double zwraca obecna ilosc zdrowia
 	 */
 	double zwrocObecnyStanZdrowia() {
 		return this->zycie;
@@ -119,6 +110,7 @@ public:
 	/**
 	 * @brief Funkcja zwraca obecny stan many gracza
 	 *
+	 * @return double zwraca obecna ilosc many
 	 */
 	double zwrocObecnyStanMany() {
 		return this->mana;
@@ -130,7 +122,7 @@ public:
 	 * @param ile Ile obrazen nalezy odjac od puli zdrowia gracza
 	 */
 	void zadajObrazenia(double ile = 1) {
-		if(this->zycie>0)
+		if (this->zycie > 0)
 			this->zycie -= ile;
 	}
 
@@ -142,7 +134,7 @@ public:
 	void uleczObrazenia(double ile = 1) {
 		if (ile + this->zycie >= maxZycie) this->zycie = this->maxZycie;
 		if (this->zycie < this->maxZycie)
-			this->zycie+=ile;
+			this->zycie += ile;
 	}
 
 	/**
@@ -153,7 +145,7 @@ public:
 	void odejmijMane(double ile = 1) {
 		if (this->mana - ile <= 0) this->mana = 0;
 		if (this->mana > 0)
-			this->mana-=ile;
+			this->mana -= ile;
 	}
 
 	/**
@@ -164,7 +156,7 @@ public:
 	void ladujMane(double ile = 1) {
 		if (ile + this->mana >= maxMana) this->mana = this->maxMana;
 		if (this->mana < this->maxMana)
-			this->mana+=ile;
+			this->mana += ile;
 	}
 
 	/**
@@ -172,9 +164,9 @@ public:
 	 *
 	 * @param ilosc Ile doswiadczenia nalezy dodac
 	 */
-	void dodajExp(double ilosc){
+	void dodajExp(double ilosc) {
 		//std::cout << this->exp << " - " << this->maxExp << " -- " << this->level <<  std::endl;
-		if (this->exp < this->maxExp){
+		if (this->exp < this->maxExp) {
 			this->exp += ilosc;
 			sprawdzLevel();
 		}
@@ -199,7 +191,7 @@ public:
 
 	/**
 	 * @brief Funkcja zwraca poziom gracza
-	 *
+	 * @return int zwraca wysokosc poziomu gracza
 	 */
 	int zwrocLevel() {
 		return this->level;
@@ -216,7 +208,7 @@ public:
 
 	/**
 	 * @brief Funkcja zwraca opecna ilosc doswiadczenia gracza
-	 *
+	 * @return double zwraca obecna ilosc punktow doswiadczenia
 	 */
 	double zwrocObecnyStanExp() {
 		return this->exp;
@@ -232,7 +224,7 @@ public:
 
 	/**
 	 * @brief Funkcja zwraca nazwe gracza
-	 *
+	 * @return string zwraca obecna nazwe gracza
 	 */
 	std::string zwrocNazwa() {
 		return this->nazwa;
@@ -256,7 +248,7 @@ public:
 
 	/**
 	 * @brief Funkcja sprawdza czy gracz nie zyje, jesli umarl (jeko zycie spadlo do zera) zwraca true
-	 *
+	 * @return true zwraca prawde jezeli zdrowie gracza spadlo na poziom smiertelny
 	 */
 	bool isDead() {
 		if (this->zycie <= 0) return true;

@@ -1,0 +1,421 @@
+\hypertarget{class_statystyki}{}\doxysection{Statystyki Class Reference}
+\label{class_statystyki}\index{Statystyki@{Statystyki}}
+
+
+Klasa odpowiedzialna za reprezentacje statystyk bohatera.  
+
+
+
+
+{\ttfamily \#include $<$Statystyki.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_statystyki_a5f34547d776dd6a6a11d32fdbf845755}{Statystyki}} (int \mbox{\hyperlink{class_statystyki_a9717bea8eeadc8619381199bf7949245}{dostepne\+Punkty}}, float \mbox{\hyperlink{class_statystyki_a713f28d440fcf43349b4deb02fb6dc01}{mnoznik\+Sila}}, float \mbox{\hyperlink{class_statystyki_a825138684016e35249b698c5f333091a}{mnoznik\+Dmg}}, float \mbox{\hyperlink{class_statystyki_a5b898f714c2e3437aca48af0e5f8c963}{mnoznik\+Inteligencja}})
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzacy podstaowe wartosci statystyk. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_statystyki_ac727adc329785ca9e4d4d01b0545ea98}{oblicz\+Sila}} (int zycie)
+\begin{DoxyCompactList}\small\item\em Funkcja wyliczajaca dodatkowy bonus punktow zycia z punktow sily. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_statystyki_a6e6a912db0d48268f9f032613b6edfd1}{oblicz\+Dmg}} (int dmg)
+\begin{DoxyCompactList}\small\item\em Funkcja wyliczajaca dodatkowy bonus obrazen magicznych z punktow dmg. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_statystyki_a3fd970a1a335fb46c2c398265de11598}{oblicz\+Inteligencja}} (int mana)
+\begin{DoxyCompactList}\small\item\em Funkcja wyliczajaca dodatkowy bonus punktow many z punktow inteligencji. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_statystyki_a7735e5066425e4278ad8e6a25d6ba4bf}{zwroc\+Sila}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca obecna wartosc sily bohatera. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_statystyki_a63d6afa5b0dbd56e2044d6935ee28d77}{zwroc\+Dmg}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca obecna wartosc dmg bohatera. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_statystyki_adca8950f576e683af98af84d69628f0b}{zwroc\+Inteligencja}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca obecna wartosc inteligencji bohatera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statystyki_aece397e0ecc31da6589b6f27f70b8c31}{zwieksz\+Punkty}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwieksza wartosc dostepnych punktow do wydania o jeden. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statystyki_a05b31ffe3235750241216730724072ca}{zmniejsz\+Punkty}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zmniejsza wartosc dostepnych punktow do wydania o jeden. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statystyki_a6e2ba2d37022425c4e2b485c90d51af9}{dodaj\+Sila}} (int ile=1)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za dodanie wolnego punktu w sile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statystyki_a8b881883dc4a1690ab99868f66b3e9bf}{dodaj\+Dmg}} (int ile=1)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za dodanie wolnego punktu w dmg. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_statystyki_ac851ea746838ec819b064aaed9212074}{dodaj\+Inteligencja}} (int ile=1)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za dodanie wolnego punktu w inteligencje. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_statystyki_aa89331d4a33ff5928348aebbd75e62c6}{zwroc\+Ilosc\+Dostepnych\+Punktow}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za zwrocenie dostepnej ilosci punktow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_statystyki_ab9e6a5cf9ca0c20e1f9aeb5b4104f5ce}{sila}} = 1
+\begin{DoxyCompactList}\small\item\em Ilosc sily czarodzieja \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_statystyki_a713f28d440fcf43349b4deb02fb6dc01}{mnoznik\+Sila}}
+\begin{DoxyCompactList}\small\item\em Mnoznik sily bohatera \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_statystyki_a54e327b11de80877e5a0b7c8ab47a46a}{magic\+Dmg}} = 1
+\begin{DoxyCompactList}\small\item\em Ilosc obrazen czarodzieja \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_statystyki_a825138684016e35249b698c5f333091a}{mnoznik\+Dmg}}
+\begin{DoxyCompactList}\small\item\em Mnoznik obrazen czarow \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_statystyki_a2005508d92153ceeaecce74f3702e510}{inteligencja}} = 1
+\begin{DoxyCompactList}\small\item\em Ilosc punktow inteligencji czarodzieja \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_statystyki_a5b898f714c2e3437aca48af0e5f8c963}{mnoznik\+Inteligencja}}
+\begin{DoxyCompactList}\small\item\em Mnoznik punktow many \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_statystyki_a9717bea8eeadc8619381199bf7949245}{dostepne\+Punkty}}
+\begin{DoxyCompactList}\small\item\em Wartosc zapisujaca ilosc dostepnych do wydania punktow \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiedzialna za reprezentacje statystyk bohatera. 
+
+Definition at line 8 of file Statystyki.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_statystyki_a5f34547d776dd6a6a11d32fdbf845755}\label{class_statystyki_a5f34547d776dd6a6a11d32fdbf845755}} 
+\index{Statystyki@{Statystyki}!Statystyki@{Statystyki}}
+\index{Statystyki@{Statystyki}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{Statystyki()}{Statystyki()}}
+{\footnotesize\ttfamily Statystyki\+::\+Statystyki (\begin{DoxyParamCaption}\item[{int}]{dostepne\+Punkty,  }\item[{float}]{mnoznik\+Sila,  }\item[{float}]{mnoznik\+Dmg,  }\item[{float}]{mnoznik\+Inteligencja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor tworzacy podstaowe wartosci statystyk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dostepne\+Punkty} & ilosc dostepnych punktow do wydania \\
+\hline
+{\em mnoznik\+Sila} & mnoznik definiujacy ilosc dodatkowe HP bohatera za kazdy punkt \\
+\hline
+{\em mnoznik\+Dmg} & mnoznik definiujacy ilosc dodatkowych obrazen z czarow bohatera \\
+\hline
+{\em mnoznik\+Inteligencja} & mnoznik definiujacy ilosc dodatkowych punktow many \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file Statystyki.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_statystyki_a8b881883dc4a1690ab99868f66b3e9bf}\label{class_statystyki_a8b881883dc4a1690ab99868f66b3e9bf}} 
+\index{Statystyki@{Statystyki}!dodajDmg@{dodajDmg}}
+\index{dodajDmg@{dodajDmg}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{dodajDmg()}{dodajDmg()}}
+{\footnotesize\ttfamily void Statystyki\+::dodaj\+Dmg (\begin{DoxyParamCaption}\item[{int}]{ile = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za dodanie wolnego punktu w dmg. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ile} & mozliwe jest ustawienie wartosci punktow ktore chce sie na to wydac \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 134 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_ac851ea746838ec819b064aaed9212074}\label{class_statystyki_ac851ea746838ec819b064aaed9212074}} 
+\index{Statystyki@{Statystyki}!dodajInteligencja@{dodajInteligencja}}
+\index{dodajInteligencja@{dodajInteligencja}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{dodajInteligencja()}{dodajInteligencja()}}
+{\footnotesize\ttfamily void Statystyki\+::dodaj\+Inteligencja (\begin{DoxyParamCaption}\item[{int}]{ile = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za dodanie wolnego punktu w inteligencje. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ile} & mozliwe jest ustawienie wartosci punktow ktore chce sie na to wydac \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 144 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a6e2ba2d37022425c4e2b485c90d51af9}\label{class_statystyki_a6e2ba2d37022425c4e2b485c90d51af9}} 
+\index{Statystyki@{Statystyki}!dodajSila@{dodajSila}}
+\index{dodajSila@{dodajSila}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{dodajSila()}{dodajSila()}}
+{\footnotesize\ttfamily void Statystyki\+::dodaj\+Sila (\begin{DoxyParamCaption}\item[{int}]{ile = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za dodanie wolnego punktu w sile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ile} & mozliwe jest ustawienie wartosci punktow ktore chce sie na to wydac \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a6e6a912db0d48268f9f032613b6edfd1}\label{class_statystyki_a6e6a912db0d48268f9f032613b6edfd1}} 
+\index{Statystyki@{Statystyki}!obliczDmg@{obliczDmg}}
+\index{obliczDmg@{obliczDmg}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{obliczDmg()}{obliczDmg()}}
+{\footnotesize\ttfamily float Statystyki\+::oblicz\+Dmg (\begin{DoxyParamCaption}\item[{int}]{dmg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja wyliczajaca dodatkowy bonus obrazen magicznych z punktow dmg. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dmg} & obecna wartosc obrazen zaklecia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float zwraca dodatkowa wartosc obrazen jaka przysluguje czarodziejowi za poziom 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a3fd970a1a335fb46c2c398265de11598}\label{class_statystyki_a3fd970a1a335fb46c2c398265de11598}} 
+\index{Statystyki@{Statystyki}!obliczInteligencja@{obliczInteligencja}}
+\index{obliczInteligencja@{obliczInteligencja}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{obliczInteligencja()}{obliczInteligencja()}}
+{\footnotesize\ttfamily float Statystyki\+::oblicz\+Inteligencja (\begin{DoxyParamCaption}\item[{int}]{mana }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja wyliczajaca dodatkowy bonus punktow many z punktow inteligencji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mana} & obecna maksymalna wartosc many gracza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float zwraca dodatkowa wartosc many jaka przysluguje czarodziejowi za poziom 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_ac727adc329785ca9e4d4d01b0545ea98}\label{class_statystyki_ac727adc329785ca9e4d4d01b0545ea98}} 
+\index{Statystyki@{Statystyki}!obliczSila@{obliczSila}}
+\index{obliczSila@{obliczSila}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{obliczSila()}{obliczSila()}}
+{\footnotesize\ttfamily float Statystyki\+::oblicz\+Sila (\begin{DoxyParamCaption}\item[{int}]{zycie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja wyliczajaca dodatkowy bonus punktow zycia z punktow sily. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zycie} & maksymalna ilosc zycie bohatera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float zwraca dodatkowa wartosc zycia jaka przysluguje czarodziejowi za poziom 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a05b31ffe3235750241216730724072ca}\label{class_statystyki_a05b31ffe3235750241216730724072ca}} 
+\index{Statystyki@{Statystyki}!zmniejszPunkty@{zmniejszPunkty}}
+\index{zmniejszPunkty@{zmniejszPunkty}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{zmniejszPunkty()}{zmniejszPunkty()}}
+{\footnotesize\ttfamily void Statystyki\+::zmniejsz\+Punkty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zmniejsza wartosc dostepnych punktow do wydania o jeden. 
+
+
+
+Definition at line 116 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_aece397e0ecc31da6589b6f27f70b8c31}\label{class_statystyki_aece397e0ecc31da6589b6f27f70b8c31}} 
+\index{Statystyki@{Statystyki}!zwiekszPunkty@{zwiekszPunkty}}
+\index{zwiekszPunkty@{zwiekszPunkty}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{zwiekszPunkty()}{zwiekszPunkty()}}
+{\footnotesize\ttfamily void Statystyki\+::zwieksz\+Punkty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwieksza wartosc dostepnych punktow do wydania o jeden. 
+
+
+
+Definition at line 109 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a63d6afa5b0dbd56e2044d6935ee28d77}\label{class_statystyki_a63d6afa5b0dbd56e2044d6935ee28d77}} 
+\index{Statystyki@{Statystyki}!zwrocDmg@{zwrocDmg}}
+\index{zwrocDmg@{zwrocDmg}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{zwrocDmg()}{zwrocDmg()}}
+{\footnotesize\ttfamily int Statystyki\+::zwroc\+Dmg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca obecna wartosc dmg bohatera. 
+
+\begin{DoxyReturn}{Returns}
+int zwraca ilosc punktow dodanych w dmg przez bohatera 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_aa89331d4a33ff5928348aebbd75e62c6}\label{class_statystyki_aa89331d4a33ff5928348aebbd75e62c6}} 
+\index{Statystyki@{Statystyki}!zwrocIloscDostepnychPunktow@{zwrocIloscDostepnychPunktow}}
+\index{zwrocIloscDostepnychPunktow@{zwrocIloscDostepnychPunktow}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{zwrocIloscDostepnychPunktow()}{zwrocIloscDostepnychPunktow()}}
+{\footnotesize\ttfamily int Statystyki\+::zwroc\+Ilosc\+Dostepnych\+Punktow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za zwrocenie dostepnej ilosci punktow. 
+
+\begin{DoxyReturn}{Returns}
+int zwraca ilosc dostepnych punktow 
+\end{DoxyReturn}
+
+
+Definition at line 155 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_adca8950f576e683af98af84d69628f0b}\label{class_statystyki_adca8950f576e683af98af84d69628f0b}} 
+\index{Statystyki@{Statystyki}!zwrocInteligencja@{zwrocInteligencja}}
+\index{zwrocInteligencja@{zwrocInteligencja}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{zwrocInteligencja()}{zwrocInteligencja()}}
+{\footnotesize\ttfamily int Statystyki\+::zwroc\+Inteligencja (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca obecna wartosc inteligencji bohatera. 
+
+\begin{DoxyReturn}{Returns}
+int zwraca ilosc punktow dodanych w inteligencje przez bohatera 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a7735e5066425e4278ad8e6a25d6ba4bf}\label{class_statystyki_a7735e5066425e4278ad8e6a25d6ba4bf}} 
+\index{Statystyki@{Statystyki}!zwrocSila@{zwrocSila}}
+\index{zwrocSila@{zwrocSila}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{zwrocSila()}{zwrocSila()}}
+{\footnotesize\ttfamily int Statystyki\+::zwroc\+Sila (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca obecna wartosc sily bohatera. 
+
+\begin{DoxyReturn}{Returns}
+int zwraca ilosc punktow dodanych w sile przez bohatera ~\newline
+ 
+\end{DoxyReturn}
+
+
+Definition at line 86 of file Statystyki.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_statystyki_a9717bea8eeadc8619381199bf7949245}\label{class_statystyki_a9717bea8eeadc8619381199bf7949245}} 
+\index{Statystyki@{Statystyki}!dostepnePunkty@{dostepnePunkty}}
+\index{dostepnePunkty@{dostepnePunkty}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{dostepnePunkty}{dostepnePunkty}}
+{\footnotesize\ttfamily int Statystyki\+::dostepne\+Punkty}
+
+
+
+Wartosc zapisujaca ilosc dostepnych do wydania punktow 
+
+
+
+Definition at line 37 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a2005508d92153ceeaecce74f3702e510}\label{class_statystyki_a2005508d92153ceeaecce74f3702e510}} 
+\index{Statystyki@{Statystyki}!inteligencja@{inteligencja}}
+\index{inteligencja@{inteligencja}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{inteligencja}{inteligencja}}
+{\footnotesize\ttfamily int Statystyki\+::inteligencja = 1}
+
+
+
+Ilosc punktow inteligencji czarodzieja 
+
+
+
+Definition at line 29 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a54e327b11de80877e5a0b7c8ab47a46a}\label{class_statystyki_a54e327b11de80877e5a0b7c8ab47a46a}} 
+\index{Statystyki@{Statystyki}!magicDmg@{magicDmg}}
+\index{magicDmg@{magicDmg}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{magicDmg}{magicDmg}}
+{\footnotesize\ttfamily int Statystyki\+::magic\+Dmg = 1}
+
+
+
+Ilosc obrazen czarodzieja 
+
+
+
+Definition at line 21 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a825138684016e35249b698c5f333091a}\label{class_statystyki_a825138684016e35249b698c5f333091a}} 
+\index{Statystyki@{Statystyki}!mnoznikDmg@{mnoznikDmg}}
+\index{mnoznikDmg@{mnoznikDmg}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{mnoznikDmg}{mnoznikDmg}}
+{\footnotesize\ttfamily float Statystyki\+::mnoznik\+Dmg}
+
+
+
+Mnoznik obrazen czarow 
+
+
+
+Definition at line 25 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a5b898f714c2e3437aca48af0e5f8c963}\label{class_statystyki_a5b898f714c2e3437aca48af0e5f8c963}} 
+\index{Statystyki@{Statystyki}!mnoznikInteligencja@{mnoznikInteligencja}}
+\index{mnoznikInteligencja@{mnoznikInteligencja}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{mnoznikInteligencja}{mnoznikInteligencja}}
+{\footnotesize\ttfamily float Statystyki\+::mnoznik\+Inteligencja}
+
+
+
+Mnoznik punktow many 
+
+
+
+Definition at line 33 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_a713f28d440fcf43349b4deb02fb6dc01}\label{class_statystyki_a713f28d440fcf43349b4deb02fb6dc01}} 
+\index{Statystyki@{Statystyki}!mnoznikSila@{mnoznikSila}}
+\index{mnoznikSila@{mnoznikSila}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{mnoznikSila}{mnoznikSila}}
+{\footnotesize\ttfamily float Statystyki\+::mnoznik\+Sila}
+
+
+
+Mnoznik sily bohatera 
+
+
+
+Definition at line 17 of file Statystyki.\+h.
+
+\mbox{\Hypertarget{class_statystyki_ab9e6a5cf9ca0c20e1f9aeb5b4104f5ce}\label{class_statystyki_ab9e6a5cf9ca0c20e1f9aeb5b4104f5ce}} 
+\index{Statystyki@{Statystyki}!sila@{sila}}
+\index{sila@{sila}!Statystyki@{Statystyki}}
+\doxysubsubsection{\texorpdfstring{sila}{sila}}
+{\footnotesize\ttfamily int Statystyki\+::sila = 1}
+
+
+
+Ilosc sily czarodzieja 
+
+
+
+Definition at line 13 of file Statystyki.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_statystyki_8h}{Statystyki.\+h}}\end{DoxyCompactItemize}

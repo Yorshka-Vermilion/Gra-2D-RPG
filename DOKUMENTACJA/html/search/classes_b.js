@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['viewport_212',['Viewport',['../class_viewport.html',1,'']]]
+  ['rzucaniezaklec_461',['RzucanieZaklec',['../class_rzucanie_zaklec.html',1,'']]]
 ];

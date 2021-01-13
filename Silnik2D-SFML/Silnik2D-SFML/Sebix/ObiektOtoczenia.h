@@ -7,8 +7,10 @@ class ObiektOtoczenia : public Obiekt {
 	double dmg;
 	int range;
 	int flag = 0;
+	std::string dialog[5];
+	bool interakcja;
 public:
-	ObiektOtoczenia(std::string sciezka, sf::Vector2f pozycja, int zycie, int exp, sf::Vector2f scale, int flag = 0, double dmg = 0, int range = 0) : Obiekt(sciezka, pozycja) {
+	ObiektOtoczenia(std::string sciezka, sf::Vector2f pozycja, int zycie, int exp, sf::Vector2f scale, int flag = 0, double dmg = 0, int range = 0, bool interakcja = false) : Obiekt(sciezka, pozycja) {
 		this->setOriginOnMiddle();
 		this->przeskaluj(scale);
 		this->zycie = zycie;
@@ -16,9 +18,10 @@ public:
 		this->flag = flag;
 		this->dmg = dmg;
 		this->range = range;
+		this->interakcja = interakcja;
 	}
-
 	ObiektOtoczenia(){};
+
 	//test
 	virtual ObiektOtoczenia* clone() const {
 		return new ObiektOtoczenia(*this);
@@ -78,5 +81,19 @@ public:
 				}
 			}
 		}
+	}
+
+	bool zwrocInterakcja() {
+		if(this != nullptr)
+			return this->interakcja;
+	}
+
+	void setInterakcja(bool x) {
+		if (this->interakcja == false) this->interakcja = true;
+		else this->interakcja = false;
+	}
+
+	void setRange(int range) {
+		this->range = range;
 	}
 };

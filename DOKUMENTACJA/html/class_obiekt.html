@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Obiekt Class Reference</title>
+<title>Grafika - Projekt: Obiekt Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Grafika - Projekt
    </div>
   </td>
  </tr>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_obiekt.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -81,8 +101,14 @@ Inheritance diagram for Obiekt:</div>
  <div class="center">
   <img src="class_obiekt.png" usemap="#Obiekt_map" alt=""/>
   <map id="Obiekt_map" name="Obiekt_map">
-<area href="class_animacja.html" title="Klasa obsługująca animacje." alt="Animacja" shape="rect" coords="0,56,64,80"/>
-<area href="class_gracz.html" title="Klasa opisujaca gracza." alt="Gracz" shape="rect" coords="74,56,138,80"/>
+<area href="class_animacja.html" title="Klasa obsługująca animacje." alt="Animacja" shape="rect" coords="115,56,220,80"/>
+<area href="class_exp.html" title="Klasa odpowiada za reprezentacje graficzna do�wiadczenia bohatera." alt="Exp" shape="rect" coords="115,112,220,136"/>
+<area href="class_gracz.html" title="Klasa opisujaca gracza." alt="Gracz" shape="rect" coords="115,168,220,192"/>
+<area href="class_mana.html" title="Klasa odpowiada za reprezentacje graficzna many bohatera." alt="Mana" shape="rect" coords="115,224,220,248"/>
+<area href="class_obiekt_otoczenia.html" alt="ObiektOtoczenia" shape="rect" coords="115,280,220,304"/>
+<area href="class_okno_dialog.html" title="Klasa odpowiada za reprezentacje graficzna dialogow oraz interakcji." alt="OknoDialog" shape="rect" coords="115,336,220,360"/>
+<area href="class_plytka.html" alt="Plytka" shape="rect" coords="115,392,220,416"/>
+<area href="class_zycie.html" title="Klasa odpowiada za reprezentacje graficzna zdrowia bohatera." alt="Zycie" shape="rect" coords="115,448,220,472"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -91,6 +117,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a03124928e33622a68b22f9bb7e1d8cf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a03124928e33622a68b22f9bb7e1d8cf9">Obiekt</a> (std::string sciezka, sf::Vector2f pozycja)</td></tr>
 <tr class="memdesc:a03124928e33622a68b22f9bb7e1d8cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy nowy <a class="el" href="class_obiekt.html" title="Klasa opisujaca kazdy obiekt w grze.">Obiekt</a>.  <a href="class_obiekt.html#a03124928e33622a68b22f9bb7e1d8cf9">More...</a><br /></td></tr>
 <tr class="separator:a03124928e33622a68b22f9bb7e1d8cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e27a872226e2b55c6f42c0677e5d00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#ac8e27a872226e2b55c6f42c0677e5d00">Obiekt</a> ()</td></tr>
+<tr class="memdesc:ac8e27a872226e2b55c6f42c0677e5d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy nowy pusty <a class="el" href="class_obiekt.html" title="Klasa opisujaca kazdy obiekt w grze.">Obiekt</a>.  <a href="class_obiekt.html#ac8e27a872226e2b55c6f42c0677e5d00">More...</a><br /></td></tr>
+<tr class="separator:ac8e27a872226e2b55c6f42c0677e5d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f9100c2391cc63b30bee84758af76b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a18f9100c2391cc63b30bee84758af76b">draw</a> (sf::RenderTarget *cel)</td></tr>
+<tr class="memdesc:a18f9100c2391cc63b30bee84758af76b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja rysuje obiekt.  <a href="class_obiekt.html#a18f9100c2391cc63b30bee84758af76b">More...</a><br /></td></tr>
+<tr class="separator:a18f9100c2391cc63b30bee84758af76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a20b741117cafcc4a538d3a2d43aad6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">zmienTeksture</a> (std::string sciezka)</td></tr>
 <tr class="memdesc:a6a20b741117cafcc4a538d3a2d43aad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Podmienia teksture na podana w argumencie.  <a href="class_obiekt.html#a6a20b741117cafcc4a538d3a2d43aad6">More...</a><br /></td></tr>
 <tr class="separator:a6a20b741117cafcc4a538d3a2d43aad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,6 +135,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c6a32b37cffaf8755269f9260714c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">przeskaluj</a> (sf::Vector2f jak)</td></tr>
 <tr class="memdesc:a7c6a32b37cffaf8755269f9260714c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skaluje obiekt.  <a href="class_obiekt.html#a7c6a32b37cffaf8755269f9260714c70">More...</a><br /></td></tr>
 <tr class="separator:a7c6a32b37cffaf8755269f9260714c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeffd4b81169593dc52b4c41943cf6613"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#aeffd4b81169593dc52b4c41943cf6613">setOriginOnMiddle</a> ()</td></tr>
+<tr class="memdesc:aeffd4b81169593dc52b4c41943cf6613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja ustawia 'origin' na srodku sprite'a.  <a href="class_obiekt.html#aeffd4b81169593dc52b4c41943cf6613">More...</a><br /></td></tr>
+<tr class="separator:aeffd4b81169593dc52b4c41943cf6613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bca4542d722dfc07bb905dfb021cfea"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a3bca4542d722dfc07bb905dfb021cfea">PobierzRozmiar</a> ()</td></tr>
+<tr class="memdesc:a3bca4542d722dfc07bb905dfb021cfea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwraca rozmiar sprite'a.  <a href="class_obiekt.html#a3bca4542d722dfc07bb905dfb021cfea">More...</a><br /></td></tr>
+<tr class="separator:a3bca4542d722dfc07bb905dfb021cfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f98de411f33171aa65cb8b1ab9360b"><td class="memItemLeft" align="right" valign="top">sf::FloatRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a96f98de411f33171aa65cb8b1ab9360b">pobierzPozycje</a> ()</td></tr>
+<tr class="memdesc:a96f98de411f33171aa65cb8b1ab9360b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwraca rozmiar sprite'a.  <a href="class_obiekt.html#a96f98de411f33171aa65cb8b1ab9360b">More...</a><br /></td></tr>
+<tr class="separator:a96f98de411f33171aa65cb8b1ab9360b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe13261fdb4a04f8fb89178e12047f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a9fe13261fdb4a04f8fb89178e12047f2">rozjasnij</a> (float ile, int max=0)</td></tr>
+<tr class="memdesc:a9fe13261fdb4a04f8fb89178e12047f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja rozjasnia obiekt.  <a href="class_obiekt.html#a9fe13261fdb4a04f8fb89178e12047f2">More...</a><br /></td></tr>
+<tr class="separator:a9fe13261fdb4a04f8fb89178e12047f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0308862e97a4e26eedb6481ca9da7957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_obiekt.html#a0308862e97a4e26eedb6481ca9da7957">przyciemnij</a> (float ile, int max=500)</td></tr>
+<tr class="memdesc:a0308862e97a4e26eedb6481ca9da7957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja przyciemnia obiekt.  <a href="class_obiekt.html#a0308862e97a4e26eedb6481ca9da7957">More...</a><br /></td></tr>
+<tr class="separator:a0308862e97a4e26eedb6481ca9da7957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -118,9 +165,11 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Klasa opisujaca kazdy obiekt w grze. </p>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00010">10</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a03124928e33622a68b22f9bb7e1d8cf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03124928e33622a68b22f9bb7e1d8cf9">&#9670;&nbsp;</a></span>Obiekt()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a03124928e33622a68b22f9bb7e1d8cf9">&#9670;&nbsp;</a></span>Obiekt() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,9 +211,134 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00025">25</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
+</div>
+</div>
+<a id="ac8e27a872226e2b55c6f42c0677e5d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e27a872226e2b55c6f42c0677e5d00">&#9670;&nbsp;</a></span>Obiekt() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Obiekt::Obiekt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tworzy nowy pusty <a class="el" href="class_obiekt.html" title="Klasa opisujaca kazdy obiekt w grze.">Obiekt</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00035">35</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a18f9100c2391cc63b30bee84758af76b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f9100c2391cc63b30bee84758af76b">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Obiekt::draw </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderTarget *&#160;</td>
+          <td class="paramname"><em>cel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja rysuje obiekt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cel</td><td>Wskaznik na RenderTarget w ktorym ma odbywac sie rysowanie </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00041">41</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
+</div>
+</div>
+<a id="a96f98de411f33171aa65cb8b1ab9360b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96f98de411f33171aa65cb8b1ab9360b">&#9670;&nbsp;</a></span>pobierzPozycje()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::FloatRect Obiekt::pobierzPozycje </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja zwraca rozmiar sprite'a. </p>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00099">99</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
+</div>
+</div>
+<a id="a3bca4542d722dfc07bb905dfb021cfea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bca4542d722dfc07bb905dfb021cfea">&#9670;&nbsp;</a></span>PobierzRozmiar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f Obiekt::PobierzRozmiar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja zwraca rozmiar sprite'a. </p>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00093">93</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
+</div>
+</div>
 <a id="a7c6a32b37cffaf8755269f9260714c70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c6a32b37cffaf8755269f9260714c70">&#9670;&nbsp;</a></span>przeskaluj()</h2>
 
@@ -196,6 +370,8 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00081">81</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
 
 </div>
 </div>
@@ -231,6 +407,55 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00063">63</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
+</div>
+</div>
+<a id="a0308862e97a4e26eedb6481ca9da7957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0308862e97a4e26eedb6481ca9da7957">&#9670;&nbsp;</a></span>przyciemnij()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Obiekt::przyciemnij </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em> = <code>500</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja przyciemnia obiekt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ile</td><td>O ile ma byc przyciemniony obiekt </td></tr>
+    <tr><td class="paramname">max</td><td>Maksymalna wartosc przyciemniona </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00119">119</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
 </div>
 </div>
 <a id="aaea31a8611efee40f4254f206e597ccb"></a>
@@ -264,6 +489,84 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00072">72</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
+</div>
+</div>
+<a id="a9fe13261fdb4a04f8fb89178e12047f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe13261fdb4a04f8fb89178e12047f2">&#9670;&nbsp;</a></span>rozjasnij()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Obiekt::rozjasnij </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja rozjasnia obiekt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ile</td><td>O ile ma byc rozjasniony obiekt </td></tr>
+    <tr><td class="paramname">max</td><td>Maksymalna wartosc rozjasnienia </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00108">108</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
+</div>
+</div>
+<a id="aeffd4b81169593dc52b4c41943cf6613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeffd4b81169593dc52b4c41943cf6613">&#9670;&nbsp;</a></span>setOriginOnMiddle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Obiekt::setOriginOnMiddle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja ustawia 'origin' na srodku sprite'a. </p>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00087">87</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
 
 </div>
 </div>
@@ -299,6 +602,8 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00050">50</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -315,6 +620,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Zmienna przechowujaca sprite. </p>
+
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00017">17</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
 
 </div>
 </div>
@@ -340,15 +647,21 @@ Protected Attributes</h2></td></tr>
 
 <p>Zmienna przechowujaca teksture. </p>
 
+<p class="definition">Definition at line <a class="el" href="_obiekt_8h_source.html#l00014">14</a> of file <a class="el" href="_obiekt_8h_source.html">Obiekt.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Bartek/<a class="el" href="_obiekt_8h_source.html">Obiekt.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_obiekt.html">Obiekt</a></li>
+    <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,0 +1,529 @@
+\hypertarget{class_mapa}{}\doxysection{Mapa Class Reference}
+\label{class_mapa}\index{Mapa@{Mapa}}
+
+
+{\ttfamily \#include $<$Mapa.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mapa_a36be413bbb98d299d223f7b1380a217c}{Mapa}} (float \mbox{\hyperlink{class_mapa_a6b2ed5dd2a5909512283784f0c4576a5}{przerwa\+\_\+pomiedzy}}, sf\+::\+Vector2u \mbox{\hyperlink{class_mapa_ade409cf81eb3dfa169eeb5ecd3abec7e}{pozycja\+\_\+poczatkowa}}, \mbox{\hyperlink{class_gracz}{Gracz}} $\ast$\mbox{\hyperlink{class_mapa_a12654390b0db9cd17a6af031ac3e8436}{gracz}}, int \mbox{\hyperlink{class_mapa_a075439b47cec2d2c27418bd6dc9e6415}{dystans\+\_\+tworzenia}}=15)
+\begin{DoxyCompactList}\small\item\em Konstruktor mapy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_af9e4158a845509e73d4ae953a88dd6ee}{Zaktualizuj\+Rozmiar\+Plytki}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdzajaca jaki rozmiar maja wgrane plytki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_a15a668d4801b2e52af9145ccce465724}{Ustaw\+Plytki}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiajaca plytki w odpowiednich miejscach na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_a1751e23b9afcd8ab510011914d4648a0}{Przypisz\+Obiekt}} (std\+::string sciezka, int x, int y, int zycie, int exp, sf\+::\+Vector2f scale, int flag=0)
+\begin{DoxyCompactList}\small\item\em Funkcja przypisuje obiekt otoczenia do dane plytki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_a9d93b6654da7d3e67a404b7094f6fbb4}{Przypisz\+Obiekt}} (\mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} $\ast$obiekt, int x, int y)
+\begin{DoxyCompactList}\small\item\em Funkcja przypisujaca obiekt otoczenia do danej plytki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_af319c3b3d7f02de0243085bb300cb0fb}{Przypisz\+Bohatera}} ()
+\begin{DoxyCompactList}\small\item\em Przypisuje bohatera do plytki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_a45d4b9212fd02259a0ca15f1283de23f}{draw}} (sf\+::\+Render\+Target $\ast$cel)
+\begin{DoxyCompactList}\small\item\em Rysowanie wszystkich elementow mapy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_aefd70bb3e97795f912c144f45ec566be}{animuj}} (sf\+::\+Render\+Target $\ast$okno, const float \&dtime)
+\begin{DoxyCompactList}\small\item\em Funkcja obsluguje animacje obiektow znajdujacych sie na plytkach. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_a5e592dd55f2fd9cf82aa453237260bce}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizowanie stanu mapy i kazdego kafelka. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_a36f8c06af2cc7758db9d6fc5640c368a}{podswietl\+Kafelki}} (sf\+::\+Vector2f pozycja\+Myszy)
+\begin{DoxyCompactList}\small\item\em Podswietlanie kafelka nad ktorym znajduje sie mysz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_a4c520535667048c9ab6ddf657f0b4c44}{zaznacz\+Kafelek}} ()
+\begin{DoxyCompactList}\small\item\em Zaznaczanie kafelka nad ktorym aktualnie znajduje sie mysz. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mapa_abf93170e5365cf44bb68d0ee5b92325e}{Rusz}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza czy gracz moze ruszyc sie na dany kafelek (tylko sasiadujace) a przesowa gracza na ten kafelek oraz przeprowadza spotaknie z obiektem (jesli takowy istnieje) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mapa_a502db975ae5e5d7e89b55455b2513ea4}{Przesun}} (int kierunek)
+\begin{DoxyCompactList}\small\item\em Funkcja obsluguje ruch mapy, generowanie nowych kafelkow na krawedziach oraz losowe generowanie obiektow na tych kafelkach. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_plytka}{Plytka}} $\ast$ \mbox{\hyperlink{class_mapa_a8c55d9538cd9852d2aab294aab3e54c7}{zwroc\+Aktualnie\+Zaznaczona}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca wskaznik na aktualnie zaznaczona plytke. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mapa_a440710fdea1d0e8e975ad7ccd1e1792e}{zwroc\+Dystans\+Tworzenia}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca dystans\+\_\+tworzenia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{class_plytka}{Plytka}} $\ast$ $>$ $>$ \mbox{\hyperlink{class_mapa_a47f6dcb73821b5b00185f87324e9a2f6}{plytki}}
+\begin{DoxyCompactList}\small\item\em Vector z vectorami z wskaznikami na plytki, przechowuje cala mape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_mapa_a9d1b795ddc063f487a8fc25f4a8bdcd8}{szerokosc}}
+\begin{DoxyCompactList}\small\item\em Szerokosc kafelka. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_mapa_a5651ed2a9c534eaad3b35c77b36274ee}{wysokosc}}
+\begin{DoxyCompactList}\small\item\em Wysokosc kafelka. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_mapa_a6b2ed5dd2a5909512283784f0c4576a5}{przerwa\+\_\+pomiedzy}}
+\begin{DoxyCompactList}\small\item\em Przerwa pomiedzy kafelkami. \end{DoxyCompactList}\item 
+sf\+::\+Vector2u \mbox{\hyperlink{class_mapa_ade409cf81eb3dfa169eeb5ecd3abec7e}{pozycja\+\_\+poczatkowa}}
+\begin{DoxyCompactList}\small\item\em Index x i y kafelka na ktorym znajduje sie gracz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mapa_a075439b47cec2d2c27418bd6dc9e6415}{dystans\+\_\+tworzenia}}
+\begin{DoxyCompactList}\small\item\em Dystans tworzenia mapy, ilosc kafelkow jednoczesnie znajdujaca sie na mapie. \end{DoxyCompactList}\item 
+sf\+::\+Vector2i \mbox{\hyperlink{class_mapa_ad7476403c04d1e330d2cf4765c361039}{aktualnie\+\_\+podswietlona\+\_\+plytka}}
+\begin{DoxyCompactList}\small\item\em Index x i y aktualnie podswietlonej plytki. \end{DoxyCompactList}\item 
+sf\+::\+Vector2i \mbox{\hyperlink{class_mapa_adc4159b32798a9197fdbb75444b0c2a3}{aktualnie\+\_\+zaznaczona\+\_\+plytka}}
+\begin{DoxyCompactList}\small\item\em Index x i y aktualnie zaznaczonej plytki. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$ \mbox{\hyperlink{class_mapa_a12654390b0db9cd17a6af031ac3e8436}{gracz}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na gracza. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_mapa_a09216c9c32cb499a8e1214f27b1d836d}{plyty}} \mbox{[}4\mbox{]} = \{ \char`\"{}Grass1.\+png\char`\"{},\char`\"{}Grass2.\+png\char`\"{} ,\char`\"{}Grass3.\+png\char`\"{} ,\char`\"{}podswietlenie.\+png\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em Tablica sciezek do plikow z teksturami mapy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} $\ast$ \mbox{\hyperlink{class_mapa_ae961a0a0df08b2e2f68a6a55780da257}{otoczenie}} \mbox{[}5\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tablica wskaznikow na gotowe obiekty otoczenia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file Mapa.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mapa_a36be413bbb98d299d223f7b1380a217c}\label{class_mapa_a36be413bbb98d299d223f7b1380a217c}} 
+\index{Mapa@{Mapa}!Mapa@{Mapa}}
+\index{Mapa@{Mapa}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{Mapa()}{Mapa()}}
+{\footnotesize\ttfamily Mapa\+::\+Mapa (\begin{DoxyParamCaption}\item[{float}]{przerwa\+\_\+pomiedzy,  }\item[{sf\+::\+Vector2u}]{pozycja\+\_\+poczatkowa,  }\item[{\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$}]{gracz,  }\item[{int}]{dystans\+\_\+tworzenia = {\ttfamily 15} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor mapy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em przerwa\+\_\+pomiedzy} & Przerwa pomiedzy plytkami \\
+\hline
+{\em pozycja\+\_\+poczatkowa} & Pozycja poczatkowa gracza \\
+\hline
+{\em gracz} & Wskaznik na gracza \\
+\hline
+{\em dystans\+\_\+tworzenia} & Ilosc kafelkow mapy na osi x i y ktore beda przechowywane w vectorze plytki \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file Mapa.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mapa_aefd70bb3e97795f912c144f45ec566be}\label{class_mapa_aefd70bb3e97795f912c144f45ec566be}} 
+\index{Mapa@{Mapa}!animuj@{animuj}}
+\index{animuj@{animuj}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{animuj()}{animuj()}}
+{\footnotesize\ttfamily void Mapa\+::animuj (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{okno,  }\item[{const float \&}]{dtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja obsluguje animacje obiektow znajdujacych sie na plytkach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target wskazujacy na cel rysowania \\
+\hline
+{\em dtime} & Delta czasu (timer) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 171 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a45d4b9212fd02259a0ca15f1283de23f}\label{class_mapa_a45d4b9212fd02259a0ca15f1283de23f}} 
+\index{Mapa@{Mapa}!draw@{draw}}
+\index{draw@{draw}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Mapa\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rysowanie wszystkich elementow mapy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target wskazujacy na cel rysowania \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a36f8c06af2cc7758db9d6fc5640c368a}\label{class_mapa_a36f8c06af2cc7758db9d6fc5640c368a}} 
+\index{Mapa@{Mapa}!podswietlKafelki@{podswietlKafelki}}
+\index{podswietlKafelki@{podswietlKafelki}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{podswietlKafelki()}{podswietlKafelki()}}
+{\footnotesize\ttfamily void Mapa\+::podswietl\+Kafelki (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pozycja\+Myszy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Podswietlanie kafelka nad ktorym znajduje sie mysz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pozycja\+Myszy} & Vector2f przechowujacy pozycje myszy na ekranie \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 204 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a502db975ae5e5d7e89b55455b2513ea4}\label{class_mapa_a502db975ae5e5d7e89b55455b2513ea4}} 
+\index{Mapa@{Mapa}!Przesun@{Przesun}}
+\index{Przesun@{Przesun}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{Przesun()}{Przesun()}}
+{\footnotesize\ttfamily void Mapa\+::\+Przesun (\begin{DoxyParamCaption}\item[{int}]{kierunek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja obsluguje ruch mapy, generowanie nowych kafelkow na krawedziach oraz losowe generowanie obiektow na tych kafelkach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kierunek} & Okresla kierunek w ktorym ma przesunac sie mapa, 0 lewo, 1 prawo, 2 gora, 3 dol \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 317 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_af319c3b3d7f02de0243085bb300cb0fb}\label{class_mapa_af319c3b3d7f02de0243085bb300cb0fb}} 
+\index{Mapa@{Mapa}!PrzypiszBohatera@{PrzypiszBohatera}}
+\index{PrzypiszBohatera@{PrzypiszBohatera}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{PrzypiszBohatera()}{PrzypiszBohatera()}}
+{\footnotesize\ttfamily void Mapa\+::\+Przypisz\+Bohatera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Przypisuje bohatera do plytki. 
+
+
+
+Definition at line 144 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a9d93b6654da7d3e67a404b7094f6fbb4}\label{class_mapa_a9d93b6654da7d3e67a404b7094f6fbb4}} 
+\index{Mapa@{Mapa}!PrzypiszObiekt@{PrzypiszObiekt}}
+\index{PrzypiszObiekt@{PrzypiszObiekt}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{PrzypiszObiekt()}{PrzypiszObiekt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Mapa\+::\+Przypisz\+Obiekt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} $\ast$}]{obiekt,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja przypisujaca obiekt otoczenia do danej plytki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obiekt} & Wskaznik na \mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}} do przypisania \\
+\hline
+{\em x} & Index x w vectorze plytki, wskazuje na plytke do ktorej ma byc przypisany obiekt \\
+\hline
+{\em y} & Index y w vectorze plytki, wskazuje na plytke do ktorej ma byc przypisany obiekt \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 137 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a1751e23b9afcd8ab510011914d4648a0}\label{class_mapa_a1751e23b9afcd8ab510011914d4648a0}} 
+\index{Mapa@{Mapa}!PrzypiszObiekt@{PrzypiszObiekt}}
+\index{PrzypiszObiekt@{PrzypiszObiekt}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{PrzypiszObiekt()}{PrzypiszObiekt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Mapa\+::\+Przypisz\+Obiekt (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{zycie,  }\item[{int}]{exp,  }\item[{sf\+::\+Vector2f}]{scale,  }\item[{int}]{flag = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja przypisuje obiekt otoczenia do dane plytki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & Sciezka do pliku z tekstura \\
+\hline
+{\em x} & Index x w vectorze plytki, wskazuje na plytke do ktorej ma byc przypisany obiekt \\
+\hline
+{\em y} & Index y w vectorze plytki, wskazuje na plytke do ktorej ma byc przypisany obiekt \\
+\hline
+{\em zycie} & \mbox{\hyperlink{class_zycie}{Zycie}} obiektu \\
+\hline
+{\em scale} & Skala obiektu \\
+\hline
+{\em flag} & Reprezentuje status obiektu (0-\/przenikalny, 1-\/nieprzenikalny, 2-\/zniszczalny) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 127 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_abf93170e5365cf44bb68d0ee5b92325e}\label{class_mapa_abf93170e5365cf44bb68d0ee5b92325e}} 
+\index{Mapa@{Mapa}!Rusz@{Rusz}}
+\index{Rusz@{Rusz}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{Rusz()}{Rusz()}}
+{\footnotesize\ttfamily bool Mapa\+::\+Rusz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja sprawdza czy gracz moze ruszyc sie na dany kafelek (tylko sasiadujace) a przesowa gracza na ten kafelek oraz przeprowadza spotaknie z obiektem (jesli takowy istnieje) 
+
+\begin{DoxyReturn}{Returns}
+true jezeli ruch zostal wykonany 
+\end{DoxyReturn}
+
+
+Definition at line 259 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a5e592dd55f2fd9cf82aa453237260bce}\label{class_mapa_a5e592dd55f2fd9cf82aa453237260bce}} 
+\index{Mapa@{Mapa}!update@{update}}
+\index{update@{update}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Mapa\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualizowanie stanu mapy i kazdego kafelka. 
+
+
+
+Definition at line 187 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a15a668d4801b2e52af9145ccce465724}\label{class_mapa_a15a668d4801b2e52af9145ccce465724}} 
+\index{Mapa@{Mapa}!UstawPlytki@{UstawPlytki}}
+\index{UstawPlytki@{UstawPlytki}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{UstawPlytki()}{UstawPlytki()}}
+{\footnotesize\ttfamily void Mapa\+::\+Ustaw\+Plytki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja ustawiajaca plytki w odpowiednich miejscach na ekranie. 
+
+
+
+Definition at line 102 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_af9e4158a845509e73d4ae953a88dd6ee}\label{class_mapa_af9e4158a845509e73d4ae953a88dd6ee}} 
+\index{Mapa@{Mapa}!ZaktualizujRozmiarPlytki@{ZaktualizujRozmiarPlytki}}
+\index{ZaktualizujRozmiarPlytki@{ZaktualizujRozmiarPlytki}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{ZaktualizujRozmiarPlytki()}{ZaktualizujRozmiarPlytki()}}
+{\footnotesize\ttfamily void Mapa\+::\+Zaktualizuj\+Rozmiar\+Plytki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja sprawdzajaca jaki rozmiar maja wgrane plytki. 
+
+
+
+Definition at line 92 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a4c520535667048c9ab6ddf657f0b4c44}\label{class_mapa_a4c520535667048c9ab6ddf657f0b4c44}} 
+\index{Mapa@{Mapa}!zaznaczKafelek@{zaznaczKafelek}}
+\index{zaznaczKafelek@{zaznaczKafelek}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{zaznaczKafelek()}{zaznaczKafelek()}}
+{\footnotesize\ttfamily void Mapa\+::zaznacz\+Kafelek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zaznaczanie kafelka nad ktorym aktualnie znajduje sie mysz. 
+
+
+
+Definition at line 246 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a8c55d9538cd9852d2aab294aab3e54c7}\label{class_mapa_a8c55d9538cd9852d2aab294aab3e54c7}} 
+\index{Mapa@{Mapa}!zwrocAktualnieZaznaczona@{zwrocAktualnieZaznaczona}}
+\index{zwrocAktualnieZaznaczona@{zwrocAktualnieZaznaczona}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{zwrocAktualnieZaznaczona()}{zwrocAktualnieZaznaczona()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_plytka}{Plytka}}$\ast$ Mapa\+::zwroc\+Aktualnie\+Zaznaczona (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca wskaznik na aktualnie zaznaczona plytke. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_plytka}{Plytka}} zwraca wskaznik na aktualnie oznaczona plytke 
+\end{DoxyReturn}
+
+
+Definition at line 372 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a440710fdea1d0e8e975ad7ccd1e1792e}\label{class_mapa_a440710fdea1d0e8e975ad7ccd1e1792e}} 
+\index{Mapa@{Mapa}!zwrocDystansTworzenia@{zwrocDystansTworzenia}}
+\index{zwrocDystansTworzenia@{zwrocDystansTworzenia}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{zwrocDystansTworzenia()}{zwrocDystansTworzenia()}}
+{\footnotesize\ttfamily int Mapa\+::zwroc\+Dystans\+Tworzenia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca dystans\+\_\+tworzenia. 
+
+\begin{DoxyReturn}{Returns}
+zwraca wielkosc mapy 
+\end{DoxyReturn}
+
+
+Definition at line 379 of file Mapa.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mapa_ad7476403c04d1e330d2cf4765c361039}\label{class_mapa_ad7476403c04d1e330d2cf4765c361039}} 
+\index{Mapa@{Mapa}!aktualnie\_podswietlona\_plytka@{aktualnie\_podswietlona\_plytka}}
+\index{aktualnie\_podswietlona\_plytka@{aktualnie\_podswietlona\_plytka}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{aktualnie\_podswietlona\_plytka}{aktualnie\_podswietlona\_plytka}}
+{\footnotesize\ttfamily sf\+::\+Vector2i Mapa\+::aktualnie\+\_\+podswietlona\+\_\+plytka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Index x i y aktualnie podswietlonej plytki. 
+
+
+
+Definition at line 21 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_adc4159b32798a9197fdbb75444b0c2a3}\label{class_mapa_adc4159b32798a9197fdbb75444b0c2a3}} 
+\index{Mapa@{Mapa}!aktualnie\_zaznaczona\_plytka@{aktualnie\_zaznaczona\_plytka}}
+\index{aktualnie\_zaznaczona\_plytka@{aktualnie\_zaznaczona\_plytka}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{aktualnie\_zaznaczona\_plytka}{aktualnie\_zaznaczona\_plytka}}
+{\footnotesize\ttfamily sf\+::\+Vector2i Mapa\+::aktualnie\+\_\+zaznaczona\+\_\+plytka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Index x i y aktualnie zaznaczonej plytki. 
+
+
+
+Definition at line 23 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a075439b47cec2d2c27418bd6dc9e6415}\label{class_mapa_a075439b47cec2d2c27418bd6dc9e6415}} 
+\index{Mapa@{Mapa}!dystans\_tworzenia@{dystans\_tworzenia}}
+\index{dystans\_tworzenia@{dystans\_tworzenia}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{dystans\_tworzenia}{dystans\_tworzenia}}
+{\footnotesize\ttfamily int Mapa\+::dystans\+\_\+tworzenia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dystans tworzenia mapy, ilosc kafelkow jednoczesnie znajdujaca sie na mapie. 
+
+
+
+Definition at line 19 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a12654390b0db9cd17a6af031ac3e8436}\label{class_mapa_a12654390b0db9cd17a6af031ac3e8436}} 
+\index{Mapa@{Mapa}!gracz@{gracz}}
+\index{gracz@{gracz}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{gracz}{gracz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gracz}{Gracz}}$\ast$ Mapa\+::gracz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wskaznik na gracza. 
+
+
+
+Definition at line 25 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_ae961a0a0df08b2e2f68a6a55780da257}\label{class_mapa_ae961a0a0df08b2e2f68a6a55780da257}} 
+\index{Mapa@{Mapa}!otoczenie@{otoczenie}}
+\index{otoczenie@{otoczenie}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{otoczenie}{otoczenie}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt_otoczenia}{Obiekt\+Otoczenia}}$\ast$ Mapa\+::otoczenie\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{         \textcolor{keyword}{new} \mbox{\hyperlink{class_obiekt_otoczenia}{ObiektOtoczenia}}(\textcolor{stringliteral}{"{}beczka.png"{}}, sf::Vector2f(0, 0), 1 + rand() \% 100, 1 + rand() \% 100, sf::Vector2f(0.15, 0.15), 2),}
+\DoxyCodeLine{         \textcolor{keyword}{new} \mbox{\hyperlink{class_obiekt_otoczenia}{ObiektOtoczenia}}(\textcolor{stringliteral}{"{}ghost.png"{}}, sf::Vector2f(0, 0), 1 + rand() \% 100, 1 + rand() \% 100, sf::Vector2f(2, 2),0, 1 + rand() \% 25, 3),}
+\DoxyCodeLine{         \textcolor{keyword}{new} \mbox{\hyperlink{class_obiekt_otoczenia}{ObiektOtoczenia}}(\textcolor{stringliteral}{"{}rock.png"{}}, sf::Vector2f(0, 0), 1 + rand() \% 100, 1 + rand() \% 100, sf::Vector2f(3, 3), 1),}
+\DoxyCodeLine{         \textcolor{keyword}{new} \mbox{\hyperlink{class_obiekt_otoczenia}{ObiektOtoczenia}}(\textcolor{stringliteral}{"{}skeleton.png"{}}, sf::Vector2f(0, 0), 1 + rand() \% 100, 1 + rand() \% 100, sf::Vector2f(2, 2), 1, 1 + rand() \% 25, 1),}
+\DoxyCodeLine{         \textcolor{keyword}{new} \mbox{\hyperlink{class_obiekt_otoczenia}{ObiektOtoczenia}}(\textcolor{stringliteral}{"{}H12.png"{}}, sf::Vector2f(0, 0),1000,1000, sf::Vector2f(2, 2), 1, 100, 0,\textcolor{keyword}{true})}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Tablica wskaznikow na gotowe obiekty otoczenia. 
+
+
+
+Definition at line 29 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a47f6dcb73821b5b00185f87324e9a2f6}\label{class_mapa_a47f6dcb73821b5b00185f87324e9a2f6}} 
+\index{Mapa@{Mapa}!plytki@{plytki}}
+\index{plytki@{plytki}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{plytki}{plytki}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$\mbox{\hyperlink{class_plytka}{Plytka}}$\ast$$>$ $>$ Mapa\+::plytki}
+
+
+
+Vector z vectorami z wskaznikami na plytki, przechowuje cala mape. 
+
+
+
+Definition at line 39 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a09216c9c32cb499a8e1214f27b1d836d}\label{class_mapa_a09216c9c32cb499a8e1214f27b1d836d}} 
+\index{Mapa@{Mapa}!plyty@{plyty}}
+\index{plyty@{plyty}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{plyty}{plyty}}
+{\footnotesize\ttfamily std\+::string Mapa\+::plyty\mbox{[}4\mbox{]} = \{ \char`\"{}Grass1.\+png\char`\"{},\char`\"{}Grass2.\+png\char`\"{} ,\char`\"{}Grass3.\+png\char`\"{} ,\char`\"{}podswietlenie.\+png\char`\"{} \}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tablica sciezek do plikow z teksturami mapy. 
+
+
+
+Definition at line 27 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_ade409cf81eb3dfa169eeb5ecd3abec7e}\label{class_mapa_ade409cf81eb3dfa169eeb5ecd3abec7e}} 
+\index{Mapa@{Mapa}!pozycja\_poczatkowa@{pozycja\_poczatkowa}}
+\index{pozycja\_poczatkowa@{pozycja\_poczatkowa}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{pozycja\_poczatkowa}{pozycja\_poczatkowa}}
+{\footnotesize\ttfamily sf\+::\+Vector2u Mapa\+::pozycja\+\_\+poczatkowa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Index x i y kafelka na ktorym znajduje sie gracz. 
+
+
+
+Definition at line 17 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a6b2ed5dd2a5909512283784f0c4576a5}\label{class_mapa_a6b2ed5dd2a5909512283784f0c4576a5}} 
+\index{Mapa@{Mapa}!przerwa\_pomiedzy@{przerwa\_pomiedzy}}
+\index{przerwa\_pomiedzy@{przerwa\_pomiedzy}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{przerwa\_pomiedzy}{przerwa\_pomiedzy}}
+{\footnotesize\ttfamily float Mapa\+::przerwa\+\_\+pomiedzy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Przerwa pomiedzy kafelkami. 
+
+
+
+Definition at line 15 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a9d1b795ddc063f487a8fc25f4a8bdcd8}\label{class_mapa_a9d1b795ddc063f487a8fc25f4a8bdcd8}} 
+\index{Mapa@{Mapa}!szerokosc@{szerokosc}}
+\index{szerokosc@{szerokosc}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{szerokosc}{szerokosc}}
+{\footnotesize\ttfamily float Mapa\+::szerokosc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Szerokosc kafelka. 
+
+
+
+Definition at line 11 of file Mapa.\+h.
+
+\mbox{\Hypertarget{class_mapa_a5651ed2a9c534eaad3b35c77b36274ee}\label{class_mapa_a5651ed2a9c534eaad3b35c77b36274ee}} 
+\index{Mapa@{Mapa}!wysokosc@{wysokosc}}
+\index{wysokosc@{wysokosc}!Mapa@{Mapa}}
+\doxysubsubsection{\texorpdfstring{wysokosc}{wysokosc}}
+{\footnotesize\ttfamily float Mapa\+::wysokosc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wysokosc kafelka. 
+
+
+
+Definition at line 13 of file Mapa.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bartek/\mbox{\hyperlink{_mapa_8h}{Mapa.\+h}}\end{DoxyCompactItemize}

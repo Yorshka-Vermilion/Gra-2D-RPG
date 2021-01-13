@@ -1,0 +1,135 @@
+\hypertarget{struct_opcje}{}\doxysection{Opcje Struct Reference}
+\label{struct_opcje}\index{Opcje@{Opcje}}
+
+
+Struktura odpowiadajaca tworzenie postaci w dialogcach.  
+
+
+
+
+{\ttfamily \#include $<$Dialog.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_opcje_ad65562f490c47e7027a10676dfce1b57}{Opcje}} (std\+::string \mbox{\hyperlink{struct_opcje_a7d3a942fe9c98e70a9178ccdc0817e7e}{tresc}}, \mbox{\hyperlink{struct_wiadomosc}{Wiadomosc}} $\ast$\mbox{\hyperlink{struct_opcje_a108e3fb2a775584e80520aa3cfd7f998}{wiadomosc}})
+\begin{DoxyCompactList}\small\item\em Konstruktor opcji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_opcje_ab6c38e14155d819c1cb6a40183f4a2dc}{edytuj\+Tresc\+Odpowiedzi}} (std\+::string \mbox{\hyperlink{struct_opcje_a7d3a942fe9c98e70a9178ccdc0817e7e}{tresc}})
+\begin{DoxyCompactList}\small\item\em Pozwala edytowac tresc odpowiedzi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_opcje_a7fa2fbc1e286846f33b80a51aa292e30}{edytuj\+Okno\+Docelowe}} (\mbox{\hyperlink{struct_wiadomosc}{Wiadomosc}} $\ast$\mbox{\hyperlink{struct_opcje_a108e3fb2a775584e80520aa3cfd7f998}{wiadomosc}})
+\begin{DoxyCompactList}\small\item\em Pozwala edytowaæ pelna wiadomosc w dialogu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{struct_opcje_a7d3a942fe9c98e70a9178ccdc0817e7e}{tresc}}
+\begin{DoxyCompactList}\small\item\em Tresc opcji \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_wiadomosc}{Wiadomosc}} $\ast$ \mbox{\hyperlink{struct_opcje_a108e3fb2a775584e80520aa3cfd7f998}{wiadomosc}}
+\begin{DoxyCompactList}\small\item\em Kolejna wiadomosc w kolejce \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struktura odpowiadajaca tworzenie postaci w dialogcach. 
+
+Definition at line 13 of file Dialog.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_opcje_ad65562f490c47e7027a10676dfce1b57}\label{struct_opcje_ad65562f490c47e7027a10676dfce1b57}} 
+\index{Opcje@{Opcje}!Opcje@{Opcje}}
+\index{Opcje@{Opcje}!Opcje@{Opcje}}
+\doxysubsubsection{\texorpdfstring{Opcje()}{Opcje()}}
+{\footnotesize\ttfamily Opcje\+::\+Opcje (\begin{DoxyParamCaption}\item[{std\+::string}]{tresc,  }\item[{\mbox{\hyperlink{struct_wiadomosc}{Wiadomosc}} $\ast$}]{wiadomosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor opcji. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tresc} & Tresc wiadomosci \\
+\hline
+{\em wiadomosc} & Odpowiedzialna za przydzielenie wiadomosci do opcji \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file Dialog.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_opcje_a7fa2fbc1e286846f33b80a51aa292e30}\label{struct_opcje_a7fa2fbc1e286846f33b80a51aa292e30}} 
+\index{Opcje@{Opcje}!edytujOknoDocelowe@{edytujOknoDocelowe}}
+\index{edytujOknoDocelowe@{edytujOknoDocelowe}!Opcje@{Opcje}}
+\doxysubsubsection{\texorpdfstring{edytujOknoDocelowe()}{edytujOknoDocelowe()}}
+{\footnotesize\ttfamily void Opcje\+::edytuj\+Okno\+Docelowe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_wiadomosc}{Wiadomosc}} $\ast$}]{wiadomosc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pozwala edytowaæ pelna wiadomosc w dialogu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wiadomosc} & Wskaznik na wiadomosc ktora ma zostac przypisana jako nowa wiadomosc docelowa \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file Dialog.\+h.
+
+\mbox{\Hypertarget{struct_opcje_ab6c38e14155d819c1cb6a40183f4a2dc}\label{struct_opcje_ab6c38e14155d819c1cb6a40183f4a2dc}} 
+\index{Opcje@{Opcje}!edytujTrescOdpowiedzi@{edytujTrescOdpowiedzi}}
+\index{edytujTrescOdpowiedzi@{edytujTrescOdpowiedzi}!Opcje@{Opcje}}
+\doxysubsubsection{\texorpdfstring{edytujTrescOdpowiedzi()}{edytujTrescOdpowiedzi()}}
+{\footnotesize\ttfamily void Opcje\+::edytuj\+Tresc\+Odpowiedzi (\begin{DoxyParamCaption}\item[{std\+::string}]{tresc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pozwala edytowac tresc odpowiedzi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tresc} & Nowa tresc dla odpowiedzi \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file Dialog.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_opcje_a7d3a942fe9c98e70a9178ccdc0817e7e}\label{struct_opcje_a7d3a942fe9c98e70a9178ccdc0817e7e}} 
+\index{Opcje@{Opcje}!tresc@{tresc}}
+\index{tresc@{tresc}!Opcje@{Opcje}}
+\doxysubsubsection{\texorpdfstring{tresc}{tresc}}
+{\footnotesize\ttfamily std\+::string Opcje\+::tresc}
+
+
+
+Tresc opcji 
+
+
+
+Definition at line 17 of file Dialog.\+h.
+
+\mbox{\Hypertarget{struct_opcje_a108e3fb2a775584e80520aa3cfd7f998}\label{struct_opcje_a108e3fb2a775584e80520aa3cfd7f998}} 
+\index{Opcje@{Opcje}!wiadomosc@{wiadomosc}}
+\index{wiadomosc@{wiadomosc}!Opcje@{Opcje}}
+\doxysubsubsection{\texorpdfstring{wiadomosc}{wiadomosc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_wiadomosc}{Wiadomosc}}$\ast$ Opcje\+::wiadomosc}
+
+
+
+Kolejna wiadomosc w kolejce 
+
+
+
+Definition at line 21 of file Dialog.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_dialog_8h}{Dialog.\+h}}\end{DoxyCompactItemize}

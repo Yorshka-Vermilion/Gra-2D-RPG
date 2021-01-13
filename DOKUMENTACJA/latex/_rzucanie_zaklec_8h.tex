@@ -1,0 +1,60 @@
+\hypertarget{_rzucanie_zaklec_8h}{}\doxysection{Bartek/\+Rzucanie\+Zaklec.h File Reference}
+\label{_rzucanie_zaklec_8h}\index{Bartek/RzucanieZaklec.h@{Bartek/RzucanieZaklec.h}}
+{\ttfamily \#include \char`\"{}Zaklecie.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Sebix/\+Funkcje.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Sebix/\+Point2\+D\+Array.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Gracz.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Plytka.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_rzucanie_zaklec}{Rzucanie\+Zaklec}}
+\begin{DoxyCompactList}\small\item\em Klasa obslugujaca rzucanie zaklec. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80}{spelle}} \{ \mbox{\hyperlink{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a867ad78240c1fc0399d32e6cb4038108}{L\+E\+WO}}, 
+\mbox{\hyperlink{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a1404a769a1aa4dbecb741e1f643beac2}{P\+R\+A\+WO}}, 
+\mbox{\hyperlink{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a85d7cd100e43114a48acad19ea89c3f2}{G\+O\+RA}}, 
+\mbox{\hyperlink{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a559af0e570db6c98dee8d19662b1fb6d}{D\+OL}}
+ \}
+\begin{DoxyCompactList}\small\item\em Kierunki rzucania czarow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80}\label{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80}} 
+\index{RzucanieZaklec.h@{RzucanieZaklec.h}!spelle@{spelle}}
+\index{spelle@{spelle}!RzucanieZaklec.h@{RzucanieZaklec.h}}
+\doxysubsubsection{\texorpdfstring{spelle}{spelle}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80}{spelle}}}
+
+
+
+Kierunki rzucania czarow. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEWO@{LEWO}!RzucanieZaklec.h@{RzucanieZaklec.h}}\index{RzucanieZaklec.h@{RzucanieZaklec.h}!LEWO@{LEWO}}}\mbox{\Hypertarget{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a867ad78240c1fc0399d32e6cb4038108}\label{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a867ad78240c1fc0399d32e6cb4038108}} 
+L\+E\+WO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PRAWO@{PRAWO}!RzucanieZaklec.h@{RzucanieZaklec.h}}\index{RzucanieZaklec.h@{RzucanieZaklec.h}!PRAWO@{PRAWO}}}\mbox{\Hypertarget{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a1404a769a1aa4dbecb741e1f643beac2}\label{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a1404a769a1aa4dbecb741e1f643beac2}} 
+P\+R\+A\+WO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GORA@{GORA}!RzucanieZaklec.h@{RzucanieZaklec.h}}\index{RzucanieZaklec.h@{RzucanieZaklec.h}!GORA@{GORA}}}\mbox{\Hypertarget{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a85d7cd100e43114a48acad19ea89c3f2}\label{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a85d7cd100e43114a48acad19ea89c3f2}} 
+G\+O\+RA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOL@{DOL}!RzucanieZaklec.h@{RzucanieZaklec.h}}\index{RzucanieZaklec.h@{RzucanieZaklec.h}!DOL@{DOL}}}\mbox{\Hypertarget{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a559af0e570db6c98dee8d19662b1fb6d}\label{_rzucanie_zaklec_8h_a6433c118f080b617ed14ef916ad51e80a559af0e570db6c98dee8d19662b1fb6d}} 
+D\+OL&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 13 of file Rzucanie\+Zaklec.\+h.
+

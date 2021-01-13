@@ -1,5 +1,5 @@
 ﻿  Silnik2D-SFML.cpp
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Obiekt.h(78,98): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Obiekt.h(88,98): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
           with
           [
               T=unsigned int
@@ -8,7 +8,7 @@ C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Obiekt.h(78,66): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Obiekt.h(88,66): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
           with
           [
               T=unsigned int
@@ -17,113 +17,94 @@ C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Obiekt.h(92,70): warning C4244: "argument": konwersja z "float" do "sf::Uint8", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Obiekt.h(98,70): warning C4244: "argument": konwersja z "float" do "sf::Uint8", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Animacja.h(81,192): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Obiekt.h(111,70): warning C4244: "argument": konwersja z "float" do "sf::Uint8", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Obiekt.h(122,70): warning C4244: "argument": konwersja z "float" do "sf::Uint8", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Animacja.h(81,192): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Animacja.h(81,186): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Animacja.h(81,186): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Animacja.h(133,72): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Animacja.h(135,72): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Animacja.h(133,54): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Animacja.h(135,54): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Funkcje.h(208,24): warning C4244: "argument": konwersja z "T" do "unsigned int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Funkcje.h(208,24): warning C4244: "argument": konwersja z "T" do "unsigned int", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Funkcje.h(213,24): warning C4244: "argument": konwersja z "T" do "unsigned int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Funkcje.h(213,24): warning C4244: "argument": konwersja z "T" do "unsigned int", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(232,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(233,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(238,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(239,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(244,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(245,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(250,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(251,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Statystyki.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gracz.h(39,1): warning C4305: "argument": obcięcie z "double" do "float"
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gracz.h(40,60): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gracz.h(41,66): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gracz.h(135,15): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Zycie.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Zycie.h(32,17): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Mana.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Mana.h(32,17): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Exp.h(45,17): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\StatInGame.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\StatInGame.h(54,1): warning C4305: "argument": obcięcie z "double" do "float"
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\HUD.h(123,102): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\HUD.h(135,49): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\HUD.h(145,108): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Dialog.h(57,1): warning C4267: "return": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Dialog.h(148,47): warning C4553: „==”: Wynik wyrażenia nie jest używany; czy chodziło Ci o „=”?
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Camera.h(10,27): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\ObiektOtoczenia.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\ObiektOtoczenia.h(47,18): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(24,13): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(58,1): warning C4305: "argument": obcięcie z "double" do "T"
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(232,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(233,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(238,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(239,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(244,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(245,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(250,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Moveport.h(251,15): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Statystyki.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gracz.h(49,1): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gracz.h(50,60): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gracz.h(51,66): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gracz.h(181,15): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Zycie.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Zycie.h(65,17): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Mana.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Mana.h(62,17): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Exp.h(85,17): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\StatInGame.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\StatInGame.h(105,1): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\OknoDialog.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\HUD.h(129,102): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\HUD.h(141,49): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\HUD.h(151,108): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Dialog.h(128,1): warning C4267: "return": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Dialog.h(230,47): warning C4553: „==”: Wynik wyrażenia nie jest używany; czy chodziło Ci o „=”?
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Camera.h(22,27): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\ObiektOtoczenia.h(2,10): warning C4067: nieoczekiwane tokeny występujące po dyrektywie preprocesora - oczekiwano nowego wiersza
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\ObiektOtoczenia.h(60,18): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(29,32): warning C4305: "argument": obcięcie z "double" do "T"
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(58,1): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(169,1): warning C4267: "argument": konwersja z "size_t" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(49,13): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(82,1): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(229,1): warning C4267: "argument": konwersja z "size_t" do "T", możliwa utrata danych
           with
           [
               T=int
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(229,1): warning C4305: "argument": obcięcie z "double" do "T"
-          with
-          [
-              T=float
-          ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(229,1): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(237,1): warning C4305: "argument": obcięcie z "double" do "T"
-          with
-          [
-              T=float
-          ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(237,1): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(244,1): warning C4305: "argument": obcięcie z "double" do "T"
-          with
-          [
-              T=float
-          ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(244,1): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(252,1): warning C4305: "argument": obcięcie z "double" do "T"
-          with
-          [
-              T=float
-          ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(252,1): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(29,1): warning C4305: "argument": obcięcie z "double" do "float"
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(35,1): warning C4305: "argument": obcięcie z "double" do "float"
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(41,10): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(42,10): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(54,1): warning C4267: "return": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(72,55): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(82,38): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Dzwiek.h(20,24): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Dzwiek.h(25,29): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Dzwiek.h(43,51): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gra.h(41,86): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(328,1): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(339,1): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(349,1): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Mapa.h(360,1): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(42,1): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(48,1): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(58,10): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(59,10): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(71,1): warning C4267: "return": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(100,55): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\RzucanieZaklec.h(115,38): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Dzwiek.h(38,24): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Dzwiek.h(46,29): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Dzwiek.h(70,51): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gra.h(68,86): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
           with
           [
               T=unsigned int
@@ -132,7 +113,7 @@ C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gra.h(41,65): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gra.h(68,65): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
           with
           [
               T=unsigned int
@@ -141,13 +122,13 @@ C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gra.h(48,1): warning C4305: "argument": obcięcie z "double" do "T"
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gra.h(76,1): warning C4305: "argument": obcięcie z "double" do "T"
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gra.h(203,1): warning C4305: "argument": obcięcie z "double" do "float"
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(43,86): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Gra.h(255,1): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(139,86): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
           with
           [
               T=unsigned int
@@ -156,7 +137,7 @@ C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(43,65): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(139,65): warning C4244: "argument": konwersja z "T" do "T", możliwa utrata danych
           with
           [
               T=unsigned int
@@ -165,55 +146,55 @@ C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(261,100): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(266,47): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(271,106): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(316,1): warning C4305: "argument": obcięcie z "double" do "float"
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(32,78): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(384,100): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(389,47): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(394,106): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Sebix\Creator.h(447,1): warning C4305: "argument": obcięcie z "double" do "float"
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(52,78): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(32,52): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(52,52): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(40,73): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(60,73): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(40,52): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(60,52): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(48,78): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(68,78): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(48,52): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Przemek\menu.h(68,52): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Engine.h(79,78): warning C4244: "argument": konwersja z "float" do "unsigned int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Engine.h(79,58): warning C4244: "argument": konwersja z "float" do "unsigned int", możliwa utrata danych
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Engine.h(177,56): warning C4244: "argument": konwersja z "float" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Engine.h(79,78): warning C4244: "argument": konwersja z "float" do "unsigned int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Engine.h(79,58): warning C4244: "argument": konwersja z "float" do "unsigned int", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Engine.h(177,56): warning C4244: "argument": konwersja z "float" do "T", możliwa utrata danych
           with
           [
               T=unsigned int
           ]
-C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Engine.h(177,36): warning C4244: "argument": konwersja z "float" do "T", możliwa utrata danych
+C:\Git\Grafika-Projekt\Silnik2D-SFML\Silnik2D-SFML\Bartek\Engine.h(177,36): warning C4244: "argument": konwersja z "float" do "T", możliwa utrata danych
           with
           [
               T=unsigned int
           ]
   Trwa generowanie kodu
-  3 of 1097 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+  4 of 1104 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    5 functions had inline decision re-evaluated but remain unchanged
   Zakończono generowanie kodu
-  Silnik2D-SFML.vcxproj -> C:\Users\Arc\Desktop\Polibuda\Strona\Grafika-Projekt\Silnik2D-SFML\x64\Release\Silnik2D-SFML.exe
+  Silnik2D-SFML.vcxproj -> C:\Git\Grafika-Projekt\Silnik2D-SFML\x64\Release\Silnik2D-SFML.exe

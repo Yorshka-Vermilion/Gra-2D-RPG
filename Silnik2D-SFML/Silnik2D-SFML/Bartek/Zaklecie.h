@@ -1,10 +1,6 @@
 #pragma once
 #include "Animacja.h"
 
-/**
-	 * @brief Klasa opisujaca zaklecie
-	 *
-	 */
 class Zaklecie
 {
 	/// Zapisuje w vectorze 'obraz' (czyli kierunki i kolejnosc) lini ktore musza byc narysowane na ekranie aby uaktywnic dane zaklecie
@@ -35,12 +31,13 @@ public:
 		this->animacja = animacja;
 		this->animacja->setOriginOnMiddle();
 	}
-
 	/**
 	 * @brief Funkcja aktualizujaca animacje zaklecia
 	 *
 	 * @param cel Wskaznik na cel rysowania
 	 * @param dtime Delta czasu (timer)
+	 * @return true gdy animacja sie zakonczyla
+	 * @return false gdy animacja dalej trwa
 	 */
 	bool update(sf::RenderTarget* cel, const float& dtime) {
 		if (!this->animacja->koniec()) {
@@ -49,11 +46,12 @@ public:
 		}
 		else return true;
 	}
-
 	/**
 	 * @brief Funkcja sprawdzajaca czy podany w argumencie vector obrazu zgadza sie z vectorem obraz_wzorcowy
 	 *
 	 * @param co Vector obrazu do sprawdzenia
+	 * @return true gdy zaklecie zgadza sie z tym znajdujacym sie w zapisanym zbiorze
+	 * @return false gdy zaklecie nie znajduje sie w zapisanym zbiorze lub jest nie do rozpoznania
 	 */
 	bool sprawdz(std::vector<int> co) {
 		if (co.size() == this->obraz_wzorcowy.size()) {
@@ -64,15 +62,13 @@ public:
 		}
 		else return false;
 	}
-
 	/**
 	 * @brief Funkcja zwracajaca nazwe zaklecia
-	 *
+	 * @return string zwraca nazwe zaklecia
 	 */
 	std::string getNazwa() {
 		return this->nazwa;
 	}
-
 	/**
 	 * @brief Funkcja resetujaca animacje zaklecia
 	 *
@@ -80,7 +76,6 @@ public:
 	void zresetuj() {
 		this->animacja->zresetuj();
 	}
-
 	/**
 	 * @brief Funkcja ustawiajaca zaklecia na odpowiedniej pozycji
 	 *
@@ -89,18 +84,16 @@ public:
 	void ustaw(sf::Vector2f gdzie) {
 		this->animacja->rusz(gdzie);
 	}
-
 	/**
 	 * @brief Funkcja zwraca obrazenia zaklecia
-	 *
+	 * @return double zwraca ilosc obrazen zaklecia
 	 */
 	double getDmg() {
 		return this->dmg;
 	}
-
 	/**
 	 * @brief Funkcja zwraca mane potrzebna do rzucenia zaklecia
-	 *
+	 * @return double zwraca koszt many
 	 */
 	double getManaCost() {
 		return this->mana;

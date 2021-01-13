@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['lewy_354',['lewy',['../class_stan.html#a8407c45b30a429772941352bd8bc6140',1,'Stan']]],
-  ['ls_355',['ls',['../class_demo.html#a5b562548748e6fd2eda0bd092a548de2',1,'Demo']]]
+  ['hpcircle_803',['hpCircle',['../class_zycie.html#a9e3d8789b1dec4ca8a3b869377172ecc',1,'Zycie']]],
+  ['hppos_804',['hpPos',['../class_zycie.html#a13e0fc3137b529e7ec6e1f6a94f82a2d',1,'Zycie']]],
+  ['hud_805',['hud',['../class_gra.html#a28dbd88f911bff2f22425cfe4b7f5eec',1,'Gra']]]
 ];

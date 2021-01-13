@@ -1,10 +1,19 @@
 var searchData=
 [
-  ['checkxypk_15',['checkXYpk',['../class_moveport.html#aab7fd4fcc0df439cf3d755939ca05571',1,'Moveport']]],
-  ['circleprimitive_16',['CirclePrimitive',['../class_circle_primitive.html',1,'CirclePrimitive'],['../class_circle_primitive.html#a0deab1f10289aeed65a6b7fd1e2da3f0',1,'CirclePrimitive::CirclePrimitive()'],['../class_circle_primitive.html#a7c36913452073ec494015cd70d2bbbfe',1,'CirclePrimitive::CirclePrimitive(Point2D S, float R)']]],
-  ['circleprimitive_2eh_17',['CirclePrimitive.h',['../_circle_primitive_8h.html',1,'']]],
-  ['clock_18',['clock',['../class_engine.html#ad15b607cfc5e57f53e3a2d2378e2b297',1,'Engine']]],
-  ['cutviewportline_19',['cutViewportLine',['../class_moveport.html#a6b6052bb5c1f23c622a900fa5f859dfb',1,'Moveport']]],
-  ['cutviewportlines_20',['cutViewportLines',['../class_moveport.html#ad1e66c9f67dc3fd3b8581239644db744',1,'Moveport']]],
-  ['cutviewportpoint_21',['cutViewportPoint',['../class_moveport.html#aff270d4ceedc15113822e4d801f88adf',1,'Moveport']]]
+  ['camera_33',['Camera',['../class_camera.html',1,'Camera'],['../class_camera.html#a44757071b12e981453517c9b84c45cad',1,'Camera::Camera()']]],
+  ['camera_2eh_34',['Camera.h',['../_camera_8h.html',1,'']]],
+  ['cameraplayer_35',['cameraPlayer',['../class_gra.html#a991362183442922e416e75a2ac922568',1,'Gra::cameraPlayer()'],['../class_camera.html#ae35fe1e8b10a6081a5a1fe22d4eaf740',1,'Camera::cameraPlayer()'],['../class_creator.html#af63147649ffeed742c8196d0fc4e1003',1,'Creator::cameraPlayer()']]],
+  ['changeisable_36',['changeIsAble',['../class_h_u_d.html#af474d40c637eba84540a3bfe128d42f7',1,'HUD']]],
+  ['check_37',['check',['../class_creator.html#a5d69e808864356c4deca0257b0d22486',1,'Creator']]],
+  ['checkcharacter_38',['checkCharacter',['../class_creator.html#a5b144995c775845470962caa827b9fbd',1,'Creator']]],
+  ['checkxypk_39',['checkXYpk',['../class_moveport.html#aab7fd4fcc0df439cf3d755939ca05571',1,'Moveport']]],
+  ['checkzycie_40',['checkZycie',['../class_obiekt_otoczenia.html#a2351015d1b95f42d727a4a5cf3b5ac8e',1,'ObiektOtoczenia']]],
+  ['clock_41',['clock',['../class_engine.html#ad15b607cfc5e57f53e3a2d2378e2b297',1,'Engine']]],
+  ['clone_42',['clone',['../class_obiekt_otoczenia.html#a2ae03e01633bb95a02761e764773eef6',1,'ObiektOtoczenia']]],
+  ['creator_43',['Creator',['../class_creator.html',1,'Creator'],['../class_creator.html#ad467c269bf0896dcb564d0eab8077670',1,'Creator::Creator()']]],
+  ['creator_2eh_44',['Creator.h',['../_creator_8h.html',1,'']]],
+  ['cutviewportline_45',['cutViewportLine',['../class_moveport.html#a6b6052bb5c1f23c622a900fa5f859dfb',1,'Moveport']]],
+  ['cutviewportlines_46',['cutViewportLines',['../class_moveport.html#ad1e66c9f67dc3fd3b8581239644db744',1,'Moveport']]],
+  ['cutviewportpoint_47',['cutViewportPoint',['../class_moveport.html#aff270d4ceedc15113822e4d801f88adf',1,'Moveport']]],
+  ['czcionka_48',['czcionka',['../class_creator.html#a6390e335ea32fa54f842658e0a714575',1,'Creator::czcionka()'],['../class_h_u_d.html#a5cd2fba5765fa7eed90a69b6a68e1451',1,'HUD::czcionka()'],['../class_okno_dialog.html#a927ec65ccfd12575fa477a8d66fecd23',1,'OknoDialog::czcionka()'],['../class_stat_in_game.html#a9c12c9e1687f4d81d68b2245f71fa890',1,'StatInGame::czcionka()']]]
 ];

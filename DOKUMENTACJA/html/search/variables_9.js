@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nacisnieto_357',['nacisnieto',['../class_demo.html#a5d8605d3be8aed2478480c0056d04bde',1,'Demo']]]
+  ['jednorazowa_809',['jednorazowa',['../class_animacja.html#afbecf06bb22bb5d6e6aa369cb226e6dc',1,'Animacja']]]
 ];

@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: MenuGlowne Class Reference</title>
+<title>Grafika - Projekt: MenuGlowne Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Grafika - Projekt
    </div>
   </td>
  </tr>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_menu_glowne.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,10 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_menu_glowne-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MenuGlowne Class Reference</div>  </div>
@@ -92,6 +112,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a16f61dd18ba95be4efe0591a267f5a20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_glowne.html#a16f61dd18ba95be4efe0591a267f5a20">~MenuGlowne</a> ()</td></tr>
 <tr class="memdesc:a16f61dd18ba95be4efe0591a267f5a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Niszczy <a class="el" href="class_menu_glowne.html" title="Klasa opisujaca MenuGlowne.">MenuGlowne</a>.  <a href="class_menu_glowne.html#a16f61dd18ba95be4efe0591a267f5a20">More...</a><br /></td></tr>
 <tr class="separator:a16f61dd18ba95be4efe0591a267f5a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9fcf47128801e2b4c9322be7c54f4b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_glowne.html#ab9fcf47128801e2b4c9322be7c54f4b6">Poruszanie_po_menu</a> ()</td></tr>
+<tr class="memdesc:ab9fcf47128801e2b4c9322be7c54f4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja obsluguje poruszanie sie po menu za pomoca strzalki w gore i w dol.  <a href="class_menu_glowne.html#ab9fcf47128801e2b4c9322be7c54f4b6">More...</a><br /></td></tr>
+<tr class="separator:ab9fcf47128801e2b4c9322be7c54f4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6499e94933c03c8c3d417b71ef23ed5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_glowne.html#a6499e94933c03c8c3d417b71ef23ed5b">Wybieranie_w_menu</a> ()</td></tr>
+<tr class="memdesc:a6499e94933c03c8c3d417b71ef23ed5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja obsluguje wybieranie zaznaczonej opcji w menu.  <a href="class_menu_glowne.html#a6499e94933c03c8c3d417b71ef23ed5b">More...</a><br /></td></tr>
+<tr class="separator:a6499e94933c03c8c3d417b71ef23ed5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96ea1632cd82be427d7cc68cf0c6f051"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_glowne.html#a96ea1632cd82be427d7cc68cf0c6f051">draw</a> (sf::RenderTarget *target)</td></tr>
 <tr class="memdesc:a96ea1632cd82be427d7cc68cf0c6f051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rysuje obiekty znajdujace sie w menu glownym.  <a href="class_menu_glowne.html#a96ea1632cd82be427d7cc68cf0c6f051">More...</a><br /></td></tr>
 <tr class="separator:a96ea1632cd82be427d7cc68cf0c6f051"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,11 +132,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a667f2152e33cc36e504c4c4701e3a694 inherit pub_methods_class_stan"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza pozycje myszy oraz zapewnia, ze nacisniecie (przytrzymanie) klawisza myszy spowoduje jedna akcje zamiast, wielu.  <a href="class_stan.html#a667f2152e33cc36e504c4c4701e3a694">More...</a><br /></td></tr>
 <tr class="separator:a667f2152e33cc36e504c4c4701e3a694 inherit pub_methods_class_stan"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aff108614581aa77b441cc3f3f4f452ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_demo.html">Demo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_glowne.html#aff108614581aa77b441cc3f3f4f452ac">demo</a></td></tr>
-<tr class="memdesc:aff108614581aa77b441cc3f3f4f452ac"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_obiekt.html" title="Klasa opisujaca kazdy obiekt w grze.">Obiekt</a> <a class="el" href="class_demo.html">Demo</a>.  <a href="class_menu_glowne.html#aff108614581aa77b441cc3f3f4f452ac">More...</a><br /></td></tr>
-<tr class="separator:aff108614581aa77b441cc3f3f4f452ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a7b2b9719e5dc210ad3faabdcb1304b3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_menu.html">Menu</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_glowne.html#a7b2b9719e5dc210ad3faabdcb1304b3d">menu</a></td></tr>
+<tr class="separator:a7b2b9719e5dc210ad3faabdcb1304b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -142,6 +167,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Klasa opisujaca <a class="el" href="class_menu_glowne.html" title="Klasa opisujaca MenuGlowne.">MenuGlowne</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_menu_glowne_8h_source.html#l00015">15</a> of file <a class="el" href="_menu_glowne_8h_source.html">MenuGlowne.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a53fc265b55106e06e7dd3d78bb7937dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53fc265b55106e06e7dd3d78bb7937dc">&#9670;&nbsp;</a></span>MenuGlowne()</h2>
@@ -193,6 +220,8 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_menu_glowne_8h_source.html#l00026">26</a> of file <a class="el" href="_menu_glowne_8h_source.html">MenuGlowne.h</a>.</p>
+
 </div>
 </div>
 <a id="a16f61dd18ba95be4efe0591a267f5a20"></a>
@@ -219,6 +248,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Niszczy <a class="el" href="class_menu_glowne.html" title="Klasa opisujaca MenuGlowne.">MenuGlowne</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_menu_glowne_8h_source.html#l00034">34</a> of file <a class="el" href="_menu_glowne_8h_source.html">MenuGlowne.h</a>.</p>
 
 </div>
 </div>
@@ -258,6 +289,37 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_stan.html#af819ad0f6b5e69d441ae6495ea9ece5d">Stan</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_menu_glowne_8h_source.html#l00103">103</a> of file <a class="el" href="_menu_glowne_8h_source.html">MenuGlowne.h</a>.</p>
+
+</div>
+</div>
+<a id="ab9fcf47128801e2b4c9322be7c54f4b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9fcf47128801e2b4c9322be7c54f4b6">&#9670;&nbsp;</a></span>Poruszanie_po_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MenuGlowne::Poruszanie_po_menu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja obsluguje poruszanie sie po menu za pomoca strzalki w gore i w dol. </p>
+
+<p class="definition">Definition at line <a class="el" href="_menu_glowne_8h_source.html#l00041">41</a> of file <a class="el" href="_menu_glowne_8h_source.html">MenuGlowne.h</a>.</p>
+
 </div>
 </div>
 <a id="a15cdd836dbed8619fbd08e7e63f69b1e"></a>
@@ -295,11 +357,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_stan.html#a2dde2e9d9e66aade33b857cb64697cf3">Stan</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_menu_glowne_8h_source.html#l00113">113</a> of file <a class="el" href="_menu_glowne_8h_source.html">MenuGlowne.h</a>.</p>
+
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aff108614581aa77b441cc3f3f4f452ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff108614581aa77b441cc3f3f4f452ac">&#9670;&nbsp;</a></span>demo</h2>
+<a id="a6499e94933c03c8c3d417b71ef23ed5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6499e94933c03c8c3d417b71ef23ed5b">&#9670;&nbsp;</a></span>Wybieranie_w_menu()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,17 +371,39 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_demo.html">Demo</a>* MenuGlowne::demo</td>
+          <td class="memname">void MenuGlowne::Wybieranie_w_menu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_obiekt.html" title="Klasa opisujaca kazdy obiekt w grze.">Obiekt</a> <a class="el" href="class_demo.html">Demo</a>. </p>
+<p>Funkcja obsluguje wybieranie zaznaczonej opcji w menu. </p>
+
+<p class="definition">Definition at line <a class="el" href="_menu_glowne_8h_source.html#l00054">54</a> of file <a class="el" href="_menu_glowne_8h_source.html">MenuGlowne.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7b2b9719e5dc210ad3faabdcb1304b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b2b9719e5dc210ad3faabdcb1304b3d">&#9670;&nbsp;</a></span>menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_menu.html">Menu</a>* MenuGlowne::menu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_menu_glowne_8h_source.html#l00018">18</a> of file <a class="el" href="_menu_glowne_8h_source.html">MenuGlowne.h</a>.</p>
 
 </div>
 </div>
@@ -326,9 +411,13 @@ Additional Inherited Members</h2></td></tr>
 <li>Bartek/<a class="el" href="_menu_glowne_8h_source.html">MenuGlowne.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_menu_glowne.html">MenuGlowne</a></li>
+    <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
 </body>
 </html>

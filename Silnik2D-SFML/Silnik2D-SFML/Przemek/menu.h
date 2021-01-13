@@ -9,13 +9,33 @@
 * @brief klasa Menu
 */
 class Menu {
+	/// <summary>
+	/// Numer obecnie wybranej opcji
+	/// </summary>
 	int WybranaOpcja;
+	/// <summary>
+	/// Czcionka reprezentacji graficznej
+	/// </summary>
 	sf::Font font;
+	/// <summary>
+	/// Tablica opcji reprezentacji graficznych menu
+	/// </summary>
 	sf::Text menu[ROZMIAR_OPCJI];
+	/// <summary>
+	/// Wysokosc menu
+	/// </summary>
 	int wysokosc;
+	/// <summary>
+	/// Szerokosc menu
+	/// </summary>
 	int szerokosc;
 public:
-
+	/**
+	 * @brief Konstruktor menu
+	 *
+	 * @param wysokosc wysokosc menu
+	 * @param szerokosc szerokosc menu
+	 */
 	Menu(int wysokosc, int szerokosc) {
 		this->wysokosc = wysokosc;
 		this->szerokosc = szerokosc;
@@ -50,12 +70,19 @@ public:
 		WybranaOpcja = 0;
 	}
 
+	/**
+	* @brief Funkcja odpowiadajca za rysowanie menu
+	* @param target odpowiada za okno w którym ma zostac narysowany obiekt
+	*/
 	void draw(sf::RenderTarget* target) {
 		for (int i = 0; i < ROZMIAR_OPCJI; i++) {
 			target->draw(menu[i]);
 		}
 	}
 
+	/**
+	* @brief Funkcja odpowiadajca za poruszanie sie po menu w gore
+	*/
 	void PoruszanieWGore() {
 		if (WybranaOpcja - 1 >= 0) {
 			menu[WybranaOpcja].setFillColor(sf::Color::White);
@@ -64,6 +91,9 @@ public:
 		}
 	}
 
+	/**
+	* @brief Funkcja odpowiadajca za poruszanie sie po menu w dol
+	*/
 	void PoruszanieWDol() {
 		if (WybranaOpcja + 1 < ROZMIAR_OPCJI) {
 			menu[WybranaOpcja].setFillColor(sf::Color::White);
@@ -71,6 +101,10 @@ public:
 			menu[WybranaOpcja].setFillColor(sf::Color::Red);
 		}
 	}
+	/**
+	* @brief Funkcja sprawdza czy uzytkownik wybral ktoras z opcji
+	* @return int zwraca wybrana przez uzytkownika opcje
+	*/
 	int Nacisnieta_opcja() {
 		return WybranaOpcja;
 	}

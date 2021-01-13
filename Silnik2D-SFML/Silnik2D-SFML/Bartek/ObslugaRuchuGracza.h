@@ -3,13 +3,13 @@
 #include "../Sebix/DrzewoDialogow.h"
 
 /**
- * @brief Klasa sluzaca do obslugi ruchu gracza
+ * @brief Klasa sluzaca do obslugi debugu gracza
  * 
  */
 class ObslugaRuchuGracza
 {
 	/// Wskaznik na obiekt gracza
-	Gracz *gracz; 
+	Gracz* gracz;
 	/// Predkosc ruchu
 	float szybkosc;
 	/// Wskaznik na drzewo dialogow
@@ -17,11 +17,11 @@ class ObslugaRuchuGracza
 
 public:
 	/**
-	 * @brief Tworzy nowy obiekt obslugi ruchu gracza
-	 * 
-	 * @param gracz Wskaznik na obiekt typu Gracz
-	 * @param szybkosc Szybkosc ruchu
-	 */
+		 * @brief Tworzy nowy obiekt obslugi ruchu gracza
+		 *
+		 * @param gracz Wskaznik na obiekt typu Gracz
+		 * @param szybkosc Szybkosc ruchu
+		 */
 	ObslugaRuchuGracza(Gracz* gracz, float szybkosc, DrzewoDialogow *drzewo) {
 		this->gracz = gracz;
 		this->szybkosc = szybkosc;
@@ -40,7 +40,7 @@ public:
 	 * @param Zegar Kontrola czasu
 	 */
 	void update(const float& Zegar) {
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
+		/*	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
 				this->gracz->rusz(sf::Vector2f(this->gracz->pobierzPozycje().x, this->gracz->pobierzPozycje().y - (szybkosc * Zegar)));
 				//std::cout << "gora" << std::endl;
 			}
@@ -79,7 +79,7 @@ public:
 			}
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::O)) {
 				this->drzewo->dodajDialog();
-			}
+			}*/
 	}
 };
 

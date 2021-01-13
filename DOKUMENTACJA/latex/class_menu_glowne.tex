@@ -22,20 +22,28 @@ Inheritance diagram for Menu\+Glowne\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Tworzy nowy obiekt \mbox{\hyperlink{class_menu_glowne}{Menu\+Glowne}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_menu_glowne_a16f61dd18ba95be4efe0591a267f5a20}{$\sim$\+Menu\+Glowne}} ()
 \begin{DoxyCompactList}\small\item\em Niszczy \mbox{\hyperlink{class_menu_glowne}{Menu\+Glowne}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_glowne_ab9fcf47128801e2b4c9322be7c54f4b6}{Poruszanie\+\_\+po\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja obsluguje poruszanie sie po menu za pomoca strzalki w gore i w dol. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_glowne_a6499e94933c03c8c3d417b71ef23ed5b}{Wybieranie\+\_\+w\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja obsluguje wybieranie zaznaczonej opcji w menu. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_menu_glowne_a96ea1632cd82be427d7cc68cf0c6f051}{draw}} (sf\+::\+Render\+Target $\ast$target)
 \begin{DoxyCompactList}\small\item\em Rysuje obiekty znajdujace sie w menu glownym. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_menu_glowne_a15cdd836dbed8619fbd08e7e63f69b1e}{update}} (const float \&\mbox{\hyperlink{class_stan_a28c020d77ac16c3e0f37d05927f0717b}{dtime}})
 \begin{DoxyCompactList}\small\item\em Odswieza stan \mbox{\hyperlink{class_menu_glowne}{Menu\+Glowne}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_demo}{Demo}} $\ast$ \mbox{\hyperlink{class_menu_glowne_aff108614581aa77b441cc3f3f4f452ac}{demo}}
-\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} \mbox{\hyperlink{class_demo}{Demo}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_menu}{Menu}} $\ast$ \mbox{\hyperlink{class_menu_glowne_a7b2b9719e5dc210ad3faabdcb1304b3d}{menu}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
 Klasa opisujaca \mbox{\hyperlink{class_menu_glowne}{Menu\+Glowne}}. 
+
+Definition at line 15 of file Menu\+Glowne.\+h.
+
+
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_menu_glowne_a53fc265b55106e06e7dd3d78bb7937dc}\label{class_menu_glowne_a53fc265b55106e06e7dd3d78bb7937dc}} 
@@ -57,6 +65,10 @@ Tworzy nowy obiekt \mbox{\hyperlink{class_menu_glowne}{Menu\+Glowne}}.
 {\em event} & Eventy \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line 26 of file Menu\+Glowne.\+h.
+
 \mbox{\Hypertarget{class_menu_glowne_a16f61dd18ba95be4efe0591a267f5a20}\label{class_menu_glowne_a16f61dd18ba95be4efe0591a267f5a20}} 
 \index{MenuGlowne@{MenuGlowne}!````~MenuGlowne@{$\sim$MenuGlowne}}
 \index{````~MenuGlowne@{$\sim$MenuGlowne}!MenuGlowne@{MenuGlowne}}
@@ -66,6 +78,10 @@ Tworzy nowy obiekt \mbox{\hyperlink{class_menu_glowne}{Menu\+Glowne}}.
 
 
 Niszczy \mbox{\hyperlink{class_menu_glowne}{Menu\+Glowne}}. 
+
+
+
+Definition at line 34 of file Menu\+Glowne.\+h.
 
 
 
@@ -89,6 +105,24 @@ Rysowanie obiektow na ekranie
 
 Implements \mbox{\hyperlink{class_stan_af819ad0f6b5e69d441ae6495ea9ece5d}{Stan}}.
 
+
+
+Definition at line 103 of file Menu\+Glowne.\+h.
+
+\mbox{\Hypertarget{class_menu_glowne_ab9fcf47128801e2b4c9322be7c54f4b6}\label{class_menu_glowne_ab9fcf47128801e2b4c9322be7c54f4b6}} 
+\index{MenuGlowne@{MenuGlowne}!Poruszanie\_po\_menu@{Poruszanie\_po\_menu}}
+\index{Poruszanie\_po\_menu@{Poruszanie\_po\_menu}!MenuGlowne@{MenuGlowne}}
+\doxysubsubsection{\texorpdfstring{Poruszanie\_po\_menu()}{Poruszanie\_po\_menu()}}
+{\footnotesize\ttfamily void Menu\+Glowne\+::\+Poruszanie\+\_\+po\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja obsluguje poruszanie sie po menu za pomoca strzalki w gore i w dol. 
+
+
+
+Definition at line 41 of file Menu\+Glowne.\+h.
+
 \mbox{\Hypertarget{class_menu_glowne_a15cdd836dbed8619fbd08e7e63f69b1e}\label{class_menu_glowne_a15cdd836dbed8619fbd08e7e63f69b1e}} 
 \index{MenuGlowne@{MenuGlowne}!update@{update}}
 \index{update@{update}!MenuGlowne@{MenuGlowne}}
@@ -110,16 +144,34 @@ Implements \mbox{\hyperlink{class_stan_a2dde2e9d9e66aade33b857cb64697cf3}{Stan}}
 
 
 
+Definition at line 113 of file Menu\+Glowne.\+h.
+
+\mbox{\Hypertarget{class_menu_glowne_a6499e94933c03c8c3d417b71ef23ed5b}\label{class_menu_glowne_a6499e94933c03c8c3d417b71ef23ed5b}} 
+\index{MenuGlowne@{MenuGlowne}!Wybieranie\_w\_menu@{Wybieranie\_w\_menu}}
+\index{Wybieranie\_w\_menu@{Wybieranie\_w\_menu}!MenuGlowne@{MenuGlowne}}
+\doxysubsubsection{\texorpdfstring{Wybieranie\_w\_menu()}{Wybieranie\_w\_menu()}}
+{\footnotesize\ttfamily void Menu\+Glowne\+::\+Wybieranie\+\_\+w\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja obsluguje wybieranie zaznaczonej opcji w menu. 
+
+
+
+Definition at line 54 of file Menu\+Glowne.\+h.
+
+
+
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_menu_glowne_aff108614581aa77b441cc3f3f4f452ac}\label{class_menu_glowne_aff108614581aa77b441cc3f3f4f452ac}} 
-\index{MenuGlowne@{MenuGlowne}!demo@{demo}}
-\index{demo@{demo}!MenuGlowne@{MenuGlowne}}
-\doxysubsubsection{\texorpdfstring{demo}{demo}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_demo}{Demo}}$\ast$ Menu\+Glowne\+::demo\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_menu_glowne_a7b2b9719e5dc210ad3faabdcb1304b3d}\label{class_menu_glowne_a7b2b9719e5dc210ad3faabdcb1304b3d}} 
+\index{MenuGlowne@{MenuGlowne}!menu@{menu}}
+\index{menu@{menu}!MenuGlowne@{MenuGlowne}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menu}{Menu}}$\ast$ Menu\+Glowne\+::menu}
 
 
 
-\mbox{\hyperlink{class_obiekt}{Obiekt}} \mbox{\hyperlink{class_demo}{Demo}}. 
+Definition at line 18 of file Menu\+Glowne.\+h.
 
 
 

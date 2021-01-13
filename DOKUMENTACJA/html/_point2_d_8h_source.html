@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Sebix/Point2D.h Source File</title>
+<title>Grafika - Projekt: Sebix/Point2D.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Grafika - Projekt
    </div>
   </td>
  </tr>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_point2_d_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_c8bc1489a3f2896a79814adaf6fbb7b8.html">Sebix</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Point2D.h</div>  </div>
@@ -74,35 +90,40 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_point2_d.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_point2_d.html">Point2D</a> : <span class="keyword">public</span> sf::Vertex {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_point2_d.html#adf5e22f00fd325514bba2d2d3b9c57bc">   17</a></span>&#160;    <a class="code" href="class_point2_d.html#adf5e22f00fd325514bba2d2d3b9c57bc">Point2D</a>(<span class="keyword">const</span> sf::Vector2f&amp; xy, <span class="keyword">const</span> sf::Color&amp; color) : sf::Vertex(xy,color){}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_point2_d.html#a15b72818ebe63800166ee9196099701f">   25</a></span>&#160;    <a class="code" href="class_point2_d.html#a15b72818ebe63800166ee9196099701f">Point2D</a>(<span class="keyword">const</span> sf::Vector2f&amp; xy) : sf::Vertex(xy){</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        this-&gt;color = sf::Color::Black;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_point2_d.html#a2415006d697f1c222c17254bdd302098">   33</a></span>&#160;    <a class="code" href="class_point2_d.html#a2415006d697f1c222c17254bdd302098">Point2D</a>() {}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_point2_d.html#a1d99db0ab55004e689f6df96fe159fb8">   40</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_point2_d.html#a1d99db0ab55004e689f6df96fe159fb8">getX</a>() {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> this-&gt;position.x;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_point2_d.html#ae4a95e28df1efd23b68a377b35624cfd">   49</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_point2_d.html#ae4a95e28df1efd23b68a377b35624cfd">getY</a>() {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> this-&gt;position.y;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_point2_d.html#adf5e22f00fd325514bba2d2d3b9c57bc">   18</a></span>&#160;    <a class="code" href="class_point2_d.html#adf5e22f00fd325514bba2d2d3b9c57bc">Point2D</a>(<span class="keyword">const</span> sf::Vector2f&amp; xy, <span class="keyword">const</span> sf::Color&amp; color) : sf::Vertex(xy,color){}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_point2_d.html#a15b72818ebe63800166ee9196099701f">   26</a></span>&#160;    <a class="code" href="class_point2_d.html#a15b72818ebe63800166ee9196099701f">Point2D</a>(<span class="keyword">const</span> sf::Vector2f&amp; xy) : sf::Vertex(xy){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        this-&gt;color = sf::Color::Black;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_point2_d.html#a2415006d697f1c222c17254bdd302098">   34</a></span>&#160;    <a class="code" href="class_point2_d.html#a2415006d697f1c222c17254bdd302098">Point2D</a>() {}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_point2_d.html#a1d99db0ab55004e689f6df96fe159fb8">   41</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_point2_d.html#a1d99db0ab55004e689f6df96fe159fb8">getX</a>() {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> this-&gt;position.x;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_point2_d.html#ae4a95e28df1efd23b68a377b35624cfd">   50</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_point2_d.html#ae4a95e28df1efd23b68a377b35624cfd">getY</a>() {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> this-&gt;position.y;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_point2_d_html_ae4a95e28df1efd23b68a377b35624cfd"><div class="ttname"><a href="class_point2_d.html#ae4a95e28df1efd23b68a377b35624cfd">Point2D::getY</a></div><div class="ttdeci">float getY()</div><div class="ttdoc">Metoda zwracajaca pozycje y pixela.</div><div class="ttdef"><b>Definition:</b> Point2D.h:49</div></div>
-<div class="ttc" id="aclass_point2_d_html"><div class="ttname"><a href="class_point2_d.html">Point2D</a></div><div class="ttdoc">Klasa odpowiedzialna za reprezentacje jednego pixlela na ekranie dziedziczaca po klasie Vertex.</div><div class="ttdef"><b>Definition:</b> Point2D.h:9</div></div>
-<div class="ttc" id="aclass_point2_d_html_adf5e22f00fd325514bba2d2d3b9c57bc"><div class="ttname"><a href="class_point2_d.html#adf5e22f00fd325514bba2d2d3b9c57bc">Point2D::Point2D</a></div><div class="ttdeci">Point2D(const sf::Vector2f &amp;xy, const sf::Color &amp;color)</div><div class="ttdoc">Konstruktor wywolywany na bazie klasy Vertex.</div><div class="ttdef"><b>Definition:</b> Point2D.h:17</div></div>
-<div class="ttc" id="aclass_point2_d_html_a1d99db0ab55004e689f6df96fe159fb8"><div class="ttname"><a href="class_point2_d.html#a1d99db0ab55004e689f6df96fe159fb8">Point2D::getX</a></div><div class="ttdeci">float getX()</div><div class="ttdoc">Metoda zwracajaca pozycje x pixela.</div><div class="ttdef"><b>Definition:</b> Point2D.h:40</div></div>
-<div class="ttc" id="aclass_point2_d_html_a15b72818ebe63800166ee9196099701f"><div class="ttname"><a href="class_point2_d.html#a15b72818ebe63800166ee9196099701f">Point2D::Point2D</a></div><div class="ttdeci">Point2D(const sf::Vector2f &amp;xy)</div><div class="ttdoc">Konstruktor wywolywany na bazie klasy Vertex bez przekazania koloru, ktory jest ustawiany na bazowy.</div><div class="ttdef"><b>Definition:</b> Point2D.h:25</div></div>
-<div class="ttc" id="aclass_point2_d_html_a2415006d697f1c222c17254bdd302098"><div class="ttname"><a href="class_point2_d.html#a2415006d697f1c222c17254bdd302098">Point2D::Point2D</a></div><div class="ttdeci">Point2D()</div><div class="ttdoc">Konstruktor domyslny reprezentujacy pusty pixel.</div><div class="ttdef"><b>Definition:</b> Point2D.h:33</div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_point2_d_html_ae4a95e28df1efd23b68a377b35624cfd"><div class="ttname"><a href="class_point2_d.html#ae4a95e28df1efd23b68a377b35624cfd">Point2D::getY</a></div><div class="ttdeci">float getY()</div><div class="ttdoc">Metoda zwracajaca pozycje y pixela.</div><div class="ttdef"><b>Definition:</b> <a href="_point2_d_8h_source.html#l00050">Point2D.h:50</a></div></div>
+<div class="ttc" id="aclass_point2_d_html"><div class="ttname"><a href="class_point2_d.html">Point2D</a></div><div class="ttdoc">Klasa odpowiedzialna za reprezentacje jednego pixlela na ekranie dziedziczaca po klasie Vertex.</div><div class="ttdef"><b>Definition:</b> <a href="_point2_d_8h_source.html#l00009">Point2D.h:9</a></div></div>
+<div class="ttc" id="aclass_point2_d_html_adf5e22f00fd325514bba2d2d3b9c57bc"><div class="ttname"><a href="class_point2_d.html#adf5e22f00fd325514bba2d2d3b9c57bc">Point2D::Point2D</a></div><div class="ttdeci">Point2D(const sf::Vector2f &amp;xy, const sf::Color &amp;color)</div><div class="ttdoc">Konstruktor wywolywany na bazie klasy Vertex.</div><div class="ttdef"><b>Definition:</b> <a href="_point2_d_8h_source.html#l00018">Point2D.h:18</a></div></div>
+<div class="ttc" id="aclass_point2_d_html_a1d99db0ab55004e689f6df96fe159fb8"><div class="ttname"><a href="class_point2_d.html#a1d99db0ab55004e689f6df96fe159fb8">Point2D::getX</a></div><div class="ttdeci">float getX()</div><div class="ttdoc">Metoda zwracajaca pozycje x pixela.</div><div class="ttdef"><b>Definition:</b> <a href="_point2_d_8h_source.html#l00041">Point2D.h:41</a></div></div>
+<div class="ttc" id="aclass_point2_d_html_a15b72818ebe63800166ee9196099701f"><div class="ttname"><a href="class_point2_d.html#a15b72818ebe63800166ee9196099701f">Point2D::Point2D</a></div><div class="ttdeci">Point2D(const sf::Vector2f &amp;xy)</div><div class="ttdoc">Konstruktor wywolywany na bazie klasy Vertex bez przekazania koloru, ktory jest ustawiany na bazowy.</div><div class="ttdef"><b>Definition:</b> <a href="_point2_d_8h_source.html#l00026">Point2D.h:26</a></div></div>
+<div class="ttc" id="aclass_point2_d_html_a2415006d697f1c222c17254bdd302098"><div class="ttname"><a href="class_point2_d.html#a2415006d697f1c222c17254bdd302098">Point2D::Point2D</a></div><div class="ttdeci">Point2D()</div><div class="ttdoc">Konstruktor domyslny reprezentujacy pusty pixel.</div><div class="ttdef"><b>Definition:</b> <a href="_point2_d_8h_source.html#l00034">Point2D.h:34</a></div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c8bc1489a3f2896a79814adaf6fbb7b8.html">Sebix</a></li><li class="navelem"><a class="el" href="_point2_d_8h.html">Point2D.h</a></li>
+    <li class="footer">Generated by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
 </body>
 </html>

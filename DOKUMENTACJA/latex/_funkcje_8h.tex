@@ -1,0 +1,352 @@
+\hypertarget{_funkcje_8h}{}\doxysection{Sebix/\+Funkcje.h File Reference}
+\label{_funkcje_8h}\index{Sebix/Funkcje.h@{Sebix/Funkcje.h}}
+{\ttfamily \#include $<$S\+F\+M\+L/\+Window.\+hpp$>$}\newline
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Point2\+D\+Array.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Point2\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Line\+Segment.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_funkcje_8h_aa5a4827202f06a6421120d6710d8d1ce}{draw2\+D\+Point}} (\mbox{\hyperlink{class_point2_d}{Point2D}} p2d, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za rysowanie pixela na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_ae1d5b669bdc5e9f957321db4c658061a}{draw2\+D\+Points}} (\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} p2da, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za narysowanie zbioru punktów na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_afe20bdd6889c172f00d4d551816bbae4}{draw2\+D\+Line}} (\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} p2da, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za narysowanie linii na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_adc7a61b2e5b4fe41b9f64f429d39cac0}{draw2\+D\+Line}} (\mbox{\hyperlink{class_point2_d}{Point2D}} p2da, \mbox{\hyperlink{class_point2_d}{Point2D}} p2db, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za narysowanie linii na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_ad006a93d2924240f56eb6aebad1737e6}{draw2\+D\+Triangle}} (\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} p2da, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za narysowanie trojkata na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_a56816417f88c5fb926a3d668e2ab9bb9}{draw2\+D\+Quad}} (\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} p2da, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za narysowanie kwadratu na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_a7115bdbcea2e3aa6cd504d825ee8f9f7}{draw2\+D\+Empty}} (\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} p2da, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za rysowanie pustych prymitywow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_aa1dcba5b97866ba1183b4142fa38c99c}{draw\+Line\+Otwarta}} (\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} p2da, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za rysowania zbioru linii otwartych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_a853d301a5d7de8815fa1fcecd08d9ea5}{draw\+Line\+Zamknieta}} (\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}} p2da, sf\+::\+Render\+Target $\ast$target=nullptr)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za rysowania zbioru linii zamknietych. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{_funkcje_8h_a7a5941474a1e5ed8f1358ccf04016823}{find\+Xes}} (std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ p2d)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za wyszukanie x maksymalnego oraz minimalnego w zbiorze punktow. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{_funkcje_8h_a243290ea988c0777e64290d634f648c0}{find\+Yes}} (std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ p2d)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za wyszukanie y maksymalnego oraz minimalnego w zbiorze punktow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_a76ccde62aad81ba0fac2eef775caa4cb}{draw\+Line\+Background}} (sf\+::\+Image \&image, \mbox{\hyperlink{class_line_segment}{Line\+Segment}} ls)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za narysowanie lini na tle okna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_a980cd68d2b2b2f55e081d5308a955c28}{draw\+Background\+Primitive}} (sf\+::\+Sprite \&sprite, sf\+::\+Texture \&texture, sf\+::\+Image \&image, std\+::vector$<$ \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $>$ ls)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za narysowanie prymitywu na tle okna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_a07ad4bfd712b917f3aca9cc58ed51b04}{wypelnijR}} (int x, int y, sf\+::\+Color ct, sf\+::\+Color cw, sf\+::\+Image \&image)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za wypelnienie ksztaltu na tle okna. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_funkcje_8h_a7115bdbcea2e3aa6cd504d825ee8f9f7}\label{_funkcje_8h_a7115bdbcea2e3aa6cd504d825ee8f9f7}} 
+\index{Funkcje.h@{Funkcje.h}!draw2DEmpty@{draw2DEmpty}}
+\index{draw2DEmpty@{draw2DEmpty}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{draw2DEmpty()}{draw2DEmpty()}}
+{\footnotesize\ttfamily void draw2\+D\+Empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}}]{p2da,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za rysowanie pustych prymitywow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2da} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}, ktory ma zostac wyswietlony na ekranie. Reprezentuje zbior punktow opisujacych prymityw \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowany prymityw \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_adc7a61b2e5b4fe41b9f64f429d39cac0}\label{_funkcje_8h_adc7a61b2e5b4fe41b9f64f429d39cac0}} 
+\index{Funkcje.h@{Funkcje.h}!draw2DLine@{draw2DLine}}
+\index{draw2DLine@{draw2DLine}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{draw2DLine()}{draw2DLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void draw2\+D\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{p2da,  }\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{p2db,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za narysowanie linii na ekranie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2da} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d}{Point2D}}, ktory ma zostac wyswietlony na ekranie. Reprezentuje punkt poczatkowy linii \\
+\hline
+{\em p2db} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d}{Point2D}}, ktory ma zostac wyswietlony na ekranie. Reprezentuje punkt koncowy linii \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowana linia \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_afe20bdd6889c172f00d4d551816bbae4}\label{_funkcje_8h_afe20bdd6889c172f00d4d551816bbae4}} 
+\index{Funkcje.h@{Funkcje.h}!draw2DLine@{draw2DLine}}
+\index{draw2DLine@{draw2DLine}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{draw2DLine()}{draw2DLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void draw2\+D\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}}]{p2da,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za narysowanie linii na ekranie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2da} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}, ktory ma zostac wyswietlony na ekranie. Reprezentuje zbior punktow opisujacych punkt poczatkowy i koncowy linii \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowana linia \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_aa5a4827202f06a6421120d6710d8d1ce}\label{_funkcje_8h_aa5a4827202f06a6421120d6710d8d1ce}} 
+\index{Funkcje.h@{Funkcje.h}!draw2DPoint@{draw2DPoint}}
+\index{draw2DPoint@{draw2DPoint}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{draw2DPoint()}{draw2DPoint()}}
+{\footnotesize\ttfamily void draw2\+D\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d}{Point2D}}}]{p2d,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za rysowanie pixela na ekranie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2d} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d}{Point2D}}, ktory ma zostac wyswietlony na ekranie. Reprezentuje jeden pixel \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowany pixel \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_ae1d5b669bdc5e9f957321db4c658061a}\label{_funkcje_8h_ae1d5b669bdc5e9f957321db4c658061a}} 
+\index{Funkcje.h@{Funkcje.h}!draw2DPoints@{draw2DPoints}}
+\index{draw2DPoints@{draw2DPoints}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{draw2DPoints()}{draw2DPoints()}}
+{\footnotesize\ttfamily void draw2\+D\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}}]{p2da,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za narysowanie zbioru punktów na ekranie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2da} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}, ktory ma zostać wyswietlony na ekranie. Reprezentuje zbior pixeli \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowany zbior pixeli \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_a56816417f88c5fb926a3d668e2ab9bb9}\label{_funkcje_8h_a56816417f88c5fb926a3d668e2ab9bb9}} 
+\index{Funkcje.h@{Funkcje.h}!draw2DQuad@{draw2DQuad}}
+\index{draw2DQuad@{draw2DQuad}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{draw2DQuad()}{draw2DQuad()}}
+{\footnotesize\ttfamily void draw2\+D\+Quad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}}]{p2da,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za narysowanie kwadratu na ekranie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2da} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}, ktory ma zostac wyswietlony na ekranie. Reprezentuje zbior punktow opisujacych wierzcholki kwadratu \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowany kwadrat \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_ad006a93d2924240f56eb6aebad1737e6}\label{_funkcje_8h_ad006a93d2924240f56eb6aebad1737e6}} 
+\index{Funkcje.h@{Funkcje.h}!draw2DTriangle@{draw2DTriangle}}
+\index{draw2DTriangle@{draw2DTriangle}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{draw2DTriangle()}{draw2DTriangle()}}
+{\footnotesize\ttfamily void draw2\+D\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}}]{p2da,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za narysowanie trojkata na ekranie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2da} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}, ktory ma zostac wyswietlony na ekranie. Reprezentuje zbior punktow opisujacych wierzcholki trojkata \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego ma zostac narysowany trojkat \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_a980cd68d2b2b2f55e081d5308a955c28}\label{_funkcje_8h_a980cd68d2b2b2f55e081d5308a955c28}} 
+\index{Funkcje.h@{Funkcje.h}!drawBackgroundPrimitive@{drawBackgroundPrimitive}}
+\index{drawBackgroundPrimitive@{drawBackgroundPrimitive}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{drawBackgroundPrimitive()}{drawBackgroundPrimitive()}}
+{\footnotesize\ttfamily void draw\+Background\+Primitive (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{sprite,  }\item[{sf\+::\+Texture \&}]{texture,  }\item[{sf\+::\+Image \&}]{image,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_line_segment}{Line\+Segment}} $>$}]{ls }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za narysowanie prymitywu na tle okna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Sprite reprezentujacy mozliwa do narysowania edytowalna teksture Texture \\
+\hline
+{\em texture} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Texture odpowiedzialny za grafike znajdujaca sie w pamieci karty graficznej i moze byc wykorzystany do rysowania \\
+\hline
+{\em image} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Image odpowiedzialny za ladowanie, manipulowanie oraz zapisywanie obrazow \\
+\hline
+{\em ls} & Wektor obiektow typu \mbox{\hyperlink{class_line_segment}{Line\+Segment}}, ktory ma zostac wyswietlony na tle okna. Reprezentuje prymityw w tle \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 228 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_a76ccde62aad81ba0fac2eef775caa4cb}\label{_funkcje_8h_a76ccde62aad81ba0fac2eef775caa4cb}} 
+\index{Funkcje.h@{Funkcje.h}!drawLineBackground@{drawLineBackground}}
+\index{drawLineBackground@{drawLineBackground}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{drawLineBackground()}{drawLineBackground()}}
+{\footnotesize\ttfamily void draw\+Line\+Background (\begin{DoxyParamCaption}\item[{sf\+::\+Image \&}]{image,  }\item[{\mbox{\hyperlink{class_line_segment}{Line\+Segment}}}]{ls }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za narysowanie lini na tle okna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Image odpowiedzialny za ladowanie, manipulowanie oraz zapisywanie obrazow \\
+\hline
+{\em ls} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_line_segment}{Line\+Segment}}, ktory ma zostac wyswietlony na tle okna. Reprezentuje linie \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 175 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_aa1dcba5b97866ba1183b4142fa38c99c}\label{_funkcje_8h_aa1dcba5b97866ba1183b4142fa38c99c}} 
+\index{Funkcje.h@{Funkcje.h}!drawLineOtwarta@{drawLineOtwarta}}
+\index{drawLineOtwarta@{drawLineOtwarta}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{drawLineOtwarta()}{drawLineOtwarta()}}
+{\footnotesize\ttfamily void draw\+Line\+Otwarta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}}]{p2da,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za rysowania zbioru linii otwartych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2da} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}, ktory ma zostac wyswietlony na ekranie. Reprezentuje zbior punktow poczatkowych i koncowych linii \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego maja zostac narysowane linie \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_a853d301a5d7de8815fa1fcecd08d9ea5}\label{_funkcje_8h_a853d301a5d7de8815fa1fcecd08d9ea5}} 
+\index{Funkcje.h@{Funkcje.h}!drawLineZamknieta@{drawLineZamknieta}}
+\index{drawLineZamknieta@{drawLineZamknieta}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{drawLineZamknieta()}{drawLineZamknieta()}}
+{\footnotesize\ttfamily void draw\+Line\+Zamknieta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}}]{p2da,  }\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za rysowania zbioru linii zamknietych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2da} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu \mbox{\hyperlink{class_point2_d_array}{Point2\+D\+Array}}, ktory ma zostac wyswietlony na ekranie. Reprezentuje zbior punktow poczatkowych i koncowych linii \\
+\hline
+{\em target} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Render\+Target dla ktorego maja zostac narysowane linie \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 116 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_a7a5941474a1e5ed8f1358ccf04016823}\label{_funkcje_8h_a7a5941474a1e5ed8f1358ccf04016823}} 
+\index{Funkcje.h@{Funkcje.h}!findXes@{findXes}}
+\index{findXes@{findXes}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{findXes()}{findXes()}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ find\+Xes (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$}]{p2d }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za wyszukanie x maksymalnego oraz minimalnego w zbiorze punktow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2d} & Wektor zawierajacy obiekty typu \mbox{\hyperlink{class_point2_d}{Point2D}}. Reprezentuje zbior punktow \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$float$>$ Zwraca dwuelementowy wektor zawierajacy wartosc maksymalna i minimalna ze zbioru x 
+\end{DoxyReturn}
+
+
+Definition at line 132 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_a243290ea988c0777e64290d634f648c0}\label{_funkcje_8h_a243290ea988c0777e64290d634f648c0}} 
+\index{Funkcje.h@{Funkcje.h}!findYes@{findYes}}
+\index{findYes@{findYes}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{findYes()}{findYes()}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$ find\+Yes (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$}]{p2d }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za wyszukanie y maksymalnego oraz minimalnego w zbiorze punktow. 
+
+/$\ast$$\ast$
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2d} & Wektor zawierajacy obiekty typu \mbox{\hyperlink{class_point2_d}{Point2D}}. Reprezentuje zbior punktow \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$float$>$ Zwraca dwuelementowy wektor zawierajacy wartosc maksymalna i minimalna ze zbioru y 
+\end{DoxyReturn}
+
+
+Definition at line 154 of file Funkcje.\+h.
+
+\mbox{\Hypertarget{_funkcje_8h_a07ad4bfd712b917f3aca9cc58ed51b04}\label{_funkcje_8h_a07ad4bfd712b917f3aca9cc58ed51b04}} 
+\index{Funkcje.h@{Funkcje.h}!wypelnijR@{wypelnijR}}
+\index{wypelnijR@{wypelnijR}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wypelnijR()}{wypelnijR()}}
+{\footnotesize\ttfamily void wypelnijR (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{sf\+::\+Color}]{ct,  }\item[{sf\+::\+Color}]{cw,  }\item[{sf\+::\+Image \&}]{image }\end{DoxyParamCaption})}
+
+
+
+Funkcja odpowiedzialna za wypelnienie ksztaltu na tle okna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Zmienna odpowiedzialna za pozycje x punktu startowego do wypelnienia \\
+\hline
+{\em y} & Zmienna odpowiedzialna za pozycje y punktu startowego do wypelnienia \\
+\hline
+{\em ct} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Color odpowiedzialny za reprezentacje koloru tla \\
+\hline
+{\em cw} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Color odpowiedzialny za reprezentacje koloru wypelnienia \\
+\hline
+{\em image} & \mbox{\hyperlink{class_obiekt}{Obiekt}} typu Image odpowiedzialny za ladowanie, manipulowanie oraz zapisywanie obrazow \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 244 of file Funkcje.\+h.
+

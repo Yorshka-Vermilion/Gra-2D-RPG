@@ -1,0 +1,704 @@
+\hypertarget{class_creator}{}\doxysection{Creator Class Reference}
+\label{class_creator}\index{Creator@{Creator}}
+
+
+Klasa reprezentujaca stan gry odpowiedzialny za tworzenie postaci.  
+
+
+
+
+{\ttfamily \#include $<$Creator.\+h$>$}
+
+Inheritance diagram for Creator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_creator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_creator_ad467c269bf0896dcb564d0eab8077670}{Creator}} (sf\+::\+Render\+Window $\ast$\mbox{\hyperlink{class_stan_a7f3ebc645765aec4b5389cd9cd7d8639}{window}}, std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$\mbox{\hyperlink{class_stan_acd6f1d71e7f622492660fad6e7e2f616}{stos}}, sf\+::\+Event $\ast$\mbox{\hyperlink{class_stan_a5ca5d63c7154592312f25d4a14e8c9da}{event}})
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzenia nowego stanu Kreatora postaci. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_creator_a0dcafacea881be3a9178634b6b8a2fe6}{make\+Creator}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajaca za zbudowanie postaci. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_creator_ad2ed5ac0eb51ffe72ecef1a84b04387a}{addR}} (bool kiedy)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajaca za dodawanie nasycenia koloru czerwonego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_creator_ae31f3f84c3e92927b525190bf33f1f06}{subR}} (bool kiedy)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajaca za odejmowanie nasycenia koloru czerwonego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_creator_a7342b173c4026546b9d14685a698c289}{addG}} (bool kiedy)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajaca za dodawanie nasycenia koloru zielonego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_creator_a5ba4d4439b70bd541d9857a5fcfbd356}{subG}} (bool kiedy)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajaca za odejmowanie nasycenia koloru zielonego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_creator_a7613a7f434a9851d2ccdb7adb0088ea5}{addB}} (bool kiedy)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajaca za dodawanie nasycenia koloru niebieskiego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_creator_a4800c37d9a9fe87ec6c05865fcbc97ef}{subB}} (bool kiedy)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajaca za odejmowanie nasycenia koloru niebieskiego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_creator_a5b144995c775845470962caa827b9fbd}{check\+Character}} (bool kiedy)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza czy postac jest gotowa do utworzenia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_creator_af8ecf377073058ea5156afa2e79f901e}{$\sim$\+Creator}} ()
+\begin{DoxyCompactList}\small\item\em Dekonstruktor kreatora. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_creator_a2c8be9474f50349af9c088e99fe4bba9}{draw}} (sf\+::\+Render\+Target $\ast$target)
+\begin{DoxyCompactList}\small\item\em Rysowanie obiektow na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_creator_a6259e2df6f9f9d6157e1aba3251528a9}{update}} (const float \&\mbox{\hyperlink{class_stan_a28c020d77ac16c3e0f37d05927f0717b}{dtime}})
+\begin{DoxyCompactList}\small\item\em Odswiezenie stanu gry. \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_creator_a23378c71d31de5412ef0bf2666c0fd4e}{zrob\+Tekst}} (std\+::string sciezka, sf\+::\+Vector2f pozycja)
+\begin{DoxyCompactList}\small\item\em Odswiezenie stanu gry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_ac9db09cb393f52ada03f5d9fa9e274b7}{bg}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na tlo reprezentujacy grafike w tle podczas tworzenia postaci \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$ \mbox{\hyperlink{class_creator_adb4bc998fbd1516a972caee1ccc1da44}{gracz}}
+\begin{DoxyCompactList}\small\item\em Wskaznik wskazujacy na gracza \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera}{Camera}} $\ast$ \mbox{\hyperlink{class_creator_af63147649ffeed742c8196d0fc4e1003}{camera\+Player}}
+\begin{DoxyCompactList}\small\item\em Wskaznik na camere reprezentujaca widok na gracza \end{DoxyCompactList}\item 
+sf\+::\+Font \mbox{\hyperlink{class_creator_a6390e335ea32fa54f842658e0a714575}{czcionka}}
+\begin{DoxyCompactList}\small\item\em Czcionka biblioteki sfml \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_creator_a85c9c3f661612f5836f7fe02f42a34ec}{nazwa}}
+\begin{DoxyCompactList}\small\item\em Nazwa uzytkownika reprezentowana przez biblioteke w formie graficznej \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_creator_ad4f029866d6c7404dc545539a05c79d5}{rt}}
+\begin{DoxyCompactList}\small\item\em Wartosc reprezentujaca nasycenie czerwonej barwy gracza w formie graficznej \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_creator_a0038533ba0b3d66b96c7844519af4385}{gt}}
+\begin{DoxyCompactList}\small\item\em Wartosc reprezentujaca nasycenie zielonej barwy gracza w formie graficznej \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_creator_a99b3236aef1f9eb0edc11a28b48b4c29}{bt}}
+\begin{DoxyCompactList}\small\item\em Wartosc reprezentujaca nasycenie niebieskiej barwy gracza w formie graficznej \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_creator_a24115e2646bea5d370664dd736006940}{sila}}
+\begin{DoxyCompactList}\small\item\em Wartosc reprezentujaca ilosc sila tworzonej postaci \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_creator_ad265f509b58d69ac31d936cf8618bbb8}{dmg}}
+\begin{DoxyCompactList}\small\item\em Wartosc reprezentujaca ilosc magicznych obrazen tworzonej postaci \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_creator_afcee2aee6e18c1b5f8052a3e656741ec}{inteligencja}}
+\begin{DoxyCompactList}\small\item\em Wartosc reprezentujaca ilosc inteligencji tworzonej postaci \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_creator_a92356995e10b2ae742f1c87d828c6e0d}{nazwa\+Std}} = \char`\"{}Mag\char`\"{}
+\begin{DoxyCompactList}\small\item\em Nazwa gracza reprezentowana przez standardow¹ biblioteke wejœcia \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_creator_a4f7797c4971bd8ba476ee1a328fa2e55}{r}}
+\begin{DoxyCompactList}\small\item\em Wartosc nasycenie barwy czerwonej w grze reprezentowana przez wartosc calkowita \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_creator_a1dd16adc29153cc3f28998e808eaa8a1}{g}}
+\begin{DoxyCompactList}\small\item\em Wartosc nasycenie barwy zielonej w grze reprezentowana przez wartosc calkowita \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_creator_a165c4675d47f8dc08fd18f1c1abf4bd3}{b}}
+\begin{DoxyCompactList}\small\item\em Wartosc nasycenie barwy niebieskiej w grze reprezentowana przez wartosc calkowita \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_ac23f4e0e2aa54620f66c69dd1b079037}{rr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny prawa strzalke koloru czerwonego \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_ad3514d513299b087f810d3fe5faaee34}{rl}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny lewa strzalke koloru czerwonego \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_aaaa96e7ba310d3279509953b9c813cc8}{gr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny prawa strzalke koloru zielonego \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_a9d50bfa8a068835a0538ed5dc759412a}{gl}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny lewa strzalke koloru zielonego \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_a757c33a92df1b5a35f60005f2b09ffc9}{br}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny prawa strzalke koloru niebieskiego \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_ad2294cfd5de860193f8b238207263e30}{bl}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny lewa strzalke koloru niebieskiego \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_a7a6509796ffa440501ad4b88db300000}{button\+Sila}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy przycisk odpowiadajacy za dodawanie punktow zdolnosci do sily \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_ad7ee1efd96bbfbf13eae49979df1dc36}{button\+Dmg}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy przycisk odpowiadajacy za dodawanie punktow zdolnosci do obrazen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_ab1fc9fbd6aa1dcb0f2635f34d89c81e6}{button\+Inteligencja}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy przycisk odpowiadajacy za dodawanie punktow zdolnosci do inteligencji \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_obiekt}{Obiekt}} $\ast$ \mbox{\hyperlink{class_creator_a5d69e808864356c4deca0257b0d22486}{check}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy przycisk odpowiadajacy za zakonczenie tworzenia postaci \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_creator_af6ebad6ba42231f5bd4b34359a037d08}{go\+Back}} = false
+\begin{DoxyCompactList}\small\item\em Flaga odpowiadajaca za wycofanie sie z kreatora postaci \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentujaca stan gry odpowiedzialny za tworzenie postaci. 
+
+Definition at line 14 of file Creator.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_creator_ad467c269bf0896dcb564d0eab8077670}\label{class_creator_ad467c269bf0896dcb564d0eab8077670}} 
+\index{Creator@{Creator}!Creator@{Creator}}
+\index{Creator@{Creator}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{Creator()}{Creator()}}
+{\footnotesize\ttfamily Creator\+::\+Creator (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window,  }\item[{std\+::stack$<$ \mbox{\hyperlink{class_stan}{Stan}} $\ast$ $>$ $\ast$}]{stos,  }\item[{sf\+::\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor tworzenia nowego stanu Kreatora postaci. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Wskaznik na okno \\
+\hline
+{\em stos} & Wskaznik na stos wskaznikow na stany \\
+\hline
+{\em event} & Wskaznik na eventy \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 131 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_af8ecf377073058ea5156afa2e79f901e}\label{class_creator_af8ecf377073058ea5156afa2e79f901e}} 
+\index{Creator@{Creator}!````~Creator@{$\sim$Creator}}
+\index{````~Creator@{$\sim$Creator}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{$\sim$Creator()}{~Creator()}}
+{\footnotesize\ttfamily Creator\+::$\sim$\+Creator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dekonstruktor kreatora. 
+
+
+
+Definition at line 321 of file Creator.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_creator_a7613a7f434a9851d2ccdb7adb0088ea5}\label{class_creator_a7613a7f434a9851d2ccdb7adb0088ea5}} 
+\index{Creator@{Creator}!addB@{addB}}
+\index{addB@{addB}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{addB()}{addB()}}
+{\footnotesize\ttfamily void Creator\+::addB (\begin{DoxyParamCaption}\item[{bool}]{kiedy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajaca za dodawanie nasycenia koloru niebieskiego. 
+
+
+
+Definition at line 277 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a7342b173c4026546b9d14685a698c289}\label{class_creator_a7342b173c4026546b9d14685a698c289}} 
+\index{Creator@{Creator}!addG@{addG}}
+\index{addG@{addG}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{addG()}{addG()}}
+{\footnotesize\ttfamily void Creator\+::addG (\begin{DoxyParamCaption}\item[{bool}]{kiedy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajaca za dodawanie nasycenia koloru zielonego. 
+
+
+
+Definition at line 249 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_ad2ed5ac0eb51ffe72ecef1a84b04387a}\label{class_creator_ad2ed5ac0eb51ffe72ecef1a84b04387a}} 
+\index{Creator@{Creator}!addR@{addR}}
+\index{addR@{addR}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{addR()}{addR()}}
+{\footnotesize\ttfamily void Creator\+::addR (\begin{DoxyParamCaption}\item[{bool}]{kiedy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajaca za dodawanie nasycenia koloru czerwonego. 
+
+
+
+Definition at line 221 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a5b144995c775845470962caa827b9fbd}\label{class_creator_a5b144995c775845470962caa827b9fbd}} 
+\index{Creator@{Creator}!checkCharacter@{checkCharacter}}
+\index{checkCharacter@{checkCharacter}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{checkCharacter()}{checkCharacter()}}
+{\footnotesize\ttfamily void Creator\+::check\+Character (\begin{DoxyParamCaption}\item[{bool}]{kiedy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja sprawdza czy postac jest gotowa do utworzenia. 
+
+
+
+Definition at line 305 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a2c8be9474f50349af9c088e99fe4bba9}\label{class_creator_a2c8be9474f50349af9c088e99fe4bba9}} 
+\index{Creator@{Creator}!draw@{draw}}
+\index{draw@{draw}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Creator\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Rysowanie obiektow na ekranie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Wskaznik na cel rysowania \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_stan_af819ad0f6b5e69d441ae6495ea9ece5d}{Stan}}.
+
+
+
+Definition at line 344 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a0dcafacea881be3a9178634b6b8a2fe6}\label{class_creator_a0dcafacea881be3a9178634b6b8a2fe6}} 
+\index{Creator@{Creator}!makeCreator@{makeCreator}}
+\index{makeCreator@{makeCreator}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{makeCreator()}{makeCreator()}}
+{\footnotesize\ttfamily void Creator\+::make\+Creator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajaca za zbudowanie postaci. 
+
+
+
+Definition at line 137 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a4800c37d9a9fe87ec6c05865fcbc97ef}\label{class_creator_a4800c37d9a9fe87ec6c05865fcbc97ef}} 
+\index{Creator@{Creator}!subB@{subB}}
+\index{subB@{subB}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{subB()}{subB()}}
+{\footnotesize\ttfamily void Creator\+::subB (\begin{DoxyParamCaption}\item[{bool}]{kiedy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajaca za odejmowanie nasycenia koloru niebieskiego. 
+
+
+
+Definition at line 291 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a5ba4d4439b70bd541d9857a5fcfbd356}\label{class_creator_a5ba4d4439b70bd541d9857a5fcfbd356}} 
+\index{Creator@{Creator}!subG@{subG}}
+\index{subG@{subG}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{subG()}{subG()}}
+{\footnotesize\ttfamily void Creator\+::subG (\begin{DoxyParamCaption}\item[{bool}]{kiedy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajaca za odejmowanie nasycenia koloru zielonego. 
+
+
+
+Definition at line 263 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_ae31f3f84c3e92927b525190bf33f1f06}\label{class_creator_ae31f3f84c3e92927b525190bf33f1f06}} 
+\index{Creator@{Creator}!subR@{subR}}
+\index{subR@{subR}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{subR()}{subR()}}
+{\footnotesize\ttfamily void Creator\+::subR (\begin{DoxyParamCaption}\item[{bool}]{kiedy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajaca za odejmowanie nasycenia koloru czerwonego. 
+
+
+
+Definition at line 235 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a6259e2df6f9f9d6157e1aba3251528a9}\label{class_creator_a6259e2df6f9f9d6157e1aba3251528a9}} 
+\index{Creator@{Creator}!update@{update}}
+\index{update@{update}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Creator\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dtime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Odswiezenie stanu gry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dtime} & Delta czasu (timer) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_stan_a2dde2e9d9e66aade33b857cb64697cf3}{Stan}}.
+
+
+
+Definition at line 375 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a23378c71d31de5412ef0bf2666c0fd4e}\label{class_creator_a23378c71d31de5412ef0bf2666c0fd4e}} 
+\index{Creator@{Creator}!zrobTekst@{zrobTekst}}
+\index{zrobTekst@{zrobTekst}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{zrobTekst()}{zrobTekst()}}
+{\footnotesize\ttfamily sf\+::\+Text Creator\+::zrob\+Tekst (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Odswiezenie stanu gry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & Sciezka odpowiedzialna za wskazanie czcionki \\
+\hline
+{\em pozycja} & Pozycja reprezetnujaca pozycje napisow w przestrzeni \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 437 of file Creator.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_creator_a165c4675d47f8dc08fd18f1c1abf4bd3}\label{class_creator_a165c4675d47f8dc08fd18f1c1abf4bd3}} 
+\index{Creator@{Creator}!b@{b}}
+\index{b@{b}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily int Creator\+::b\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc nasycenie barwy niebieskiej w grze reprezentowana przez wartosc calkowita 
+
+
+
+Definition at line 75 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_ac9db09cb393f52ada03f5d9fa9e274b7}\label{class_creator_ac9db09cb393f52ada03f5d9fa9e274b7}} 
+\index{Creator@{Creator}!bg@{bg}}
+\index{bg@{bg}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{bg}{bg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::bg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wskaznik na tlo reprezentujacy grafike w tle podczas tworzenia postaci 
+
+
+
+Definition at line 19 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_ad2294cfd5de860193f8b238207263e30}\label{class_creator_ad2294cfd5de860193f8b238207263e30}} 
+\index{Creator@{Creator}!bl@{bl}}
+\index{bl@{bl}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{bl}{bl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::bl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny lewa strzalke koloru niebieskiego 
+
+
+
+Definition at line 99 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a757c33a92df1b5a35f60005f2b09ffc9}\label{class_creator_a757c33a92df1b5a35f60005f2b09ffc9}} 
+\index{Creator@{Creator}!br@{br}}
+\index{br@{br}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{br}{br}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::br\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny prawa strzalke koloru niebieskiego 
+
+
+
+Definition at line 95 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a99b3236aef1f9eb0edc11a28b48b4c29}\label{class_creator_a99b3236aef1f9eb0edc11a28b48b4c29}} 
+\index{Creator@{Creator}!bt@{bt}}
+\index{bt@{bt}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{bt}{bt}}
+{\footnotesize\ttfamily sf\+::\+Text Creator\+::bt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc reprezentujaca nasycenie niebieskiej barwy gracza w formie graficznej 
+
+
+
+Definition at line 47 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_ad7ee1efd96bbfbf13eae49979df1dc36}\label{class_creator_ad7ee1efd96bbfbf13eae49979df1dc36}} 
+\index{Creator@{Creator}!buttonDmg@{buttonDmg}}
+\index{buttonDmg@{buttonDmg}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{buttonDmg}{buttonDmg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::button\+Dmg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy przycisk odpowiadajacy za dodawanie punktow zdolnosci do obrazen 
+
+
+
+Definition at line 107 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_ab1fc9fbd6aa1dcb0f2635f34d89c81e6}\label{class_creator_ab1fc9fbd6aa1dcb0f2635f34d89c81e6}} 
+\index{Creator@{Creator}!buttonInteligencja@{buttonInteligencja}}
+\index{buttonInteligencja@{buttonInteligencja}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{buttonInteligencja}{buttonInteligencja}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::button\+Inteligencja\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy przycisk odpowiadajacy za dodawanie punktow zdolnosci do inteligencji 
+
+
+
+Definition at line 111 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a7a6509796ffa440501ad4b88db300000}\label{class_creator_a7a6509796ffa440501ad4b88db300000}} 
+\index{Creator@{Creator}!buttonSila@{buttonSila}}
+\index{buttonSila@{buttonSila}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{buttonSila}{buttonSila}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::button\+Sila\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy przycisk odpowiadajacy za dodawanie punktow zdolnosci do sily 
+
+
+
+Definition at line 103 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_af63147649ffeed742c8196d0fc4e1003}\label{class_creator_af63147649ffeed742c8196d0fc4e1003}} 
+\index{Creator@{Creator}!cameraPlayer@{cameraPlayer}}
+\index{cameraPlayer@{cameraPlayer}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{cameraPlayer}{cameraPlayer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera}{Camera}}$\ast$ Creator\+::camera\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wskaznik na camere reprezentujaca widok na gracza 
+
+
+
+Definition at line 27 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a5d69e808864356c4deca0257b0d22486}\label{class_creator_a5d69e808864356c4deca0257b0d22486}} 
+\index{Creator@{Creator}!check@{check}}
+\index{check@{check}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{check}{check}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::check\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy przycisk odpowiadajacy za zakonczenie tworzenia postaci 
+
+
+
+Definition at line 115 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a6390e335ea32fa54f842658e0a714575}\label{class_creator_a6390e335ea32fa54f842658e0a714575}} 
+\index{Creator@{Creator}!czcionka@{czcionka}}
+\index{czcionka@{czcionka}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{czcionka}{czcionka}}
+{\footnotesize\ttfamily sf\+::\+Font Creator\+::czcionka\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Czcionka biblioteki sfml 
+
+
+
+Definition at line 31 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_ad265f509b58d69ac31d936cf8618bbb8}\label{class_creator_ad265f509b58d69ac31d936cf8618bbb8}} 
+\index{Creator@{Creator}!dmg@{dmg}}
+\index{dmg@{dmg}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{dmg}{dmg}}
+{\footnotesize\ttfamily sf\+::\+Text Creator\+::dmg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc reprezentujaca ilosc magicznych obrazen tworzonej postaci 
+
+
+
+Definition at line 55 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a1dd16adc29153cc3f28998e808eaa8a1}\label{class_creator_a1dd16adc29153cc3f28998e808eaa8a1}} 
+\index{Creator@{Creator}!g@{g}}
+\index{g@{g}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily int Creator\+::g\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc nasycenie barwy zielonej w grze reprezentowana przez wartosc calkowita 
+
+
+
+Definition at line 71 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a9d50bfa8a068835a0538ed5dc759412a}\label{class_creator_a9d50bfa8a068835a0538ed5dc759412a}} 
+\index{Creator@{Creator}!gl@{gl}}
+\index{gl@{gl}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{gl}{gl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::gl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny lewa strzalke koloru zielonego 
+
+
+
+Definition at line 91 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_af6ebad6ba42231f5bd4b34359a037d08}\label{class_creator_af6ebad6ba42231f5bd4b34359a037d08}} 
+\index{Creator@{Creator}!goBack@{goBack}}
+\index{goBack@{goBack}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{goBack}{goBack}}
+{\footnotesize\ttfamily bool Creator\+::go\+Back = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Flaga odpowiadajaca za wycofanie sie z kreatora postaci 
+
+
+
+Definition at line 119 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_aaaa96e7ba310d3279509953b9c813cc8}\label{class_creator_aaaa96e7ba310d3279509953b9c813cc8}} 
+\index{Creator@{Creator}!gr@{gr}}
+\index{gr@{gr}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{gr}{gr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::gr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny prawa strzalke koloru zielonego 
+
+
+
+Definition at line 87 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_adb4bc998fbd1516a972caee1ccc1da44}\label{class_creator_adb4bc998fbd1516a972caee1ccc1da44}} 
+\index{Creator@{Creator}!gracz@{gracz}}
+\index{gracz@{gracz}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{gracz}{gracz}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gracz}{Gracz}}$\ast$ Creator\+::gracz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wskaznik wskazujacy na gracza 
+
+
+
+Definition at line 23 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a0038533ba0b3d66b96c7844519af4385}\label{class_creator_a0038533ba0b3d66b96c7844519af4385}} 
+\index{Creator@{Creator}!gt@{gt}}
+\index{gt@{gt}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{gt}{gt}}
+{\footnotesize\ttfamily sf\+::\+Text Creator\+::gt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc reprezentujaca nasycenie zielonej barwy gracza w formie graficznej 
+
+
+
+Definition at line 43 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_afcee2aee6e18c1b5f8052a3e656741ec}\label{class_creator_afcee2aee6e18c1b5f8052a3e656741ec}} 
+\index{Creator@{Creator}!inteligencja@{inteligencja}}
+\index{inteligencja@{inteligencja}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{inteligencja}{inteligencja}}
+{\footnotesize\ttfamily sf\+::\+Text Creator\+::inteligencja\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc reprezentujaca ilosc inteligencji tworzonej postaci 
+
+
+
+Definition at line 59 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a85c9c3f661612f5836f7fe02f42a34ec}\label{class_creator_a85c9c3f661612f5836f7fe02f42a34ec}} 
+\index{Creator@{Creator}!nazwa@{nazwa}}
+\index{nazwa@{nazwa}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{nazwa}{nazwa}}
+{\footnotesize\ttfamily sf\+::\+Text Creator\+::nazwa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nazwa uzytkownika reprezentowana przez biblioteke w formie graficznej 
+
+
+
+Definition at line 35 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a92356995e10b2ae742f1c87d828c6e0d}\label{class_creator_a92356995e10b2ae742f1c87d828c6e0d}} 
+\index{Creator@{Creator}!nazwaStd@{nazwaStd}}
+\index{nazwaStd@{nazwaStd}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{nazwaStd}{nazwaStd}}
+{\footnotesize\ttfamily std\+::string Creator\+::nazwa\+Std = \char`\"{}Mag\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nazwa gracza reprezentowana przez standardow¹ biblioteke wejœcia 
+
+
+
+Definition at line 63 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a4f7797c4971bd8ba476ee1a328fa2e55}\label{class_creator_a4f7797c4971bd8ba476ee1a328fa2e55}} 
+\index{Creator@{Creator}!r@{r}}
+\index{r@{r}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily int Creator\+::r\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc nasycenie barwy czerwonej w grze reprezentowana przez wartosc calkowita 
+
+
+
+Definition at line 67 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_ad3514d513299b087f810d3fe5faaee34}\label{class_creator_ad3514d513299b087f810d3fe5faaee34}} 
+\index{Creator@{Creator}!rl@{rl}}
+\index{rl@{rl}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{rl}{rl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::rl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny lewa strzalke koloru czerwonego 
+
+
+
+Definition at line 83 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_ac23f4e0e2aa54620f66c69dd1b079037}\label{class_creator_ac23f4e0e2aa54620f66c69dd1b079037}} 
+\index{Creator@{Creator}!rr@{rr}}
+\index{rr@{rr}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{rr}{rr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_obiekt}{Obiekt}}$\ast$ Creator\+::rr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy w sposob graficzny prawa strzalke koloru czerwonego 
+
+
+
+Definition at line 79 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_ad4f029866d6c7404dc545539a05c79d5}\label{class_creator_ad4f029866d6c7404dc545539a05c79d5}} 
+\index{Creator@{Creator}!rt@{rt}}
+\index{rt@{rt}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{rt}{rt}}
+{\footnotesize\ttfamily sf\+::\+Text Creator\+::rt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc reprezentujaca nasycenie czerwonej barwy gracza w formie graficznej 
+
+~\newline
+ 
+
+Definition at line 39 of file Creator.\+h.
+
+\mbox{\Hypertarget{class_creator_a24115e2646bea5d370664dd736006940}\label{class_creator_a24115e2646bea5d370664dd736006940}} 
+\index{Creator@{Creator}!sila@{sila}}
+\index{sila@{sila}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{sila}{sila}}
+{\footnotesize\ttfamily sf\+::\+Text Creator\+::sila\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc reprezentujaca ilosc sila tworzonej postaci 
+
+
+
+Definition at line 51 of file Creator.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_creator_8h}{Creator.\+h}}\end{DoxyCompactItemize}

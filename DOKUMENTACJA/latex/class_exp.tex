@@ -1,0 +1,226 @@
+\hypertarget{class_exp}{}\doxysection{Exp Class Reference}
+\label{class_exp}\index{Exp@{Exp}}
+
+
+Klasa odpowiada za reprezentacje graficzna doœwiadczenia bohatera.  
+
+
+
+
+{\ttfamily \#include $<$Exp.\+h$>$}
+
+Inheritance diagram for Exp\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_exp}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_exp_a6fd43c6ea9e9bfae8bd89351ef0e74c0}{Exp}} (std\+::string sciezka, sf\+::\+Vector2f pozycja)
+\begin{DoxyCompactList}\small\item\em Konstruktor odpowiedzialny za zbudowanie kul z doswiadczeniem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_exp_a244b3e0fe1abb02d6198ccbb869de014}{draw}} (sf\+::\+Render\+Target $\ast$cel)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiadajca za rysowanie doswiadczenia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_exp_a03507ad531318f6d88369cf0521b19ff}{zrob\+Exp}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za zbudowanie kul doswiadczenia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_exp_abd8aad89e2409653a49408194ddc39a0}{update\+Exp}} (double obecne\+Exp, double max\+Exp, bool level\+Up)
+\begin{DoxyCompactList}\small\item\em Funkcja odpowiedzialna za reprezentacje aktualizacji doswiadczenia bohatera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_exp_a3f5582b3bb0ef1531fc0401406ce192c}{diameter}}
+\begin{DoxyCompactList}\small\item\em Wartosc okreslajaca srednice okregu \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_exp_a089fc522385c03b50b4316e861395bb6}{max\+Orbs}} = 9
+\begin{DoxyCompactList}\small\item\em Wartosc okreslajaca maksymalna ilosc kul z doswiadczeniem \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_exp_a2d156f95f5bf7a1bea231b050e1ce0b2}{active\+Orb}} = 0
+\begin{DoxyCompactList}\small\item\em Ilosc uzupelnionych kul doswiadczenia \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_exp_a5a07919cf5cf785a9ff1386fdcfe9d53}{orb\+Gate}} = 0
+\begin{DoxyCompactList}\small\item\em Wartosc graniczna przy ktorej postac wbije wy¿szy poziom \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_exp_a57e1bc0df451c7d1e04a3553cb8027e6}{exp\+Mid}}
+\begin{DoxyCompactList}\small\item\em Pozycja srodkowej kuli doswiadczenia \end{DoxyCompactList}\item 
+std\+::vector$<$ sf\+::\+Circle\+Shape $>$ \mbox{\hyperlink{class_exp_a46c46b7dbbfdcbde3e966af1c43d218a}{exp\+Circle}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy kulki doswiadczenia bohatera \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Klasa odpowiada za reprezentacje graficzna doœwiadczenia bohatera. 
+
+Definition at line 9 of file Exp.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_exp_a6fd43c6ea9e9bfae8bd89351ef0e74c0}\label{class_exp_a6fd43c6ea9e9bfae8bd89351ef0e74c0}} 
+\index{Exp@{Exp}!Exp@{Exp}}
+\index{Exp@{Exp}!Exp@{Exp}}
+\doxysubsubsection{\texorpdfstring{Exp()}{Exp()}}
+{\footnotesize\ttfamily Exp\+::\+Exp (\begin{DoxyParamCaption}\item[{std\+::string}]{sciezka,  }\item[{sf\+::\+Vector2f}]{pozycja }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor odpowiedzialny za zbudowanie kul z doswiadczeniem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka} & odpowiada za znajdowanie sie pliku reprezentujacego kule doswiadczenia \\
+\hline
+{\em pozycja} & odpowaida za pozycje w ktorej ma sie znajdowac srodkowa kula z doswiadczeniem \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file Exp.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_exp_a244b3e0fe1abb02d6198ccbb869de014}\label{class_exp_a244b3e0fe1abb02d6198ccbb869de014}} 
+\index{Exp@{Exp}!draw@{draw}}
+\index{draw@{draw}!Exp@{Exp}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Exp\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{cel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiadajca za rysowanie doswiadczenia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cel} & odpowiada za okno w którym ma zostac narysowany obiekt \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Exp.\+h.
+
+\mbox{\Hypertarget{class_exp_abd8aad89e2409653a49408194ddc39a0}\label{class_exp_abd8aad89e2409653a49408194ddc39a0}} 
+\index{Exp@{Exp}!updateExp@{updateExp}}
+\index{updateExp@{updateExp}!Exp@{Exp}}
+\doxysubsubsection{\texorpdfstring{updateExp()}{updateExp()}}
+{\footnotesize\ttfamily void Exp\+::update\+Exp (\begin{DoxyParamCaption}\item[{double}]{obecne\+Exp,  }\item[{double}]{max\+Exp,  }\item[{bool}]{level\+Up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za reprezentacje aktualizacji doswiadczenia bohatera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obecne\+Exp} & obecny stan doswiadczenia bohatera \\
+\hline
+{\em max\+Exp} & maksymalny stan doswiadczenia bohatera \\
+\hline
+{\em level\+Up} & flaga reprezentujaca wbicie poziomu przez bohatera \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file Exp.\+h.
+
+\mbox{\Hypertarget{class_exp_a03507ad531318f6d88369cf0521b19ff}\label{class_exp_a03507ad531318f6d88369cf0521b19ff}} 
+\index{Exp@{Exp}!zrobExp@{zrobExp}}
+\index{zrobExp@{zrobExp}!Exp@{Exp}}
+\doxysubsubsection{\texorpdfstring{zrobExp()}{zrobExp()}}
+{\footnotesize\ttfamily void Exp\+::zrob\+Exp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja odpowiedzialna za zbudowanie kul doswiadczenia. 
+
+
+
+Definition at line 64 of file Exp.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_exp_a2d156f95f5bf7a1bea231b050e1ce0b2}\label{class_exp_a2d156f95f5bf7a1bea231b050e1ce0b2}} 
+\index{Exp@{Exp}!activeOrb@{activeOrb}}
+\index{activeOrb@{activeOrb}!Exp@{Exp}}
+\doxysubsubsection{\texorpdfstring{activeOrb}{activeOrb}}
+{\footnotesize\ttfamily int Exp\+::active\+Orb = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ilosc uzupelnionych kul doswiadczenia 
+
+
+
+Definition at line 21 of file Exp.\+h.
+
+\mbox{\Hypertarget{class_exp_a3f5582b3bb0ef1531fc0401406ce192c}\label{class_exp_a3f5582b3bb0ef1531fc0401406ce192c}} 
+\index{Exp@{Exp}!diameter@{diameter}}
+\index{diameter@{diameter}!Exp@{Exp}}
+\doxysubsubsection{\texorpdfstring{diameter}{diameter}}
+{\footnotesize\ttfamily float Exp\+::diameter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc okreslajaca srednice okregu 
+
+
+
+Definition at line 13 of file Exp.\+h.
+
+\mbox{\Hypertarget{class_exp_a46c46b7dbbfdcbde3e966af1c43d218a}\label{class_exp_a46c46b7dbbfdcbde3e966af1c43d218a}} 
+\index{Exp@{Exp}!expCircle@{expCircle}}
+\index{expCircle@{expCircle}!Exp@{Exp}}
+\doxysubsubsection{\texorpdfstring{expCircle}{expCircle}}
+{\footnotesize\ttfamily std\+::vector$<$sf\+::\+Circle\+Shape$>$ Exp\+::exp\+Circle\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_obiekt}{Obiekt}} reprezentujacy kulki doswiadczenia bohatera 
+
+
+
+Definition at line 33 of file Exp.\+h.
+
+\mbox{\Hypertarget{class_exp_a57e1bc0df451c7d1e04a3553cb8027e6}\label{class_exp_a57e1bc0df451c7d1e04a3553cb8027e6}} 
+\index{Exp@{Exp}!expMid@{expMid}}
+\index{expMid@{expMid}!Exp@{Exp}}
+\doxysubsubsection{\texorpdfstring{expMid}{expMid}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Exp\+::exp\+Mid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pozycja srodkowej kuli doswiadczenia 
+
+
+
+Definition at line 29 of file Exp.\+h.
+
+\mbox{\Hypertarget{class_exp_a089fc522385c03b50b4316e861395bb6}\label{class_exp_a089fc522385c03b50b4316e861395bb6}} 
+\index{Exp@{Exp}!maxOrbs@{maxOrbs}}
+\index{maxOrbs@{maxOrbs}!Exp@{Exp}}
+\doxysubsubsection{\texorpdfstring{maxOrbs}{maxOrbs}}
+{\footnotesize\ttfamily int Exp\+::max\+Orbs = 9\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc okreslajaca maksymalna ilosc kul z doswiadczeniem 
+
+
+
+Definition at line 17 of file Exp.\+h.
+
+\mbox{\Hypertarget{class_exp_a5a07919cf5cf785a9ff1386fdcfe9d53}\label{class_exp_a5a07919cf5cf785a9ff1386fdcfe9d53}} 
+\index{Exp@{Exp}!orbGate@{orbGate}}
+\index{orbGate@{orbGate}!Exp@{Exp}}
+\doxysubsubsection{\texorpdfstring{orbGate}{orbGate}}
+{\footnotesize\ttfamily float Exp\+::orb\+Gate = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wartosc graniczna przy ktorej postac wbije wy¿szy poziom 
+
+
+
+Definition at line 25 of file Exp.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_exp_8h}{Exp.\+h}}\end{DoxyCompactItemize}

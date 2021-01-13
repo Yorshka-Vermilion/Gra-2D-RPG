@@ -7,38 +7,133 @@
 #include "Camera.h"
 
 
-
 /**
- * @brief Klasa w ktorej bedzie znajdowal sie kod gry
+ * @brief Klasa reprezentujaca stan gry odpowiedzialny za tworzenie postaci
  * 
  */
 class Creator : public Stan
 {
+	/// <summary>
+	/// Wskaznik na tlo reprezentujacy grafike w tle podczas tworzenia postaci
+	/// </summary>
 	Obiekt* bg;
+	/// <summary>
+	/// Wskaznik wskazujacy na gracza
+	/// </summary>
 	Gracz* gracz;
+	/// <summary>
+	/// Wskaznik na camere reprezentujaca widok na gracza
+	/// </summary>
 	Camera* cameraPlayer;
+	/// <summary>
+	/// Czcionka biblioteki sfml
+	/// </summary>
 	sf::Font czcionka;
-	sf::Text nazwa,rt,gt,bt,sila,dmg,inteligencja;
+	/// <summary>
+	/// Nazwa uzytkownika reprezentowana przez biblioteke w formie graficznej
+	/// </summary>
+	sf::Text nazwa;
+	/// <summary>
+	/// Wartosc reprezentujaca nasycenie czerwonej barwy gracza w formie graficznej
+	/// </summary> 
+	sf::Text rt; 
+	/// <summary>
+	/// Wartosc reprezentujaca nasycenie zielonej barwy gracza w formie graficznej
+	/// </summary>
+	sf::Text gt;
+	/// <summary>
+	/// Wartosc reprezentujaca nasycenie niebieskiej barwy gracza w formie graficznej
+	/// </summary>
+	sf::Text bt;
+	/// <summary>
+	/// Wartosc reprezentujaca ilosc sila tworzonej postaci
+	/// </summary>
+	sf::Text sila; 
+	/// <summary>
+	/// Wartosc reprezentujaca ilosc magicznych obrazen tworzonej postaci
+	/// </summary>
+	sf::Text dmg;
+	/// <summary>
+	/// Wartosc reprezentujaca ilosc inteligencji tworzonej postaci
+	/// </summary>
+	sf::Text inteligencja;
+	/// <summary>
+	/// Nazwa gracza reprezentowana przez standardow¹ biblioteke wejœcia
+	/// </summary>
 	std::string nazwaStd = "Mag";
-	int r, g, b;
+	/// <summary>
+	/// Wartosc nasycenie barwy czerwonej w grze reprezentowana przez wartosc calkowita
+	/// </summary>
+	int r;
+	/// <summary>
+	/// Wartosc nasycenie barwy zielonej w grze reprezentowana przez wartosc calkowita
+	/// </summary>
+	int g;
+	/// <summary>
+	/// Wartosc nasycenie barwy niebieskiej w grze reprezentowana przez wartosc calkowita
+	/// </summary>
+	int b;
+	/// <summary>
+	/// Obiekt reprezentujacy w sposob graficzny prawa strzalke koloru czerwonego
+	/// </summary>
 	Obiekt* rr;
+	/// <summary>
+	/// Obiekt reprezentujacy w sposob graficzny lewa strzalke koloru czerwonego
+	/// </summary>
 	Obiekt* rl;
+	/// <summary>
+	/// Obiekt reprezentujacy w sposob graficzny prawa strzalke koloru zielonego
+	/// </summary>
 	Obiekt* gr;
+	/// <summary>
+	/// Obiekt reprezentujacy w sposob graficzny lewa strzalke koloru zielonego
+	/// </summary>
 	Obiekt* gl;
+	/// <summary>
+	/// Obiekt reprezentujacy w sposob graficzny prawa strzalke koloru niebieskiego
+	/// </summary>
 	Obiekt* br;
+	/// <summary>
+	/// Obiekt reprezentujacy w sposob graficzny lewa strzalke koloru niebieskiego
+	/// </summary>
 	Obiekt* bl;
+	/// <summary>
+	/// Obiekt reprezentujacy przycisk odpowiadajacy za dodawanie punktow zdolnosci do sily
+	/// </summary>
 	Obiekt* buttonSila;
+	/// <summary>
+	/// Obiekt reprezentujacy przycisk odpowiadajacy za dodawanie punktow zdolnosci do obrazen
+	/// </summary>
 	Obiekt* buttonDmg;
+	/// <summary>
+	/// Obiekt reprezentujacy przycisk odpowiadajacy za dodawanie punktow zdolnosci do inteligencji
+	/// </summary>
 	Obiekt* buttonInteligencja;
+	/// <summary>
+	/// Obiekt reprezentujacy przycisk odpowiadajacy za zakonczenie tworzenia postaci
+	/// </summary>
 	Obiekt* check;
+	/// <summary>
+	/// Flaga odpowiadajaca za wycofanie sie z kreatora postaci
+	/// </summary>
 	bool goBack = false;
 
 
+
 public:
+	/**
+	 * @brief Konstruktor tworzenia nowego stanu Kreatora postaci
+	 *
+	 * @param window Wskaznik na okno
+	 * @param stos Wskaznik na stos wskaznikow na stany
+	 * @param event Wskaznik na eventy
+	 */
 	Creator(sf::RenderWindow* window, std::stack<Stan*>* stos, sf::Event* event) : Stan(window, stos, event) {
 		this->makeCreator();
 	}
-
+	/**
+	 * @brief Funkcja odpowiadajaca za zbudowanie postaci
+	 */
 	void makeCreator() {
 		this->gracz = new Gracz("H11.png", sf::Vector2f(200, 200), 100, 300, 1000);
 		this->cameraPlayer = new Camera(sf::Vector2f(window->getSize().x, window->getSize().y), 0.2);
@@ -120,7 +215,9 @@ public:
 		this->bg->przestaw(sf::Vector2f(990, 300));
 		this->bg->przeskaluj(sf::Vector2f(5, 5));
 	}
-
+	/**
+	 * @brief Funkcja odpowiadajaca za dodawanie nasycenia koloru czerwonego
+	 */
 	void addR(bool kiedy) {
 		if (kiedy == true && this->r < 255 && this->rl->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y)) {
 			this->r++;
@@ -132,7 +229,9 @@ public:
 			this->rt.setPosition(pozycja);
 		}
 	}
-
+	/**
+	 * @brief Funkcja odpowiadajaca za odejmowanie nasycenia koloru czerwonego
+	 */
 	void subR(bool kiedy) {
 		if (kiedy == true && this->r > 0 && this->rr->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y)) {
 			this->r--;
@@ -144,7 +243,9 @@ public:
 			this->rt.setPosition(pozycja);
 		}
 	}
-
+	/**
+	 * @brief Funkcja odpowiadajaca za dodawanie nasycenia koloru zielonego
+	 */
 	void addG(bool kiedy) {
 		if (kiedy == true && this->g < 255 && this->gl->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y)) {
 			this->g++;
@@ -156,7 +257,9 @@ public:
 			this->gt.setPosition(pozycja);
 		}
 	}
-
+	/**
+	 * @brief Funkcja odpowiadajaca za odejmowanie nasycenia koloru zielonego
+	 */
 	void subG(bool kiedy) {
 		if (kiedy == true && this->g > 0 && this->gr->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y)) {
 			this->g--;
@@ -168,7 +271,9 @@ public:
 			this->gt.setPosition(pozycja);
 		}
 	}
-
+	/**
+	 * @brief Funkcja odpowiadajaca za dodawanie nasycenia koloru niebieskiego
+	 */
 	void addB(bool kiedy) {
 		if (kiedy == true && this->b < 255 && this->bl->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y)) {
 			this->b++;
@@ -180,7 +285,9 @@ public:
 			this->bt.setPosition(pozycja);
 		}
 	}
-
+	/**
+	 * @brief Funkcja odpowiadajaca za odejmowanie nasycenia koloru niebieskiego
+	 */
 	void subB(bool kiedy) {
 		if (kiedy == true && this->b > 0 && this->br->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y)) {
 			this->b--;
@@ -192,7 +299,9 @@ public:
 			this->bt.setPosition(pozycja);
 		}
 	}
-
+	/**
+	 * @brief Funkcja sprawdza czy postac jest gotowa do utworzenia
+	 */
 	void checkCharacter(bool kiedy) {
 		if (kiedy == true && this->check->sprajt.getGlobalBounds().contains(this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).x, this->window->mapPixelToCoords(this->pozycja_kursora_w_oknie, this->cameraPlayer->returnView()).y)){
 			if (this->gracz->statystyki->zwrocIloscDostepnychPunktow() == 0){
@@ -206,7 +315,9 @@ public:
 			}
 		}
 	}
-
+	/**
+	 * @brief Dekonstruktor kreatora
+	 */
 	~Creator() {
 		delete(this->rr);
 		delete(this->rl);
@@ -225,7 +336,11 @@ public:
 		delete(this->stos);
 		delete(this->window);
 	}
-
+	/**
+	 * @brief Rysowanie obiektow na ekranie
+	 *
+	 * @param target Wskaznik na cel rysowania
+	 */
 	void draw(sf::RenderTarget* target) { // Rysowanie obiektow na ekranie
 		if (!target) target = this->window;
 		this->bg->draw(target);
@@ -252,7 +367,11 @@ public:
 
 		target->setView(target->getDefaultView());
 	};
-
+	/**
+	 * @brief Odswiezenie stanu gry
+	 *
+	 * @param dtime Delta czasu (timer)
+	 */
 	void update(const float& dtime) { // Odswiezenie stanu aktualnego "stanu"
 		if (this->goBack == true) this->stos->pop();
 		this->dtime = dtime;
@@ -309,7 +428,12 @@ public:
 		this->gracz->sprajt.setColor(sf::Color(this->r, this->g, this->b));
 		checkCharacter(this->lewy);
 	};
-
+	/**
+	 * @brief Odswiezenie stanu gry
+	 *
+	 * @param sciezka Sciezka odpowiedzialna za wskazanie czcionki
+	 * @param pozycja Pozycja reprezetnujaca pozycje napisow w przestrzeni
+	 */
 	sf::Text zrobTekst(std::string sciezka, sf::Vector2f pozycja) {
 		if (!this->czcionka.loadFromFile(sciezka)) {
 			std::cout << "Nie udalo sie zaladowac czcionki" << std::endl;

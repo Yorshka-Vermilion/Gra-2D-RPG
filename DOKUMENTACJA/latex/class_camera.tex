@@ -1,0 +1,117 @@
+\hypertarget{class_camera}{}\doxysection{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+Klasa camera odpowiadajaca za obserwowanie gracza.  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_a44757071b12e981453517c9b84c45cad}{Camera}} (sf\+::\+Vector2f size, double zoom)
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzenia kamery. \end{DoxyCompactList}\item 
+sf\+::\+View \mbox{\hyperlink{class_camera_ab121183dda07e373e0937aaf4e312c11}{return\+View}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwracajaca aktualny widok kamery. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a374817e145593252f17a975a76e88c5f}{update}} (\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$gracz)
+\begin{DoxyCompactList}\small\item\em Funkcja aktualizujaca camere na podstawie pozycji gracza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+View \mbox{\hyperlink{class_camera_ae35fe1e8b10a6081a5a1fe22d4eaf740}{camera\+Player}}
+\begin{DoxyCompactList}\small\item\em Widok ustawiony na gracza \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa camera odpowiadajaca za obserwowanie gracza. 
+
+Definition at line 8 of file Camera.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_camera_a44757071b12e981453517c9b84c45cad}\label{class_camera_a44757071b12e981453517c9b84c45cad}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{size,  }\item[{double}]{zoom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor tworzenia kamery. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Wektor liczb zmiennoprzecinkowych reprezentuj¹cych wielkoœæ kamery \\
+\hline
+{\em zoom} & Liczba zmiennoprzecinkowe reprezentuj¹ca zbli¿enie kamery \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file Camera.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_ab121183dda07e373e0937aaf4e312c11}\label{class_camera_ab121183dda07e373e0937aaf4e312c11}} 
+\index{Camera@{Camera}!returnView@{returnView}}
+\index{returnView@{returnView}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{returnView()}{returnView()}}
+{\footnotesize\ttfamily sf\+::\+View Camera\+::return\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwracajaca aktualny widok kamery. 
+
+\begin{DoxyReturn}{Returns}
+View zwraca widok aktualnej kamery 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file Camera.\+h.
+
+\mbox{\Hypertarget{class_camera_a374817e145593252f17a975a76e88c5f}\label{class_camera_a374817e145593252f17a975a76e88c5f}} 
+\index{Camera@{Camera}!update@{update}}
+\index{update@{update}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Camera\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gracz}{Gracz}} $\ast$}]{gracz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja aktualizujaca camere na podstawie pozycji gracza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gracz} & Wskaznik na gracza reprezentujacy gracza ktorego ma obserwowac kamera \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Camera.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_camera_ae35fe1e8b10a6081a5a1fe22d4eaf740}\label{class_camera_ae35fe1e8b10a6081a5a1fe22d4eaf740}} 
+\index{Camera@{Camera}!cameraPlayer@{cameraPlayer}}
+\index{cameraPlayer@{cameraPlayer}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{cameraPlayer}{cameraPlayer}}
+{\footnotesize\ttfamily sf\+::\+View Camera\+::camera\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Widok ustawiony na gracza 
+
+
+
+Definition at line 12 of file Camera.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sebix/\mbox{\hyperlink{_camera_8h}{Camera.\+h}}\end{DoxyCompactItemize}
