@@ -1,9 +1,6 @@
 # Gra-2D-RPG
 Gra RPG 2D 
 
-
-
-
 ## Biblioteki:
 
 - SFML 2.5
@@ -20,9 +17,13 @@ zaznaczeniu wybranego kafelka, możemy rzucić na niego zaklęcie. Robimy to pop
 przytrzymanie lewego Control'a, a następnie wykonania odpowiedniej kombinacji ruchów myszką
 ptrzyrzymując lewy przycisk myszy. Przytrzymując Control, naciskamy i trzymamy lewy przycisk
 myszy i rysujemy linię w konkretnym kierunku, puszczamy, a następnie wykonujemy kolejne znaki.
+
 Obecnie w grze występują dwa czary:
+
 Kula Ognia – PRAWO, PRAWO, LEWO | → → ←
+
 Błyskawica – GÓRA, DÓŁ, PRAWO | ↑ ↓ →
+
 Każda z umiejętności zadaje ustalone obrażenia wzmocnione o statystyki postaci oraz pobiera
 konkretną ilość many. Poprzez przytrzymanie lewego alta możemy podejrzeć nasze obecne
 statystyki, natomiast po wbiciu poziomu wyskoczy nam okno w lewym górnym roku które
@@ -36,6 +37,6 @@ zakończyć poprzez naciśnięcie przycisku Escape, dzięki temu wrócimy do men
 
 ![alt text](https://github.com/Armata-Strigoi/Gra-2D-RPG/blob/main/1.PNG?raw=true)
 
-![alt text](https://github.com/Armata-Strigoi/Gra-2D-RPG/blob/main/1.PNG?raw=true)
+![alt text](https://github.com/Armata-Strigoi/Gra-2D-RPG/blob/main/2.PNG?raw=true)
 
-![alt text](https://github.com/Armata-Strigoi/Gra-2D-RPG/blob/main/1.PNG?raw=true)
+![alt text](https://github.com/Armata-Strigoi/Gra-2D-RPG/blob/main/3.PNG?raw=true)
